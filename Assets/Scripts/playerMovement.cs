@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Input;
+using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
-    public input controls;
-    void awake()
+    public Input controls;
+    void awake() 
     {
-        controls.player.movement.preformed += ctx => move();
+        controls.player.movement.performed += ctx => move();
     }
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class playerMovement : MonoBehaviour
 
     void move()
     {
-        Debug.log("move");
+        Debug.Log("move");
     }
 
     // Update is called once per frame
