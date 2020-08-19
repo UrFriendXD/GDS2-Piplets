@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlantPrefabs
   m_EditorClassIdentifier: 
   aloePrefab: {fileID: 3635768608790019983, guid: ce8c6b86b5e6ada409cdb68fbb299ddf, type: 3}
-  cottonPrefab: {fileID: 0}
+  cottonPrefab: {fileID: 925342554021937007, guid: 5ee9ebb3ef6b22944b688bfc2f4f3a79, type: 3}
   treePrefab: {fileID: 0}
