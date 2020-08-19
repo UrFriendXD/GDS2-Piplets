@@ -32,11 +32,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e3e21ce7-2a5b-4da9-90f9-aaf6b763a149" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Plant.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Plant.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlantType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +49,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlantStages.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/RuntimeSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/GameEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlantStages.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/GameEventListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/PlayerScripts/Movement/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Edward/Scripts/Tool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/PickupObjectRuntimeSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/FireProjectile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/CannonDetector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/Objects/CanPickUp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/CannonStation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/PlayerScripts/Interaction/PlayerInputChecker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlantStages.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plants.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Plants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlantFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantPrefabs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlantType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" />
       </list>
     </option>
   </component>
@@ -128,8 +146,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1193" y="264" key="RiderGenerateDialog" timestamp="1597833733436">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1193" y="264" key="RiderGenerateDialog/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1597833733436" />
   </component>
 </project>

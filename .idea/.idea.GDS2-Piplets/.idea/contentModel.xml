@@ -9,9 +9,13 @@
         <e p="Scripts" t="Include">
           <e p="AloePlant.cs" t="Include" />
           <e p="FarmPlot.cs" t="Include" />
-          <e p="Plant.cs" t="Include" />
+          <e p="PlantFunctions.cs" t="Include" />
           <e p="PlantStages.cs" t="Include" />
           <e p="PlantType.cs" t="Include" />
+          <e p="ScriptableObjects" t="Include">
+            <e p="PlantPrefabs.cs" t="Include" />
+            <e p="Plants.cs" t="Include" />
+          </e>
           <e p="Test.cs" t="Include" />
         </e>
       </e>

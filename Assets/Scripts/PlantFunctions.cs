@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class Plant : MonoBehaviour
+public class PlantFunctions : MonoBehaviour
 {
     [SerializeField] private Sprite[] plantSprites;
     private SpriteRenderer _spriteRenderer;
@@ -14,23 +14,33 @@ public class Plant : MonoBehaviour
     // remove serialise when no need to debug
     [SerializeField] private PlantStages currentPlantStage; 
     
+    // Values to relating to farming
     [SerializeField] private int daysSincePlanted = 0;
-    protected int daysToStage1;
-
-    private bool _bIsWatered;
-
+    private int daysToStage1;
+    private int daysToHarvest;
     //[SerializeField] private int giveResourceMin;
     //[SerializeField] private int giveResourceMax;
-    [SerializeField] private int amountToGive;
- 
+    private float amountToGive;
+    
+    private bool _bIsWatered;
     //private bool _bIsHarvestable;
 
     private PlantType _thisPlantType;
+    public Plants _plants;
     
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
+        //Initialising values from Plants scriptable objects
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        plantSprites = _plants.plantSprites;
+
+        daysToStage1 = _plants.daysToStage1;
+        daysToHarvest = _plants.daysToHarvest;
+        amountToGive = _plants.amountToGive;
+
+        _thisPlantType = _plants.plantType;
+        
         if (daysSincePlanted == 0)
         {
             currentPlantStage = PlantStages.Seed;
@@ -50,6 +60,27 @@ public class Plant : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             OnWatered();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Harvest();
+        }
+    }
+
+    public void OnInteract()
+    {
+        switch (currentPlantStage)
+        {
+            case PlantStages.Harvestable:
+                Harvest();
+                break;
+            case PlantStages.Wilted:
+                DestroyPlant();
+                break;
+            default:
+                Debug.Log("Interacting with plant failed");
+                break; 
         }
     }
 
@@ -76,13 +107,14 @@ public class Plant : MonoBehaviour
             daysSincePlanted++;
 
             // Depending on day since planted, grow a stage
-            switch ((PlantStages)daysSincePlanted)
+            switch (daysSincePlanted)
             {
-                case PlantStages.Growing:
+                // var _ is nothing
+                case var _ when daysSincePlanted == daysToStage1:
                     currentPlantStage = PlantStages.Growing;
                     UpdateSprite(1);
                     break;
-                case PlantStages.Harvestable:
+                case var _ when daysSincePlanted == daysToHarvest:
                     currentPlantStage = PlantStages.Harvestable;
                     UpdateSprite(plantSprites.Length-1);
                     break;
@@ -119,18 +151,22 @@ public class Plant : MonoBehaviour
             }*/
             
             //Inventory.Gain(amountToGive)
+            Debug.Log($"Gave {amountToGive}");
 
             // Show particles based on amount or just particles
+            DestroyPlant();
         }
     }
 
-    public void OnPlantDeath()
+    public void OnSeasonEnd()
     {
         currentPlantStage = PlantStages.Wilted;
+        UpdateSprite(plantSprites.Length);
     }
 
-    private void UpdateSprite(int value)
-    {
-        _spriteRenderer.sprite = plantSprites[value];
-    }
+    // Updates sprite base on parameter
+    private void UpdateSprite(int value) => _spriteRenderer.sprite = plantSprites[value];
+
+    // Destroys plant
+    private void DestroyPlant() => Destroy(this);
 }
