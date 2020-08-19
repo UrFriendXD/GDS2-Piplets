@@ -1,0 +1,3106 @@
+fileFormatVersion: 2
+guid: a17dbbe3356ca0c46bc5f41b70c640c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7611922939038124576
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_0
+  - first:
+      213: -7265195913885538248
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_1
+  - first:
+      213: 8528964833775945951
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_2
+  - first:
+      213: 4378020375758376042
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_3
+  - first:
+      213: -218333279042278905
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_4
+  - first:
+      213: -7520803702179115985
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_5
+  - first:
+      213: -3877116707388979131
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_6
+  - first:
+      213: -8597066982518256989
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_7
+  - first:
+      213: 2622699873385517716
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_8
+  - first:
+      213: 688747461186541803
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_9
+  - first:
+      213: -8888745527122971455
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_10
+  - first:
+      213: -2102901626415043395
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_11
+  - first:
+      213: -1176671501572305963
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_12
+  - first:
+      213: -5576089280762147188
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_13
+  - first:
+      213: 9146792425519575815
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_14
+  - first:
+      213: 9041688617518598016
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_15
+  - first:
+      213: -3787752966721231530
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_16
+  - first:
+      213: -2367006022608155542
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_17
+  - first:
+      213: -479601027526226263
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_18
+  - first:
+      213: -6397706500447499510
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_19
+  - first:
+      213: 3810652978037510182
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_20
+  - first:
+      213: 188699726192512654
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_21
+  - first:
+      213: 1634835023602404367
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_22
+  - first:
+      213: 7181506800560694381
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_23
+  - first:
+      213: 4153699714515654521
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_24
+  - first:
+      213: -8324379858074782623
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_25
+  - first:
+      213: 6774736748342243898
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_26
+  - first:
+      213: -9178850724957379937
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_27
+  - first:
+      213: -1091722818283087314
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_28
+  - first:
+      213: -8110555506089123970
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_29
+  - first:
+      213: 6824434540952715358
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_30
+  - first:
+      213: 8828911567840890201
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_31
+  - first:
+      213: -7338092223597932001
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_32
+  - first:
+      213: -3388724369211457136
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_33
+  - first:
+      213: -1539190898118707755
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_34
+  - first:
+      213: 1353575620910648047
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_35
+  - first:
+      213: -7422841089213609227
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_36
+  - first:
+      213: -7792290688042234417
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_37
+  - first:
+      213: 7690859631819845508
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_38
+  - first:
+      213: -1584843733317519577
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_39
+  - first:
+      213: -781176622380268152
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_40
+  - first:
+      213: -2674506856124623119
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_41
+  - first:
+      213: 4192583723460386017
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_42
+  - first:
+      213: 5520134325067437382
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_43
+  - first:
+      213: -2935684519450209703
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_44
+  - first:
+      213: 2225720046280078438
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_45
+  - first:
+      213: -9098036307570611545
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_46
+  - first:
+      213: 2186623491050125666
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_47
+  - first:
+      213: 895930557084688276
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_48
+  - first:
+      213: -1718703317569678055
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_49
+  - first:
+      213: 8468567608554849247
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_50
+  - first:
+      213: -2283305958652402575
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_51
+  - first:
+      213: -4758166612810323612
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_52
+  - first:
+      213: -9213459894068928800
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_53
+  - first:
+      213: 8607421100747119268
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_54
+  - first:
+      213: 8323844019510060632
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_55
+  - first:
+      213: -6995452162259544069
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_56
+  - first:
+      213: 4239815579013304757
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_57
+  - first:
+      213: 2695214980028371282
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_58
+  - first:
+      213: 4664960663292192837
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_59
+  - first:
+      213: -6207230123635024483
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_60
+  - first:
+      213: 4711379934569800844
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_61
+  - first:
+      213: -2885668318770204534
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_62
+  - first:
+      213: 1599060364421311842
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_63
+  - first:
+      213: 919942081517024210
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_64
+  - first:
+      213: 4069655136487327709
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_65
+  - first:
+      213: -6619225444571276774
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_66
+  - first:
+      213: -6974048645262832451
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_67
+  - first:
+      213: 3262691580490254257
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_68
+  - first:
+      213: 6453819234732190841
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_69
+  - first:
+      213: -251403275561106252
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_70
+  - first:
+      213: 6455112065445741757
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_71
+  - first:
+      213: 8213760446268085206
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_72
+  - first:
+      213: -5119927080268573514
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_73
+  - first:
+      213: 5232421445213177331
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_74
+  - first:
+      213: 5485518086934091459
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_75
+  - first:
+      213: -1417829799083370822
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_76
+  - first:
+      213: 2622410646288896820
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_77
+  - first:
+      213: -1572147517567244319
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_78
+  - first:
+      213: -8279880316180796812
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_79
+  - first:
+      213: -6088412687305049219
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_80
+  - first:
+      213: 4763960592228617135
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_81
+  - first:
+      213: -9083663664940357045
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_82
+  - first:
+      213: -6502295871989627455
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_83
+  - first:
+      213: 3981283579428959180
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_84
+  - first:
+      213: 48630180935908236
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_85
+  - first:
+      213: -3213163100481780422
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_86
+  - first:
+      213: 5036674484264014114
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_87
+  - first:
+      213: -7469215461074241282
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_88
+  - first:
+      213: -1403056684686556394
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_89
+  - first:
+      213: -1608752156655342971
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_90
+  - first:
+      213: 1597283048368905457
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_91
+  - first:
+      213: -5850298085762402728
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_92
+  - first:
+      213: -6830065944939672951
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_93
+  - first:
+      213: 5535221482327631143
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_94
+  - first:
+      213: -6021022007848213320
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_95
+  - first:
+      213: -2136443221539797770
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_96
+  - first:
+      213: -6381825422358342100
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_97
+  - first:
+      213: 6130743542643454140
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_98
+  - first:
+      213: 859718034236111895
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_99
+  - first:
+      213: -2326598307285949187
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_100
+  - first:
+      213: 864772776916137543
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_101
+  - first:
+      213: 8424081684110112497
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_102
+  - first:
+      213: 7859771484121290134
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_103
+  - first:
+      213: -6074458198620414389
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_104
+  - first:
+      213: 4527261873947349880
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_105
+  - first:
+      213: -292195182766262506
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_106
+  - first:
+      213: -8447882506685049208
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_107
+  - first:
+      213: 2268361620158555566
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_108
+  - first:
+      213: 413426940794604981
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_109
+  - first:
+      213: -5885675907350619247
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_110
+  - first:
+      213: 6245770533297579151
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_111
+  - first:
+      213: 2133477460719123140
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_112
+  - first:
+      213: 1208988237817823973
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_113
+  - first:
+      213: 8986571462086248272
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_114
+  - first:
+      213: -2435203516122667175
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_115
+  - first:
+      213: -5534107876875999164
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_116
+  - first:
+      213: 102533244747689964
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_117
+  - first:
+      213: 6716111546358134346
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_118
+  - first:
+      213: -2665802151136528140
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_119
+  - first:
+      213: -6248180951659432025
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_120
+  - first:
+      213: 4759298709473520841
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_121
+  - first:
+      213: -3925860461732317245
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_122
+  - first:
+      213: 3205043464534428868
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_123
+  - first:
+      213: 6297774247663332782
+    second: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_124
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ac307559bf2a960800000000000000
+      internalID: 7611922939038124576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838ab391fc6dc2b90800000000000000
+      internalID: -7265195913885538248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd88303f358fc5670800000000000000
+      internalID: 8528964833775945951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_3
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c0084065ad1cc30800000000000000
+      internalID: 4378020375758376042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ae90c1a0358fcf0800000000000000
+      internalID: -218333279042278905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_5
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ccb2a31ecb0a790800000000000000
+      internalID: -7520803702179115985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_6
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548095f75e6b13ac0800000000000000
+      internalID: -3877116707388979131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_7
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa82cce02511b880800000000000000
+      internalID: -8597066982518256989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4921b91a3a3b56420800000000000000
+      internalID: 2622699873385517716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_9
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 736
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8d9f3ba2cee8900800000000000000
+      internalID: 688747461186541803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c43ef4a905d4a480800000000000000
+      internalID: -8888745527122971455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbca0f7cc1ef0d2e0800000000000000
+      internalID: -2102901626415043395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db057be08f9bafe0800000000000000
+      internalID: -1176671501572305963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 658
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e0f40b750cd92b0800000000000000
+      internalID: -5576089280762147188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703f35dcf3fefee70800000000000000
+      internalID: 9146792425519575815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08783e884e78a7d70800000000000000
+      internalID: 9041688617518598016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_16
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65526a1ceb23f6bc0800000000000000
+      internalID: -3787752966721231530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_17
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 656
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c0b393094b62fd0800000000000000
+      internalID: -2367006022608155542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_18
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 656
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae0360186d1859f0800000000000000
+      internalID: -479601027526226263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_19
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 656
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b8e9795d7c637a0800000000000000
+      internalID: -6397706500447499510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620d53e91b822e430800000000000000
+      internalID: 3810652978037510182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_21
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e0be4b6656e9200800000000000000
+      internalID: 188699726192512654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c4030dac910b610800000000000000
+      internalID: 1634835023602404367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_23
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64e877c266d9a360800000000000000
+      internalID: 7181506800560694381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_24
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977d85312e7e4a930800000000000000
+      internalID: 4153699714515654521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_25
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1643900af9cd97c80800000000000000
+      internalID: -8324379858074782623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_26
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3279b3bd23b40e50800000000000000
+      internalID: 6774736748342243898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_27
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f922494b5eb2e9080800000000000000
+      internalID: -9178850724957379937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_28
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a5c0781eb69d0f0800000000000000
+      internalID: -1091722818283087314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_29
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 576
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f18702db4817f80800000000000000
+      internalID: -8110555506089123970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50846ebe0345be50800000000000000
+      internalID: 6824434540952715358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d4e7a1b48968a70800000000000000
+      internalID: 8828911567840890201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f129363600cd92a90800000000000000
+      internalID: -7338092223597932001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_33
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0910173f325d8f0d0800000000000000
+      internalID: -3388724369211457136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_34
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5be1c7802b3aae0800000000000000
+      internalID: -1539190898118707755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_35
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea020d0bddd8c210800000000000000
+      internalID: 1353575620910648047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_36
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5facf357b55ccf890800000000000000
+      internalID: -7422841089213609227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_37
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd88a097e83cd390800000000000000
+      internalID: -7792290688042234417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_38
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 496
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f6304561c6bba60800000000000000
+      internalID: 7690859631819845508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_39
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 496
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727fa1b7501810ae0800000000000000
+      internalID: -1584843733317519577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 416
+        width: 190
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8854f243004b825f0800000000000000
+      internalID: -781176622380268152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6585b3f2e32ead0800000000000000
+      internalID: -2674506856124623119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_42
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecd0f7eeac0f2a30800000000000000
+      internalID: 4192583723460386017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_43
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645d516fbe47b9c40800000000000000
+      internalID: 5520134325067437382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_44
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9529e85cb7a5247d0800000000000000
+      internalID: -2935684519450209703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_45
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6647df7f69853ee10800000000000000
+      internalID: 2225720046280078438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_46
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaa5a58e284db180800000000000000
+      internalID: -9098036307570611545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_47
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2693199da72785e10800000000000000
+      internalID: 2186623491050125666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_48
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 416
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f5376481cfe6c00800000000000000
+      internalID: 895930557084688276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 336
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91559f15070f528e0800000000000000
+      internalID: -1718703317569678055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_50
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 336
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd38a402f55668570800000000000000
+      internalID: 8468567608554849247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_51
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 336
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174adfcf3511050e0800000000000000
+      internalID: -2283305958652402575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_52
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 336
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469215deca897fdb0800000000000000
+      internalID: -4758166612810323612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_53
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 336
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee96b59a07332080800000000000000
+      internalID: -9213459894068928800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_54
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 336
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aadb3613e3b37770800000000000000
+      internalID: 8607421100747119268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_55
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 338
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85628acb80c348370800000000000000
+      internalID: 8323844019510060632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_56
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 336
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7184962592bee90800000000000000
+      internalID: -6995452162259544069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_57
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 256
+        width: 92
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1514c3ec9d6da30800000000000000
+      internalID: 4239815579013304757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_58
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 336
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25117e59eb3576520800000000000000
+      internalID: 2695214980028371282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_59
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548a3bad1054db040800000000000000
+      internalID: 4664960663292192837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_60
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d51a1071d7bd9a0800000000000000
+      internalID: -6207230123635024483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84afe9a61f226140800000000000000
+      internalID: 4711379934569800844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_62
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a807a18f3fb04f7d0800000000000000
+      internalID: -2885668318770204534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_63
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 256
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d2db3ede0013610800000000000000
+      internalID: 1599060364421311842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_64
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d371c6f27a44cc00800000000000000
+      internalID: 919942081517024210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_65
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7cba0e8c15a7830800000000000000
+      internalID: 4069655136487327709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_66
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 256
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a1a104789c324a0800000000000000
+      internalID: -6619225444571276774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_67
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 256
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc80dc05b3373f90800000000000000
+      internalID: -6974048645262832451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_68
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b787cab4b8674d20800000000000000
+      internalID: 3262691580490254257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_69
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cabc27662909950800000000000000
+      internalID: 6453819234732190841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_70
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b48fc88d06d28cf0800000000000000
+      internalID: -251403275561106252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_71
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db44b3e093a259950800000000000000
+      internalID: 6455112065445741757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_72
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d396f58b932df170800000000000000
+      internalID: 8213760446268085206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_73
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b450b0727d52f8b0800000000000000
+      internalID: -5119927080268573514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_74
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f54115f49b4d9840800000000000000
+      internalID: 5232421445213177331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_75
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6dfa4f2a9702c40800000000000000
+      internalID: 5485518086934091459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_76
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab61ca94f4bd25ce0800000000000000
+      internalID: -1417829799083370822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_77
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 176
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4339043b69ca46420800000000000000
+      internalID: 2622410646288896820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_78
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e764e0992c9e2ae0800000000000000
+      internalID: -1572147517567244319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_79
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a6b4b98b4f71d80800000000000000
+      internalID: -8279880316180796812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_80
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b733f2bec918ba0800000000000000
+      internalID: -6088412687305049219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_81
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 98
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab0fb70becfc1240800000000000000
+      internalID: 4763960592228617135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_82
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 98
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a6b18260850f180800000000000000
+      internalID: -9083663664940357045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_83
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 96
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5c195ea5433c5a0800000000000000
+      internalID: -6502295871989627455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_84
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc375fd525c504730800000000000000
+      internalID: 3981283579428959180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_85
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b3c0454e4cca000800000000000000
+      internalID: 48630180935908236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_86
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3504662f2d8863d0800000000000000
+      internalID: -3213163100481780422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_87
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 96
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22194db02ccd5e540800000000000000
+      internalID: 5036674484264014114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_88
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef870db9c14085890800000000000000
+      internalID: -7469215461074241282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_89
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61345850167578ce0800000000000000
+      internalID: -1403056684686556394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_90
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a2ae2ef609ca9e0800000000000000
+      internalID: -1608752156655342971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_91
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc18cf3870ba2610800000000000000
+      internalID: 1597283048368905457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_92
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856fbff13e09fcea0800000000000000
+      internalID: -5850298085762402728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_93
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ac067d53bb631a0800000000000000
+      internalID: -6830065944939672951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_94
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725ef3f7c9e01dc40800000000000000
+      internalID: 5535221482327631143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_95
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4e5657268017ca0800000000000000
+      internalID: -6021022007848213320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_96
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f444599534d952e0800000000000000
+      internalID: -2136443221539797770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_97
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 16
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2616c937933f67a0800000000000000
+      internalID: -6381825422358342100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_98
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0784c15c6c41550800000000000000
+      internalID: 6130743542643454140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_99
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cf3a54ff45eeb00800000000000000
+      internalID: 859718034236111895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_100
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df422379a2346bfd0800000000000000
+      internalID: -2326598307285949187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_101
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746b383424a400c00800000000000000
+      internalID: 864772776916137543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_102
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6f144b8a958e470800000000000000
+      internalID: 8424081684110112497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_103
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6955bce9584831d60800000000000000
+      internalID: 7859771484121290134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_104
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e5544c37033bba0800000000000000
+      internalID: -6074458198620414389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_105
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8731dc910b014de30800000000000000
+      internalID: 4527261873947349880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_106
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617f226870ae1fbf0800000000000000
+      internalID: -292195182766262506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_107
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8861dc47e9713ca80800000000000000
+      internalID: -8447882506685049208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_108
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 6
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea52eaf00e6da7f10800000000000000
+      internalID: 2268361620158555566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_109
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd83aabc99ccb500800000000000000
+      internalID: 413426940794604981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_110
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b9a4722f0e15ea0800000000000000
+      internalID: -5885675907350619247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_111
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84edc1653f6da650800000000000000
+      internalID: 6245770533297579151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_112
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca37766272ab9d10800000000000000
+      internalID: 2133477460719123140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_113
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2c1c4956037c010800000000000000
+      internalID: 1208988237817823973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_114
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0574052c127b6bc70800000000000000
+      internalID: 8986571462086248272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_115
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957e9b9ed4b643ed0800000000000000
+      internalID: -2435203516122667175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_116
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4486d1af436e233b0800000000000000
+      internalID: -5534107876875999164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_117
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 6
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefaade51754c6100800000000000000
+      internalID: 102533244747689964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_118
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4673903edb643d50800000000000000
+      internalID: 6716111546358134346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_119
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8f80c411b210bd0800000000000000
+      internalID: -2665802151136528140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_120
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a73afb57800a49a0800000000000000
+      internalID: -6248180951659432025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_121
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cce42ed5fc6c0240800000000000000
+      internalID: 4759298709473520841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_122
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7b1bcc5ba8489c0800000000000000
+      internalID: -3925860461732317245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_123
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc0349cc0a9a7c20800000000000000
+      internalID: 3205043464534428868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_plant_sprites_by_neorice_by_neoriceisgood_d5v6ios-fullview_124
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead639baf40366750800000000000000
+      internalID: 6297774247663332782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
