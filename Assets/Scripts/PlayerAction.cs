@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @Input : IInputActionCollection, IDisposable
+public class @PlayerAction : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @Input()
+    public @PlayerAction()
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""Input"",
@@ -20,8 +20,16 @@ public class @Input : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""movement"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""c6adbdbd-538d-4e7e-b8f4-92b6ffb1c4a2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""LadderMovement"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""4938417d-d387-4dd5-a10b-a7f0f2f8c45f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -29,69 +37,80 @@ public class @Input : IInputActionCollection, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""0473b0b2-d245-4a85-b031-078c9ab06a26"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""name"": ""Sideways"",
+                    ""id"": ""0f095be0-9ffd-4b1d-9d6b-983ce7a320d9"",
+                    ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""keyboard"",
+                    ""groups"": """",
                     ""action"": ""movement"",
-                    ""isComposite"": false,
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""803bbe31-b129-4652-920a-559889965a30"",
-                    ""path"": ""<Keyboard>/downArrow"",
+                    ""name"": ""negative"",
+                    ""id"": ""8c3b6324-c6a0-45e9-8447-724fd4a5bc62"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""keyboard"",
+                    ""groups"": """",
                     ""action"": ""movement"",
                     ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""a590c0ff-db14-46c5-952d-6f9ce196fdcc"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""UpandDown"",
+                    ""id"": ""eebd4e19-e9ce-42f5-9ece-772d0e8c961b"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LadderMovement"",
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""1e10c5f4-83ac-45d6-861a-5e63f7e677ba"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""name"": ""negative"",
+                    ""id"": ""b976ba8b-bb87-44d3-b922-ca80ada8da7d"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""keyboard"",
-                    ""action"": ""movement"",
+                    ""groups"": """",
+                    ""action"": ""LadderMovement"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""7b90520b-5926-4c5c-a6bb-faf0c91b0f0c"",
-                    ""path"": ""<Keyboard>/downArrow"",
+                    ""name"": ""positive"",
+                    ""id"": ""de8dff66-da8b-42a1-a836-be5d31b77671"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""keyboard"",
-                    ""action"": ""movement"",
+                    ""groups"": """",
+                    ""action"": ""LadderMovement"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 }
             ]
         }
     ],
-    ""controlSchemes"": [
-        {
-            ""name"": ""keyboard"",
-            ""bindingGroup"": ""keyboard"",
-            ""devices"": [
-                {
-                    ""devicePath"": ""<Keyboard>"",
-                    ""isOptional"": false,
-                    ""isOR"": false
-                }
-            ]
-        }
-    ]
+    ""controlSchemes"": []
 }");
         // player
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
+        m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -142,11 +161,13 @@ public class @Input : IInputActionCollection, IDisposable
     private readonly InputActionMap m_player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
+    private readonly InputAction m_player_LadderMovement;
     public struct PlayerActions
     {
-        private @Input m_Wrapper;
-        public PlayerActions(@Input wrapper) { m_Wrapper = wrapper; }
+        private @PlayerAction m_Wrapper;
+        public PlayerActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
+        public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -159,6 +180,9 @@ public class @Input : IInputActionCollection, IDisposable
                 @movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
+                @LadderMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
+                @LadderMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
+                @LadderMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -166,21 +190,16 @@ public class @Input : IInputActionCollection, IDisposable
                 @movement.started += instance.OnMovement;
                 @movement.performed += instance.OnMovement;
                 @movement.canceled += instance.OnMovement;
+                @LadderMovement.started += instance.OnLadderMovement;
+                @LadderMovement.performed += instance.OnLadderMovement;
+                @LadderMovement.canceled += instance.OnLadderMovement;
             }
         }
     }
     public PlayerActions @player => new PlayerActions(this);
-    private int m_keyboardSchemeIndex = -1;
-    public InputControlScheme keyboardScheme
-    {
-        get
-        {
-            if (m_keyboardSchemeIndex == -1) m_keyboardSchemeIndex = asset.FindControlSchemeIndex("keyboard");
-            return asset.controlSchemes[m_keyboardSchemeIndex];
-        }
-    }
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnLadderMovement(InputAction.CallbackContext context);
     }
 }
