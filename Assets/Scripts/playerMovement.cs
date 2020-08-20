@@ -6,10 +6,10 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement;
+    public bool LadderMovement, endLadder, GroundCheck;
     [SerializeField] private float walkspeed, ladderspeed;
 
-    void awake()
+    void Awake()
     {
         control = new PlayerAction();
     }
@@ -28,6 +28,37 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         LadderMovement = false;
+        endLadder = false;
+    }
+
+    public void LadderOn()
+    {
+        LadderMovement = true;
+    }
+
+    public void EndOn()
+    {
+        endLadder = true;
+    }
+
+    public void EndOff()
+    {
+        endLadder = false;
+    }
+
+    public void LadderOff()
+    {
+        LadderMovement = false;
+    }
+
+    public void GroundOn()
+    {
+        GroundCheck = true;
+    }
+
+    public void GroundOff()
+    {
+        GroundCheck = false;
     }
 
     // Update is called once per frame
@@ -43,6 +74,14 @@ public class playerMovement : MonoBehaviour
     public void LadderMoveUpAndDown()
     {
         float movementInput = control.player.LadderMovement.ReadValue<float>();
+        if(movementInput == 1 && endLadder == true)
+        {
+            movementInput = 0;
+        }
+        if (movementInput == -1 && GroundCheck == true)
+        {
+            movementInput = 0;
+        }
         Vector3 currentPosition = transform.position;
         currentPosition.y += movementInput * ladderspeed * Time.deltaTime;
         transform.position = currentPosition;
@@ -50,26 +89,20 @@ public class playerMovement : MonoBehaviour
 
     public void playerMoveRightAndLeft()
     {
-        float movementInput = control.player.movement.ReadValue<float>();
-        /**
-        if (movementInput > 0)
+        if (GroundCheck == true && endLadder == false)
         {
-            if (transform.rotation.y != 0)
-            {
-                transform.Rotate(0f,0f,0f);
-            }
+            float movementInput = control.player.movement.ReadValue<float>();
+            Vector3 currentPosition = transform.position;
+            currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+            transform.position = currentPosition;
         }
-        if (movementInput < 0)
+        if (endLadder == true)
         {
-            if (transform.rotation.y != 180)
-            {
-                transform.Rotate(0f,180f,0f);
-            }
+            float movementInput = control.player.movement.ReadValue<float>();
+            Vector3 currentPosition = transform.position;
+            currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+            transform.position = currentPosition;
         }
-        **/
-        Vector3 currentPosition = transform.position;
-        currentPosition.x += movementInput * walkspeed * Time.deltaTime;
-        transform.position = currentPosition;
     }
 
 }
