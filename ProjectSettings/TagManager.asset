@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Ladder
+  - Sap
+  - Aloe
+  - Cotton
   layers:
   - Default
   - TransparentFX
