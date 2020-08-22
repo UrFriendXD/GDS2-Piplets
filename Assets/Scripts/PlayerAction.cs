@@ -33,6 +33,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChopTree"",
+                    ""type"": ""Button"",
+                    ""id"": ""1f9d3701-03a9-4e4f-aa51-0e4940d17f8c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -101,6 +109,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""LadderMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b6a4b90-8669-431f-b8ae-e573ed7c189f"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChopTree"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -111,6 +130,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
+        m_player_ChopTree = m_player.FindAction("ChopTree", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -162,12 +182,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_LadderMovement;
+    private readonly InputAction m_player_ChopTree;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
         public PlayerActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
+        public InputAction @ChopTree => m_Wrapper.m_player_ChopTree;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -183,6 +205,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
+                @ChopTree.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @ChopTree.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @ChopTree.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -193,6 +218,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started += instance.OnLadderMovement;
                 @LadderMovement.performed += instance.OnLadderMovement;
                 @LadderMovement.canceled += instance.OnLadderMovement;
+                @ChopTree.started += instance.OnChopTree;
+                @ChopTree.performed += instance.OnChopTree;
+                @ChopTree.canceled += instance.OnChopTree;
             }
         }
     }
@@ -201,5 +229,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLadderMovement(InputAction.CallbackContext context);
+        void OnChopTree(InputAction.CallbackContext context);
     }
 }

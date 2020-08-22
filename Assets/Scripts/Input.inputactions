@@ -20,6 +20,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ChopTree",
+                    "type": "Button",
+                    "id": "1f9d3701-03a9-4e4f-aa51-0e4940d17f8c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -88,6 +96,17 @@
                     "action": "LadderMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1b6a4b90-8669-431f-b8ae-e573ed7c189f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChopTree",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

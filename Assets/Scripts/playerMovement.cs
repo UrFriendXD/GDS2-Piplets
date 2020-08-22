@@ -6,8 +6,9 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck;
+    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping;
     [SerializeField] private float walkspeed, ladderspeed;
+    public float treePos;
 
     void Awake()
     {
@@ -29,6 +30,46 @@ public class playerMovement : MonoBehaviour
     {
         LadderMovement = false;
         endLadder = false;
+        chopping = false;
+        control.player.ChopTree.performed += cxt => chop();
+    }
+
+    public void chopOn(float value)
+    {
+        treePos = value;
+        canChop = true;
+    }
+
+    public void chopOff()
+    {
+        canChop = false;
+    }
+
+    public void chop()
+    {
+        if (canChop == true && chopping == false)
+        {
+            if(transform.position.x > treePos)
+            {
+               this.transform.Rotate(0f, -180f, 0f);
+            }
+            if(transform.position.x < treePos)
+            {
+               this.transform.Rotate(0f, 0f, 0f);
+            }
+            //runs chopping animation
+            StartCoroutine(coolDown(2f));
+        }
+    }
+
+    IEnumerator coolDown(float time)
+    {
+        chopping = true;
+        axe Axe = gameObject.GetComponentInChildren<axe>();
+        Axe.axeOn();
+        yield return new WaitForSeconds(time);
+        chopping = false;
+        Axe.axeOff();
     }
 
     public void LadderOn()
@@ -89,19 +130,22 @@ public class playerMovement : MonoBehaviour
 
     public void playerMoveRightAndLeft()
     {
-        if (GroundCheck == true && endLadder == false)
+        if (chopping == false)
         {
-            float movementInput = control.player.movement.ReadValue<float>();
-            Vector3 currentPosition = transform.position;
-            currentPosition.x += movementInput * walkspeed * Time.deltaTime;
-            transform.position = currentPosition;
-        }
-        if (endLadder == true)
-        {
-            float movementInput = control.player.movement.ReadValue<float>();
-            Vector3 currentPosition = transform.position;
-            currentPosition.x += movementInput * walkspeed * Time.deltaTime;
-            transform.position = currentPosition;
+            if (GroundCheck == true && endLadder == false)
+            {
+                float movementInput = control.player.movement.ReadValue<float>();
+                Vector3 currentPosition = transform.position;
+                currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+                transform.position = currentPosition;
+            }
+            if (endLadder == true)
+            {
+                float movementInput = control.player.movement.ReadValue<float>();
+                Vector3 currentPosition = transform.position;
+                currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+                transform.position = currentPosition;
+            }
         }
     }
 

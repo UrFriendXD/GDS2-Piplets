@@ -9,6 +9,7 @@ TagManager:
   - Sap
   - Aloe
   - Cotton
+  - Tree
   layers:
   - Default
   - TransparentFX
