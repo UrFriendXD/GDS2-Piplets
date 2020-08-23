@@ -6,9 +6,9 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping;
+    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping, canWater, watering;
     [SerializeField] private float walkspeed, ladderspeed;
-    public float treePos;
+    public float treePos, waterPos;
 
     void Awake()
     {
@@ -32,6 +32,19 @@ public class playerMovement : MonoBehaviour
         endLadder = false;
         chopping = false;
         control.player.ChopTree.performed += cxt => chop();
+        control.player.WaterPlant.performed += cxt => water();
+    }
+
+    public void waterOn(float value)
+    {
+        waterPos = value;
+        canWater = true;
+    }
+
+    public void waterOff(float value)
+    {
+        waterPos = value;
+        canWater = false;
     }
 
     public void chopOn(float value)
@@ -40,29 +53,44 @@ public class playerMovement : MonoBehaviour
         canChop = true;
     }
 
-    public void chopOff()
+    public void chopOff(float value)
     {
+        treePos = value;
         canChop = false;
     }
 
     public void chop()
     {
-        if (canChop == true && chopping == false)
+        rotatePlayer();
+        //runs chopping animation
+        StartCoroutine(coolDownAxe(2f));
+       
+    }
+
+    public void water()
+    {
+        rotatePlayer();
+        //runs chopping animation
+        StartCoroutine(coolDownWaterCan(2f));
+
+    }
+
+    public void rotatePlayer()
+    {
+        if ((canChop == true && chopping == false) || (watering == false && canWater == true))
         {
-            if(transform.position.x > treePos && transform.rotation.y == 0)
+            if (((transform.position.x > treePos && treePos !=0)|| (transform.position.x > waterPos && waterPos != 0)) && transform.rotation.y == 0)
             {
-               this.transform.Rotate(0f, -180f, 0f);
+                this.transform.Rotate(0f, -180f, 0f);
             }
-            if(transform.position.x < treePos && transform.rotation.y != 0)
+            if (((transform.position.x < treePos && treePos != 0) || (transform.position.x < waterPos && waterPos != 0)) && transform.rotation.y != 0)
             {
-               this.transform.Rotate(0f, 180f, 0f);
+                this.transform.Rotate(0f, 180f, 0f);
             }
-            //runs chopping animation
-            StartCoroutine(coolDown(2f));
         }
     }
 
-    IEnumerator coolDown(float time)
+    IEnumerator coolDownAxe(float time)
     {
         chopping = true;
         axe Axe = gameObject.GetComponentInChildren<axe>();
@@ -70,6 +98,16 @@ public class playerMovement : MonoBehaviour
         yield return new WaitForSeconds(time);
         chopping = false;
         Axe.axeOff();
+    }
+
+    IEnumerator coolDownWaterCan(float time)
+    {
+        watering = true;
+        can Can = gameObject.GetComponentInChildren<can>();
+        Can.canOn();
+        yield return new WaitForSeconds(time);
+        watering = false;
+        Can.canOff();
     }
 
     public void LadderOn()
@@ -135,14 +173,7 @@ public class playerMovement : MonoBehaviour
             if (GroundCheck == true && endLadder == false)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
-                if(movementInput < 0 && transform.rotation.y == 0)
-                {
-                    this.transform.Rotate(0f, -180f, 0f);
-                }
-                if (movementInput > 0 && transform.rotation.y != 0)
-                {
-                    this.transform.Rotate(0f, 180f, 0f);
-                }
+                rotatePlayerMovement(movementInput);
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
@@ -150,18 +181,23 @@ public class playerMovement : MonoBehaviour
             if (endLadder == true)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
-                if (movementInput < 0 && transform.rotation.y == 0)
-                {
-                    this.transform.Rotate(0f, -180f, 0f);
-                }
-                if (movementInput > 0 && transform.rotation.y != 0)
-                {
-                    this.transform.Rotate(0f, 180f, 0f);
-                }
+                rotatePlayerMovement(movementInput);
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
             }
+        }
+    }
+
+    public void rotatePlayerMovement(float movementInput)
+    {
+        if (movementInput < 0 && transform.rotation.y == 0)
+        {
+            this.transform.Rotate(0f, -180f, 0f);
+        }
+        if (movementInput > 0 && transform.rotation.y != 0)
+        {
+            this.transform.Rotate(0f, 180f, 0f);
         }
     }
 
