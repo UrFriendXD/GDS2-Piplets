@@ -6,9 +6,10 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping, canWater, watering;
+    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping, canWater, watering, enoughSeed;
     [SerializeField] private float walkspeed, ladderspeed;
     public float treePos, waterPos;
+    public int plantSeedType;
 
     void Awake()
     {
@@ -28,11 +29,55 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        plantSeedType = 0;
         LadderMovement = false;
         endLadder = false;
         chopping = false;
+        watering = false;
         control.player.ChopTree.performed += cxt => chop();
         control.player.WaterPlant.performed += cxt => water();
+        control.player.Sapling.performed += cxt => sap();
+        control.player.AloeSeed.performed += cxt => aloe();
+        control.player.CottonSeed.performed += cxt => cotton();
+        control.player.PlantSeed.performed += cxt => plant();
+    }
+
+    public void sap()
+    {
+        plantSeedType = 1;
+        this.GetComponent<PlantManagement>().switchSeedType(plantSeedType);
+    }
+
+    public void aloe()
+    {
+        plantSeedType = 2;
+        this.GetComponent<PlantManagement>().switchSeedType(plantSeedType);
+    }
+
+    public void cotton()
+    {
+        plantSeedType = 3;
+        this.GetComponent<PlantManagement>().switchSeedType(plantSeedType);
+    }
+
+    public void plant()
+    {
+        if(enoughSeed == true)
+        {
+            //rotatePlayer();
+        }
+    }
+
+    public void updateSeed(int value)
+    {
+        if(value > 0)
+        {
+            enoughSeed = true;
+        }
+        else
+        {
+            enoughSeed = false;
+        }
     }
 
     public void waterOn(float value)
@@ -61,17 +106,22 @@ public class playerMovement : MonoBehaviour
 
     public void chop()
     {
-        rotatePlayer();
-        //runs chopping animation
-        StartCoroutine(coolDownAxe(2f));
-       
+        if (canChop == true)
+        {
+            rotatePlayer();
+            //runs chopping animation
+            StartCoroutine(coolDownAxe(2f));
+        }
     }
 
     public void water()
     {
-        rotatePlayer();
-        //runs chopping animation
-        StartCoroutine(coolDownWaterCan(2f));
+        if (canWater)
+        {
+            rotatePlayer();
+            //runs chopping animation
+            StartCoroutine(coolDownWaterCan(2f));
+        }
 
     }
 
@@ -168,7 +218,7 @@ public class playerMovement : MonoBehaviour
 
     public void playerMoveRightAndLeft()
     {
-        if (chopping == false)
+        if (chopping == false && watering == false)
         {
             if (GroundCheck == true && endLadder == false)
             {
