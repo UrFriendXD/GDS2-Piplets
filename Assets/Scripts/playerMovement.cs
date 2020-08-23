@@ -49,13 +49,13 @@ public class playerMovement : MonoBehaviour
     {
         if (canChop == true && chopping == false)
         {
-            if(transform.position.x > treePos)
+            if(transform.position.x > treePos && transform.rotation.y == 0)
             {
                this.transform.Rotate(0f, -180f, 0f);
             }
-            if(transform.position.x < treePos)
+            if(transform.position.x < treePos && transform.rotation.y != 0)
             {
-               this.transform.Rotate(0f, 0f, 0f);
+               this.transform.Rotate(0f, 180f, 0f);
             }
             //runs chopping animation
             StartCoroutine(coolDown(2f));
@@ -135,6 +135,14 @@ public class playerMovement : MonoBehaviour
             if (GroundCheck == true && endLadder == false)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
+                if(movementInput < 0 && transform.rotation.y == 0)
+                {
+                    this.transform.Rotate(0f, -180f, 0f);
+                }
+                if (movementInput > 0 && transform.rotation.y != 0)
+                {
+                    this.transform.Rotate(0f, 180f, 0f);
+                }
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
@@ -142,6 +150,14 @@ public class playerMovement : MonoBehaviour
             if (endLadder == true)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
+                if (movementInput < 0 && transform.rotation.y == 0)
+                {
+                    this.transform.Rotate(0f, -180f, 0f);
+                }
+                if (movementInput > 0 && transform.rotation.y != 0)
+                {
+                    this.transform.Rotate(0f, 180f, 0f);
+                }
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
