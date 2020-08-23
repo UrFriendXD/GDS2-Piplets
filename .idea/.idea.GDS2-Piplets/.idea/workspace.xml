@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Sprint1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Sprint1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e21ce7-2a5b-4da9-90f9-aaf6b763a149" name="Default Changelist" comment="" />
+    <list default="true" id="e3e21ce7-2a5b-4da9-90f9-aaf6b763a149" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Plant.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Plant.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlantType.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +48,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/TestPlayerStephen.cs" />
+=======
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/RuntimeSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/GameEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlantStages.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/GameEventListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/PlayerScripts/Movement/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Edward/Scripts/Tool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/ScriptableObjects/PickupObjectRuntimeSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/FireProjectile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/CannonDetector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/Objects/CanPickUp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/CannonStation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/PlayerScripts/Interaction/PlayerInputChecker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlantStages.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Plants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlantFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantPrefabs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlantType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FarmPlot.cs" />
+>>>>>>> Dev
       </list>
     </option>
   </component>
@@ -26,7 +96,17 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+=======
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+>>>>>>> Dev
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -57,19 +137,51 @@
       <option name="presentableId" value="Default" />
       <updated>1597630964758</updated>
       <workItem from="1597630967242" duration="1000" />
+<<<<<<< HEAD
       <workItem from="1597922848721" duration="103000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+=======
+      <workItem from="1597727309683" duration="3913000" />
+      <workItem from="1597745841929" duration="7777000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+>>>>>>> Dev
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="461" y="165" key="SettingsEditor" timestamp="1597922946118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597922946118" />
+=======
+    <state x="-1193" y="264" key="RiderGenerateDialog" timestamp="1597833733436">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1193" y="264" key="RiderGenerateDialog/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1597833733436" />
+>>>>>>> Dev
   </component>
 </project>
