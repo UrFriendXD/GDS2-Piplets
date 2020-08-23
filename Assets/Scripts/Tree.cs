@@ -78,7 +78,7 @@ public class Tree : MonoBehaviour
         if (col.tag == "Player")
         {
             treeOn = false;
-            col.GetComponent<playerMovement>().chopOff();
+            col.GetComponent<playerMovement>().chopOff(0f);
         }
     }
 }

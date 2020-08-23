@@ -41,6 +41,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""WaterPlant"",
+                    ""type"": ""Button"",
+                    ""id"": ""22e89871-6a0b-4394-8485-cf1f88621fc9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,6 +128,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""ChopTree"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a205f920-1ec5-4725-92fa-d5995b02e518"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WaterPlant"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -131,6 +150,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
         m_player_ChopTree = m_player.FindAction("ChopTree", throwIfNotFound: true);
+        m_player_WaterPlant = m_player.FindAction("WaterPlant", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -183,6 +203,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_LadderMovement;
     private readonly InputAction m_player_ChopTree;
+    private readonly InputAction m_player_WaterPlant;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -190,6 +211,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
         public InputAction @ChopTree => m_Wrapper.m_player_ChopTree;
+        public InputAction @WaterPlant => m_Wrapper.m_player_WaterPlant;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -208,6 +230,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @ChopTree.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
                 @ChopTree.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
                 @ChopTree.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @WaterPlant.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
+                @WaterPlant.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
+                @WaterPlant.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -221,6 +246,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @ChopTree.started += instance.OnChopTree;
                 @ChopTree.performed += instance.OnChopTree;
                 @ChopTree.canceled += instance.OnChopTree;
+                @WaterPlant.started += instance.OnWaterPlant;
+                @WaterPlant.performed += instance.OnWaterPlant;
+                @WaterPlant.canceled += instance.OnWaterPlant;
             }
         }
     }
@@ -230,5 +258,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnLadderMovement(InputAction.CallbackContext context);
         void OnChopTree(InputAction.CallbackContext context);
+        void OnWaterPlant(InputAction.CallbackContext context);
     }
 }
