@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum PlantStages
 {
-    Seed, Growing, Harvestable, Wilted
+    None, Seed, Growing, Harvestable, Wilted
 }
