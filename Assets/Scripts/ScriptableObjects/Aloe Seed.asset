@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e81cb8f12a38267499341fd29aa6561c, type: 3}
-  m_Name: Aloe
+  m_Name: Aloe Seed
   m_EditorClassIdentifier: 
+  id: 9221445f5fdd4784d915fed27fd4a4a5
+  itemName: Aloe Seed
+  icon: {fileID: 5535221482327631143, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
+  maximumStack: 99
   plantType: 1
   daysToStage1: 0
   daysToHarvest: 1
@@ -21,3 +25,4 @@ MonoBehaviour:
   - {fileID: -218333279042278905, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
   - {fileID: -7520803702179115985, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
   amountToGive: 1
+  rawGoodToGive: {fileID: 11400000, guid: 934e24e80f9d1b2429658e6846f98646, type: 2}
