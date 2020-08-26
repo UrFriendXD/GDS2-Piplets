@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Ladder
+  - Sap
+  - Aloe
+  - Cotton
+  - Tree
+  - Plant
   layers:
   - Default
   - TransparentFX
