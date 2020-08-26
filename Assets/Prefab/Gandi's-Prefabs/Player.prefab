@@ -134,10 +134,12 @@ MonoBehaviour:
   chopping: 0
   canWater: 0
   watering: 0
-  walkspeed: 2
+  enoughSeed: 0
+  walkspeed: 3
   ladderspeed: 2
   treePos: 0
   waterPos: 0
+  plantSeedType: 0
 --- !u!114 &7072382248368338963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,9 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c3e033fa4bea474ab6fec612e5901f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addSap: 0
-  addAloe: 0
-  addCotton: 0
+  amountSap: 0
+  amountAloe: 0
+  amountCotton: 0
+  sap: 0
+  aloe: 0
+  cotton: 0
 --- !u!114 &7072382248368338962
 MonoBehaviour:
   m_ObjectHideFlags: 0
