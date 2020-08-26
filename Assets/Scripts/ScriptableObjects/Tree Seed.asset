@@ -15,9 +15,10 @@ MonoBehaviour:
   id: 7ef759cc7df722744bbf1c208a518334
   itemName: 
   icon: {fileID: 0}
-  maximumStack: 1
+  maximumStack: 99
   plantType: 3
   daysToStage1: 0
   daysToHarvest: 0
   plantSprites: []
   amountToGive: 5
+  rawGoodToGive: {fileID: 0}

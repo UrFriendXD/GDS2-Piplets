@@ -37,6 +37,13 @@ public class PlantFunctions : MonoBehaviour
     // Player modifiers to be implemented later
     // private int playerModifier
 
+    private void OnValidate()
+    {
+        if (!_player)
+        {
+            FindObjectOfType<Player>();
+        }
+    }
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -180,7 +187,6 @@ public class PlantFunctions : MonoBehaviour
             {
                 Debug.Log($"Gave no seed");
             }
-            DestroyPlant();
 
             // Show particles based on amount or just particles
             DestroyPlant();

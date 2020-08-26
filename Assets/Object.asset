@@ -36,4 +36,4 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
-  m_Prefab: {fileID: 0}
+  m_Prefab: {fileID: 1886585778003438897, guid: 8a61045a6b513044390119423ba4a2c2, type: 3}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Farming;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Plant Seed", menuName = "Items/Plant")]
+[CreateAssetMenu(fileName = "New Plant Seed", menuName = "Items/PlantSeed")]
 public class PlantSeed : Item
 {
     public PlantType plantType;
