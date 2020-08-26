@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping, canWater, watering, enoughSeed;
+    public bool LadderMovement, endLadder, GroundCheck, canChop, chopping, canWater, watering, enoughSeed, canPlant, planting, canHarvest, harvesting;
     [SerializeField] private float walkspeed, ladderspeed;
     public float treePos, waterPos;
     public int plantSeedType;
@@ -40,6 +40,7 @@ public class playerMovement : MonoBehaviour
         control.player.AloeSeed.performed += cxt => aloe();
         control.player.CottonSeed.performed += cxt => cotton();
         control.player.PlantSeed.performed += cxt => plant();
+        control.player.Harvesting.performed += cxt => harvest();
     }
 
     public void sap()
@@ -62,11 +63,25 @@ public class playerMovement : MonoBehaviour
 
     public void plant()
     {
-        if(enoughSeed == true)
+        if (enoughSeed == true && canPlant == true)
         {
-            //rotatePlayer();
+            rotatePlayer();
+            //runs planting animation
+            StartCoroutine(coolDownPlant(2f));
         }
     }
+
+    public void harvest()
+    {
+        if (canHarvest == true)
+        {
+            rotatePlayer();
+            //runs harvesting animation
+            StartCoroutine(coolDownHarvest(2f));
+        }
+    }
+
+    
 
     public void updateSeed(int value)
     {
@@ -78,6 +93,26 @@ public class playerMovement : MonoBehaviour
         {
             enoughSeed = false;
         }
+    }
+
+    public void plantOn()
+    {
+        canPlant = true;
+    }
+
+    public void plantOff()
+    {
+        canPlant = false;
+    }
+
+    public void harvestOn()
+    {
+        canHarvest = true;
+    }
+
+    public void harvestOff()
+    {
+        canHarvest = false;
     }
 
     public void waterOn(float value)
@@ -116,7 +151,7 @@ public class playerMovement : MonoBehaviour
 
     public void water()
     {
-        if (canWater)
+        if (canWater == true)
         {
             rotatePlayer();
             //runs chopping animation
@@ -127,7 +162,7 @@ public class playerMovement : MonoBehaviour
 
     public void rotatePlayer()
     {
-        if ((canChop == true && chopping == false) || (watering == false && canWater == true))
+        if ((canChop == true && chopping == false) || ((watering == false && canWater == true) || (planting == false && canPlant == true)) || (harvesting == false && canHarvest == true))
         {
             if (((transform.position.x > treePos && treePos !=0)|| (transform.position.x > waterPos && waterPos != 0)) && transform.rotation.y == 0)
             {
@@ -148,6 +183,26 @@ public class playerMovement : MonoBehaviour
         yield return new WaitForSeconds(time);
         chopping = false;
         Axe.axeOff();
+    }
+
+    IEnumerator coolDownHarvest(float time)
+    {
+        harvesting = true;
+        harvestTool HarvestTool = gameObject.GetComponentInChildren<harvestTool>();
+        HarvestTool.harvestToolOn();
+        yield return new WaitForSeconds(time);
+        harvesting = false;
+        HarvestTool.harvestToolOff();
+    }
+
+    IEnumerator coolDownPlant(float time)
+    {
+        planting = true;
+        shovel Shovel = gameObject.GetComponentInChildren<shovel>();
+        Shovel.shovelOn();
+        yield return new WaitForSeconds(time);
+        planting = false;
+        Shovel.shovelOff();
     }
 
     IEnumerator coolDownWaterCan(float time)
@@ -218,7 +273,7 @@ public class playerMovement : MonoBehaviour
 
     public void playerMoveRightAndLeft()
     {
-        if (chopping == false && watering == false)
+        if (chopping == false && watering == false && planting == false && harvesting == false)
         {
             if (GroundCheck == true && endLadder == false)
             {

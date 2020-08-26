@@ -81,6 +81,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Harvesting"",
+                    ""type"": ""Button"",
+                    ""id"": ""57e26702-95cd-4f5e-9ad7-0c3374691c72"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -215,6 +223,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""PlantSeed"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""572b728a-49aa-4901-8dbe-6ca6d0933e11"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Harvesting"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -231,6 +250,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
         m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
         m_player_PlantSeed = m_player.FindAction("PlantSeed", throwIfNotFound: true);
+        m_player_Harvesting = m_player.FindAction("Harvesting", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -288,6 +308,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_player_AloeSeed;
     private readonly InputAction m_player_CottonSeed;
     private readonly InputAction m_player_PlantSeed;
+    private readonly InputAction m_player_Harvesting;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -300,6 +321,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
         public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
         public InputAction @PlantSeed => m_Wrapper.m_player_PlantSeed;
+        public InputAction @Harvesting => m_Wrapper.m_player_Harvesting;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -333,6 +355,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @PlantSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
                 @PlantSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
                 @PlantSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
+                @Harvesting.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
+                @Harvesting.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
+                @Harvesting.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -361,6 +386,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @PlantSeed.started += instance.OnPlantSeed;
                 @PlantSeed.performed += instance.OnPlantSeed;
                 @PlantSeed.canceled += instance.OnPlantSeed;
+                @Harvesting.started += instance.OnHarvesting;
+                @Harvesting.performed += instance.OnHarvesting;
+                @Harvesting.canceled += instance.OnHarvesting;
             }
         }
     }
@@ -375,5 +403,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnAloeSeed(InputAction.CallbackContext context);
         void OnCottonSeed(InputAction.CallbackContext context);
         void OnPlantSeed(InputAction.CallbackContext context);
+        void OnHarvesting(InputAction.CallbackContext context);
     }
 }
