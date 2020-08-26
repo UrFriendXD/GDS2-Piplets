@@ -44,7 +44,7 @@ public class PlantFunctions : MonoBehaviour
 
     public virtual void Plant(PlantSeed plantSeed)
     {
-        this._plantSeed = plantSeed;
+        _plantSeed = plantSeed;
         //Initialising values from Plants scriptable objects
         //plantSprites = this.plantSeed.plantSprites;
 
@@ -53,7 +53,7 @@ public class PlantFunctions : MonoBehaviour
         _amountToGive = this.plantSeed.amountToGive;
         _rawGoodToGive = plantSeed.rawGoodToGive;*/
         
-        _thisPlantType = this._plantSeed.plantType;
+        _thisPlantType = _plantSeed.plantType;
         
         // If this is a new plant set stage to seed and seedling sprite
         if (daysSincePlanted == 0)
@@ -118,7 +118,7 @@ public class PlantFunctions : MonoBehaviour
     public void Grow()
     {
         // If plant is harvestable ignore growth 
-        if (currentPlantStage == PlantStages.Harvestable) return;
+        if (currentPlantStage == PlantStages.Harvestable || currentPlantStage == PlantStages.None && !_plantSeed) return;
         
         //If watered grow a day
         if (_bIsWatered)
@@ -174,8 +174,12 @@ public class PlantFunctions : MonoBehaviour
             if (randomSeed > 50)
             {
                 player.inventory.AddItem(_plantSeed);
+                Debug.Log($"Gave {_plantSeed.amountToGive}");
             }
-            Debug.Log($"Gave {_plantSeed.amountToGive}");
+            else
+            {
+                Debug.Log($"Gave no seed");
+            }
             DestroyPlant();
 
             // Show particles based on amount or just particles
