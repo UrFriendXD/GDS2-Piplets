@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
     public bool LadderMovement, endLadder, GroundCheck, canChop, chopping, canWater, watering, enoughSeed, canPlant, planting, canHarvest, harvesting;
-    [SerializeField] private float walkspeed, ladderspeed;
+    [SerializeField] private float walkspeed, ladderspeed, fallspeed;
     public float treePos, waterPos;
     public int plantSeedType;
 
@@ -253,6 +253,17 @@ public class playerMovement : MonoBehaviour
         {
             LadderMoveUpAndDown();
         }
+        if(LadderMovement == false && GroundCheck == false)
+        {
+            fall();
+        }
+    }
+
+    public void fall()
+    {
+        Vector3 currentPosition = transform.position;
+        currentPosition.y +=  -1 * fallspeed * Time.deltaTime;
+        transform.position = currentPosition;
     }
 
     public void LadderMoveUpAndDown()
@@ -262,7 +273,7 @@ public class playerMovement : MonoBehaviour
         {
             movementInput = 0;
         }
-        if (movementInput == -1 && GroundCheck == true)
+        if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
         {
             movementInput = 0;
         }
