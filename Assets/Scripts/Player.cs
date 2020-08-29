@@ -22,19 +22,24 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void InteractWithItem()
     {
-        
+        switch (itemHeld.itemName)
+        {
+            case "Watering Can":
+                //Function here
+                break;
+        }
     }
 
-    public void SelectItem(String itemSelectID)
+    public void SelectItem(String itemSelectName)
     {
         itemHeld = null;
-        Debug.Log(itemSelectID);
+        Debug.Log(itemSelectName);
         foreach (var item in inventory.ItemSlots)
         {
             if (!item.Item) continue;
-            if (itemSelectID == item.Item.itemName)
+            if (itemSelectName == item.Item.itemName)
             {
                 itemHeld = item.Item;
                 return;
