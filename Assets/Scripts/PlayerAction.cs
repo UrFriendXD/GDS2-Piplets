@@ -35,14 +35,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""ChopTree"",
-                    ""type"": ""Button"",
-                    ""id"": ""1f9d3701-03a9-4e4f-aa51-0e4940d17f8c"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""WaterPlant"",
                     ""type"": ""Button"",
                     ""id"": ""22e89871-6a0b-4394-8485-cf1f88621fc9"",
@@ -51,9 +43,25 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Sapling"",
+                    ""name"": ""PlantSeed"",
                     ""type"": ""Button"",
-                    ""id"": ""db1eb91f-fe6e-426f-bd77-6d1145856e17"",
+                    ""id"": ""abfc48b4-3de2-4ebc-ac1d-978272ed3f12"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Harvesting"",
+                    ""type"": ""Button"",
+                    ""id"": ""57e26702-95cd-4f5e-9ad7-0c3374691c72"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChopTree"",
+                    ""type"": ""Button"",
+                    ""id"": ""1f9d3701-03a9-4e4f-aa51-0e4940d17f8c"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -75,17 +83,25 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""PlantSeed"",
+                    ""name"": ""Sapling"",
                     ""type"": ""Button"",
-                    ""id"": ""abfc48b4-3de2-4ebc-ac1d-978272ed3f12"",
+                    ""id"": ""db1eb91f-fe6e-426f-bd77-6d1145856e17"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Harvesting"",
+                    ""name"": ""Select Watering Can"",
                     ""type"": ""Button"",
-                    ""id"": ""57e26702-95cd-4f5e-9ad7-0c3374691c72"",
+                    ""id"": ""de150bb8-6d0e-4fae-a551-e9dda4a745b9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Select Axe"",
+                    ""type"": ""Button"",
+                    ""id"": ""040b422d-73f7-4098-b9f2-7ac096582851"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -160,17 +176,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1b6a4b90-8669-431f-b8ae-e573ed7c189f"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ChopTree"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""a205f920-1ec5-4725-92fa-d5995b02e518"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -182,19 +187,8 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1ffbd22a-de76-4bc6-87a4-402c6d8ccd90"",
-                    ""path"": ""<Keyboard>/1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Sapling"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""058519f5-34dc-4bee-95c7-b19245288fff"",
-                    ""path"": ""<Keyboard>/2"",
+                    ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -205,7 +199,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""b8619f5e-0954-4a66-85a3-90573ee6e116"",
-                    ""path"": ""<Keyboard>/3"",
+                    ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -215,8 +209,30 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9f269742-ec57-4a28-ace8-70f70fb861d0"",
+                    ""id"": ""1ffbd22a-de76-4bc6-87a4-402c6d8ccd90"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sapling"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b48c420b-ed03-4590-a4ea-19a402e4e4b5"",
                     ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Select Watering Can"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9f269742-ec57-4a28-ace8-70f70fb861d0"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -227,11 +243,33 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""572b728a-49aa-4901-8dbe-6ca6d0933e11"",
-                    ""path"": ""<Keyboard>/5"",
+                    ""path"": ""<Keyboard>/t"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Harvesting"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c133d520-d063-4bf1-a34e-0d0d21fb8657"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Select Axe"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b6a4b90-8669-431f-b8ae-e573ed7c189f"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChopTree"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -244,13 +282,15 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
-        m_player_ChopTree = m_player.FindAction("ChopTree", throwIfNotFound: true);
         m_player_WaterPlant = m_player.FindAction("WaterPlant", throwIfNotFound: true);
-        m_player_Sapling = m_player.FindAction("Sapling", throwIfNotFound: true);
-        m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
-        m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
         m_player_PlantSeed = m_player.FindAction("PlantSeed", throwIfNotFound: true);
         m_player_Harvesting = m_player.FindAction("Harvesting", throwIfNotFound: true);
+        m_player_ChopTree = m_player.FindAction("ChopTree", throwIfNotFound: true);
+        m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
+        m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
+        m_player_Sapling = m_player.FindAction("Sapling", throwIfNotFound: true);
+        m_player_SelectWateringCan = m_player.FindAction("Select Watering Can", throwIfNotFound: true);
+        m_player_SelectAxe = m_player.FindAction("Select Axe", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -302,26 +342,30 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_LadderMovement;
-    private readonly InputAction m_player_ChopTree;
     private readonly InputAction m_player_WaterPlant;
-    private readonly InputAction m_player_Sapling;
-    private readonly InputAction m_player_AloeSeed;
-    private readonly InputAction m_player_CottonSeed;
     private readonly InputAction m_player_PlantSeed;
     private readonly InputAction m_player_Harvesting;
+    private readonly InputAction m_player_ChopTree;
+    private readonly InputAction m_player_AloeSeed;
+    private readonly InputAction m_player_CottonSeed;
+    private readonly InputAction m_player_Sapling;
+    private readonly InputAction m_player_SelectWateringCan;
+    private readonly InputAction m_player_SelectAxe;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
         public PlayerActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
-        public InputAction @ChopTree => m_Wrapper.m_player_ChopTree;
         public InputAction @WaterPlant => m_Wrapper.m_player_WaterPlant;
-        public InputAction @Sapling => m_Wrapper.m_player_Sapling;
-        public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
-        public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
         public InputAction @PlantSeed => m_Wrapper.m_player_PlantSeed;
         public InputAction @Harvesting => m_Wrapper.m_player_Harvesting;
+        public InputAction @ChopTree => m_Wrapper.m_player_ChopTree;
+        public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
+        public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
+        public InputAction @Sapling => m_Wrapper.m_player_Sapling;
+        public InputAction @SelectWateringCan => m_Wrapper.m_player_SelectWateringCan;
+        public InputAction @SelectAxe => m_Wrapper.m_player_SelectAxe;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -337,27 +381,33 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
-                @ChopTree.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
-                @ChopTree.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
-                @ChopTree.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
                 @WaterPlant.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
                 @WaterPlant.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
                 @WaterPlant.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
-                @Sapling.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
-                @Sapling.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
-                @Sapling.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
-                @AloeSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
-                @AloeSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
-                @AloeSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
-                @CottonSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
-                @CottonSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
-                @CottonSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
                 @PlantSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
                 @PlantSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
                 @PlantSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
                 @Harvesting.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
                 @Harvesting.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
                 @Harvesting.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
+                @ChopTree.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @ChopTree.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @ChopTree.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @AloeSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
+                @AloeSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
+                @AloeSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
+                @CottonSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
+                @CottonSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
+                @CottonSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
+                @Sapling.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
+                @Sapling.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
+                @Sapling.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
+                @SelectWateringCan.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectWateringCan;
+                @SelectWateringCan.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectWateringCan;
+                @SelectWateringCan.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectWateringCan;
+                @SelectAxe.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
+                @SelectAxe.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
+                @SelectAxe.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -368,27 +418,33 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started += instance.OnLadderMovement;
                 @LadderMovement.performed += instance.OnLadderMovement;
                 @LadderMovement.canceled += instance.OnLadderMovement;
-                @ChopTree.started += instance.OnChopTree;
-                @ChopTree.performed += instance.OnChopTree;
-                @ChopTree.canceled += instance.OnChopTree;
                 @WaterPlant.started += instance.OnWaterPlant;
                 @WaterPlant.performed += instance.OnWaterPlant;
                 @WaterPlant.canceled += instance.OnWaterPlant;
-                @Sapling.started += instance.OnSapling;
-                @Sapling.performed += instance.OnSapling;
-                @Sapling.canceled += instance.OnSapling;
-                @AloeSeed.started += instance.OnAloeSeed;
-                @AloeSeed.performed += instance.OnAloeSeed;
-                @AloeSeed.canceled += instance.OnAloeSeed;
-                @CottonSeed.started += instance.OnCottonSeed;
-                @CottonSeed.performed += instance.OnCottonSeed;
-                @CottonSeed.canceled += instance.OnCottonSeed;
                 @PlantSeed.started += instance.OnPlantSeed;
                 @PlantSeed.performed += instance.OnPlantSeed;
                 @PlantSeed.canceled += instance.OnPlantSeed;
                 @Harvesting.started += instance.OnHarvesting;
                 @Harvesting.performed += instance.OnHarvesting;
                 @Harvesting.canceled += instance.OnHarvesting;
+                @ChopTree.started += instance.OnChopTree;
+                @ChopTree.performed += instance.OnChopTree;
+                @ChopTree.canceled += instance.OnChopTree;
+                @AloeSeed.started += instance.OnAloeSeed;
+                @AloeSeed.performed += instance.OnAloeSeed;
+                @AloeSeed.canceled += instance.OnAloeSeed;
+                @CottonSeed.started += instance.OnCottonSeed;
+                @CottonSeed.performed += instance.OnCottonSeed;
+                @CottonSeed.canceled += instance.OnCottonSeed;
+                @Sapling.started += instance.OnSapling;
+                @Sapling.performed += instance.OnSapling;
+                @Sapling.canceled += instance.OnSapling;
+                @SelectWateringCan.started += instance.OnSelectWateringCan;
+                @SelectWateringCan.performed += instance.OnSelectWateringCan;
+                @SelectWateringCan.canceled += instance.OnSelectWateringCan;
+                @SelectAxe.started += instance.OnSelectAxe;
+                @SelectAxe.performed += instance.OnSelectAxe;
+                @SelectAxe.canceled += instance.OnSelectAxe;
             }
         }
     }
@@ -397,12 +453,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLadderMovement(InputAction.CallbackContext context);
-        void OnChopTree(InputAction.CallbackContext context);
         void OnWaterPlant(InputAction.CallbackContext context);
-        void OnSapling(InputAction.CallbackContext context);
-        void OnAloeSeed(InputAction.CallbackContext context);
-        void OnCottonSeed(InputAction.CallbackContext context);
         void OnPlantSeed(InputAction.CallbackContext context);
         void OnHarvesting(InputAction.CallbackContext context);
+        void OnChopTree(InputAction.CallbackContext context);
+        void OnAloeSeed(InputAction.CallbackContext context);
+        void OnCottonSeed(InputAction.CallbackContext context);
+        void OnSapling(InputAction.CallbackContext context);
+        void OnSelectWateringCan(InputAction.CallbackContext context);
+        void OnSelectAxe(InputAction.CallbackContext context);
     }
 }

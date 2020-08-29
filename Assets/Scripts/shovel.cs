@@ -29,14 +29,14 @@ public class shovel : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("on");
-        if (col.tag == "Plant")
+        if (other.CompareTag("Plant"))
         {
-            if (hit == false)
+            if (!hit)
             {
-                col.GetComponent<Plant>().plant();
+                other.GetComponent<Plant>().plant();
                 hit = true;
             }
         }

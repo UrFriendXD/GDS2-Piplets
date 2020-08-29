@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     //[SerializeField] private UI_Inventory _uiInventory;
     [SerializeField] private ItemSaveManager itemSaveManager;
+    public Item itemHeld;
     
     public Inventory inventory;
     private void Awake()
@@ -24,5 +25,20 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SelectItem(String itemSelectID)
+    {
+        itemHeld = null;
+        Debug.Log(itemSelectID);
+        foreach (var item in inventory.ItemSlots)
+        {
+            if (!item.Item) continue;
+            if (itemSelectID == item.Item.itemName)
+            {
+                itemHeld = item.Item;
+                return;
+            }
+        }
     }
 }

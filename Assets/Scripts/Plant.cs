@@ -5,10 +5,14 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     public bool plantOn;
+    private Player player;
+    private Item plantSeed;
+    private FarmPlot farmPlot;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        farmPlot = GetComponent<FarmPlot>();
     }
 
     // Update is called once per frame
@@ -19,26 +23,29 @@ public class Plant : MonoBehaviour
 
     public void plant()
     {
-        //plantScript
+        farmPlot.InteractWithItem(player.itemHeld, player);
+        Debug.Log("Planted");
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("on");
-        if (col.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             plantOn = true;
-            col.GetComponent<playerMovement>().plantOn();
+            player = other.GetComponent<Player>();
+            other.GetComponent<playerMovement>().plantOn();
         }
     }
 
-    void OnTriggerExit2D(Collider2D col)
+    void OnTriggerExit2D(Collider2D other)
     {
         Debug.Log("off");
-        if (col.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             plantOn = false;
-            col.GetComponent<playerMovement>().plantOff();
+            player = null;
+            other.GetComponent<playerMovement>().plantOff();
         }
     }
 }

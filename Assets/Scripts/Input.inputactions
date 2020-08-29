@@ -22,14 +22,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ChopTree",
-                    "type": "Button",
-                    "id": "1f9d3701-03a9-4e4f-aa51-0e4940d17f8c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "WaterPlant",
                     "type": "Button",
                     "id": "22e89871-6a0b-4394-8485-cf1f88621fc9",
@@ -38,9 +30,25 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Sapling",
+                    "name": "PlantSeed",
                     "type": "Button",
-                    "id": "db1eb91f-fe6e-426f-bd77-6d1145856e17",
+                    "id": "abfc48b4-3de2-4ebc-ac1d-978272ed3f12",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Harvesting",
+                    "type": "Button",
+                    "id": "57e26702-95cd-4f5e-9ad7-0c3374691c72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ChopTree",
+                    "type": "Button",
+                    "id": "1f9d3701-03a9-4e4f-aa51-0e4940d17f8c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -62,17 +70,25 @@
                     "interactions": ""
                 },
                 {
-                    "name": "PlantSeed",
+                    "name": "Sapling",
                     "type": "Button",
-                    "id": "abfc48b4-3de2-4ebc-ac1d-978272ed3f12",
+                    "id": "db1eb91f-fe6e-426f-bd77-6d1145856e17",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Harvesting",
+                    "name": "Select Watering Can",
                     "type": "Button",
-                    "id": "57e26702-95cd-4f5e-9ad7-0c3374691c72",
+                    "id": "de150bb8-6d0e-4fae-a551-e9dda4a745b9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Select Axe",
+                    "type": "Button",
+                    "id": "040b422d-73f7-4098-b9f2-7ac096582851",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -147,17 +163,6 @@
                 },
                 {
                     "name": "",
-                    "id": "1b6a4b90-8669-431f-b8ae-e573ed7c189f",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ChopTree",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "a205f920-1ec5-4725-92fa-d5995b02e518",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -169,19 +174,8 @@
                 },
                 {
                     "name": "",
-                    "id": "1ffbd22a-de76-4bc6-87a4-402c6d8ccd90",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Sapling",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "058519f5-34dc-4bee-95c7-b19245288fff",
-                    "path": "<Keyboard>/2",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -192,7 +186,7 @@
                 {
                     "name": "",
                     "id": "b8619f5e-0954-4a66-85a3-90573ee6e116",
-                    "path": "<Keyboard>/3",
+                    "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -202,8 +196,30 @@
                 },
                 {
                     "name": "",
-                    "id": "9f269742-ec57-4a28-ace8-70f70fb861d0",
+                    "id": "1ffbd22a-de76-4bc6-87a4-402c6d8ccd90",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sapling",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b48c420b-ed03-4590-a4ea-19a402e4e4b5",
                     "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Watering Can",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f269742-ec57-4a28-ace8-70f70fb861d0",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -214,11 +230,33 @@
                 {
                     "name": "",
                     "id": "572b728a-49aa-4901-8dbe-6ca6d0933e11",
-                    "path": "<Keyboard>/5",
+                    "path": "<Keyboard>/t",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Harvesting",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c133d520-d063-4bf1-a34e-0d0d21fb8657",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Axe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b6a4b90-8669-431f-b8ae-e573ed7c189f",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChopTree",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

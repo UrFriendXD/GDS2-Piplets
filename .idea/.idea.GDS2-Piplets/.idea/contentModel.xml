@@ -26,6 +26,8 @@
             <e p="ItemSaveManager.cs" t="Include" />
           </e>
           <e p="GroundCheck.cs" t="Include" />
+          <e p="harvest.cs" t="Include" />
+          <e p="harvestTool.cs" t="Include" />
           <e p="Items" t="Include">
             <e p="BaseItemSlot.cs" t="Include" />
             <e p="GiveItemTest.cs" t="Include" />
@@ -38,9 +40,11 @@
           </e>
           <e p="Ladder.cs" t="Include" />
           <e p="MaterialManagement.cs" t="Include" />
+          <e p="Plant.cs" t="Include" />
           <e p="PlantManagement.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="DayPassTest.cs" t="Include" />
+            <e p="PlayerInputChecker.cs" t="Include" />
           </e>
           <e p="Player.cs" t="Include" />
           <e p="PlayerAction.cs" t="Include" />
@@ -56,6 +60,8 @@
             <e p="RuntimeSet.cs" t="Include" />
           </e>
           <e p="Seeds.cs" t="Include" />
+          <e p="shovel.cs" t="Include" />
+          <e p="Tool.cs" t="Include" />
           <e p="Tree.cs" t="Include" />
           <e p="Water.cs" t="Include" />
           <e p="wood.cs" t="Include" />

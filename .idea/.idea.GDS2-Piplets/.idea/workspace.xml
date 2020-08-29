@@ -32,26 +32,44 @@
   <component name="ChangeListManager">
     <list default="true" id="e3e21ce7-2a5b-4da9-90f9-aaf6b763a149" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Aloe.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Aloe.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Cotton.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Cotton.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/FarmPlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/FarmPlot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Ground (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Ground (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Ground.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Ground.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Ladder.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Ladder.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Plant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Plant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Tree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gandi's-Prefabs/Tree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FarmingScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FarmingScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gandi'sPlayerMovementScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gandi'sPlayerMovementScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Inventory.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Inventory.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Aloe Seed.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Aloe Seed.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cotton Seed.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cotton Seed.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantSeed.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantSeed.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Raw Aloe.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Raw Aloe.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Raw Cotton.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Raw Cotton.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Tree Seed.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Tree Seed.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Plant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Plant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantManagement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlantManagement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seeds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Seeds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Water.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Water.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/can.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/can.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/harvest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/harvest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/shovel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/shovel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +81,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/ItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/PlayerScripts/Movement/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/ItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,6 +97,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/StationScripts/Cannon/CannonStation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/IItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Stuff/Game Dev/PDT/PlaymakersPirates/Assets/Scripts/PlayerScripts/Interaction/PlayerInputChecker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -84,7 +105,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlantStages.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Plants.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Plant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AloePlant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlantFunctions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantPrefabs.cs" />
@@ -99,7 +119,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Plants.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/ItemContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/GiveItemTest.cs" />
@@ -109,8 +128,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlantSeed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/DayPassTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Seeds.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlantManagement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/shovel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test Tool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/can.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/harvest.cs" />
       </list>
     </option>
   </component>
@@ -134,7 +165,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -170,7 +201,7 @@
       <workItem from="1598444421811" duration="1608000" />
       <workItem from="1598450686148" duration="611000" />
       <workItem from="1598523535534" duration="1829000" />
-      <workItem from="1598694927324" duration="1743000" />
+      <workItem from="1598694927324" duration="11919000" />
     </task>
     <servers />
   </component>

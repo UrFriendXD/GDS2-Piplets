@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0a4d6733a767de242a91fda931f5a574
   itemName: Cotton Seed
-  icon: {fileID: 0}
+  icon: {fileID: 4192583723460386017, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
   maximumStack: 99
   plantType: 2
   daysToStage1: 0

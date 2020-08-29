@@ -11,6 +11,13 @@ public class playerMovement : MonoBehaviour
     public float treePos, waterPos;
     public int plantSeedType;
 
+    
+    private Player player;
+    private axe axe;
+    private harvestTool harvestTool;
+    private shovel shovel;
+    private can can;
+
     void Awake()
     {
         control = new PlayerAction();
@@ -29,56 +36,61 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        can = gameObject.GetComponentInChildren<can>();
+        shovel = gameObject.GetComponentInChildren<shovel>();
+        harvestTool = gameObject.GetComponentInChildren<harvestTool>();
+        axe = gameObject.GetComponentInChildren<axe>();
         plantSeedType = 0;
-        LadderMovement = false;
-        endLadder = false;
-        chopping = false;
-        watering = false;
         control.player.ChopTree.performed += cxt => chop();
-        control.player.WaterPlant.performed += cxt => water();
+        control.player.WaterPlant.performed += cxt => Water();
         control.player.Sapling.performed += cxt => sap();
         control.player.AloeSeed.performed += cxt => aloe();
         control.player.CottonSeed.performed += cxt => cotton();
         control.player.PlantSeed.performed += cxt => plant();
         control.player.Harvesting.performed += cxt => harvest();
-    }
+        control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
+        control.player.SelectAxe.performed += cxt => SelectAxe();
 
-    public void sap()
-    {
-        plantSeedType = 1;
-        this.GetComponent<PlantManagement>().switchSeedType(plantSeedType);
+        player = GetComponent<Player>();
     }
 
     public void aloe()
     {
-        plantSeedType = 2;
-        this.GetComponent<PlantManagement>().switchSeedType(plantSeedType);
+        player.SelectItem("Aloe Seed");
     }
 
     public void cotton()
     {
-        plantSeedType = 3;
-        this.GetComponent<PlantManagement>().switchSeedType(plantSeedType);
+        player.SelectItem("Cotton Seed");
+    }
+    
+    public void sap()
+    {
+        player.SelectItem("Tree Seed");
     }
 
     public void plant()
     {
-        if (enoughSeed == true && canPlant == true)
-        {
-            rotatePlayer();
-            //runs planting animation
-            StartCoroutine(coolDownPlant(2f));
-        }
+        rotatePlayer();
+        //runs planting animation
+        StartCoroutine(coolDownPlant(2f));
+    }
+
+    private void SelectWateringCan()
+    {
+        player.SelectItem("Watering Can");
+    }
+    
+    private void SelectAxe()
+    {
+        throw new System.NotImplementedException();
     }
 
     public void harvest()
     {
-        if (canHarvest == true)
-        {
-            rotatePlayer();
-            //runs harvesting animation
-            StartCoroutine(coolDownHarvest(2f));
-        }
+        rotatePlayer();
+        //runs harvesting animation
+        StartCoroutine(coolDownHarvest(2f));
     }
 
     
@@ -149,9 +161,9 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    public void water()
+    public void Water()
     {
-        if (canWater == true)
+        if (canWater)
         {
             rotatePlayer();
             //runs chopping animation
@@ -178,41 +190,37 @@ public class playerMovement : MonoBehaviour
     IEnumerator coolDownAxe(float time)
     {
         chopping = true;
-        axe Axe = gameObject.GetComponentInChildren<axe>();
-        Axe.axeOn();
+        axe.axeOn();
         yield return new WaitForSeconds(time);
         chopping = false;
-        Axe.axeOff();
+        axe.axeOff();
     }
 
     IEnumerator coolDownHarvest(float time)
     {
         harvesting = true;
-        harvestTool HarvestTool = gameObject.GetComponentInChildren<harvestTool>();
-        HarvestTool.harvestToolOn();
+        harvestTool.harvestToolOn();
         yield return new WaitForSeconds(time);
         harvesting = false;
-        HarvestTool.harvestToolOff();
+        harvestTool.harvestToolOff();
     }
 
     IEnumerator coolDownPlant(float time)
     {
         planting = true;
-        shovel Shovel = gameObject.GetComponentInChildren<shovel>();
-        Shovel.shovelOn();
+        shovel.shovelOn();
         yield return new WaitForSeconds(time);
         planting = false;
-        Shovel.shovelOff();
+        shovel.shovelOff();
     }
 
     IEnumerator coolDownWaterCan(float time)
     {
         watering = true;
-        can Can = gameObject.GetComponentInChildren<can>();
-        Can.canOn();
+        can.canOn();
         yield return new WaitForSeconds(time);
         watering = false;
-        Can.canOff();
+        can.canOff();
     }
 
     public void LadderOn()

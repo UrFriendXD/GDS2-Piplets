@@ -5,6 +5,7 @@ using UnityEngine;
 public class can : MonoBehaviour
 {
     public bool hit;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +30,14 @@ public class can : MonoBehaviour
         hit = false;
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("on");
-        if (col.tag == "Plant")
+        if (other.CompareTag("Plant"))
         {
             if (hit == false)
             {
-                col.GetComponent<Water>().water();
+                other.GetComponent<Water>().water();
                 hit = true;
             }
         }

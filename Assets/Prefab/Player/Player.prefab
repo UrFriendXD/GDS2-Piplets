@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07803527cbebd74e9065a8eb38991fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: 0
 --- !u!1 &7072382248368338954
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,11 +255,12 @@ GameObject:
   - component: {fileID: 7072382248368338958}
   - component: {fileID: 7072382248368338959}
   - component: {fileID: 7072382248368338956}
+  - component: {fileID: 7072382248368338960}
   - component: {fileID: 7072382248368338957}
   - component: {fileID: 7072382248368338961}
   - component: {fileID: 7072382248368338963}
   - component: {fileID: 7072382248368338962}
-  - component: {fileID: 7072382248368338960}
+  - component: {fileID: 1273165475}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -312,7 +314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cd0901b1fa560434f9a1968ed01b237e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -334,6 +336,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!50 &7072382248368338960
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &7072382248368338957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -372,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c601bacf6f88da14a848fdd44c19a501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LadderMovement: 1
+  LadderMovement: 0
   endLadder: 0
   GroundCheck: 0
   canChop: 0
@@ -386,6 +409,7 @@ MonoBehaviour:
   harvesting: 0
   walkspeed: 3
   ladderspeed: 2
+  fallspeed: 2
   treePos: 0
   waterPos: 0
   plantSeedType: 0
@@ -420,27 +444,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   woodAmount: 0
---- !u!50 &7072382248368338960
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &1273165475
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7072382248368338954}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f880e921397c5d40ac0facb41633db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSaveManager: {fileID: 0}
+  itemHeld: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!1 &7072382248468513760
 GameObject:
   m_ObjectHideFlags: 0

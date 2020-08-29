@@ -33,7 +33,7 @@ public class PlantFunctions : MonoBehaviour
 
     public bool isTesting;
 
-    // Remove serializable later
+    // Remove serializable later when implemented
     [SerializeField] private Player _player;
     
     // Player modifiers to be implemented later
@@ -182,7 +182,6 @@ public class PlantFunctions : MonoBehaviour
             for (var i = 0; i < _plantSeed.amountToGive; i++)
             {
                 player.inventory.AddItem(_plantSeed.rawGoodToGive);
-
             }
             
             // Give raw good based on chance * modifier (later on)
