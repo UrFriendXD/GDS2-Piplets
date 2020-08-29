@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1886585778003438902}
   - component: {fileID: 1886585778003438903}
   - component: {fileID: 1886585778003438896}
+  - component: {fileID: 1480392601}
   m_Layer: 0
-  m_Name: Plant
+  m_Name: FarmPlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,3 +114,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlantType: {fileID: 11400000, guid: 9221445f5fdd4784d915fed27fd4a4a5, type: 2}
+--- !u!114 &1480392601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886585778003438897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e839e4c12473014b9b3d3faccc0f61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 663d0b9bd067b9f42bb85574594e974c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []

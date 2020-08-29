@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Farming;
+using RoboRyanTron.Unite2017.Events;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 
@@ -36,6 +38,9 @@ public class PlantFunctions : MonoBehaviour
     
     // Player modifiers to be implemented later
     // private int playerModifier
+    
+    //To check for day passing
+    private GameEventListener gameEventListener;
 
     private void OnValidate()
     {
@@ -47,11 +52,13 @@ public class PlantFunctions : MonoBehaviour
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        gameEventListener = GetComponent<GameEventListener>();
     }
 
-    public virtual void Plant(PlantSeed plantSeed)
+    public void Plant(PlantSeed plantSeed)
     {
         _plantSeed = plantSeed;
+        gameEventListener.Response.AddListener(Grow);
         //Initialising values from Plants scriptable objects
         //plantSprites = this.plantSeed.plantSprites;
 
@@ -63,11 +70,9 @@ public class PlantFunctions : MonoBehaviour
         _thisPlantType = _plantSeed.plantType;
         
         // If this is a new plant set stage to seed and seedling sprite
-        if (daysSincePlanted == 0)
-        {
-            currentPlantStage = PlantStages.Seed;
-            UpdateSprite(0);
-        }
+        if (daysSincePlanted != 0) return;
+        currentPlantStage = PlantStages.Seed;
+        UpdateSprite(0);
     }
 
     // Update is called once per frame
@@ -174,8 +179,12 @@ public class PlantFunctions : MonoBehaviour
             
             //Inventory.Gain(amountToGive)
             //Give raw good to player
-            player.inventory.AddItem(_plantSeed.rawGoodToGive);
+            for (var i = 0; i < _plantSeed.amountToGive; i++)
+            {
+                player.inventory.AddItem(_plantSeed.rawGoodToGive);
 
+            }
+            
             // Give raw good based on chance * modifier (later on)
             var randomSeed = Random.Range(0, 101);
             if (randomSeed > 50)
@@ -197,6 +206,7 @@ public class PlantFunctions : MonoBehaviour
     {
         currentPlantStage = PlantStages.Wilted;
         UpdateSprite(_plantSeed.plantSprites.Length);
+        gameEventListener.Response.RemoveAllListeners();
     }
 
     // Updates sprite base on parameter
@@ -209,6 +219,7 @@ public class PlantFunctions : MonoBehaviour
         _plantSeed = null;
         _thisPlantType = PlantType.None;
         currentPlantStage = PlantStages.None;
+        gameEventListener.Response?.RemoveAllListeners();
     }
 
     public bool IsPlanted() => _thisPlantType != PlantType.None;
