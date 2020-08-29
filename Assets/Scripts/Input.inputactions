@@ -36,6 +36,46 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Sapling",
+                    "type": "Button",
+                    "id": "db1eb91f-fe6e-426f-bd77-6d1145856e17",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AloeSeed",
+                    "type": "Button",
+                    "id": "8bff560a-d451-479f-b59c-d98e34f39bc7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CottonSeed",
+                    "type": "Button",
+                    "id": "8acdf920-52b3-43de-8646-c5d38dbefa84",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PlantSeed",
+                    "type": "Button",
+                    "id": "abfc48b4-3de2-4ebc-ac1d-978272ed3f12",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Harvesting",
+                    "type": "Button",
+                    "id": "57e26702-95cd-4f5e-9ad7-0c3374691c72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -124,6 +164,61 @@
                     "processors": "",
                     "groups": "",
                     "action": "WaterPlant",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1ffbd22a-de76-4bc6-87a4-402c6d8ccd90",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sapling",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "058519f5-34dc-4bee-95c7-b19245288fff",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AloeSeed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8619f5e-0954-4a66-85a3-90573ee6e116",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CottonSeed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f269742-ec57-4a28-ace8-70f70fb861d0",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlantSeed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "572b728a-49aa-4901-8dbe-6ca6d0933e11",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Harvesting",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
