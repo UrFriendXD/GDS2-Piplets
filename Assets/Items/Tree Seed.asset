@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e81cb8f12a38267499341fd29aa6561c, type: 3}
-  m_Name: Cotton Seed
+  m_Name: Tree Seed
   m_EditorClassIdentifier: 
-  id: 0a4d6733a767de242a91fda931f5a574
-  itemName: Cotton Seed
+  id: 7ef759cc7df722744bbf1c208a518334
+  itemName: 
   icon: {fileID: 0}
   maximumStack: 99
-  plantType: 2
+  plantType: 3
   daysToStage1: 0
   daysToHarvest: 0
   plantSprites: []
-  amountToGive: 3
+  amountToGive: 5
+  rawGoodToGive: {fileID: 0}

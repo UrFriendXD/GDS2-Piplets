@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ef26728db7e63c48874ad1838e6e8a3, type: 3}
-  m_Name: Raw Aloe
+  m_Name: Raw Cotton
   m_EditorClassIdentifier: 
-  id: 934e24e80f9d1b2429658e6846f98646
-  itemName: Aloe
-  icon: {fileID: -6207230123635024483, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
-  maximumStack: 1
+  id: 0f04804e9fe36314da7f6bbfaa711716
+  itemName: 
+  icon: {fileID: 0}
+  maximumStack: 99

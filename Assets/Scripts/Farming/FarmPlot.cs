@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Farming;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(PlantFunctions))]
 public class FarmPlot : MonoBehaviour
@@ -10,6 +11,7 @@ public class FarmPlot : MonoBehaviour
     [SerializeField] private PlantSeed currentPlantType;
 
     private PlantFunctions _currentPlant;
+    
 
     /*public FarmPlot(Plant currentPlant)
     {
@@ -74,13 +76,7 @@ public class FarmPlot : MonoBehaviour
             // Or subscribe object to days passing script
         }
     }
-
-    public void DayPassed()
-    {
-        // Add this function to day delegate
-        _currentPlant.Grow();
-    }
-
+    
     public void OnDestroyCrop()
     {
         _currentPlant.DestroyPlant();

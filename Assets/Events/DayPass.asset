@@ -9,15 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81cb8f12a38267499341fd29aa6561c, type: 3}
-  m_Name: Tree Seed
+  m_Script: {fileID: 11500000, guid: afde042156902ab4b9521d2a74eb2466, type: 3}
+  m_Name: DayPass
   m_EditorClassIdentifier: 
-  id: 7ef759cc7df722744bbf1c208a518334
-  itemName: 
-  icon: {fileID: 0}
-  maximumStack: 1
-  plantType: 3
-  daysToStage1: 0
-  daysToHarvest: 0
-  plantSprites: []
-  amountToGive: 5
