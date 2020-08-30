@@ -1,36 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class EndLadder : MonoBehaviour
+namespace Environment.Indoors
 {
-    // Start is called before the first frame update
-    void Start()
+    public class EndLadder : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        Debug.Log("on");
-        if (col.tag == "Player")
+        // Start is called before the first frame update
+        void Start()
         {
-            col.GetComponent<playerMovement>().EndOn();
+        
         }
-    }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        Debug.Log("off");
-        if (col.tag == "Player")
+        // Update is called once per frame
+        void Update()
         {
-            col.GetComponent<playerMovement>().EndOff();
+        
+        }
+
+        void OnTriggerEnter2D(Collider2D col)
+        {
+            Debug.Log("on");
+            if (col.tag == "Player")
+            {
+                col.GetComponent<playerMovement>().EndOn();
+            }
+        }
+
+        void OnTriggerExit2D(Collider2D col)
+        {
+            Debug.Log("off");
+            if (col.tag == "Player")
+            {
+                col.GetComponent<playerMovement>().EndOff();
+            }
         }
     }
 }

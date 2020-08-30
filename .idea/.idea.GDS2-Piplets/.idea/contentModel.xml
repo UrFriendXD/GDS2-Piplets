@@ -10,6 +10,7 @@
         <e p="Scripts" t="Include">
           <e p="Environment" t="Include">
             <e p="Indoors" t="Include">
+              <e p="Bed.cs" t="Include" />
               <e p="EndLadder.cs" t="Include" />
               <e p="Ladder.cs" t="Include" />
             </e>
@@ -51,13 +52,11 @@
           <e p="Player" t="Include">
             <e p="DayPassTest.cs" t="Include" />
             <e p="GroundCheck.cs" t="Include" />
-            <e p="Input" t="Include">
-              <e p="PlayerAction.cs" t="Include" />
-            </e>
             <e p="Player.cs" t="Include" />
             <e p="PlayerInputChecker.cs" t="Include" />
             <e p="playerMovement.cs" t="Include" />
           </e>
+          <e p="PlayerAction.cs" t="Include" />
           <e p="PlayerDetector.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="Events" t="Include">

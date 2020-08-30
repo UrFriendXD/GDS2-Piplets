@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
-    public bool plantOn;
     private Player player;
     private Item plantSeed;
     private FarmPlot farmPlot;
@@ -17,18 +16,12 @@ public class Plant : MonoBehaviour
         farmPlot = GetComponent<FarmPlot>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void InteractBare()
     {
         farmPlot.InteractBare(player);
     }
 
-    public void plant()
+    public void InteractWithItem()
     {
         farmPlot.InteractWithItem(player.itemHeld, player);
         Debug.Log("Planted");
@@ -39,10 +32,9 @@ public class Plant : MonoBehaviour
         Debug.Log("on");
         if (other.CompareTag("Player"))
         {
-            plantOn = true;
             player = other.GetComponent<Player>();
             other.GetComponent<playerMovement>().plantOn(plantPos);
-            player.Pressed += plant;
+            player.Pressed += InteractWithItem;
             player.BarePressed += InteractBare;
         }
     }
@@ -52,9 +44,8 @@ public class Plant : MonoBehaviour
         Debug.Log("off");
         if (other.CompareTag("Player"))
         {
-            plantOn = false;
             other.GetComponent<playerMovement>().plantOff(0f);
-            player.Pressed -= plant;
+            player.Pressed -= InteractWithItem;
             player.BarePressed -= InteractBare;
             player = null;
         }

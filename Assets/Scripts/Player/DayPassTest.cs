@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class DayPassTest : MonoBehaviour
 {
-    public UnityEvent DayPass;
+    //public UnityEvent DayPass;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class DayPassTest : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z))
         {
-            DayPass.Invoke();
+            //DayPass.Invoke();
         }
     }
 }
