@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class MaterialManagement : MonoBehaviour
 {
+    public int woodAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,10 @@ public class Test : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AddMaterial(int amount)
+    {
+        woodAmount = woodAmount + amount;
     }
 }
