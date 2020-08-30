@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/Input.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/Player/Input/Input.inputactions'
 
 using System;
 using System.Collections;
@@ -215,23 +215,23 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c133d520-d063-4bf1-a34e-0d0d21fb8657"",
-                    ""path"": ""<Keyboard>/5"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Select Axe"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""1b6a4b90-8669-431f-b8ae-e573ed7c189f"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c133d520-d063-4bf1-a34e-0d0d21fb8657"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Select Axe"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
