@@ -22,7 +22,7 @@ public class FarmPlot : MonoBehaviour
     private void Start()
     {
         _currentPlant = GetComponent<PlantFunctions>();
-        if (!currentPlantType)
+        if (currentPlantType != null)
         {
             OnPlant(currentPlantType);
         }
@@ -30,14 +30,14 @@ public class FarmPlot : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        /*if (Input.GetKeyDown(KeyCode.A))
         {
             OnPlant(currentPlantType);
-        }
+        }*/
     }
 
     // Interacting with bare hands/no items in hands
-    public void InteractBare(Item item, Player player)
+    public void InteractBare(Player player)
     {
         if (_currentPlant.IsPlanted())
         {
@@ -46,7 +46,7 @@ public class FarmPlot : MonoBehaviour
     }
 
     //Interacting with item in hand/use
-    public void InteractWithItem(Item item)
+    public void InteractWithItem(Item item, Player player)
     {
         // Watering can waters plants
         if (item.name == "Watering Can")
@@ -57,7 +57,8 @@ public class FarmPlot : MonoBehaviour
         //If it's a seed it'll plant if it's empty
         else if (item as PlantSeed)
         {
-            if (!_currentPlant.IsPlanted())
+            // If plant is empty and player has room
+            if (!_currentPlant.IsPlanted()  && player.inventory.RemoveItem(item))
             {
                 OnPlant(item as PlantSeed);
             }
@@ -67,14 +68,11 @@ public class FarmPlot : MonoBehaviour
     // Plants the plant
     private void OnPlant(PlantSeed plantSeed)
     {
-        // If it's empty plant
-        if (currentPlantType)
-        {
-            _currentPlant.Plant(plantSeed);
-            //Add grow to day pass delegate
-            // delegate += DaysPassed();
-            // Or subscribe object to days passing script
-        }
+        _currentPlant.Plant(plantSeed);
+        currentPlantType = plantSeed;
+        //Add grow to day pass delegate
+        // delegate += DaysPassed();
+        // Or subscribe object to days passing script
     }
     
     public void OnDestroyCrop()

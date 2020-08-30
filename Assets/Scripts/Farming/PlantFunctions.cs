@@ -33,22 +33,13 @@ public class PlantFunctions : MonoBehaviour
 
     public bool isTesting;
 
-    // Remove serializable later
-    [SerializeField] private Player _player;
-    
     // Player modifiers to be implemented later
     // private int playerModifier
     
     //To check for day passing
     private GameEventListener gameEventListener;
 
-    private void OnValidate()
-    {
-        if (!_player)
-        {
-            FindObjectOfType<Player>();
-        }
-    }
+    // Initialising values
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -93,7 +84,7 @@ public class PlantFunctions : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Harvest(_player);
+                //Harvest(_player);
             }
         }
     }
@@ -182,7 +173,6 @@ public class PlantFunctions : MonoBehaviour
             for (var i = 0; i < _plantSeed.amountToGive; i++)
             {
                 player.inventory.AddItem(_plantSeed.rawGoodToGive);
-
             }
             
             // Give raw good based on chance * modifier (later on)
@@ -202,6 +192,7 @@ public class PlantFunctions : MonoBehaviour
         }
     }
 
+    // Function to set plant to wilted after each season
     public void OnSeasonEnd()
     {
         currentPlantStage = PlantStages.Wilted;

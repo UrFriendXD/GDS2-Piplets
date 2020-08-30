@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Steven\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Steven\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GDS2-Piplets.-2059524258.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Steven\Desktop\GDS2\GDS2-Piplets" t="IncludeRecursive">
+    <e p="C:\Users\Sam\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Sam\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GDS2-Piplets.-954295577.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="axe.cs" t="Include" />
-          <e p="can.cs" t="Include" />
-          <e p="EndLadder.cs" t="Include" />
+          <e p="Environment" t="Include">
+            <e p="Indoors" t="Include">
+              <e p="Bed.cs" t="Include" />
+              <e p="EndLadder.cs" t="Include" />
+              <e p="Ladder.cs" t="Include" />
+            </e>
+            <e p="Outdoors" t="Include">
+              <e p="WildPlant.cs" t="Include" />
+              <e p="wood.cs" t="Include" />
+            </e>
+          </e>
           <e p="Farming" t="Include">
             <e p="AloePlant.cs" t="Include" />
             <e p="FarmPlot.cs" t="Include" />
+            <e p="Plant.cs" t="Include" />
             <e p="PlantFunctions.cs" t="Include" />
             <e p="PlantStages.cs" t="Include" />
             <e p="PlantType.cs" t="Include" />
+            <e p="Tree.cs" t="Include" />
           </e>
           <e p="FileIO" t="Include">
             <e p="FileReadWrite.cs" t="Include" />
@@ -25,9 +35,6 @@
             <e p="ItemSaveIO.cs" t="Include" />
             <e p="ItemSaveManager.cs" t="Include" />
           </e>
-          <e p="GroundCheck.cs" t="Include" />
-          <e p="harvest.cs" t="Include" />
-          <e p="harvestTool.cs" t="Include" />
           <e p="Items" t="Include">
             <e p="BaseItemSlot.cs" t="Include" />
             <e p="GiveItemTest.cs" t="Include" />
@@ -38,17 +45,19 @@
             <e p="ItemSlot.cs" t="Include" />
             <e p="PlantSeed.cs" t="Include" />
           </e>
-          <e p="Ladder.cs" t="Include" />
           <e p="MaterialManagement.cs" t="Include" />
-          <e p="Piplet.cs" t="Include" />
-          <e p="Plant.cs" t="Include" />
-          <e p="PlantManagement.cs" t="Include" />
+          <e p="Piplet" t="Include">
+            <e p="Piplet.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="DayPassTest.cs" t="Include" />
+            <e p="GroundCheck.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerInputChecker.cs" t="Include" />
+            <e p="playerMovement.cs" t="Include" />
           </e>
-          <e p="Player.cs" t="Include" />
           <e p="PlayerAction.cs" t="Include" />
-          <e p="playerMovement.cs" t="Include" />
+          <e p="PlayerDetector.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="Events" t="Include">
               <e p="Editor" t="Include">
@@ -59,12 +68,6 @@
             </e>
             <e p="RuntimeSet.cs" t="Include" />
           </e>
-          <e p="Seeds.cs" t="Include" />
-          <e p="shovel.cs" t="Include" />
-          <e p="TestPlayerStephen.cs" t="Include" />
-          <e p="Tree.cs" t="Include" />
-          <e p="Water.cs" t="Include" />
-          <e p="wood.cs" t="Include" />
         </e>
       </e>
       <e p="GDS2-Piplets.sln" t="IncludeFlat" />
