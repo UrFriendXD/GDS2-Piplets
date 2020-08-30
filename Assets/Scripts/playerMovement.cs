@@ -41,12 +41,10 @@ public class playerMovement : MonoBehaviour
         harvestTool = gameObject.GetComponentInChildren<harvestTool>();
         axe = gameObject.GetComponentInChildren<axe>();
         plantSeedType = 0;
-        control.player.ChopTree.performed += cxt => chop();
-        control.player.WaterPlant.performed += cxt => Water();
+        control.player.Action.performed += cxt => action();
         control.player.Sapling.performed += cxt => sap();
         control.player.AloeSeed.performed += cxt => aloe();
         control.player.CottonSeed.performed += cxt => cotton();
-        control.player.PlantSeed.performed += cxt => plant();
         control.player.Harvesting.performed += cxt => harvest();
         control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
         control.player.SelectAxe.performed += cxt => SelectAxe();
@@ -84,6 +82,11 @@ public class playerMovement : MonoBehaviour
     private void SelectAxe()
     {
         player.SelectItem("Axe");
+    }
+
+    public void action()
+    {
+        player.InteractWithItem();
     }
 
     public void harvest()
@@ -153,7 +156,7 @@ public class playerMovement : MonoBehaviour
 
     public void chop()
     {
-        if (canChop == true)
+        if (canChop)
         {
             rotatePlayer();
             //runs chopping animation
@@ -190,10 +193,10 @@ public class playerMovement : MonoBehaviour
     IEnumerator coolDownAxe(float time)
     {
         chopping = true;
-        axe.axeOn();
+        axe.On();
         yield return new WaitForSeconds(time);
         chopping = false;
-        axe.axeOff();
+        axe.Off();
     }
 
     IEnumerator coolDownHarvest(float time)
@@ -217,10 +220,10 @@ public class playerMovement : MonoBehaviour
     IEnumerator coolDownWaterCan(float time)
     {
         watering = true;
-        can.canOn();
+        can.On();
         yield return new WaitForSeconds(time);
         watering = false;
-        can.canOff();
+        can.Off();
     }
 
     public void LadderOn()

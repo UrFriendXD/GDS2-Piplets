@@ -35,22 +35,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""WaterPlant"",
-                    ""type"": ""Button"",
-                    ""id"": ""22e89871-6a0b-4394-8485-cf1f88621fc9"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""PlantSeed"",
-                    ""type"": ""Button"",
-                    ""id"": ""abfc48b4-3de2-4ebc-ac1d-978272ed3f12"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""Harvesting"",
                     ""type"": ""Button"",
                     ""id"": ""57e26702-95cd-4f5e-9ad7-0c3374691c72"",
@@ -59,7 +43,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""ChopTree"",
+                    ""name"": ""Action"",
                     ""type"": ""Button"",
                     ""id"": ""1f9d3701-03a9-4e4f-aa51-0e4940d17f8c"",
                     ""expectedControlType"": ""Button"",
@@ -176,17 +160,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a205f920-1ec5-4725-92fa-d5995b02e518"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""WaterPlant"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""058519f5-34dc-4bee-95c7-b19245288fff"",
                     ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
@@ -231,19 +204,8 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9f269742-ec57-4a28-ace8-70f70fb861d0"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlantSeed"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""572b728a-49aa-4901-8dbe-6ca6d0933e11"",
-                    ""path"": ""<Keyboard>/t"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -265,11 +227,11 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""1b6a4b90-8669-431f-b8ae-e573ed7c189f"",
-                    ""path"": ""<Keyboard>/f"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ChopTree"",
+                    ""action"": ""Action"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -282,10 +244,8 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
-        m_player_WaterPlant = m_player.FindAction("WaterPlant", throwIfNotFound: true);
-        m_player_PlantSeed = m_player.FindAction("PlantSeed", throwIfNotFound: true);
         m_player_Harvesting = m_player.FindAction("Harvesting", throwIfNotFound: true);
-        m_player_ChopTree = m_player.FindAction("ChopTree", throwIfNotFound: true);
+        m_player_Action = m_player.FindAction("Action", throwIfNotFound: true);
         m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
         m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
         m_player_Sapling = m_player.FindAction("Sapling", throwIfNotFound: true);
@@ -342,10 +302,8 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_LadderMovement;
-    private readonly InputAction m_player_WaterPlant;
-    private readonly InputAction m_player_PlantSeed;
     private readonly InputAction m_player_Harvesting;
-    private readonly InputAction m_player_ChopTree;
+    private readonly InputAction m_player_Action;
     private readonly InputAction m_player_AloeSeed;
     private readonly InputAction m_player_CottonSeed;
     private readonly InputAction m_player_Sapling;
@@ -357,10 +315,8 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public PlayerActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
-        public InputAction @WaterPlant => m_Wrapper.m_player_WaterPlant;
-        public InputAction @PlantSeed => m_Wrapper.m_player_PlantSeed;
         public InputAction @Harvesting => m_Wrapper.m_player_Harvesting;
-        public InputAction @ChopTree => m_Wrapper.m_player_ChopTree;
+        public InputAction @Action => m_Wrapper.m_player_Action;
         public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
         public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
         public InputAction @Sapling => m_Wrapper.m_player_Sapling;
@@ -381,18 +337,12 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
-                @WaterPlant.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
-                @WaterPlant.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
-                @WaterPlant.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWaterPlant;
-                @PlantSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
-                @PlantSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
-                @PlantSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPlantSeed;
                 @Harvesting.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
                 @Harvesting.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
                 @Harvesting.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
-                @ChopTree.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
-                @ChopTree.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
-                @ChopTree.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChopTree;
+                @Action.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
+                @Action.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
+                @Action.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @AloeSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
                 @AloeSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
                 @AloeSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
@@ -418,18 +368,12 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started += instance.OnLadderMovement;
                 @LadderMovement.performed += instance.OnLadderMovement;
                 @LadderMovement.canceled += instance.OnLadderMovement;
-                @WaterPlant.started += instance.OnWaterPlant;
-                @WaterPlant.performed += instance.OnWaterPlant;
-                @WaterPlant.canceled += instance.OnWaterPlant;
-                @PlantSeed.started += instance.OnPlantSeed;
-                @PlantSeed.performed += instance.OnPlantSeed;
-                @PlantSeed.canceled += instance.OnPlantSeed;
                 @Harvesting.started += instance.OnHarvesting;
                 @Harvesting.performed += instance.OnHarvesting;
                 @Harvesting.canceled += instance.OnHarvesting;
-                @ChopTree.started += instance.OnChopTree;
-                @ChopTree.performed += instance.OnChopTree;
-                @ChopTree.canceled += instance.OnChopTree;
+                @Action.started += instance.OnAction;
+                @Action.performed += instance.OnAction;
+                @Action.canceled += instance.OnAction;
                 @AloeSeed.started += instance.OnAloeSeed;
                 @AloeSeed.performed += instance.OnAloeSeed;
                 @AloeSeed.canceled += instance.OnAloeSeed;
@@ -453,10 +397,8 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLadderMovement(InputAction.CallbackContext context);
-        void OnWaterPlant(InputAction.CallbackContext context);
-        void OnPlantSeed(InputAction.CallbackContext context);
         void OnHarvesting(InputAction.CallbackContext context);
-        void OnChopTree(InputAction.CallbackContext context);
+        void OnAction(InputAction.CallbackContext context);
         void OnAloeSeed(InputAction.CallbackContext context);
         void OnCottonSeed(InputAction.CallbackContext context);
         void OnSapling(InputAction.CallbackContext context);

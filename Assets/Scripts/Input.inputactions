@@ -22,22 +22,6 @@
                     "interactions": ""
                 },
                 {
-                    "name": "WaterPlant",
-                    "type": "Button",
-                    "id": "22e89871-6a0b-4394-8485-cf1f88621fc9",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "PlantSeed",
-                    "type": "Button",
-                    "id": "abfc48b4-3de2-4ebc-ac1d-978272ed3f12",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
                     "name": "Harvesting",
                     "type": "Button",
                     "id": "57e26702-95cd-4f5e-9ad7-0c3374691c72",
@@ -46,7 +30,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ChopTree",
+                    "name": "Action",
                     "type": "Button",
                     "id": "1f9d3701-03a9-4e4f-aa51-0e4940d17f8c",
                     "expectedControlType": "Button",
@@ -163,17 +147,6 @@
                 },
                 {
                     "name": "",
-                    "id": "a205f920-1ec5-4725-92fa-d5995b02e518",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "WaterPlant",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "058519f5-34dc-4bee-95c7-b19245288fff",
                     "path": "<Keyboard>/1",
                     "interactions": "",
@@ -218,19 +191,8 @@
                 },
                 {
                     "name": "",
-                    "id": "9f269742-ec57-4a28-ace8-70f70fb861d0",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlantSeed",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "572b728a-49aa-4901-8dbe-6ca6d0933e11",
-                    "path": "<Keyboard>/t",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -252,11 +214,11 @@
                 {
                     "name": "",
                     "id": "1b6a4b90-8669-431f-b8ae-e573ed7c189f",
-                    "path": "<Keyboard>/f",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ChopTree",
+                    "action": "Action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
