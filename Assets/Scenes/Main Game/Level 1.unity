@@ -842,18 +842,6 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 413961636}
-    - target: {fileID: 1891979315, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041902593847341647, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6868810627460999926, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7072382248368338954, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -900,10 +888,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7072382248368338958, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7072382249641717783, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -971,7 +955,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1200479210929215009, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
+    - {fileID: 6050053528973497297, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
 --- !u!4 &1008662561 stripped
 Transform:

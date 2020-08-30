@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.WSA.Input;
 
 public class Player : MonoBehaviour
 {
@@ -9,8 +10,12 @@ public class Player : MonoBehaviour
     [SerializeField] private ItemSaveManager itemSaveManager;
     public Item itemHeld;
     private playerMovement PlayerMovement;
-    
+    public delegate void OnActionPressed();
+    public event OnActionPressed Pressed;
+    public delegate void OnActionBare();
+    public event OnActionBare BarePressed;
     public Inventory inventory;
+
     private void Awake()
     {
         //_uiInventory.SetInventory(inventory);
@@ -30,20 +35,30 @@ public class Player : MonoBehaviour
         {
             case "Watering Can":
                 PlayerMovement.Water();
+                Pressed();
                 break;
             case "Axe":
                 PlayerMovement.chop();
+                Pressed();
                 break;
             case "Aloe Seed":
-                PlayerMovement.plant(); 
+                PlayerMovement.plant();
+                Pressed();
                 break;
             case "Tree Seed":
                 PlayerMovement.plant();
+                Pressed();
                 break;
             case "Cotton Seed":
                 PlayerMovement.plant();
+                Pressed();
                 break;
         }
+    }
+
+    public void InteractBare()
+    {
+        BarePressed();
     }
 
     public void SelectItem(String itemSelectName)

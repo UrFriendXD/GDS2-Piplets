@@ -8,10 +8,12 @@ public class Plant : MonoBehaviour
     private Player player;
     private Item plantSeed;
     private FarmPlot farmPlot;
-    
+    private float plantPos;
+
     // Start is called before the first frame update
     void Start()
     {
+        plantPos = transform.position.x;
         farmPlot = GetComponent<FarmPlot>();
     }
 
@@ -19,6 +21,11 @@ public class Plant : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void InteractBare()
+    {
+        farmPlot.InteractBare(player);
     }
 
     public void plant()
@@ -34,7 +41,9 @@ public class Plant : MonoBehaviour
         {
             plantOn = true;
             player = other.GetComponent<Player>();
-            other.GetComponent<playerMovement>().plantOn();
+            other.GetComponent<playerMovement>().plantOn(plantPos);
+            player.Pressed += plant;
+            player.BarePressed += InteractBare;
         }
     }
 
@@ -44,8 +53,10 @@ public class Plant : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             plantOn = false;
+            other.GetComponent<playerMovement>().plantOff(0f);
+            player.Pressed -= plant;
+            player.BarePressed -= InteractBare;
             player = null;
-            other.GetComponent<playerMovement>().plantOff();
         }
     }
 }
