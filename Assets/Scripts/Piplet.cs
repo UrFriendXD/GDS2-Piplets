@@ -17,17 +17,19 @@ public class Piplet : MonoBehaviour
     public GameObject player;
     private Transform target;
     private bool stepping;
+    private playerMovement _PlayerMovement;
 
     void Start()
     {
         target = player.GetComponent<Transform>();
-        level = 1; 
+        level = 1;
+        _PlayerMovement = player.GetComponent<playerMovement>();
     }
 
 
     void Update()
     {
-        if (player.GroundCheck == true && player.transform.position.y == transform.position.y)
+        if (_PlayerMovement.GroundCheck == true && target.transform.position.y == transform.position.y)
         {
             if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
             {
@@ -39,9 +41,9 @@ public class Piplet : MonoBehaviour
             }
 
         }
-        else if (player.GroundCheck == true && player.transform.position.y != transform.position.y)
+        else if (_PlayerMovement.GroundCheck == true && target.transform.position.y != transform.position.y)
         {
-            transform.position = new Vector3(transform.position.x, player.transform.position.y,transform.position.z);
+            transform.position = new Vector3(transform.position.x, target.transform.position.y,transform.position.z);
         }
 
         if (steps > level2Threshold)
