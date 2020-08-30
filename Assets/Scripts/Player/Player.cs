@@ -31,6 +31,10 @@ public class Player : MonoBehaviour
     public void InteractWithItem()
     {
         if (!itemHeld) return;
+        if (Pressed == null)
+        {
+            return;
+        }
         switch (itemHeld.itemName)
         {
             case "Watering Can":
@@ -58,10 +62,10 @@ public class Player : MonoBehaviour
 
     public void InteractBare()
     {
-        BarePressed();
+        BarePressed?.Invoke();
     }
 
-    public void SelectItem(String itemSelectName)
+    public void SelectItem(string itemSelectName)
     {
         itemHeld = null;
         Debug.Log(itemSelectName);

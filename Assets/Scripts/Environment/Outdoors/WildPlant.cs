@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Seeds : MonoBehaviour
+public class WildPlant : MonoBehaviour
 {
 
     [SerializeField] private PlantSeed item;
