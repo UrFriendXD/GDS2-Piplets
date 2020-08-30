@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Sam\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Sam\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GDS2-Piplets.-954295577.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets" t="IncludeRecursive">
+    <e p="C:\Users\Steven\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Steven\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GDS2-Piplets.-2059524258.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Steven\Desktop\GDS2\GDS2-Piplets" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -26,6 +26,8 @@
             <e p="ItemSaveManager.cs" t="Include" />
           </e>
           <e p="GroundCheck.cs" t="Include" />
+          <e p="harvest.cs" t="Include" />
+          <e p="harvestTool.cs" t="Include" />
           <e p="Items" t="Include">
             <e p="BaseItemSlot.cs" t="Include" />
             <e p="GiveItemTest.cs" t="Include" />
@@ -38,6 +40,8 @@
           </e>
           <e p="Ladder.cs" t="Include" />
           <e p="MaterialManagement.cs" t="Include" />
+          <e p="Piplet.cs" t="Include" />
+          <e p="Plant.cs" t="Include" />
           <e p="PlantManagement.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="DayPassTest.cs" t="Include" />
@@ -56,6 +60,8 @@
             <e p="RuntimeSet.cs" t="Include" />
           </e>
           <e p="Seeds.cs" t="Include" />
+          <e p="shovel.cs" t="Include" />
+          <e p="TestPlayerStephen.cs" t="Include" />
           <e p="Tree.cs" t="Include" />
           <e p="Water.cs" t="Include" />
           <e p="wood.cs" t="Include" />
