@@ -24,12 +24,12 @@ public class Plant : MonoBehaviour
     public void InteractWithItem()
     {
         farmPlot.InteractWithItem(player.itemHeld, player);
-        Debug.Log("Planted");
+        //Debug.Log("Planted");
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("on");
+        //Debug.Log("on");
         if (other.CompareTag("Player"))
         {
             player = other.GetComponent<Player>();
@@ -41,7 +41,7 @@ public class Plant : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("off");
+        //Debug.Log("off");
         if (other.CompareTag("Player"))
         {
             other.GetComponent<playerMovement>().plantOff(0f);

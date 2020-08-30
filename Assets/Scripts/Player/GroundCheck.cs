@@ -19,7 +19,7 @@ public class GroundCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("on");
+        //Debug.Log("on");
         if (col.tag == "Ground")
         {
             playerMovement player = gameObject.GetComponentInParent<playerMovement>();
@@ -29,7 +29,7 @@ public class GroundCheck : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        Debug.Log("off");
+        //Debug.Log("off");
         if (col.tag == "Ground")
         {
             playerMovement player = gameObject.GetComponentInParent<playerMovement>();

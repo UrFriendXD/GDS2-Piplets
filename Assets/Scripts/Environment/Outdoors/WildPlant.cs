@@ -13,7 +13,6 @@ public class WildPlant : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("on");
         if (other.CompareTag("Player"))
         {
             // Add item to player if not empty and can add item

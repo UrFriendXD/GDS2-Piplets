@@ -225,7 +225,7 @@ public class playerMovement : MonoBehaviour
         {
             movementInput = 0;
         }
-        if (movementInput == -1 && GroundCheck == true && LadderMovement == true)
+        if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
         {
             movementInput = 0;
         }
@@ -238,7 +238,7 @@ public class playerMovement : MonoBehaviour
     {
         if (chopping == false && watering == false && planting == false && harvesting == false)
         {
-            if (GroundCheck == true && endLadder == false)
+            if (endLadder == false)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);

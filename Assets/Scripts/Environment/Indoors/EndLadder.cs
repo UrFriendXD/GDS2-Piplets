@@ -18,7 +18,7 @@ namespace Environment.Indoors
 
         void OnTriggerEnter2D(Collider2D col)
         {
-            Debug.Log("on");
+            //Debug.Log("on");
             if (col.tag == "Player")
             {
                 col.GetComponent<playerMovement>().EndOn();
@@ -27,7 +27,7 @@ namespace Environment.Indoors
 
         void OnTriggerExit2D(Collider2D col)
         {
-            Debug.Log("off");
+            //Debug.Log("off");
             if (col.tag == "Player")
             {
                 col.GetComponent<playerMovement>().EndOff();

@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0a4d6733a767de242a91fda931f5a574
   itemName: Cotton Seed
-  icon: {fileID: 4192583723460386017, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
+  icon: {fileID: -7052646978787364308, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
   maximumStack: 99
   plantType: 2
   daysToStage1: 1
   daysToHarvest: 3
   plantSprites:
-  - {fileID: -479601027526226263, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
-  - {fileID: -2136443221539797770, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
-  - {fileID: 5535221482327631143, guid: a17dbbe3356ca0c46bc5f41b70c640c1, type: 3}
+  - {fileID: -7149551068079155410, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+  - {fileID: -6404887804027818240, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+  - {fileID: -8924838130865898737, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
   amountToGive: 3
   rawGoodToGive: {fileID: 11400000, guid: 0f04804e9fe36314da7f6bbfaa711716, type: 2}
