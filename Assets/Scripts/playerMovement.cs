@@ -83,7 +83,7 @@ public class playerMovement : MonoBehaviour
     
     private void SelectAxe()
     {
-        throw new System.NotImplementedException();
+        player.SelectItem("Axe");
     }
 
     public void harvest()
