@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //[SerializeField] private UI_Inventory _uiInventory;
     [SerializeField] private ItemSaveManager itemSaveManager;
     public Item itemHeld;
     public Inventory inventory;
 
+    // Selects players item from inventory based on parameter
     public void SelectItem(string itemSelectName)
     {
         itemHeld = null;

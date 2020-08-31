@@ -68,6 +68,7 @@ public class playerMovement : MonoBehaviour
     }
     #endregion
 
+    // Stops player movement when interacting
     public void Interact()
     {
         if (!isInteracting)
@@ -76,6 +77,7 @@ public class playerMovement : MonoBehaviour
         }
     }
     
+    // Sets objectPos to parameter when player touches an object
     public void TouchObject(float objectPos)
     {
         interactingObjectPos = objectPos;
@@ -96,7 +98,7 @@ public class playerMovement : MonoBehaviour
         }
     }
     
-
+    // Stops player and rotates 
     private IEnumerator PlayAnimation(float time)
     {
         isInteracting = true;

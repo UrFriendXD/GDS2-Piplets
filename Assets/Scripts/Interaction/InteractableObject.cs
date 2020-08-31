@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Interacting with bare hands
     public virtual void InteractBare(Player player)
     {
         
     }
 
-    //Interacting with item in hand/use
+    // Interacting with item in hand/use
     public virtual void InteractWithItem(Item item, Player player)
     {
         

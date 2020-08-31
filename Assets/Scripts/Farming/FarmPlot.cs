@@ -5,17 +5,11 @@ namespace Farming
     [RequireComponent(typeof(PlantFunctions))]
     public class FarmPlot : InteractableObject
     {
+        // Plant variables
         [SerializeField] private PlantSeed currentPlantType;
-
         private PlantFunctions _currentPlant;
-    
 
-        /*public FarmPlot(Plant currentPlant)
-    {
-        _currentPlant = currentPlant;
-    }*/
-
-        // Start is called before the first frame update
+        // Initialise variables
         private void Start()
         {
             _currentPlant = GetComponent<PlantFunctions>();
@@ -69,7 +63,7 @@ namespace Farming
             currentPlantType = plantSeed;
         }
     
-        // Function to activate when season ends
+        // Function to activate when season ends or be moved into plant functions
         public void OnSeasonEnd()
         {
             _currentPlant.OnSeasonEnd();

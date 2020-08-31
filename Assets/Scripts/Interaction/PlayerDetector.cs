@@ -15,11 +15,13 @@ public class PlayerDetector : MonoBehaviour
         interactableObject = GetComponent<InteractableObject>();
     }
 
+    // Calls interactableObjects InteractBare()
     private void InteractBare()
     {
         interactableObject.InteractBare(player);
     }
 
+    // Calls interactableObjects InteractWithItem()
     private void InteractWithItem()
     {
         interactableObject.InteractWithItem(player.itemHeld, player);
@@ -28,14 +30,15 @@ public class PlayerDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("on");
         if (other.CompareTag("Player"))
         {
             player = other.GetComponent<Player>();
             
+            // Send objects x position for playerMovement
             playerMovement = other.GetComponent<playerMovement>();
             playerMovement.TouchObject(transform.position.x);
 
+            // Adds functions to delegate
             playerInputChecker = other.GetComponent<PlayerInputChecker>();
             playerInputChecker.Pressed += InteractWithItem;
             playerInputChecker.BarePressed += InteractBare;
@@ -47,9 +50,14 @@ public class PlayerDetector : MonoBehaviour
         //Debug.Log("off");
         if (other.CompareTag("Player"))
         {
+            // Reset object x position
             playerMovement.TouchObject(0);
+            
+            // Removes functions from delegate
             playerInputChecker.Pressed -= InteractWithItem;
             playerInputChecker.BarePressed -= InteractBare;
+            
+            // Resets variables
             player = null;
             playerMovement = null;
             playerInputChecker = null;

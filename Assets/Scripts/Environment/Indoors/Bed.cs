@@ -8,6 +8,7 @@ namespace Environment.Indoors
         public UnityEvent dayPass;
         private Player player;
         
+        // Calls day pass event regardless of interaction key
         public override void InteractWithItem(Item item, Player player)
         {
             dayPass.Invoke();

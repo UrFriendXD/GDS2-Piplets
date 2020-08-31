@@ -8,8 +8,14 @@ public class WildPlant : MonoBehaviour
 
     [SerializeField] private PlantSeed item;
 
-    [SerializeField] private int amount;
+    [SerializeField] private int refreshAmount;
+    private int currentAmount;
     private bool _isEmpty;
+
+    private void Start()
+    {
+        currentAmount = refreshAmount;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,17 +28,13 @@ public class WildPlant : MonoBehaviour
                 Item itemCopy = item.GetCopy();
                 if (inventory.AddItem(itemCopy))
                 {
-                    amount--;
-                    if (amount == 0)
+                    currentAmount--;
+                    if (currentAmount == 0)
                     {
                         _isEmpty = true;
                         SeedPicked();
                     }
                     Debug.Log("Gave item");
-                }
-                else
-                {
-                    itemCopy.Destroy();
                 }
             }
         }
@@ -41,5 +43,10 @@ public class WildPlant : MonoBehaviour
     private void SeedPicked()
     {
         gameObject.SetActive(false);
+    }
+
+    public void RefreshWildPlant()
+    {
+        currentAmount = refreshAmount;
     }
 }

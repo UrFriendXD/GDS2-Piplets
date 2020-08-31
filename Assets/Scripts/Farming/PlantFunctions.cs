@@ -9,7 +9,6 @@ namespace Farming
     public class PlantFunctions : MonoBehaviour
     {
         // Sprites variables
-        //[SerializeField] private Sprite[] plantSprites;
         private SpriteRenderer _spriteRenderer;
 
         // Remove serialise when no need to debug
@@ -17,13 +16,8 @@ namespace Farming
     
         // Values to relating to farming
         [SerializeField] private int daysSincePlanted = 0;
-        /*private int _daysToStage1;
-    private int _daysToHarvest;
-    private float _amountToGive;
-    private Item _rawGoodToGive;*/
-    
+
         private bool _bIsWatered;
-        //private bool _bIsHarvestable;
 
         private PlantType _thisPlantType;
         private PlantSeed _plantSeed;
@@ -42,19 +36,13 @@ namespace Farming
             _spriteRenderer = GetComponent<SpriteRenderer>();
             gameEventListener = GetComponent<GameEventListener>();
         }
-
+        
+        
+        // Initialising values on plant
         public void Plant(PlantSeed plantSeed)
         {
             _plantSeed = plantSeed;
             gameEventListener.Response.AddListener(Grow);
-            //Initialising values from Plants scriptable objects
-            //plantSprites = this.plantSeed.plantSprites;
-
-            /*_daysToStage1 = this.plantSeed.daysToStage1;
-        _daysToHarvest = this.plantSeed.daysToHarvest;
-        _amountToGive = this.plantSeed.amountToGive;
-        _rawGoodToGive = plantSeed.rawGoodToGive;*/
-        
             _thisPlantType = _plantSeed.plantType;
         
             // If this is a new plant set stage to seed and seedling sprite
@@ -115,10 +103,10 @@ namespace Farming
         }
 
         // Grows the plant by a day
-        public void Grow()
+        private void Grow()
         {
             // If plant is harvestable ignore growth 
-            if (currentPlantStage == PlantStages.Harvestable || currentPlantStage == PlantStages.None && !_plantSeed) return;
+            if ((currentPlantStage == PlantStages.Harvestable || currentPlantStage == PlantStages.None) && !_plantSeed) return;
         
             //If watered grow a day
             if (_bIsWatered)
@@ -147,7 +135,7 @@ namespace Farming
 
         }
 
-        public void Harvest(Player player)
+        private void Harvest(Player player)
         {
             if (currentPlantStage == PlantStages.Harvestable)
             {
@@ -201,7 +189,7 @@ namespace Farming
         private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.plantSprites[value];
 
         // Destroys plant and resets it's values
-        public void DestroyPlant()
+        private void DestroyPlant()
         {
             _spriteRenderer.sprite = null;
             _plantSeed = null;
