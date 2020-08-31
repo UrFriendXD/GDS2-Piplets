@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Harvesting",
+                    "name": "InteractBare",
                     "type": "Button",
                     "id": "57e26702-95cd-4f5e-9ad7-0c3374691c72",
                     "expectedControlType": "Button",
@@ -196,7 +196,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Harvesting",
+                    "action": "InteractBare",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

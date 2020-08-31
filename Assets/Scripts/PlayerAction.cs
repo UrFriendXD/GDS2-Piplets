@@ -35,7 +35,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Harvesting"",
+                    ""name"": ""InteractBare"",
                     ""type"": ""Button"",
                     ""id"": ""57e26702-95cd-4f5e-9ad7-0c3374691c72"",
                     ""expectedControlType"": ""Button"",
@@ -209,7 +209,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Harvesting"",
+                    ""action"": ""InteractBare"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -244,7 +244,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
-        m_player_Harvesting = m_player.FindAction("Harvesting", throwIfNotFound: true);
+        m_player_InteractBare = m_player.FindAction("InteractBare", throwIfNotFound: true);
         m_player_Action = m_player.FindAction("Action", throwIfNotFound: true);
         m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
         m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
@@ -302,7 +302,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_LadderMovement;
-    private readonly InputAction m_player_Harvesting;
+    private readonly InputAction m_player_InteractBare;
     private readonly InputAction m_player_Action;
     private readonly InputAction m_player_AloeSeed;
     private readonly InputAction m_player_CottonSeed;
@@ -315,7 +315,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public PlayerActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
-        public InputAction @Harvesting => m_Wrapper.m_player_Harvesting;
+        public InputAction @InteractBare => m_Wrapper.m_player_InteractBare;
         public InputAction @Action => m_Wrapper.m_player_Action;
         public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
         public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
@@ -337,9 +337,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
-                @Harvesting.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
-                @Harvesting.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
-                @Harvesting.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
+                @InteractBare.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteractBare;
+                @InteractBare.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteractBare;
+                @InteractBare.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteractBare;
                 @Action.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @Action.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @Action.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
@@ -368,9 +368,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started += instance.OnLadderMovement;
                 @LadderMovement.performed += instance.OnLadderMovement;
                 @LadderMovement.canceled += instance.OnLadderMovement;
-                @Harvesting.started += instance.OnHarvesting;
-                @Harvesting.performed += instance.OnHarvesting;
-                @Harvesting.canceled += instance.OnHarvesting;
+                @InteractBare.started += instance.OnInteractBare;
+                @InteractBare.performed += instance.OnInteractBare;
+                @InteractBare.canceled += instance.OnInteractBare;
                 @Action.started += instance.OnAction;
                 @Action.performed += instance.OnAction;
                 @Action.canceled += instance.OnAction;
@@ -397,7 +397,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLadderMovement(InputAction.CallbackContext context);
-        void OnHarvesting(InputAction.CallbackContext context);
+        void OnInteractBare(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
         void OnAloeSeed(InputAction.CallbackContext context);
         void OnCottonSeed(InputAction.CallbackContext context);
