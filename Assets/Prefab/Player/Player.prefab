@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7072382248368338961}
   - component: {fileID: 7072382248368338962}
   - component: {fileID: 1273165475}
+  - component: {fileID: 1447940501}
+  - component: {fileID: 1447940502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -150,16 +152,11 @@ MonoBehaviour:
   LadderMovement: 0
   endLadder: 0
   GroundCheck: 0
-  chopping: 0
-  watering: 0
-  enoughSeed: 0
-  planting: 0
-  harvesting: 0
+  isInteracting: 0
   walkspeed: 3
   ladderspeed: 2
   fallspeed: 2
-  treePos: 0
-  plantPos: 0
+  interactingObjectPos: 0
   plantSeedType: 0
 --- !u!114 &7072382248368338962
 MonoBehaviour:
@@ -189,6 +186,48 @@ MonoBehaviour:
   itemSaveManager: {fileID: 0}
   itemHeld: {fileID: 0}
   inventory: {fileID: 0}
+--- !u!114 &1447940501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c9a7dc9cc9b9241875e7412f8f0b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1447940502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 470fc75e0e0d0ea4b9073d230901257a, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &7072382248468513760
 GameObject:
   m_ObjectHideFlags: 0

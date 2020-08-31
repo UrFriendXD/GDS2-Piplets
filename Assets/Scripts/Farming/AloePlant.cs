@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class AloePlant : PlantFunctions
+﻿namespace Farming
 {
-    /*//private PlantStages PlantStages { Seed = 0; Growing; Harvestable; Wilted; get; }
+    public class AloePlant : PlantFunctions
+    {
+        /*//private PlantStages PlantStages { Seed = 0; Growing; Harvestable; Wilted; get; }
 
     // Start is called before the first frame update
     public override void Start()
@@ -29,4 +27,5 @@ public class AloePlant : PlantFunctions
         base.Grow();
         
     }*/
+    }
 }
