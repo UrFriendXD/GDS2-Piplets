@@ -5,13 +5,16 @@ using UnityEngine;
 public class wood : MonoBehaviour
 {
     public bool picked;
-    public int WoodDrop;
+    private Player player;
+    public PlantSeed _plantSeed;
+    public int wooddrop;
+
     // Start is called before the first frame update
     void Start()
     {
-        WoodDrop = 0;
         GetComponent<BoxCollider2D>().enabled = false;
         picked = false;
+        //wooddrop = 0;
     }
 
     // Update is called once per frame
@@ -22,21 +25,27 @@ public class wood : MonoBehaviour
 
     public void woodDrop(int drop)
     {
-        WoodDrop = WoodDrop + drop; 
+        wooddrop = wooddrop + drop; 
     }
 
     public void woodOn()
     {
+        GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<BoxCollider2D>().enabled = true;
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("on");
-        if (col.tag == "Player" && picked == false)
+        if (other.CompareTag("Player"))
         {
             picked = true;
-            col.GetComponent<MaterialManagement>().AddMaterial(WoodDrop);
+            _plantSeed.amountToGive = wooddrop;
+            for (var i = 0; i < _plantSeed.amountToGive; i++)
+            {
+                player = other.GetComponent<Player>();
+                player.inventory.AddItem(_plantSeed.rawGoodToGive);
+            }
+            _plantSeed.amountToGive = 0;
             woodPicked();
         }
     }
