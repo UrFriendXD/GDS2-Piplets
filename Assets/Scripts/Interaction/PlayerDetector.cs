@@ -62,7 +62,14 @@ public class PlayerDetector : MonoBehaviour
             player = null;
             playerMovement = null;
             playerInputChecker = null;
-            this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            if (this.CompareTag("Door"))
+            {
+                this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            }
         }
     }
 }

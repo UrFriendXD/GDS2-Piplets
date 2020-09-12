@@ -12,6 +12,7 @@ TagManager:
   - Tree
   - Plant
   - Wall
+  - Door
   layers:
   - Default
   - TransparentFX
