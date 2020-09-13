@@ -20,5 +20,5 @@ MonoBehaviour:
   daysToStage1: 0
   daysToHarvest: 0
   plantSprites: []
-  amountToGive: 5
-  rawGoodToGive: {fileID: 0}
+  amountToGive: 0
+  rawGoodToGive: {fileID: 11400000, guid: 5218a964048d4e2468c1316b36149b73, type: 2}

@@ -2,34 +2,38 @@
 
 namespace Farming
 {
-    public class Tree : MonoBehaviour
+    public class Tree : InteractableObject
     {
-        public float treepos;
-        public bool treeOn, treeDied;
+        public bool treeDied;
         public int treeHealth;
-    
+
         // Start is called before the first frame update
         void Start()
         {
-            treepos = transform.position.x;
-            treeOn = false;
-            treeDied = false;
+
         }
 
         // Update is called once per frame
         void Update()
         {
-        
+
+        }
+
+        public override void InteractWithItem(Item item, Player player)
+        {
+            Debug.Log("hit");
+            if (item.name == "Axe")
+            {
+                hit();
+            }
+
         }
 
         public void hit()
         {
-            if(treeOn == true)
-            {
-                Debug.Log("Hit");
-                treeHealth = treeHealth - 1;
-                DamageTree();
-            }
+            Debug.Log("Hit");
+            treeHealth = treeHealth - 1;
+            DamageTree();
         }
 
         public void DamageTree()
@@ -40,12 +44,12 @@ namespace Farming
                 //changeTreeColour for now then changeTreeSprite
                 Wood.woodDrop(2);
             }
-            if(treeHealth == 1)
+            if (treeHealth == 1)
             {
                 //changeTreeColour for now then changeTreeSprite
                 Wood.woodDrop(2);
             }
-            if(treeHealth == 0)
+            if (treeHealth == 0)
             {
                 Wood.woodDrop(1);
                 Death();
@@ -55,31 +59,12 @@ namespace Farming
         public void Death()
         {
             treeDied = true;
-            MeshRenderer m = GetComponent<MeshRenderer>();
+            SpriteRenderer m = GetComponent<SpriteRenderer>();
             m.enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             wood Wood = gameObject.GetComponentInChildren<wood>();
             Wood.woodOn();
         }
-
-        void OnTriggerEnter2D(Collider2D col)
-        {
-            Debug.Log("on");
-            if (col.tag == "Player")
-            {
-                treeOn = true;
-                col.GetComponent<playerMovement>().TouchObject(treepos);
-            }
-        }
-
-        void OnTriggerExit2D(Collider2D col)
-        {
-            Debug.Log("off");
-            if (col.tag == "Player")
-            {
-                treeOn = false;
-                col.GetComponent<playerMovement>().TouchObject(0f);
-            }
-        }
     }
+
 }
