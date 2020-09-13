@@ -1,37 +1,40 @@
-﻿using Player;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Player;
+using UnityEditor;
 using UnityEngine;
 
-public class PlayerDetector : MonoBehaviour
+public class UIPlayerDetector : MonoBehaviour
 {
     private PlayerScript playerScript;
-    private playerMovement playerMovement;
     private PlayerInputChecker playerInputChecker;
-    private Item plantSeed;
-    private InteractableObject interactableObject;
-    private float objectPos;
+    private UIInteractableObject uiInteractableObject;
 
-    // Start is called before the first frame update
-    private void Start()
+    private new void Start()
     {
-        interactableObject = GetComponent<InteractableObject>();
+        uiInteractableObject = GetComponent<UIInteractableObject>();
     }
 
-    // Calls interactableObjects InteractBare()
-    protected virtual void InteractBare()
+    private void InteractBare()
     {
-        interactableObject.InteractBare(playerScript);
+        uiInteractableObject.InteractBare(playerInputChecker, playerScript);
     }
 
-    // Calls interactableObjects InteractWithItem()
-    protected virtual void InteractWithItem()
+    private void InteractWithItem()
     {
-        interactableObject.InteractWithItem(playerScript.itemHeld, playerScript);
-        //Debug.Log("Planted");
+        uiInteractableObject.InteractBare(playerInputChecker, playerScript);
     }
 
+    public void RemoveInteraction()
+    {
+        playerInputChecker.BarePressed -= InteractBare;
+        playerInputChecker.Pressed -= InteractWithItem;
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         CheckPlayer(other.gameObject);
+        Debug.Log("touch");
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -43,10 +46,6 @@ public class PlayerDetector : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         playerScript = other.GetComponent<PlayerScript>();
-            
-        // Send objects x position for playerMovement
-        playerMovement = other.GetComponent<playerMovement>();
-        playerMovement.TouchObject(transform.position.x);
 
         // Adds functions to delegate
         playerInputChecker = other.GetComponent<PlayerInputChecker>();
@@ -57,16 +56,13 @@ public class PlayerDetector : MonoBehaviour
     private void RemovePlayer(GameObject other)
     {
         if (!other.CompareTag("Player")) return;
-        // Reset object x position
-        playerMovement.TouchObject(0);
-            
+        
         // Removes functions from delegate
         playerInputChecker.Pressed -= InteractWithItem;
         playerInputChecker.BarePressed -= InteractBare;
             
         // Resets variables
         playerScript = null;
-        playerMovement = null;
         playerInputChecker = null;
     }
 }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81cb8f12a38267499341fd29aa6561c, type: 3}
+  m_Name: Tree Sapling
+  m_EditorClassIdentifier: 
+  id: 7ef759cc7df722744bbf1c208a518334
+  itemName: Tree sapling
+  icon: {fileID: 0}
+  maximumStack: 99
+  plantType: 3
+  daysToStage1: 0
+  daysToHarvest: 0
+  plantSprites: []
+  amountToGive: 5
+  rawGoodToGive: {fileID: 11400000, guid: 3f5cf1493d272214fa1aaac3292a141a, type: 2}

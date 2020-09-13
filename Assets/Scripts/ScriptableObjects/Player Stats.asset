@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd034ca8f125e2846b361fd5b359a89d, type: 3}
-  m_Name: Raw Aloe
+  m_Script: {fileID: 11500000, guid: 0b5c93b4b2e9a184db312bfa764cbf40, type: 3}
+  m_Name: Player Stats
   m_EditorClassIdentifier: 
-  id: b46d27292c6714243899634802e45936
-  itemName: Aloe
-  icon: {fileID: 1347494148684388122, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-  maximumStack: 99
-  buyingPrice: 2
-  sellingPrice: 4
+  money: 1900

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class WildPlant : MonoBehaviour
@@ -24,7 +25,7 @@ public class WildPlant : MonoBehaviour
             // Add item to player if not empty and can add item
             if (!_isEmpty)
             {
-                Inventory inventory = other.GetComponent<Player>().inventory;
+                Inventory inventory = other.GetComponent<PlayerScript>().inventory;
                 Item itemCopy = item.GetCopy();
                 if (inventory.AddItem(itemCopy))
                 {

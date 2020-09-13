@@ -1,4 +1,5 @@
-﻿using RoboRyanTron.Unite2017.Events;
+﻿using Player;
+using RoboRyanTron.Unite2017.Events;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -76,12 +77,12 @@ namespace Farming
 
         // Basic interacting with plant
         // Harvests if harvestable, destroys if dead
-        public void OnInteract(Player player)
+        public void OnInteract(PlayerScript playerScript)
         {
             switch (currentPlantStage)
             {
                 case PlantStages.Harvestable:
-                    Harvest(player);
+                    Harvest(playerScript);
                     break;
                 case PlantStages.Wilted:
                     DestroyPlant();
@@ -135,7 +136,7 @@ namespace Farming
 
         }
 
-        private void Harvest(Player player)
+        private void Harvest(PlayerScript playerScript)
         {
             if (currentPlantStage == PlantStages.Harvestable)
             {
@@ -157,14 +158,14 @@ namespace Farming
                 //Give raw good to player
                 for (var i = 0; i < _plantSeed.amountToGive; i++)
                 {
-                    player.inventory.AddItem(_plantSeed.rawGoodToGive);
+                    playerScript.inventory.AddItem(_plantSeed.rawGoodToGive);
                 }
             
                 // Give raw good based on chance * modifier (later on)
                 var randomSeed = Random.Range(0, 101);
                 if (randomSeed > 50)
                 {
-                    player.inventory.AddItem(_plantSeed);
+                    playerScript.inventory.AddItem(_plantSeed);
                     Debug.Log($"Gave {_plantSeed.amountToGive}");
                 }
                 else

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Threading;
+using Player;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -14,16 +15,16 @@ public class Piplet : MonoBehaviour
     [SerializeField] private int steps = 0;
     [SerializeField] private int level2Threshold = 300;
     [SerializeField] private int level3Threshold = 3000;
-    public Player player;
+    public PlayerScript playerScript;
     private Transform target;
     private bool stepping;
     private playerMovement _PlayerMovement;
 
     void Start()
     {
-        target = player.transform;
+        target = playerScript.transform;
         level = 1;
-        _PlayerMovement = player.GetComponent<playerMovement>();
+        _PlayerMovement = playerScript.GetComponent<playerMovement>();
     }
 
 
