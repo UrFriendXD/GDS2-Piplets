@@ -62,7 +62,7 @@ public class PlayerDetector : MonoBehaviour
             player = null;
             playerMovement = null;
             playerInputChecker = null;
-            if (this.CompareTag("Door"))
+            if (this.CompareTag("Door") && other.GetComponent<SpriteRenderer>().sortingOrder == 2)
             {
                 this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             }

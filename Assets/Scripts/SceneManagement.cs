@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    public SpawnPoint spawnPoint;
 
     public static SceneManagement Instance
     {
@@ -38,12 +37,8 @@ public class SceneManagement : MonoBehaviour
         
     }
 
-    public void changeScene(Player player)
+    public void changeScene(int buildIndex)
     {
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Gandi'sPlayerMovementScene"))
-        {
-            SceneManager.LoadScene("TestScene");
-        }
-        //player.transform.position = spawnPoint.transform.position;
+        SceneManager.LoadScene(buildIndex);
     }
 }
