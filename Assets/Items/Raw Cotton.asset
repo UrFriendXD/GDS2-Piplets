@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd034ca8f125e2846b361fd5b359a89d, type: 3}
   m_Name: Raw Cotton
   m_EditorClassIdentifier: 
-  id: 
+  id: 0f04804e9fe36314da7f6bbfaa711716
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 1078262282487390478, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
   maximumStack: 1
-  buyingPrice: 0
-  sellingPrice: 0
+  buyingPrice: 8
+  sellingPrice: 3
