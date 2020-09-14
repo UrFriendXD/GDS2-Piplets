@@ -24,4 +24,9 @@ public class UIInteractableObject : MonoBehaviour
     {
         uiPlayerDetector.RemoveInteraction();
     }
+
+    public virtual void CloseUI()
+    {
+        
+    }
 }

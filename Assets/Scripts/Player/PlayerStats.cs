@@ -6,5 +6,7 @@ namespace Player
     public class PlayerStats : ScriptableObject
     {
         public int money;
+        
+        
     }
 }

@@ -1,18 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class ProcessingItemButton : MonoBehaviour
+public class ProcessingItemButton : TerminalAddRemoveButton
 {
-    // Start is called before the first frame update
-    void Start()
+    [HideInInspector]
+    public CraftingRecipe _craftingRecipe;
+
+    private void Update()
     {
-        
+        // Adds amount
+        if (_adding && _delay <= 0)
+        {
+            if (_craftingRecipe.CanCraft(PlayerInventory, _amount))
+            {
+                UpdateAmount(_amount += 1);
+                _delay = delayReset;
+            }
+        }
+
+        // Removes amount
+        if (_removing && _delay <= 0)
+        {
+            if (_amount > 0)
+            {
+                UpdateAmount(_amount -= 1);
+                _delay = delayReset;
+            }
+        }
+
+        // Timer
+        if (_delay > 0)
+        {
+            _delay -= Time.deltaTime;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ResetAmount()
     {
-        
+        UpdateAmount(0);
     }
 }

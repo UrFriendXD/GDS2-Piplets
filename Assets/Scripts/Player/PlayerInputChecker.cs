@@ -39,6 +39,8 @@ namespace Player
         private void OnCancel()
         {
             OnCancelButtonPressed?.Invoke();
+            OnCancelButtonPressed = null;
+            //Debug.Log("Canceled");
         }
     }
 }

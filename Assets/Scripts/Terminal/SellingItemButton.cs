@@ -6,49 +6,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class SellingItemButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class SellingItemButton : TerminalAddRemoveButton
 {
     // Item that it sells
     [SerializeField] private TradableItem item;
-    
-    // Player variables set from terminal
-    [NonSerialized]
-    public Inventory PlayerInventory;
-    [NonSerialized]
-    public PlayerStats PlayerStats;
+    public PlayerStats playerStats;
 
-    // Values for selling 
-    private bool _adding, _removing;
-    [SerializeField] private float delayReset;
-    private float _delay;
-    private int _amount;
-
-    [SerializeField] private Text amountText;
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        // If already add or removing ignore. Forces only one MB active
-        if (_adding || _removing) return;
-        
-        // If LMB add, RMB remove
-        switch (eventData.pointerId)
-        {
-            case -1:
-                _adding = true;
-                break;
-            case -2:
-                _removing = true;
-                break;
-        }
-    }
-
-    // Releases current actions
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        _adding = false;
-        _removing = false;
-    }
-    
     private void Update()
     {
         // Adds amount
@@ -87,14 +50,7 @@ public class SellingItemButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
             PlayerInventory.RemoveItem(item);
         }
 
-        PlayerStats.money += item.sellingPrice * _amount;
+        playerStats.money += item.sellingPrice * _amount;
         UpdateAmount(0);
-
-    }
-
-    private void UpdateAmount(int changeAmount)
-    {
-        _amount = changeAmount;
-        amountText.text = _amount.ToString();
     }
 }

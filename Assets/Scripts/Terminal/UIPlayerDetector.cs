@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Player;
 using UnityEditor;
@@ -10,6 +11,8 @@ public class UIPlayerDetector : MonoBehaviour
     private PlayerInputChecker playerInputChecker;
     private UIInteractableObject uiInteractableObject;
 
+    private bool _activated;
+
     private new void Start()
     {
         uiInteractableObject = GetComponent<UIInteractableObject>();
@@ -18,23 +21,41 @@ public class UIPlayerDetector : MonoBehaviour
     private void InteractBare()
     {
         uiInteractableObject.InteractBare(playerInputChecker, playerScript);
+        playerInputChecker.OnCancelButtonPressed += AddInteraction;
     }
 
     private void InteractWithItem()
     {
         uiInteractableObject.InteractBare(playerInputChecker, playerScript);
+        playerInputChecker.OnCancelButtonPressed += AddInteraction;
     }
 
+    // Removes functions from delegate
     public void RemoveInteraction()
     {
         playerInputChecker.BarePressed -= InteractBare;
         playerInputChecker.Pressed -= InteractWithItem;
     }
     
+    // Adds functions to delegate
+    public void AddInteraction()
+    {
+        playerInputChecker.BarePressed += InteractBare;
+        playerInputChecker.Pressed += InteractWithItem;
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         CheckPlayer(other.gameObject);
         Debug.Log("touch");
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (!_activated)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -49,8 +70,7 @@ public class UIPlayerDetector : MonoBehaviour
 
         // Adds functions to delegate
         playerInputChecker = other.GetComponent<PlayerInputChecker>();
-        playerInputChecker.Pressed += InteractWithItem;
-        playerInputChecker.BarePressed += InteractBare;
+        AddInteraction();
     }
 
     private void RemovePlayer(GameObject other)
@@ -58,11 +78,12 @@ public class UIPlayerDetector : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         // Removes functions from delegate
-        playerInputChecker.Pressed -= InteractWithItem;
-        playerInputChecker.BarePressed -= InteractBare;
+        RemoveInteraction();
             
         // Resets variables
         playerScript = null;
         playerInputChecker = null;
+        
+        uiInteractableObject.CloseUI();
     }
 }

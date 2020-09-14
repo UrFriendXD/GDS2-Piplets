@@ -6,6 +6,7 @@ using UnityEngine;
 public class Terminal : UIInteractableObject
 {
     // Canvases
+    [SerializeField] private Canvas terminalCanvas;
     [SerializeField] private Canvas sellingCanvas;
     [SerializeField] private Canvas processingCanvas;
     
@@ -14,7 +15,7 @@ public class Terminal : UIInteractableObject
     
     // Arrays
     private SellingItemButton[] sellingItemButtons;
-    private ProcessingItemButton[] processingItemButtons;
+    private CraftingRecipeUI[] craftingRecipeUis;
     
     // Player variables
     private Inventory inventory;
@@ -22,6 +23,8 @@ public class Terminal : UIInteractableObject
     private PlayerInputChecker _playerInputChecker;
 
     private bool BinUse;
+    
+    public bool selling;
 
     public override void Start()
     {
@@ -29,7 +32,7 @@ public class Terminal : UIInteractableObject
         
         // Puts the buttons in their arrays
         sellingItemButtons = sellingCanvas.GetComponentsInChildren<SellingItemButton>(true);
-        processingItemButtons = processingCanvas.GetComponentsInChildren<ProcessingItemButton>(true);
+        craftingRecipeUis = processingCanvas.GetComponentsInChildren<CraftingRecipeUI>(true);
     }
 
     public override void InteractBare(PlayerInputChecker playerInputChecker, PlayerScript playerScript)
@@ -58,54 +61,61 @@ public class Terminal : UIInteractableObject
         if (!BinUse)
         {
             BinUse = true;
-            
+            terminalCanvas.gameObject.SetActive(true);
             // Change to first interface
-            OpenSellingMenu();
-            
+            if (selling)
+            {
+                OpenSellingMenu();
+            }
+            else
+            {
+                OpenProcessingMenu();
+            }
+
             // Set inventory for each button
             foreach (var sellingItemButton in sellingItemButtons)
             {
                 sellingItemButton.PlayerInventory = inventory;
-                sellingItemButton.PlayerStats = playerStats;
+                sellingItemButton.playerStats = playerStats;
             }
             
             // Do the same as above for processing
-            foreach (var processingItemButton in processingItemButtons)
+            foreach (var craftingRecipeUi in craftingRecipeUis)
             {
-                //processingItemButton.inventory = inventory;
+                craftingRecipeUi.inventory = inventory;
             }
             
             // Allocates terminal to confirm buttons
             sellingConfirmButton.terminal = this;
             // processing
 
-            _playerInputChecker.OnCancelButtonPressed += CloseTerminal;
+            _playerInputChecker.OnCancelButtonPressed += CloseUI;
         }
     }
 
-    private void CloseTerminal()
+    public override void CloseUI()
     {
         if (BinUse)
         {
             BinUse = false;
             
             // Change to close menu entirely
-            sellingCanvas.gameObject.SetActive(false);
+            terminalCanvas.gameObject.SetActive(false);
             
             // Set inventory for each button
             foreach (var sellingItemButton in sellingItemButtons)
             {
                 sellingItemButton.PlayerInventory = null;
-                sellingItemButton.PlayerStats = null;
+                sellingItemButton.playerStats = null;
             }
             
             // Do the same as above for processing
-            foreach (var processingItemButton in processingItemButtons)
+            foreach (var processingItemButton in craftingRecipeUis)
             {
-                //processingItemButton.inventory = null;
+                processingItemButton.inventory = null;
             }
             
-            _playerInputChecker.OnCancelButtonPressed -= CloseTerminal;
+            _playerInputChecker.OnCancelButtonPressed -= CloseUI;
         }
     }
 
@@ -126,6 +136,14 @@ public class Terminal : UIInteractableObject
         foreach (var sellingItemButton in sellingItemButtons)
         {
             sellingItemButton.SellItems();
+        }
+    }
+
+    public void CraftItems()
+    {
+        foreach (var craftingRecipeUi in craftingRecipeUis)
+        {
+            craftingRecipeUi.OnCraftButtonClick();
         }
     }
 }
