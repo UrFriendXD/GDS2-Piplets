@@ -1911,10 +1911,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62322c3d1d05c784fb6fc6a1a8124bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terminalCanvas: {fileID: 375985692}
   sellingCanvas: {fileID: 2002884409}
   processingCanvas: {fileID: 702564413}
   sellingConfirmButton: {fileID: 298184714}
-  selling: 0
+  selling: 1
 --- !u!114 &482707827
 MonoBehaviour:
   m_ObjectHideFlags: 0
