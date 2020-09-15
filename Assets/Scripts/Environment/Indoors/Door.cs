@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class Door : InteractableObject
@@ -7,19 +8,8 @@ public class Door : InteractableObject
     public GameObject greenhouse;
     public GameObject outsideGreenHouse;
     public GameObject piplet;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public override void InteractBare(Player player)
+    public override void InteractBare(PlayerScript player)
     {
         base.InteractBare(player);
         greenhouse.SetActive(!greenhouse.activeSelf);

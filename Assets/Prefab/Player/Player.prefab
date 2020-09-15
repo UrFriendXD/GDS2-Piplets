@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSaveManager: {fileID: 0}
+  playerStats: {fileID: 11400000, guid: 24fa3d1811d7d5644b18f96179542668, type: 2}
   itemHeld: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &1447940501

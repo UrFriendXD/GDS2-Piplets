@@ -23,4 +23,4 @@ MonoBehaviour:
   - {fileID: -4150176314059901787, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
   - {fileID: 3492415661574000411, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
   amountToGive: 1
-  rawGoodToGive: {fileID: 11400000, guid: 934e24e80f9d1b2429658e6846f98646, type: 2}
+  rawGoodToGive: {fileID: 11400000, guid: b46d27292c6714243899634802e45936, type: 2}

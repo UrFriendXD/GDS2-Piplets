@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class wood : MonoBehaviour
 {
     public bool picked;
-    private Player player;
+    private PlayerScript player;
     public PlantSeed _plantSeed;
     public int wooddrop;
 
@@ -42,7 +43,7 @@ public class wood : MonoBehaviour
             _plantSeed.amountToGive = wooddrop;
             for (var i = 0; i < _plantSeed.amountToGive; i++)
             {
-                player = other.GetComponent<Player>();
+                player = other.GetComponent<PlayerScript>();
                 player.inventory.AddItem(_plantSeed.rawGoodToGive);
             }
             _plantSeed.amountToGive = 0;

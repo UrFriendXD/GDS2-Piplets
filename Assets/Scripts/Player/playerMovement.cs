@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,7 +12,7 @@ public class playerMovement : MonoBehaviour
     public float interactingObjectPos;
     public int plantSeedType;
     
-    private Player player;
+    private PlayerScript player;
 
     void Awake()
     {
@@ -38,7 +39,7 @@ public class playerMovement : MonoBehaviour
         control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
         control.player.SelectAxe.performed += cxt => SelectAxe();
 
-        player = GetComponent<Player>();
+        player = GetComponent<PlayerScript>();
     }
 
     #region Selecting Items
@@ -247,5 +248,4 @@ public class playerMovement : MonoBehaviour
             this.transform.Rotate(0f, 180f, 0f);
         }
     }
-
 }

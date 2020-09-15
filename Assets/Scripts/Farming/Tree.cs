@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Player;
+using UnityEngine;
 
 namespace Farming
 {
@@ -7,26 +8,13 @@ namespace Farming
         public bool treeDied;
         public int treeHealth;
 
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-        public override void InteractWithItem(Item item, Player player)
+        public override void InteractWithItem(Item item, PlayerScript player)
         {
             Debug.Log("hit");
             if (item.name == "Axe")
             {
                 hit();
             }
-
         }
 
         public void hit()
