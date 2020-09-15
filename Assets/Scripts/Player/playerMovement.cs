@@ -1,138 +1,161 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-namespace Player
+public class playerMovement : MonoBehaviour
 {
-    public class playerMovement : MonoBehaviour
+    private PlayerAction control;
+    public bool LadderMovement, endLadder, GroundCheck, WallCheck, isInteracting, falling;
+    [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    public float interactingObjectPos;
+    public int plantSeedType;
+    
+    private Player player;
+
+    void Awake()
     {
-        private PlayerAction control;
-        public bool LadderMovement, endLadder, GroundCheck, WallCheck, isInteracting, falling;
-        [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
-        public float interactingObjectPos;
-        public int plantSeedType;
+        control = new PlayerAction();
+    }
+
+    private void OnEnable()
+    {
+        control.Enable();
+    }
+
+    private void OnDisable()
+    {
+        control.Disable();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        plantSeedType = 0;
+        control.player.Sapling.performed += cxt => Sap();
+        control.player.AloeSeed.performed += cxt => Aloe();
+        control.player.CottonSeed.performed += cxt => Cotton();
+        control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
+        control.player.SelectAxe.performed += cxt => SelectAxe();
+
+        player = GetComponent<Player>();
+    }
+
+    #region Selecting Items
+    public void Aloe()
+    {
+        player.SelectItem("Aloe Seed");
+    }
+
+    public void Cotton()
+    {
+        player.SelectItem("Cotton Seed");
+    }
+
+    public void Sap()
+    {
+        player.SelectItem("Tree Seed");
+    }
     
-        private PlayerScript playerScript;
+    private void SelectWateringCan()
+    {
+        player.SelectItem("Watering Can");
+    }
 
-        void Awake()
+    private void SelectAxe()
+    {
+        player.SelectItem("Axe");
+    }
+    #endregion
+
+    // Stops player movement when interacting
+    public void Interact()
+    {
+        if (!isInteracting)
         {
-            control = new PlayerAction();
+            StartCoroutine(PlayAnimation(2f));
         }
-
-        private void OnEnable()
-        {
-            control.Enable();
-        }
-
-        private void OnDisable()
-        {
-            control.Disable();
-        }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            plantSeedType = 0;
-            control.player.Sapling.performed += cxt => Sap();
-            control.player.AloeSeed.performed += cxt => Aloe();
-            control.player.CottonSeed.performed += cxt => Cotton();
-            control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
-            control.player.SelectAxe.performed += cxt => SelectAxe();
-
-            playerScript = GetComponent<PlayerScript>();
-        }
-
-        #region Selecting Items
-        public void Aloe()
-        {
-            playerScript.SelectItem("Aloe Seed");
-        }
-
-        public void Cotton()
-        {
-            playerScript.SelectItem("Cotton Seed");
-        }
-
-        public void Sap()
-        {
-            playerScript.SelectItem("Tree Seed");
-        }
+    }
     
-        private void SelectWateringCan()
-        {
-            playerScript.SelectItem("Watering Can");
-        }
+    // Sets objectPos to parameter when player touches an object
+    public void TouchObject(float objectPos)
+    {
+        interactingObjectPos = objectPos;
+    }
 
-        private void SelectAxe()
+    private void RotatePlayer()
+    {
+        if (!isInteracting)
         {
-            playerScript.SelectItem("Axe");
-        }
-        #endregion
-
-        // Stops player movement when interacting
-        public void Interact()
-        {
-            if (!isInteracting)
+            if (((transform.position.x > interactingObjectPos && interactingObjectPos !=0) && transform.rotation.y == 0))
             {
-                StartCoroutine(PlayAnimation(2f));
+                this.transform.Rotate(0f, -180f, 0f);
+            }
+            if (((transform.position.x < interactingObjectPos && interactingObjectPos != 0)  && transform.rotation.y != 0))
+            {
+                this.transform.Rotate(0f, 180f, 0f);
             }
         }
+    }
     
-        // Sets objectPos to parameter when player touches an object
-        public void TouchObject(float objectPos)
-        {
-            interactingObjectPos = objectPos;
-        }
+    // Stops player and rotates 
+    private IEnumerator PlayAnimation(float time)
+    {
+        isInteracting = true;
+        RotatePlayer();
+        yield return new WaitForSeconds(time);
+        isInteracting = false;
+    }
 
-        private void RotatePlayer()
-        {
-            if (!isInteracting)
-            {
-                if (((transform.position.x > interactingObjectPos && interactingObjectPos !=0) && transform.rotation.y == 0))
-                {
-                    this.transform.Rotate(0f, -180f, 0f);
-                }
-                if (((transform.position.x < interactingObjectPos && interactingObjectPos != 0)  && transform.rotation.y != 0))
-                {
-                    this.transform.Rotate(0f, 180f, 0f);
-                }
-            }
-        }
-    
-        // Stops player and rotates 
-        private IEnumerator PlayAnimation(float time)
-        {
-            isInteracting = true;
-            RotatePlayer();
-            yield return new WaitForSeconds(time);
-            isInteracting = false;
-        }
+    public void LadderOn()
+    {
+        LadderMovement = true;
+    }
 
-        public void LadderOn()
-        {
-            LadderMovement = true;
-        }
+    public void EndOn()
+    {
+        endLadder = true;
+    }
 
-        public void EndOn()
-        {
-            endLadder = true;
-        }
+    public void EndOff()
+    {
+        endLadder = false;
+    }
 
-        public void EndOff()
-        {
-            endLadder = false;
-        }
+    public void LadderOff()
+    {
+        LadderMovement = false;
+    }
 
-        public void LadderOff()
-        {
-            LadderMovement = false;
-        }
+    public void GroundOn()
+    {
+        GroundCheck = true;
+    }
 
-        public void GroundOn()
-        {
-            GroundCheck = true;
-        }
+    public void GroundOff()
+    {
+        GroundCheck = false;
+    }
 
-        public void GroundOff()
+    public void WallOn()
+    {
+        WallCheck = true;
+    }
+
+    public void WallOff()
+    {
+        WallCheck = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        playerMoveRightAndLeft();
+        if(LadderMovement == true)
+        {
+            LadderMoveUpAndDown();
+        }
+        if(LadderMovement == false && GroundCheck == false)
         {
             falling = true;
             if(fallspeed < maxfallspeed)
@@ -143,46 +166,50 @@ namespace Player
             { 
                 fall();
             }
-            if (GroundCheck || LadderMovement)
-            {
-                fallspeed = startfallspeed;
-                falling = false;
-            }
         }
-
-        public void WallOn()
+        if (GroundCheck || LadderMovement)
         {
-            WallCheck = true;
+            fallspeed = startfallspeed;
+            falling = false;
         }
+    }
 
-        public void WallOff()
+    public void fall()
+    {
+        Vector3 currentPosition = transform.position;
+        currentPosition.y +=  -1 * fallspeed * Time.deltaTime;
+        transform.position = currentPosition;
+    }
+
+    public void LadderMoveUpAndDown()
+    {
+        float movementInput = control.player.LadderMovement.ReadValue<float>();
+        if(movementInput == 1)
         {
-            WallCheck = false;
+            ladderspeed = upLadderSpeed;
         }
-
-        // Update is called once per frame
-        void Update()
+        if(movementInput == -1)
         {
-            playerMoveRightAndLeft();
-            if (LadderMovement == true)
-            {
-                GroundCheck = true;
-            }
+            ladderspeed = downLadderSpeed;
         }
-
-        
-
-        public void fall()
+        if(movementInput == 1 && endLadder == true)
         {
-            Vector3 currentPosition = transform.position;
-            currentPosition.y +=  -1 * fallspeed * Time.deltaTime;
-            transform.position = currentPosition;
+            movementInput = 0;
         }
-
-        public void LadderMoveUpAndDown()
+        if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
         {
-            float movementInput = control.player.LadderMovement.ReadValue<float>();
-            if(movementInput == 1 && endLadder == true)
+            movementInput = 0;
+        }
+        Vector3 currentPosition = transform.position;
+        currentPosition.y += movementInput * ladderspeed * Time.deltaTime;
+        transform.position = currentPosition;
+    }
+
+    public void playerMoveRightAndLeft()
+    {
+        if (!isInteracting)
+        {
+            if (endLadder == false)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
@@ -198,49 +225,27 @@ namespace Player
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
             }
-            if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
+            if (endLadder == true)
             {
-                movementInput = 0;
-            }
-            Vector3 currentPosition = transform.position;
-            currentPosition.y += movementInput * ladderspeed * Time.deltaTime;
-            transform.position = currentPosition;
-        }
-
-        public void playerMoveRightAndLeft()
-        {
-            if (!isInteracting)
-            {
-                if (endLadder == false)
-                {
-                    float movementInput = control.player.movement.ReadValue<float>();
-                    rotatePlayerMovement(movementInput);
-                    Vector3 currentPosition = transform.position;
-                    currentPosition.x += movementInput * walkspeed * Time.deltaTime;
-                    transform.position = currentPosition;
-                }
-                if (endLadder == true)
-                {
-                    float movementInput = control.player.movement.ReadValue<float>();
-                    rotatePlayerMovement(movementInput);
-                    Vector3 currentPosition = transform.position;
-                    currentPosition.x += movementInput * walkspeed * Time.deltaTime;
-                    transform.position = currentPosition;
-                }
+                float movementInput = control.player.movement.ReadValue<float>();
+                rotatePlayerMovement(movementInput);
+                Vector3 currentPosition = transform.position;
+                currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+                transform.position = currentPosition;
             }
         }
-
-        public void rotatePlayerMovement(float movementInput)
-        {
-            if (movementInput < 0 && transform.rotation.y == 0)
-            {
-                this.transform.Rotate(0f, -180f, 0f);
-            }
-            if (movementInput > 0 && transform.rotation.y != 0)
-            {
-                this.transform.Rotate(0f, 180f, 0f);
-            }
-        }
-
     }
+
+    public void rotatePlayerMovement(float movementInput)
+    {
+        if (movementInput < 0 && transform.rotation.y == 0)
+        {
+            this.transform.Rotate(0f, -180f, 0f);
+        }
+        if (movementInput > 0 && transform.rotation.y != 0)
+        {
+            this.transform.Rotate(0f, 180f, 0f);
+        }
+    }
+
 }
