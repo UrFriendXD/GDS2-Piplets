@@ -11,13 +11,18 @@
         <e p="Scripts" t="Include">
           <e p="CraftingRecipe.cs" t="Include" />
           <e p="CraftingRecipeUI.cs" t="Include" />
+          <e p="DontDestroy" t="Include">
+            <e p="DontDestroy.cs" t="Include" />
+          </e>
           <e p="Environment" t="Include">
             <e p="Indoors" t="Include">
               <e p="Bed.cs" t="Include" />
+              <e p="Door.cs" t="Include" />
               <e p="EndLadder.cs" t="Include" />
               <e p="Ladder.cs" t="Include" />
             </e>
             <e p="Outdoors" t="Include">
+              <e p="Parallax.cs" t="Include" />
               <e p="WildPlant.cs" t="Include" />
               <e p="wood.cs" t="Include" />
             </e>
@@ -61,8 +66,10 @@
             <e p="playerMovement.cs" t="Include" />
             <e p="PlayerScript.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
+            <e p="WallCheck.cs" t="Include" />
           </e>
           <e p="PlayerAction.cs" t="Include" />
+          <e p="SceneManagement.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="Events" t="Include">
               <e p="Editor" t="Include">
@@ -72,7 +79,9 @@
               <e p="GameEventListener.cs" t="Include" />
             </e>
             <e p="RuntimeSet.cs" t="Include" />
+            <e p="SpawnPointArray.cs" t="Include" />
           </e>
+          <e p="SpawnPoint.cs" t="Include" />
           <e p="Terminal" t="Include">
             <e p="ItemPrices.cs" t="Include" />
             <e p="ProcessingCanvasUI.cs" t="Include" />
