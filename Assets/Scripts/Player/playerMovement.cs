@@ -6,8 +6,8 @@ namespace Player
     public class playerMovement : MonoBehaviour
     {
         private PlayerAction control;
-        public bool LadderMovement, endLadder, GroundCheck, isInteracting;
-        [SerializeField] private float walkspeed, ladderspeed, fallspeed;
+        public bool LadderMovement, endLadder, GroundCheck, WallCheck, isInteracting, falling;
+        [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
         public float interactingObjectPos;
         public int plantSeedType;
     
@@ -134,22 +134,43 @@ namespace Player
 
         public void GroundOff()
         {
-            GroundCheck = false;
+            falling = true;
+            if(fallspeed < maxfallspeed)
+            {
+                fallspeed += fallspeedovertime * Time.deltaTime;
+            }
+            if (falling == true)
+            { 
+                fall();
+            }
+            if (GroundCheck || LadderMovement)
+            {
+                fallspeed = startfallspeed;
+                falling = false;
+            }
+        }
+
+        public void WallOn()
+        {
+            WallCheck = true;
+        }
+
+        public void WallOff()
+        {
+            WallCheck = false;
         }
 
         // Update is called once per frame
         void Update()
         {
             playerMoveRightAndLeft();
-            if(LadderMovement == true)
+            if (LadderMovement == true)
             {
-                LadderMoveUpAndDown();
-            }
-            if(LadderMovement == false && GroundCheck == false)
-            {
-                fall();
+                GroundCheck = true;
             }
         }
+
+        
 
         public void fall()
         {
@@ -163,7 +184,19 @@ namespace Player
             float movementInput = control.player.LadderMovement.ReadValue<float>();
             if(movementInput == 1 && endLadder == true)
             {
-                movementInput = 0;
+                float movementInput = control.player.movement.ReadValue<float>();
+                rotatePlayerMovement(movementInput);
+                if(WallCheck == true && movementInput ==1 && transform.rotation.y == 0)
+                {
+                    movementInput = 0;
+                }
+                if (WallCheck == true && movementInput == -1 && transform.rotation.y != 0)
+                {
+                    movementInput = 0;
+                }
+                Vector3 currentPosition = transform.position;
+                currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+                transform.position = currentPosition;
             }
             if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
             {
