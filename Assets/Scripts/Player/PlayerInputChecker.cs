@@ -36,7 +36,7 @@ namespace Player
             BarePressed?.Invoke();
         }
 
-        private void OnCancel()
+        public void OnCancel()
         {
             OnCancelButtonPressed?.Invoke();
             OnCancelButtonPressed = null;

@@ -45,13 +45,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Money Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Money Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,13 +63,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/a4/99b9bb9a/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AddMoneyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,18 +84,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/TradableItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CraftingRecipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" />
       </list>
     </option>
   </component>
@@ -148,6 +154,7 @@
       <workItem from="1599978522560" duration="861000" />
       <workItem from="1599979446209" duration="8158000" />
       <workItem from="1600086334881" duration="4278000" />
+      <workItem from="1600170784084" duration="6375000" />
     </task>
     <servers />
   </component>
@@ -173,9 +180,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1599377636901" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1600089208671">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1600174257233">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600089208671" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600174257233" />
   </component>
 </project>

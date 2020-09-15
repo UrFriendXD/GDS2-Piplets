@@ -50,14 +50,6 @@ public class UIPlayerDetector : MonoBehaviour
         Debug.Log("touch");
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (!_activated)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
     private void OnTriggerExit2D(Collider2D other)
     {
         RemovePlayer(other.gameObject);
@@ -79,6 +71,7 @@ public class UIPlayerDetector : MonoBehaviour
         
         // Removes functions from delegate
         RemoveInteraction();
+        playerInputChecker.OnCancelButtonPressed -= AddInteraction;
             
         // Resets variables
         playerScript = null;
