@@ -4493,7 +4493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2299676412024642479, guid: a5482a9e697936340a4667b18414a32a, type: 3}
       propertyPath: m_Name
-      value: Terminal
+      value: Terminal Object
       objectReference: {fileID: 0}
     - target: {fileID: 2299676412024642483, guid: a5482a9e697936340a4667b18414a32a, type: 3}
       propertyPath: _terminalUIWindow
