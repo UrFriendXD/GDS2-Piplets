@@ -1,4 +1,5 @@
 ﻿using Player;
+using System.Collections;
 using UnityEngine;
 
 namespace Farming
@@ -7,13 +8,14 @@ namespace Farming
     {
         public bool treeDied;
         public int treeHealth;
-
+        public GameObject treeparticle; // this should be a particle effect can have many to change the particle effect
         public override void InteractWithItem(Item item, PlayerScript player)
         {
             Debug.Log("hit");
             if (item.name == "Axe")
             {
                 hit();
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(treeparticle); // this line triggers the particle effect
             }
         }
 
