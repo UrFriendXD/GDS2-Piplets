@@ -9,13 +9,15 @@ namespace Farming
         public bool treeDied;
         public int treeHealth;
         public GameObject treeparticle; // this should be a particle effect can have many to change the particle effect
+        private GameObject clone; // to clone the particle effect
         public override void InteractWithItem(Item item, PlayerScript player)
         {
             Debug.Log("hit");
             if (item.name == "Axe")
             {
                 hit();
-                this.GetComponent<OutsideParticleEffects>().ParticleOn(treeparticle); // this line triggers the particle effect
+                clone = Instantiate(treeparticle, new Vector3(0f, 0f, 0f), Quaternion.identity); // clones the particle effect
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(clone); // this line triggers the particle effect
             }
         }
 

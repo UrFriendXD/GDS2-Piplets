@@ -24,12 +24,12 @@ public class OutsideParticleEffects : MonoBehaviour
         }
         particle.transform.position = transform.position;
         particle.SetActive(true);
-        StartCoroutine(ParticleOff(particle));
+        //StartCoroutine(ParticleOff(particle));
     }
 
-    IEnumerator ParticleOff(GameObject particle)
-    {
-        yield return new WaitForSeconds(2.0f);
-        particle.SetActive(false);
-    }
+    //IEnumerator ParticleOff(GameObject particle)
+    //{
+        //yield return new WaitForSeconds(2.0f);
+        //particle.SetActive(false);
+    //}
 }

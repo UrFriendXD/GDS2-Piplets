@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeDied: 0
   treeHealth: 3
-  treeparticle: {fileID: 0}
+  treeparticle: {fileID: 2588741933828825754, guid: c5703c02007109c42a4cb58a14f52731, type: 3}
 --- !u!114 &448598612
 MonoBehaviour:
   m_ObjectHideFlags: 0
