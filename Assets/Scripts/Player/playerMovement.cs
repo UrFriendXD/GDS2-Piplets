@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, isInteracting;
-    [SerializeField] private float walkspeed, ladderspeed, fallspeed;
+    public bool LadderMovement, endLadder, GroundCheck, WallCheck, isInteracting, falling;
+    [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
     public float interactingObjectPos;
     public int plantSeedType;
     
-    private Player player;
+    private PlayerScript player;
 
     void Awake()
     {
@@ -38,7 +39,7 @@ public class playerMovement : MonoBehaviour
         control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
         control.player.SelectAxe.performed += cxt => SelectAxe();
 
-        player = GetComponent<Player>();
+        player = GetComponent<PlayerScript>();
     }
 
     #region Selecting Items
@@ -137,6 +138,16 @@ public class playerMovement : MonoBehaviour
         GroundCheck = false;
     }
 
+    public void WallOn()
+    {
+        WallCheck = true;
+    }
+
+    public void WallOff()
+    {
+        WallCheck = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -147,7 +158,20 @@ public class playerMovement : MonoBehaviour
         }
         if(LadderMovement == false && GroundCheck == false)
         {
-            fall();
+            falling = true;
+            if(fallspeed < maxfallspeed)
+            {
+                fallspeed += fallspeedovertime * Time.deltaTime;
+            }
+            if (falling == true)
+            { 
+                fall();
+            }
+        }
+        if (GroundCheck || LadderMovement)
+        {
+            fallspeed = startfallspeed;
+            falling = false;
         }
     }
 
@@ -161,6 +185,14 @@ public class playerMovement : MonoBehaviour
     public void LadderMoveUpAndDown()
     {
         float movementInput = control.player.LadderMovement.ReadValue<float>();
+        if(movementInput == 1)
+        {
+            ladderspeed = upLadderSpeed;
+        }
+        if(movementInput == -1)
+        {
+            ladderspeed = downLadderSpeed;
+        }
         if(movementInput == 1 && endLadder == true)
         {
             movementInput = 0;
@@ -182,6 +214,14 @@ public class playerMovement : MonoBehaviour
             {
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
+                if(WallCheck == true && movementInput ==1 && transform.rotation.y == 0)
+                {
+                    movementInput = 0;
+                }
+                if (WallCheck == true && movementInput == -1 && transform.rotation.y != 0)
+                {
+                    movementInput = 0;
+                }
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
@@ -208,5 +248,4 @@ public class playerMovement : MonoBehaviour
             this.transform.Rotate(0f, 180f, 0f);
         }
     }
-
 }

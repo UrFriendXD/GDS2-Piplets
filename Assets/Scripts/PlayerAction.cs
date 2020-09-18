@@ -89,6 +89,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""cf706427-f80a-4c7c-955d-6b66a492f875"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -234,6 +242,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""Select Axe"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e8a86a02-feff-47d0-a69d-e0be277abba5"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -251,6 +270,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player_Sapling = m_player.FindAction("Sapling", throwIfNotFound: true);
         m_player_SelectWateringCan = m_player.FindAction("Select Watering Can", throwIfNotFound: true);
         m_player_SelectAxe = m_player.FindAction("Select Axe", throwIfNotFound: true);
+        m_player_Cancel = m_player.FindAction("Cancel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -309,6 +329,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_player_Sapling;
     private readonly InputAction m_player_SelectWateringCan;
     private readonly InputAction m_player_SelectAxe;
+    private readonly InputAction m_player_Cancel;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -322,6 +343,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @Sapling => m_Wrapper.m_player_Sapling;
         public InputAction @SelectWateringCan => m_Wrapper.m_player_SelectWateringCan;
         public InputAction @SelectAxe => m_Wrapper.m_player_SelectAxe;
+        public InputAction @Cancel => m_Wrapper.m_player_Cancel;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -358,6 +380,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @SelectAxe.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
                 @SelectAxe.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
                 @SelectAxe.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
+                @Cancel.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
+                @Cancel.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
+                @Cancel.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -389,6 +414,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @SelectAxe.started += instance.OnSelectAxe;
                 @SelectAxe.performed += instance.OnSelectAxe;
                 @SelectAxe.canceled += instance.OnSelectAxe;
+                @Cancel.started += instance.OnCancel;
+                @Cancel.performed += instance.OnCancel;
+                @Cancel.canceled += instance.OnCancel;
             }
         }
     }
@@ -404,5 +432,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnSapling(InputAction.CallbackContext context);
         void OnSelectWateringCan(InputAction.CallbackContext context);
         void OnSelectAxe(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
     }
 }
