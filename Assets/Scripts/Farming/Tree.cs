@@ -10,6 +10,7 @@ namespace Farming
         public int treeHealth;
         public GameObject treeparticle; // this should be a particle effect can have many to change the particle effect
         private GameObject clone; // to clone the particle effect
+
         public override void InteractWithItem(Item item, PlayerScript player)
         {
             Debug.Log("hit");
@@ -30,20 +31,20 @@ namespace Farming
 
         public void DamageTree()
         {
-            Wood Wood = gameObject.GetComponentInChildren<Wood>();
+            Wood wood = gameObject.GetComponentInChildren<Wood>();
             if (treeHealth == 2)
             {
                 //changeTreeColour for now then changeTreeSprite
-                Wood.WoodDrop(2);
+                wood.WoodDrop(2);
             }
             if (treeHealth == 1)
             {
                 //changeTreeColour for now then changeTreeSprite
-                Wood.WoodDrop(2);
+                wood.WoodDrop(2);
             }
             if (treeHealth == 0)
             {
-                Wood.WoodDrop(1);
+                wood.WoodDrop(1);
                 Death();
             }
         }
