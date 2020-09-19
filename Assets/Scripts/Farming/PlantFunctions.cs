@@ -36,7 +36,6 @@ namespace Farming
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
-            dayPassEventListener = GetComponent<GameEventListener>();
         }
         
         
@@ -54,7 +53,7 @@ namespace Farming
             UpdateSprite(0);
         }
 
-        // Update is called once per frame
+        /*// Update is called once per frame
         void Update()
         {
             //Test functions
@@ -75,7 +74,7 @@ namespace Farming
                     //Harvest(_player);
                 }
             }
-        }
+        }*/
 
         // Basic interacting with plant
         // Harvests if harvestable, destroys if dead
