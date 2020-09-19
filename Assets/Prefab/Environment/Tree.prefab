@@ -162,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552670676365686304}
   - component: {fileID: 1552670676365686306}
-  - component: {fileID: 1552670676365686305}
+  - component: {fileID: 5662631699275983161}
   - component: {fileID: 1623599630}
   m_Layer: 0
   m_Name: Wood
@@ -211,7 +211,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5772574, y: 1.4124305}
   m_EdgeRadius: 0
---- !u!114 &1552670676365686305
+--- !u!114 &5662631699275983161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
