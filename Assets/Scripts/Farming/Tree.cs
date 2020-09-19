@@ -30,20 +30,20 @@ namespace Farming
 
         public void DamageTree()
         {
-            wood Wood = gameObject.GetComponentInChildren<wood>();
+            Wood Wood = gameObject.GetComponentInChildren<Wood>();
             if (treeHealth == 2)
             {
                 //changeTreeColour for now then changeTreeSprite
-                Wood.woodDrop(2);
+                Wood.WoodDrop(2);
             }
             if (treeHealth == 1)
             {
                 //changeTreeColour for now then changeTreeSprite
-                Wood.woodDrop(2);
+                Wood.WoodDrop(2);
             }
             if (treeHealth == 0)
             {
-                Wood.woodDrop(1);
+                Wood.WoodDrop(1);
                 Death();
             }
         }
@@ -54,7 +54,7 @@ namespace Farming
             SpriteRenderer m = GetComponent<SpriteRenderer>();
             m.enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
-            wood Wood = gameObject.GetComponentInChildren<wood>();
+            Wood Wood = gameObject.GetComponentInChildren<Wood>();
             Wood.woodOn();
         }
     }
