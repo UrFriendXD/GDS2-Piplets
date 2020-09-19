@@ -1705,27 +1705,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6050053528973497293, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
   m_PrefabInstance: {fileID: 2038622595}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &647472377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7544780561043348508, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
-  m_PrefabInstance: {fileID: 1644785788}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &647472378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647472377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e839e4c12473014b9b3d3faccc0f61d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 663d0b9bd067b9f42bb85574594e974c, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &685090364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7544780561043348505, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
@@ -3697,18 +3676,6 @@ PrefabInstance:
     - target: {fileID: 7544780561043348508, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
       propertyPath: m_Name
       value: Wild Plant
-      objectReference: {fileID: 0}
-    - target: {fileID: 7544780561043348509, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
-      propertyPath: canRefresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7544780561043348509, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
-      propertyPath: daysToRefresh
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7544780561043348509, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
-      propertyPath: refreshAmount
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e799c94c9ff73d49aa613d88a4d374e, type: 3}
