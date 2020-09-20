@@ -38,6 +38,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayMusic" ID="{232DC11F-6CEE-4D0F-AC5E-B754B028930D}">
+					<ChildrenList>
+						<Action Name="" ID="{56EB6D85-C12A-4645-9550-51FEB8C798C0}" ShortID="963901027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Piplets_MainTheme_FINAL" ID="{3DE2E9EC-F015-48E7-89E5-02301E80CEAA}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

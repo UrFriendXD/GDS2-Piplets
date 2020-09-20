@@ -1,7 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	417627684	PlayMusic			\Default Work Unit\PlayMusic	
+	2449075236	Seed_planting			\Default Work Unit\Seed_planting	
 	2654748154	Water			\Default Work Unit\Water	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	915811618	water pour 3 (1)	Y:\Desktop\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\water pour 3 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Water pour\water pour 3 (1)		711944
-	1013900543	water pour 4	Y:\Desktop\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\water pour 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Water pour\water pour 4		352544
+	293591642	seed planting	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\seed planting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\seed planting		95720
+	413528737	Piplets_MainTheme_FINAL	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Piplets_MainTheme_FINAL\Piplets_MainTheme_FINAL		47416496
+	915811618	water pour 3 (1)	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\water pour 3 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Water pour\water pour 3 (1)		711944
+	1013900543	water pour 4	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\water pour 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Water pour\water pour 4		352544
 
