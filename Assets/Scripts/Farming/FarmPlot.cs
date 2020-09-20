@@ -39,6 +39,7 @@ namespace Farming
                 if (!playerScript.PlayerMovement.isInteracting)
                 {
                     playerScript.PlayerAudio.PlayWaterPlantEvent();
+                    playerScript.PlayerAnimationController.WateringAnimation();
                 }
             }
         

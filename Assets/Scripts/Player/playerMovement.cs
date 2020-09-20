@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, WallCheck, isInteracting, falling;
+    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2, WallCheck, isInteracting, falling;
     [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
     public float interactingObjectPos;
     public int plantSeedType;
@@ -88,7 +88,7 @@ public class playerMovement : MonoBehaviour
     {
         if (!isInteracting)
         {
-            StartCoroutine(PlayAnimation(2f));
+            StartCoroutine(PlayAnimation(1f));
         }
     }
     
@@ -151,6 +151,15 @@ public class playerMovement : MonoBehaviour
     {
         GroundCheck = false;
     }
+    public void GroundOn2()
+    {
+        GroundCheck2 = true;
+    }
+
+    public void GroundOff2()
+    {
+        GroundCheck2 = false;
+    }
 
     public void WallOn()
     {
@@ -185,7 +194,7 @@ public class playerMovement : MonoBehaviour
             {
                 LadderMoveUpAndDown();
             }
-            if (LadderMovement == false && GroundCheck == false)
+            if (LadderMovement == false && GroundCheck == false && GroundCheck2 == false)
             {
                 falling = true;
                 if (fallspeed < maxfallspeed)
@@ -197,7 +206,7 @@ public class playerMovement : MonoBehaviour
                     fall();
                 }
             }
-            if (GroundCheck || LadderMovement)
+            if (GroundCheck || LadderMovement || GroundCheck2)
             {
                 fallspeed = startfallspeed;
                 falling = false;
@@ -228,6 +237,10 @@ public class playerMovement : MonoBehaviour
             movementInput = 0;
         }
         if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
+        {
+            movementInput = 0;
+        }
+        if(movementInput == -1 && LadderMovement == true && GroundCheck2 == true)
         {
             movementInput = 0;
         }
@@ -283,7 +296,7 @@ public class playerMovement : MonoBehaviour
                     movementInput = 0;
                 }
 
-                if ((movementInput == 1 || movementInput == -1) && GroundCheck)
+                if ((movementInput == 1 || movementInput == -1) && (GroundCheck || GroundCheck2))
                 {
                     if (movementAudioTimer <= 0)
                     {
@@ -296,6 +309,8 @@ public class playerMovement : MonoBehaviour
                 {
                     movementAudioTimer -= Time.deltaTime;
                 }
+                
+                _playerScript.PlayerAnimationController.WalkAnimation(Mathf.Abs(movementInput));
 
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
