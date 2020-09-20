@@ -115,4 +115,4 @@ MonoBehaviour:
   steps: 0
   level2Threshold: 300
   level3Threshold: 3000
-  player: {fileID: 0}
+  playerScript: {fileID: 0}

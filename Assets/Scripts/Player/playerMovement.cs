@@ -11,6 +11,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
     public float interactingObjectPos;
     public int plantSeedType;
+    public GameObject UI;
     
     private PlayerScript player;
 
@@ -151,27 +152,30 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerMoveRightAndLeft();
-        if(LadderMovement == true)
+        if (!UI.activeSelf)
         {
-            LadderMoveUpAndDown();
-        }
-        if(LadderMovement == false && GroundCheck == false)
-        {
-            falling = true;
-            if(fallspeed < maxfallspeed)
+            playerMoveRightAndLeft();
+            if (LadderMovement == true)
             {
-                fallspeed += fallspeedovertime * Time.deltaTime;
+                LadderMoveUpAndDown();
             }
-            if (falling == true)
-            { 
-                fall();
+            if (LadderMovement == false && GroundCheck == false)
+            {
+                falling = true;
+                if (fallspeed < maxfallspeed)
+                {
+                    fallspeed += fallspeedovertime * Time.deltaTime;
+                }
+                if (falling == true)
+                {
+                    fall();
+                }
             }
-        }
-        if (GroundCheck || LadderMovement)
-        {
-            fallspeed = startfallspeed;
-            falling = false;
+            if (GroundCheck || LadderMovement)
+            {
+                fallspeed = startfallspeed;
+                falling = false;
+            }
         }
     }
 
