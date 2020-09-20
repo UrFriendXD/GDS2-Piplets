@@ -13,8 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DOOR_OPEN = 535830432U;
+        static const AkUniqueID LADDER_CLIMB = 1707141479U;
+        static const AkUniqueID LADDER_DESCEND = 3610060586U;
+        static const AkUniqueID PLANT_HARVEST = 3735191866U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID SEED_PLANTING = 2449075236U;
+        static const AkUniqueID WALKING = 340271938U;
         static const AkUniqueID WATER = 2654748154U;
     } // namespace EVENTS
 

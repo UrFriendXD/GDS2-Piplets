@@ -42,7 +42,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/wood.cs" />
@@ -104,6 +103,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
       </list>
     </option>
   </component>
@@ -165,7 +165,7 @@
       <workItem from="1600522427701" duration="5212000" />
       <workItem from="1600587933271" duration="622000" />
       <workItem from="1600597938582" duration="2021000" />
-      <workItem from="1600607473070" duration="4534000" />
+      <workItem from="1600607473070" duration="6129000" />
     </task>
     <servers />
   </component>
