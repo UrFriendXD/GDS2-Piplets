@@ -13,6 +13,7 @@ public class Door : InteractableObject
 
     public override void InteractBare(PlayerScript player)
     {
+        Debug.Log("Door");
         base.InteractBare(player);
         greenhouse.SetActive(!greenhouse.activeSelf);
         outsideGreenHouse.SetActive(!outsideGreenHouse.activeSelf);
@@ -33,20 +34,24 @@ public class Door : InteractableObject
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player")) return;
-        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, .5f);
+        if (other.CompareTag("Player"))
+        {
+            this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, .5f);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.CompareTag("Player")) return;
-        if (CompareTag("Door") && other.GetComponent<SpriteRenderer>().sortingOrder == 2)
+        if (other.CompareTag("Player"))
         {
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            if (CompareTag("Door") && other.GetComponent<SpriteRenderer>().sortingOrder == 2)
+            {
+                this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            }
         }
     }
 
