@@ -25,14 +25,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Walking" ID="{A459C612-590F-4918-8244-FBC533D84FA4}"/>
-				<Event Name="Ladder" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}"/>
+				<Event Name="Walking" ID="{A459C612-590F-4918-8244-FBC533D84FA4}">
+					<ChildrenList>
+						<Action Name="" ID="{48AA287B-AA54-4305-AF15-95717D06047E}" ShortID="382884762">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{24544906-B9F5-40F1-B9B6-7C109BB0E79B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ladder_Climb" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}">
+					<ChildrenList>
+						<Action Name="" ID="{238B0FBE-AFE0-4ED9-ABAE-32A2E4B8DC3B}" ShortID="29625668">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ladder" ID="{EEDF85EA-3022-423D-87E6-81C124CB7F7E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}">
 					<ChildrenList>
 						<Action Name="" ID="{D595286B-EF22-4290-A2B4-91F5DBFF4F6E}" ShortID="954557694">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="planting_harvesting" ID="{CD5F77A3-9D76-409E-A232-BAA2879D1F64}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}">
+					<ChildrenList>
+						<Action Name="" ID="{6BE24A82-27CB-49BD-9891-5A1B6EB2BBF8}" ShortID="593254033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="greenhouse door" ID="{F8D9716E-0704-4382-9A1A-EAB69B65669E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ladder_Descend" ID="{3D3C988B-6BE4-4021-92F0-942C7EE53F4B}">
+					<ChildrenList>
+						<Action Name="" ID="{866FF21E-578E-4D80-950E-E5A9C1752852}" ShortID="1045876338">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ladder slide" ID="{38D769FA-38FF-4DC2-A892-090D1C1015B6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
