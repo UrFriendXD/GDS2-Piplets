@@ -235,14 +235,14 @@ public class playerMovement : MonoBehaviour
                 case -1: 
                     if (movementAudioTimer <= 0)
                     {
-                        _playerScript.PlayerAudio.PlayLadderClimbEvent();
+                        _playerScript.PlayerAudio.PlayLadderDescentEvent();
                         movementAudioTimer = movementAudioTimerDelay;
                     }
                     break;
                 case 1:
                     if (movementAudioTimer <= 0)
                     {
-                        _playerScript.PlayerAudio.PlayLadderDescentEvent();
+                        _playerScript.PlayerAudio.PlayLadderClimbEvent();
                         movementAudioTimer = movementAudioTimerDelay;
                     }
                     break;
