@@ -1370,8 +1370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1552670676365686305, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
+    - target: {fileID: 8083049059730973633, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
+      propertyPath: plantSeed
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ef759cc7df722744bbf1c208a518334, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
 --- !u!1001 &2087738276604701099
 PrefabInstance:
