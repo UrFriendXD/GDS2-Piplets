@@ -55,7 +55,7 @@ public class Wood : MonoBehaviour
     {
         if (picked == true)
         {
-            Destroy(transform.parent.gameObject);
+            transform.parent.gameObject.SetActive(false);
         }
     }
 }
