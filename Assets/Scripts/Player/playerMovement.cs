@@ -11,7 +11,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
     public float interactingObjectPos;
     public int plantSeedType;
-    public GameObject UI;
+    public GameObject UI, UI2;
     public GameObject menu;
     public bool On;
     
@@ -173,7 +173,7 @@ public class playerMovement : MonoBehaviour
 
     public void PlayerMovementOn()
     {
-        if (UI.activeSelf || menu.activeSelf)
+        if (UI.activeSelf || menu.activeSelf || UI2.activeSelf)
         {
             On = false;
         }

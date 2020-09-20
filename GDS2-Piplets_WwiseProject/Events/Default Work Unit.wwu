@@ -42,6 +42,12 @@
 								</Event>
 								<Event Name="PlayMusic" ID="{232DC11F-6CEE-4D0F-AC5E-B754B028930D}">
 									<ChildrenList>
+										<Action Name="" ID="{7ABB4C32-4E95-4DE6-BB25-922B97B700C4}" ShortID="960694098">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{56EB6D85-C12A-4645-9550-51FEB8C798C0}" ShortID="963901027">
 											<ReferenceList>
 												<Reference Name="Target">
