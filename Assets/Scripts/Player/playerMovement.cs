@@ -12,6 +12,8 @@ public class playerMovement : MonoBehaviour
     public float interactingObjectPos;
     public int plantSeedType;
     public GameObject UI;
+    public GameObject menu;
+    public bool On;
     
     private PlayerScript player;
 
@@ -39,8 +41,13 @@ public class playerMovement : MonoBehaviour
         control.player.CottonSeed.performed += cxt => Cotton();
         control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
         control.player.SelectAxe.performed += cxt => SelectAxe();
-
+        control.player.Menu.performed += ctx => Menu();
         player = GetComponent<PlayerScript>();
+    }
+
+    public void Menu()
+    {
+        menu.SetActive(!menu.activeSelf);
     }
 
     #region Selecting Items
@@ -149,10 +156,23 @@ public class playerMovement : MonoBehaviour
         WallCheck = false;
     }
 
+    public void PlayerMovementOn()
+    {
+        if (UI.activeSelf || menu.activeSelf)
+        {
+            On = false;
+        }
+        else
+        {
+            On = true;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (!UI.activeSelf)
+        PlayerMovementOn();
+        if (On)
         {
             playerMoveRightAndLeft();
             if (LadderMovement == true)
