@@ -11,7 +11,6 @@
         <e p="botsmatic-font" t="Include">
           <e p="info.txt" t="Include" />
         </e>
-        <e p="PlayerAudio.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="DontDestroy" t="Include">
             <e p="DontDestroy.cs" t="Include" />
@@ -69,6 +68,7 @@
           </e>
           <e p="Player" t="Include">
             <e p="GroundCheck.cs" t="Include" />
+            <e p="PlayerAudio.cs" t="Include" />
             <e p="PlayerInputChecker.cs" t="Include" />
             <e p="playerMovement.cs" t="Include" />
             <e p="PlayerScript.cs" t="Include" />
