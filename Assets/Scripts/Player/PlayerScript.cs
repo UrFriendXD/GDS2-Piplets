@@ -9,6 +9,7 @@ namespace Player
         public Item itemHeld;
         public Inventory inventory;
         public PlayerAudio PlayerAudio;
+        public playerMovement PlayerMovement;
 
         // Selects players item from inventory based on parameter
         public void SelectItem(string itemSelectName)

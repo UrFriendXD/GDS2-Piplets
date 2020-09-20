@@ -166,9 +166,16 @@ namespace Farming
             }*/
 
                 //Inventory.Gain(amountToGive)
-                //Give raw good to player
+                
+                
+                // Particle systems
                 clone = Instantiate(harvestParticle, new Vector3(0, 0, 0), quaternion.identity);
                 this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
+                
+                // Plays audio for harvest
+                playerScript.PlayerAudio.PlayHarvestEvent();
+                
+                //Give raw good to player
                 for (var i = 0; i < _plantSeed.amountToGive; i++)
                 {
                     playerScript.inventory.AddItem(_plantSeed.rawGoodToGive);

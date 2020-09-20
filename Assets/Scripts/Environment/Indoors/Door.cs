@@ -9,6 +9,7 @@ public class Door : InteractableObject
     public GameObject greenhouse;
     public GameObject outsideGreenHouse;
     public GameObject piplet;
+    public AK.Wwise.Event doorEvent;
 
     public override void InteractBare(PlayerScript player)
     {
@@ -25,6 +26,9 @@ public class Door : InteractableObject
             player.GetComponent<SpriteRenderer>().sortingOrder = 3;
             piplet.GetComponent<SpriteRenderer>().sortingOrder = 3;
         }
+        
+        // Plays audio 
+        PlayDoorEvent();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -44,5 +48,10 @@ public class Door : InteractableObject
         {
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         }
+    }
+
+    private void PlayDoorEvent()
+    {
+        doorEvent.Post(gameObject);
     }
 }
