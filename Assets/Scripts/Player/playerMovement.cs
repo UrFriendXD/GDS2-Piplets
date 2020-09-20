@@ -88,7 +88,7 @@ public class playerMovement : MonoBehaviour
     {
         if (!isInteracting)
         {
-            StartCoroutine(PlayAnimation(2f));
+            StartCoroutine(PlayAnimation(1f));
         }
     }
     
@@ -296,6 +296,8 @@ public class playerMovement : MonoBehaviour
                 {
                     movementAudioTimer -= Time.deltaTime;
                 }
+                
+                _playerScript.PlayerAnimationController.WalkAnimation(Mathf.Abs(movementInput));
 
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
