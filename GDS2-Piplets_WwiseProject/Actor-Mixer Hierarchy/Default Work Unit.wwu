@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="piplet wavs" ID="{7FA31744-6196-4160-BB9B-37FD2F52A913}" ShortID="421783039">
+					<ChildrenList>
+						<Sound Name="axe_wood chop" ID="{E8D7AB75-F780-48EA-934A-399499E504A6}" ShortID="616079469">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="axe_wood chop" ID="{2735E0DB-B5E1-4BFC-88C0-ECC1F6A5B3EF}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\axe_wood chop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="528400567"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="axe_wood chop" ID="{2735E0DB-B5E1-4BFC-88C0-ECC1F6A5B3EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Digging" ID="{DA9A2198-559E-4444-B1F7-727648E789E8}" ShortID="403831433">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Digging" ID="{2026A978-8657-4942-BCDF-A0B289690B27}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\Digging.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="811239580"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Digging" ID="{2026A978-8657-4942-BCDF-A0B289690B27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="digging_ planting" ID="{4BBD918A-967C-4769-8E82-F116A00377ED}" ShortID="605855163">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="digging_ planting" ID="{1C208D60-040C-47A8-99B6-EF287C2BFF8D}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\digging_ planting.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="537909514"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="digging_ planting" ID="{1C208D60-040C-47A8-99B6-EF287C2BFF8D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dirt walking 1" ID="{DACC075B-3AA6-4E0A-8800-34A74384DA3D}" ShortID="944963160">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dirt walking 1" ID="{4D85A468-3224-4FBB-8A3F-C2C3AB353512}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\Dirt walking 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="235759432"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dirt walking 1" ID="{4D85A468-3224-4FBB-8A3F-C2C3AB353512}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="dirt walking 2" ID="{26FD6A55-FAD2-48C5-B35B-4183AB7924CF}" ShortID="386233642">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="dirt walking 2" ID="{011B7040-0B6B-4908-9231-37A35C7BDDBF}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\dirt walking 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="569667240"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="dirt walking 2" ID="{011B7040-0B6B-4908-9231-37A35C7BDDBF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="grass footsteps" ID="{B55272D6-F29C-4BB3-A40B-5D99C8078629}" ShortID="983549001">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="grass footsteps" ID="{60402336-560D-4BA7-A3B1-698DADAE33E1}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\grass footsteps.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="326715312"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="grass footsteps" ID="{60402336-560D-4BA7-A3B1-698DADAE33E1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="planting_harvesting" ID="{CD5F77A3-9D76-409E-A232-BAA2879D1F64}" ShortID="517901734">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="planting_harvesting" ID="{7E1A0B33-EF56-4CDA-A2A4-35B55B3D6E7F}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\planting_harvesting.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="402537829"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="planting_harvesting" ID="{7E1A0B33-EF56-4CDA-A2A4-35B55B3D6E7F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="seed planting" ID="{333E05D6-1465-4E75-9EFD-B29ECBE7ED01}" ShortID="206865330">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="seed planting" ID="{A7FD3B36-4FB7-470D-A0BF-DC5ECEC65E0E}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\seed planting.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="293591642"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="seed planting" ID="{A7FD3B36-4FB7-470D-A0BF-DC5ECEC65E0E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="single footstep 1" ID="{BBC14D02-A76B-4E36-89BD-10D4CE514A44}" ShortID="444357359">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="single footstep 1" ID="{E9F02136-5264-4CC1-B6E0-6EDF73C965E4}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\single footstep 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="554705134"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="single footstep 1" ID="{E9F02136-5264-4CC1-B6E0-6EDF73C965E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="stone step 1" ID="{D0B81939-7263-4B85-849E-4AE9927A0126}" ShortID="617222013">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="stone step 1" ID="{F86C0588-41F0-4792-9F4F-F73EBA52E8D1}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\stone step 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="670780140"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="stone step 1" ID="{F86C0588-41F0-4792-9F4F-F73EBA52E8D1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="stone step 2" ID="{AF3F5CE6-EF33-40DD-8FDC-F237A56D3895}" ShortID="14825609">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="stone step 2" ID="{93B0DACB-A96F-4675-B43E-0445655371D3}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\stone step 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="276486449"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="stone step 2" ID="{93B0DACB-A96F-4675-B43E-0445655371D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="water pour ground" ID="{0DC0BF6F-B0F5-4A4D-88D6-166AD3BD223B}" ShortID="1047790763">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="water pour ground" ID="{100C5A62-E190-4209-811D-943978AC752D}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\water pour ground.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="395330852"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="water pour ground" ID="{100C5A62-E190-4209-811D-943978AC752D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="water pour metal" ID="{876307EC-6DE7-4197-AD13-192AB444D83F}" ShortID="146180824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="water pour metal" ID="{927D753A-E37A-4B3D-BC49-0D69503A3DA0}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\water pour metal.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="151379636"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="water pour metal" ID="{927D753A-E37A-4B3D-BC49-0D69503A3DA0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="wood chop 2" ID="{230F723E-BEFA-4F52-917F-C746C9006D64}" ShortID="929821873">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="wood chop 2" ID="{7580F309-18C5-4818-8064-232206FA9744}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\wood chop 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="513646512"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="wood chop 2" ID="{7580F309-18C5-4818-8064-232206FA9744}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="wood cutting" ID="{016133A5-9443-4E67-9270-949F3622253B}" ShortID="558556259">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="wood cutting" ID="{B565BBA7-A510-4482-8F4C-1F0A0102F0BA}">
+									<Language>SFX</Language>
+									<AudioFile>piplet wavs\wood cutting.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="99984035"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="wood cutting" ID="{B565BBA7-A510-4482-8F4C-1F0A0102F0BA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Water pour" ID="{41E55179-D531-412A-93B6-EB02CB14E6BA}" ShortID="637308780">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="water pour 3 (1)" ID="{E12D72A1-E38B-4FC0-B9C8-4F69E20F800D}" ShortID="808286879">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="water pour 3 (1)" ID="{77025658-5F45-46DC-8DD3-FB44DE1403FF}">
+											<Language>SFX</Language>
+											<AudioFile>piplet wavs\water pour 3 (1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="915811618"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="water pour 3 (1)" ID="{77025658-5F45-46DC-8DD3-FB44DE1403FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="water pour 4" ID="{233BC6C7-3408-4497-A66B-BEF323C33503}" ShortID="580256055">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="water pour 4" ID="{861A4BE9-BA30-4B66-AA12-DAF4073719F6}">
+											<Language>SFX</Language>
+											<AudioFile>piplet wavs\water pour 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1013900543"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="water pour 4" ID="{861A4BE9-BA30-4B66-AA12-DAF4073719F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Steps" ID="{24544906-B9F5-40F1-B9B6-7C109BB0E79B}" ShortID="534164549">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4238926114" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Greenhouse</ObjectPath>
+			<ShortName>Greenhouse</ShortName>
+			<Path>Greenhouse.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="OneShot" DurationMin="1.835833" DurationMax="3.707708">
+					<IncludedMemoryFiles>
+						<File Id="915811618" Language="SFX">
+							<ShortName>piplet wavs\water pour 3 (1).wav</ShortName>
+							<Path>SFX/piplet wavs/water pour 3 (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="1013900543" Language="SFX">
+							<ShortName>piplet wavs\water pour 4.wav</ShortName>
+							<Path>SFX/piplet wavs/water pour 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

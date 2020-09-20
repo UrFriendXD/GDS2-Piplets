@@ -36,6 +36,7 @@ namespace Farming
             if (item.name == "Watering Can")
             {
                 _currentPlant.OnWatered();
+                playerScript.PlayerAudio.PlayWaterPlantEvent();
             }
         
             //If it's a seed it'll plant if it's empty
