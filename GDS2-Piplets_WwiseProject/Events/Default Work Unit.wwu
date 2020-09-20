@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}">
+					<ChildrenList>
+						<Action Name="" ID="{5C50B226-C3F0-4DC1-A1FF-D5BB3608BCBB}" ShortID="664643833">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Water pour" ID="{41E55179-D531-412A-93B6-EB02CB14E6BA}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
