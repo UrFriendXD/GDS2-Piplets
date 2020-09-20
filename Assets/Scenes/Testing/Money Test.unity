@@ -3574,7 +3574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1552670675546585257, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 1552670675546585257, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3620,6 +3620,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 696eb572591dae44b964e03f0c1ba585, type: 2}
+    - target: {fileID: 1552670676365686305, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
+      propertyPath: plantSeed
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ef759cc7df722744bbf1c208a518334, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d00f66a735cc0c847bc01b557dbdcee4, type: 3}
 --- !u!1001 &1644785788
@@ -4034,13 +4038,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2019908139, guid: 01bdad5fb92f277468417cbc1076fedb, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 413961636}
     - target: {fileID: 5732898310076772445, guid: 01bdad5fb92f277468417cbc1076fedb, type: 3}
       propertyPath: m_Name
       value: DayManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5732898310076772445, guid: 01bdad5fb92f277468417cbc1076fedb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5732898310076772447, guid: 01bdad5fb92f277468417cbc1076fedb, type: 3}
       propertyPath: m_LocalPosition.x

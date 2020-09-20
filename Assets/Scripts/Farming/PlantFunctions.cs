@@ -1,5 +1,6 @@
 ﻿using Player;
 using RoboRyanTron.Unite2017.Events;
+using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -12,8 +13,8 @@ namespace Farming
         // Sprites variables
         private SpriteRenderer _spriteRenderer;
 
-        // Remove serialise when no need to debug
-        [SerializeField] private PlantStages currentPlantStage; 
+        // Enum of current stage of the plant
+        private PlantStages _currentPlantStage; 
     
         // Values to relating to farming
         [SerializeField] private int daysSincePlanted = 0;
@@ -23,19 +24,24 @@ namespace Farming
         private PlantType _thisPlantType;
         private PlantSeed _plantSeed;
 
+        public GameObject waterParticle;
+        public GameObject harvestParticle;
+        public GameObject plantParticle;
+        private GameObject clone;
+
         public bool isTesting;
 
         // Player modifiers to be implemented later
         // private int playerModifier
     
         //To check for day passing
-        private GameEventListener gameEventListener;
+        [SerializeField] private GameEventListener dayPassEventListener;
+        [SerializeField] private GameEventListener seasonEndEventListener;
 
         // Initialising values
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
-            gameEventListener = GetComponent<GameEventListener>();
         }
         
         
@@ -43,16 +49,19 @@ namespace Farming
         public void Plant(PlantSeed plantSeed)
         {
             _plantSeed = plantSeed;
-            gameEventListener.Response.AddListener(Grow);
+            clone = Instantiate(plantParticle, new Vector3(0, 0, 0), quaternion.identity);
+            this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
+            dayPassEventListener.Response.AddListener(Grow);
             _thisPlantType = _plantSeed.plantType;
+            seasonEndEventListener.Response.AddListener(OnSeasonEnd);
         
             // If this is a new plant set stage to seed and seedling sprite
             if (daysSincePlanted != 0) return;
-            currentPlantStage = PlantStages.Seed;
+            _currentPlantStage = PlantStages.Seed;
             UpdateSprite(0);
         }
 
-        // Update is called once per frame
+        /*// Update is called once per frame
         void Update()
         {
             //Test functions
@@ -73,13 +82,13 @@ namespace Farming
                     //Harvest(_player);
                 }
             }
-        }
+        }*/
 
         // Basic interacting with plant
         // Harvests if harvestable, destroys if dead
         public void OnInteract(PlayerScript playerScript)
         {
-            switch (currentPlantStage)
+            switch (_currentPlantStage)
             {
                 case PlantStages.Harvestable:
                     Harvest(playerScript);
@@ -100,6 +109,8 @@ namespace Farming
             {
                 _bIsWatered = true;
                 //Set water graphics/particles
+                clone = Instantiate(waterParticle, new Vector3(0, 0, 0), quaternion.identity);
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
             }
         }
 
@@ -107,7 +118,7 @@ namespace Farming
         private void Grow()
         {
             // If plant is harvestable ignore growth 
-            if ((currentPlantStage == PlantStages.Harvestable || currentPlantStage == PlantStages.None) && !_plantSeed) return;
+            if ((_currentPlantStage == PlantStages.Harvestable || _currentPlantStage == PlantStages.None) && !_plantSeed) return;
         
             //If watered grow a day
             if (_bIsWatered)
@@ -120,11 +131,11 @@ namespace Farming
                 {
                     // var _ is nothing
                     case var _ when daysSincePlanted == _plantSeed.daysToStage1:
-                        currentPlantStage = PlantStages.Growing;
+                        _currentPlantStage = PlantStages.Growing;
                         UpdateSprite(1);
                         break;
                     case var _ when daysSincePlanted == _plantSeed.daysToHarvest:
-                        currentPlantStage = PlantStages.Harvestable;
+                        _currentPlantStage = PlantStages.Harvestable;
                         UpdateSprite(_plantSeed.plantSprites.Length-1);
                         break;
                     default:
@@ -132,13 +143,13 @@ namespace Farming
                         break;
                 }
             }
-            Debug.Log($"Growth {daysSincePlanted}, {currentPlantStage}");
+            Debug.Log($"Growth {daysSincePlanted}, {_currentPlantStage}");
 
         }
 
         private void Harvest(PlayerScript playerScript)
         {
-            if (currentPlantStage == PlantStages.Harvestable)
+            if (_currentPlantStage == PlantStages.Harvestable)
             {
                 // give player resource based on chance
                 // higher amt is rarer
@@ -153,9 +164,11 @@ namespace Farming
                     Debug.Log("Random is out of bounds");
                     break;
             }*/
-            
+
                 //Inventory.Gain(amountToGive)
                 //Give raw good to player
+                clone = Instantiate(harvestParticle, new Vector3(0, 0, 0), quaternion.identity);
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
                 for (var i = 0; i < _plantSeed.amountToGive; i++)
                 {
                     playerScript.inventory.AddItem(_plantSeed.rawGoodToGive);
@@ -181,9 +194,10 @@ namespace Farming
         // Function to set plant to wilted after each season
         public void OnSeasonEnd()
         {
-            currentPlantStage = PlantStages.Wilted;
-            UpdateSprite(_plantSeed.plantSprites.Length);
-            gameEventListener.Response.RemoveAllListeners();
+            _currentPlantStage = PlantStages.Wilted;
+            UpdateSprite(_plantSeed.plantSprites.Length-1);
+            dayPassEventListener.Response.RemoveListener(Grow);
+            seasonEndEventListener.Response.RemoveListener(OnSeasonEnd);
         }
 
         // Updates sprite base on parameter
@@ -195,8 +209,9 @@ namespace Farming
             _spriteRenderer.sprite = null;
             _plantSeed = null;
             _thisPlantType = PlantType.None;
-            currentPlantStage = PlantStages.None;
-            gameEventListener.Response?.RemoveAllListeners();
+            _currentPlantStage = PlantStages.None;
+            dayPassEventListener.Response.RemoveListener(Grow);
+            seasonEndEventListener.Response.RemoveListener(OnSeasonEnd);
         }
 
         public bool IsPlanted() => _thisPlantType != PlantType.None;

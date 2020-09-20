@@ -15,8 +15,6 @@
         <e p="AddMoneyTest.cs" t="Include" />
 >>>>>>> Dev
         <e p="Scripts" t="Include">
-          <e p="CraftingRecipe.cs" t="Include" />
-          <e p="CraftingRecipeUI.cs" t="Include" />
           <e p="DontDestroy" t="Include">
             <e p="DontDestroy.cs" t="Include" />
           </e>
@@ -62,6 +60,10 @@
             <e p="PlantSeed.cs" t="Include" />
             <e p="TradableItem.cs" t="Include" />
           </e>
+          <e p="Managers" t="Include">
+            <e p="DayManager.cs" t="Include" />
+            <e p="SurvivialItemUsed.cs" t="Include" />
+          </e>
           <e p="MaterialManagement.cs" t="Include" />
           <e p="Piplet" t="Include">
             <e p="Piplet.cs" t="Include" />
@@ -89,6 +91,8 @@
           </e>
           <e p="SpawnPoint.cs" t="Include" />
           <e p="Terminal" t="Include">
+            <e p="CraftingRecipe.cs" t="Include" />
+            <e p="CraftingRecipeUI.cs" t="Include" />
             <e p="ItemPrices.cs" t="Include" />
             <e p="ProcessingCanvasUI.cs" t="Include" />
             <e p="ProcessingItemButton.cs" t="Include" />

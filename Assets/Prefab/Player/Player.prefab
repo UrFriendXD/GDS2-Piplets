@@ -235,6 +235,7 @@ MonoBehaviour:
   startfallspeed: 3
   interactingObjectPos: 0
   plantSeedType: 0
+  UI: {fileID: 0}
 --- !u!114 &1273165475
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1552670675546585301}
   - component: {fileID: 448598612}
   - component: {fileID: 2015977777}
+  - component: {fileID: 393642046}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Tree
@@ -75,6 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeDied: 0
   treeHealth: 3
+  treeparticle: {fileID: 2588741933828825754, guid: c5703c02007109c42a4cb58a14f52731, type: 3}
 --- !u!114 &448598612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +140,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &393642046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552670675546585300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28e581b343f17b4089c9387b69e4280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1552670676365686319
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552670676365686304}
   - component: {fileID: 1552670676365686306}
-  - component: {fileID: 1552670676365686305}
+  - component: {fileID: 8083049059730973633}
   - component: {fileID: 1623599630}
   m_Layer: 0
   m_Name: Wood
@@ -197,7 +211,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5772574, y: 1.4124305}
   m_EdgeRadius: 0
---- !u!114 &1552670676365686305
+--- !u!114 &8083049059730973633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,7 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   picked: 0
-  _plantSeed: {fileID: 11400000, guid: 7ef759cc7df722744bbf1c208a518334, type: 2}
+  plantSeed: {fileID: 0}
+  wooddrop: 0
 --- !u!212 &1623599630
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd034ca8f125e2846b361fd5b359a89d, type: 3}
-  m_Name: Wood
+  m_Name: Mask
   m_EditorClassIdentifier: 
-  id: 3f5cf1493d272214fa1aaac3292a141a
-  itemName: Wood
+  id: 4e04df9a931345640a143e6ab7488145
+  itemName: Mask
   icon: {fileID: 0}
   maximumStack: 99
-  buyingPrice: 1
-  sellingPrice: 3
+  buyingPrice: 10
+  sellingPrice: 9

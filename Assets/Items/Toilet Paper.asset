@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd034ca8f125e2846b361fd5b359a89d, type: 3}
-  m_Name: Wood
+  m_Name: Toilet Paper
   m_EditorClassIdentifier: 
-  id: 3f5cf1493d272214fa1aaac3292a141a
-  itemName: Wood
+  id: c5e4fa70868948d4bb02e3f3b3f78ae4
+  itemName: Toilet Paper
   icon: {fileID: 0}
   maximumStack: 99
-  buyingPrice: 1
-  sellingPrice: 3
+  buyingPrice: 19
+  sellingPrice: 13

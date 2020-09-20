@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using Player;
 using UnityEngine;
 
-public class wood : MonoBehaviour
+public class Wood : MonoBehaviour
 {
     public bool picked;
-    private PlayerScript player;
-    public PlantSeed _plantSeed;
+    private PlayerScript _player;
+    public PlantSeed plantSeed;
     public int wooddrop;
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class wood : MonoBehaviour
         
     }
 
-    public void woodDrop(int drop)
+    public void WoodDrop(int drop)
     {
         wooddrop = wooddrop + drop; 
     }
@@ -40,22 +40,22 @@ public class wood : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             picked = true;
-            _plantSeed.amountToGive = wooddrop;
-            for (var i = 0; i < _plantSeed.amountToGive; i++)
+            plantSeed.amountToGive = wooddrop;
+            for (var i = 0; i < plantSeed.amountToGive; i++)
             {
-                player = other.GetComponent<PlayerScript>();
-                player.inventory.AddItem(_plantSeed.rawGoodToGive);
+                _player = other.GetComponent<PlayerScript>();
+                _player.inventory.AddItem(plantSeed.rawGoodToGive);
             }
-            _plantSeed.amountToGive = 0;
-            woodPicked();
+            plantSeed.amountToGive = 0;
+            WoodPicked();
         }
     }
 
-    public void woodPicked()
+    public void WoodPicked()
     {
         if (picked == true)
         {
-            Destroy(transform.parent.gameObject);
+            transform.parent.gameObject.SetActive(false);
         }
     }
 }

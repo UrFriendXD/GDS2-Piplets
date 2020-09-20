@@ -20,14 +20,6 @@ namespace Farming
             }
         }
 
-        private void Update()
-        {
-            /*if (Input.GetKeyDown(KeyCode.A))
-        {
-            OnPlant(currentPlantType);
-        }*/
-        }
-
         // Interacting with bare hands/no items in hands
         public override void InteractBare(PlayerScript playerScript)
         {
@@ -62,12 +54,6 @@ namespace Farming
         {
             _currentPlant.Plant(plantSeed);
             currentPlantType = plantSeed;
-        }
-    
-        // Function to activate when season ends or be moved into plant functions
-        public void OnSeasonEnd()
-        {
-            _currentPlant.OnSeasonEnd();
         }
     }
 }
