@@ -227,7 +227,7 @@ public class playerMovement : MonoBehaviour
         {
             movementInput = 0;
         }
-        if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
+        if (movementInput == -1 && GroundCheck == true && LadderMovement == true)
         {
             movementInput = 0;
         }
