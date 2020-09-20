@@ -20,6 +20,7 @@
               <e p="Ladder.cs" t="Include" />
             </e>
             <e p="Outdoors" t="Include">
+              <e p="OutsideParticleEffects.cs" t="Include" />
               <e p="Parallax.cs" t="Include" />
               <e p="WildPlant.cs" t="Include" />
               <e p="wood.cs" t="Include" />
@@ -84,6 +85,7 @@
             <e p="SpawnPointArray.cs" t="Include" />
           </e>
           <e p="SpawnPoint.cs" t="Include" />
+          <e p="TempWin.cs" t="Include" />
           <e p="Terminal" t="Include">
             <e p="CraftingRecipe.cs" t="Include" />
             <e p="CraftingRecipeUI.cs" t="Include" />
