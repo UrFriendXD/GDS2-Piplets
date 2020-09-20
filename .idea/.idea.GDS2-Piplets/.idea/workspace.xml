@@ -42,40 +42,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Events/SeasonEnd.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Events/SeasonEnd.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/CraftingRecipes/Masks Recipe.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/CraftingRecipes/Masks Recipe.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/CraftingRecipes/Toilet Paper Recipe.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/CraftingRecipes/Toilet Paper Recipe.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/Mask.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/Mask.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/TimeTest.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/TimeTest.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Survivial Item Used.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Survivial Item Used.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SurvivialItemUsed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SurvivialItemUsed.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/DayManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/DayManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Pots.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Pots.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Money Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/Money Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Money Test.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/Money Test.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CraftingRecipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CraftingRecipe.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipe.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/wood.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/wood.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/Tree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,8 +97,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SurvivialItemUsed.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/WildPlant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
       </list>
     </option>
   </component>
@@ -189,7 +158,8 @@
       <workItem from="1600170784084" duration="6375000" />
       <workItem from="1600180608866" duration="195000" />
       <workItem from="1600430881452" duration="375000" />
-      <workItem from="1600431452852" duration="5670000" />
+      <workItem from="1600431452852" duration="5862000" />
+      <workItem from="1600522427701" duration="5212000" />
     </task>
     <servers />
   </component>

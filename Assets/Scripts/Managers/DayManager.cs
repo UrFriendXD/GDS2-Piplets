@@ -17,6 +17,7 @@ public class DayManager : MonoBehaviour
     // Change later with service locator pattern
     [SerializeField] private ItemContainer playerInventory;
 
+    // Called on event DayPassed
     public void DayPassed()
     {
         days++;
@@ -26,6 +27,7 @@ public class DayManager : MonoBehaviour
         }
     }
 
+    // Checks if a week passed. If it's 14 days ends the season
     private bool WeekCheck()
     {
         if (days == 14)

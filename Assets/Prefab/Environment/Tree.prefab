@@ -210,7 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   picked: 0
-  _plantSeed: {fileID: 11400000, guid: 7ef759cc7df722744bbf1c208a518334, type: 2}
+  plantSeed: {fileID: 11400000, guid: 7ef759cc7df722744bbf1c208a518334, type: 2}
+  wooddrop: 0
 --- !u!212 &1623599630
 SpriteRenderer:
   m_ObjectHideFlags: 0
