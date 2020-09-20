@@ -1,5 +1,6 @@
 ﻿using Player;
 using RoboRyanTron.Unite2017.Events;
+using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -23,6 +24,11 @@ namespace Farming
         private PlantType _thisPlantType;
         private PlantSeed _plantSeed;
 
+        public GameObject waterParticle;
+        public GameObject harvestParticle;
+        public GameObject plantParticle;
+        private GameObject clone;
+
         public bool isTesting;
 
         // Player modifiers to be implemented later
@@ -43,6 +49,8 @@ namespace Farming
         public void Plant(PlantSeed plantSeed)
         {
             _plantSeed = plantSeed;
+            clone = Instantiate(plantParticle, new Vector3(0, 0, 0), quaternion.identity);
+            this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
             dayPassEventListener.Response.AddListener(Grow);
             _thisPlantType = _plantSeed.plantType;
             seasonEndEventListener.Response.AddListener(OnSeasonEnd);
@@ -101,6 +109,8 @@ namespace Farming
             {
                 _bIsWatered = true;
                 //Set water graphics/particles
+                clone = Instantiate(waterParticle, new Vector3(0, 0, 0), quaternion.identity);
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
             }
         }
 
@@ -154,9 +164,11 @@ namespace Farming
                     Debug.Log("Random is out of bounds");
                     break;
             }*/
-            
+
                 //Inventory.Gain(amountToGive)
                 //Give raw good to player
+                clone = Instantiate(harvestParticle, new Vector3(0, 0, 0), quaternion.identity);
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
                 for (var i = 0; i < _plantSeed.amountToGive; i++)
                 {
                     playerScript.inventory.AddItem(_plantSeed.rawGoodToGive);

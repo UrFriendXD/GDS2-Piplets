@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 615335089184662520}
   - component: {fileID: 1008662567}
   - component: {fileID: 734288940797006791}
+  - component: {fileID: 1279865708}
   m_Layer: 0
   m_Name: Pots
   m_TagString: Plant
@@ -139,6 +140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   daysSincePlanted: 0
+  waterParticle: {fileID: 277575513896351015, guid: 8a334da2db4d9dd4e8e82454c154502b, type: 3}
+  harvestParticle: {fileID: 5792810775116595073, guid: 7b0987e55cafbe64a981d19f61f93c0b, type: 3}
+  plantParticle: {fileID: 8613388125271510794, guid: a69f68b7987754a4bb092913b466c43e, type: 3}
   isTesting: 0
   dayPassEventListener: {fileID: 1008662567}
   seasonEndEventListener: {fileID: 734288940797006791}
@@ -187,3 +191,15 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1279865708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050053528973497303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28e581b343f17b4089c9387b69e4280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

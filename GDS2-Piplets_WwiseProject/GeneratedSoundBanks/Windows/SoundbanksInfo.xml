@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/rosiemcclelland/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GDS2-Piplets/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -15,21 +15,42 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MasterVolume"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="4238926114" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Greenhouse</ObjectPath>
 			<ShortName>Greenhouse</ShortName>
 			<Path>Greenhouse.bnk</Path>
 			<IncludedEvents>
+				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\PlayMusic" DurationType="OneShot" DurationMin="268.799988" DurationMax="268.799988">
+					<IncludedMemoryFiles>
+						<File Id="413528737" Language="SFX">
+							<ShortName>Piplets_MainTheme_FINAL.wav</ShortName>
+							<Path>SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2449075236" Name="Seed_planting" ObjectPath="\Events\Default Work Unit\Seed_planting" DurationType="OneShot" DurationMin="0.498208" DurationMax="0.498208">
+					<IncludedMemoryFiles>
+						<File Id="293591642" Language="SFX">
+							<ShortName>piplet wavs\seed planting.wav</ShortName>
+							<Path>SFX\piplet wavs\seed planting_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="OneShot" DurationMin="1.835833" DurationMax="3.707708">
 					<IncludedMemoryFiles>
 						<File Id="915811618" Language="SFX">
 							<ShortName>piplet wavs\water pour 3 (1).wav</ShortName>
-							<Path>SFX/piplet wavs/water pour 3 (1)_10C4C929.wem</Path>
+							<Path>SFX\piplet wavs\water pour 3 (1)_10C4C929.wem</Path>
 						</File>
 						<File Id="1013900543" Language="SFX">
 							<ShortName>piplet wavs\water pour 4.wav</ShortName>
-							<Path>SFX/piplet wavs/water pour 4_10C4C929.wem</Path>
+							<Path>SFX\piplet wavs\water pour 4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

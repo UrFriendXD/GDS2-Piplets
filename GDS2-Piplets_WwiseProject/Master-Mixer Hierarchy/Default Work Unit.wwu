@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
+						<Property Name="Volume" Type="Real64">
 							<RTPCList>
 								<RTPC Name="" ID="{61E86BA8-2B47-44DE-BB42-819690AB5E98}" ShortID="643900591">
 									<ReferenceList>
@@ -42,7 +42,7 @@
 					<ChildrenList>
 						<Bus Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}">
 							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
+								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{A8120D09-B49F-4777-846E-20EB8ABC4F02}" ShortID="638533909">
 											<ReferenceList>
@@ -74,7 +74,7 @@
 						</Bus>
 						<Bus Name="Music Audio Bus" ID="{29D7196C-D862-4230-BF92-32DB6A26EF9D}">
 							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
+								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{B3EDDFD0-BF41-4F0E-8A98-DFF100B77FEE}" ShortID="328483192">
 											<ReferenceList>
