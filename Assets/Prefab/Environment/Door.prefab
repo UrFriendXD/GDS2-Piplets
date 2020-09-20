@@ -123,6 +123,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb40a8c7838fe14d983dae242af4ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  greenhouse: {fileID: 0}
+  outsideGreenHouse: {fileID: 0}
+  piplet: {fileID: 0}
+  doorEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 451094c467e8eda468bb32d17a5a8b38, type: 2}
 --- !u!114 &5093687082390712053
 MonoBehaviour:
   m_ObjectHideFlags: 0
