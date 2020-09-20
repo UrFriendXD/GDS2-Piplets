@@ -8,6 +8,7 @@ namespace Player
         public PlayerStats playerStats;
         public Item itemHeld;
         public Inventory inventory;
+        public PlayerAudio PlayerAudio;
 
         // Selects players item from inventory based on parameter
         public void SelectItem(string itemSelectName)
