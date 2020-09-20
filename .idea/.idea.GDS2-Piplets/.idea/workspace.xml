@@ -45,9 +45,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Items/Hand Sanitiser.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Hand Sanitiser.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Items/Mask.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Mask.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Cotton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Raw Cotton.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Items/Tree Seed.asset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Items/Tree Seed.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Items/Watering Can.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Watering Can.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Wood.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Wood.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/MainMenu.unity" afterDir="false" />
@@ -179,7 +182,7 @@
       <workItem from="1600587933271" duration="622000" />
       <workItem from="1600597938582" duration="2021000" />
       <workItem from="1600607473070" duration="7631000" />
-      <workItem from="1600621610599" duration="1501000" />
+      <workItem from="1600621610599" duration="2017000" />
     </task>
     <servers />
   </component>

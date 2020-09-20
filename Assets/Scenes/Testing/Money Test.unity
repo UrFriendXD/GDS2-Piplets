@@ -4274,9 +4274,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terminal Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4928066087982333229, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.000061
+      objectReference: {fileID: 0}
     - target: {fileID: 4928066088444723281, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1218425762}
+    - target: {fileID: 4928066088678466091, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 4928066088755252510, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20.000061
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
