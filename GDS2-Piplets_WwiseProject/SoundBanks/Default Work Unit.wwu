@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Greenhouse" ID="{BD434E7B-11A4-416D-BB86-FB2F831B7F7B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Seed_planting" ID="{86FDED27-0B22-46B6-8AB0-64C0D88028DF}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

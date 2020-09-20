@@ -14,6 +14,30 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Seed_planting" ID="{86FDED27-0B22-46B6-8AB0-64C0D88028DF}">
+					<ChildrenList>
+						<Action Name="" ID="{077BCA06-C428-4A65-9E49-1CCEA95EF603}" ShortID="263460145">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="seed planting" ID="{333E05D6-1465-4E75-9EFD-B29ECBE7ED01}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Walking" ID="{A459C612-590F-4918-8244-FBC533D84FA4}"/>
+				<Event Name="Ladder" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}"/>
+				<Event Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}">
+					<ChildrenList>
+						<Action Name="" ID="{D595286B-EF22-4290-A2B4-91F5DBFF4F6E}" ShortID="954557694">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="planting_harvesting" ID="{CD5F77A3-9D76-409E-A232-BAA2879D1F64}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
