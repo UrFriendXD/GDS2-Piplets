@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 1273165475}
   - component: {fileID: 1447940501}
   - component: {fileID: 1447940502}
+  - component: {fileID: 6208465324433729384}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -238,6 +239,9 @@ MonoBehaviour:
   UI: {fileID: 0}
   menu: {fileID: 0}
   On: 0
+  movementAudioTimerDelay: 0.8
+  movementLadderUpAudioTimerDelay: 0.8
+  movementLadderDownAudioDelay: 0.8
 --- !u!114 &1273165475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,8 +258,8 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 24fa3d1811d7d5644b18f96179542668, type: 2}
   itemHeld: {fileID: 0}
   inventory: {fileID: 0}
-  PlayerAudio: {fileID: 0}
-  PlayerMovement: {fileID: 0}
+  PlayerAudio: {fileID: 6208465324433729384}
+  PlayerMovement: {fileID: 7072382248368338961}
 --- !u!114 &1447940501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +302,46 @@ MonoBehaviour:
   m_DefaultActionMap: player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6208465324433729384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1482a75c45e987141b175ec892bdee25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterPlantEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a84404aefac959d46a0d58201d0a8c82, type: 2}
+  walkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2c5e5b14832345d4287f4b4f571a18ce, type: 2}
+  harvestEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ca9e9de24a8833d4db7011dfbe46b253, type: 2}
+  seedPlantingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27f055df682aed4489d51fb3030f1675, type: 2}
+  diggingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  ladderClimbEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9e62232708aa4c4f89fcf2dfd1407d9, type: 2}
+  ladderDescentEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 659ee23c4eb13ad4d971c2cf66135cae, type: 2}
 --- !u!1 &7072382248468513760
 GameObject:
   m_ObjectHideFlags: 0

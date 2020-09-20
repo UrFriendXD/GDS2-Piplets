@@ -17,7 +17,11 @@ public class playerMovement : MonoBehaviour
     
     private PlayerScript _playerScript;
     private float movementAudioTimer;
-    [SerializeField] private float movementAudioTimerDelay = 3;
+    [SerializeField] private float movementAudioTimerDelay = 0.7f;
+    private float movementLadderUpAudioTimer;
+    [SerializeField] private float movementLadderUpAudioTimerDelay = 0.7f;    
+    private float movementLadderDownAudioTimer;
+    [SerializeField] private float movementLadderDownAudioDelay = 0.7f;
 
     void Awake()
     {
@@ -233,24 +237,28 @@ public class playerMovement : MonoBehaviour
             switch (movementInput)
             {
                 case -1: 
-                    if (movementAudioTimer <= 0)
+                    if (movementLadderDownAudioTimer <= 0)
                     {
                         _playerScript.PlayerAudio.PlayLadderDescentEvent();
-                        movementAudioTimer = movementAudioTimerDelay;
+                        movementLadderDownAudioTimer = movementLadderDownAudioDelay;
                     }
                     break;
                 case 1:
-                    if (movementAudioTimer <= 0)
+                    if (movementLadderUpAudioTimer <= 0)
                     {
                         _playerScript.PlayerAudio.PlayLadderClimbEvent();
-                        movementAudioTimer = movementAudioTimerDelay;
+                        movementLadderUpAudioTimer = movementLadderUpAudioTimerDelay;
                     }
                     break;
             }
         }
-        if (movementAudioTimer > 0)
+        if (movementLadderDownAudioTimer > 0)
         {
-            movementAudioTimer -= Time.deltaTime;
+            movementLadderDownAudioTimer -= Time.deltaTime;
+        }
+        if (movementLadderUpAudioTimer > 0)
+        {
+            movementLadderUpAudioTimer -= Time.deltaTime;
         }
 
         Vector3 currentPosition = transform.position;
@@ -275,7 +283,7 @@ public class playerMovement : MonoBehaviour
                     movementInput = 0;
                 }
 
-                if (movementInput == 1 || movementInput == -1 && GroundCheck)
+                if ((movementInput == 1 || movementInput == -1) && GroundCheck)
                 {
                     if (movementAudioTimer <= 0)
                     {
