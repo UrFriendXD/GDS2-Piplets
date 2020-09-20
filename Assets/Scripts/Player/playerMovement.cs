@@ -15,7 +15,9 @@ public class playerMovement : MonoBehaviour
     public GameObject menu;
     public bool On;
     
-    private PlayerScript player;
+    private PlayerScript _playerScript;
+    private float movementAudioTimer;
+    [SerializeField] private float movementAudioTimerDelay = 3;
 
     void Awake()
     {
@@ -42,7 +44,7 @@ public class playerMovement : MonoBehaviour
         control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
         control.player.SelectAxe.performed += cxt => SelectAxe();
         control.player.Menu.performed += ctx => Menu();
-        player = GetComponent<PlayerScript>();
+        _playerScript = GetComponent<PlayerScript>();
     }
 
     public void Menu()
@@ -53,27 +55,27 @@ public class playerMovement : MonoBehaviour
     #region Selecting Items
     public void Aloe()
     {
-        player.SelectItem("Aloe Seed");
+        _playerScript.SelectItem("Aloe Seed");
     }
 
     public void Cotton()
     {
-        player.SelectItem("Cotton Seed");
+        _playerScript.SelectItem("Cotton Seed");
     }
 
     public void Sap()
     {
-        player.SelectItem("Tree Seed");
+        _playerScript.SelectItem("Tree Seed");
     }
     
     private void SelectWateringCan()
     {
-        player.SelectItem("Watering Can");
+        _playerScript.SelectItem("Watering Can");
     }
 
     private void SelectAxe()
     {
-        player.SelectItem("Axe");
+        _playerScript.SelectItem("Axe");
     }
     #endregion
 
@@ -225,6 +227,32 @@ public class playerMovement : MonoBehaviour
         {
             movementInput = 0;
         }
+
+        if (LadderMovement)
+        {
+            switch (movementInput)
+            {
+                case -1: 
+                    if (movementAudioTimer <= 0)
+                    {
+                        _playerScript.PlayerAudio.PlayLadderClimbEvent();
+                        movementAudioTimer = movementAudioTimerDelay;
+                    }
+                    break;
+                case 1:
+                    if (movementAudioTimer <= 0)
+                    {
+                        _playerScript.PlayerAudio.PlayLadderDescentEvent();
+                        movementAudioTimer = movementAudioTimerDelay;
+                    }
+                    break;
+            }
+        }
+        if (movementAudioTimer > 0)
+        {
+            movementAudioTimer -= Time.deltaTime;
+        }
+
         Vector3 currentPosition = transform.position;
         currentPosition.y += movementInput * ladderspeed * Time.deltaTime;
         transform.position = currentPosition;
@@ -246,6 +274,21 @@ public class playerMovement : MonoBehaviour
                 {
                     movementInput = 0;
                 }
+
+                if (movementInput == 1 || movementInput == -1 && GroundCheck)
+                {
+                    if (movementAudioTimer <= 0)
+                    {
+                        _playerScript.PlayerAudio.PlayWalkEvent();
+                        movementAudioTimer = movementAudioTimerDelay;
+                    }
+                }
+
+                if (movementAudioTimer > 0)
+                {
+                    movementAudioTimer -= Time.deltaTime;
+                }
+
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
