@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     // Player variables set from terminal
-    [NonSerialized]
+    //[NonSerialized]
     public Inventory PlayerInventory;
     
     // Values for selling 
