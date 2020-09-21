@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: c5e4fa70868948d4bb02e3f3b3f78ae4
   itemName: Toilet Paper
-  icon: {fileID: 0}
+  icon: {fileID: 4399753819827433819, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   maximumStack: 99
   buyingPrice: 19
   sellingPrice: 13

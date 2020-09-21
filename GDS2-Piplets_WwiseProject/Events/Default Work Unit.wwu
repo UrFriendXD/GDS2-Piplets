@@ -3,94 +3,108 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}">
+				<Folder Name="Greenhouse" ID="{4D2ADDAB-3811-4B4C-A7CF-FDACF59B9168}" ShortID="359938900">
 					<ChildrenList>
-						<Action Name="" ID="{5C50B226-C3F0-4DC1-A1FF-D5BB3608BCBB}" ShortID="664643833">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="water pour 4" ID="{233BC6C7-3408-4497-A66B-BEF323C33503}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="Indoors" ID="{C0246044-5762-4D91-A549-DFB10B553C03}" ShortID="52873658">
+							<ChildrenList>
+								<Event Name="Ladder_Descend" ID="{3D3C988B-6BE4-4021-92F0-942C7EE53F4B}">
+									<ChildrenList>
+										<Action Name="" ID="{866FF21E-578E-4D80-950E-E5A9C1752852}" ShortID="1045876338">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ladder slide" ID="{38D769FA-38FF-4DC2-A892-090D1C1015B6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Walking" ID="{A459C612-590F-4918-8244-FBC533D84FA4}">
+									<ChildrenList>
+										<Action Name="" ID="{48AA287B-AA54-4305-AF15-95717D06047E}" ShortID="382884762">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Steps" ID="{24544906-B9F5-40F1-B9B6-7C109BB0E79B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Seed_planting" ID="{86FDED27-0B22-46B6-8AB0-64C0D88028DF}">
+									<ChildrenList>
+										<Action Name="" ID="{077BCA06-C428-4A65-9E49-1CCEA95EF603}" ShortID="263460145">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="seed planting" ID="{333E05D6-1465-4E75-9EFD-B29ECBE7ED01}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PlayMusic" ID="{232DC11F-6CEE-4D0F-AC5E-B754B028930D}">
+									<ChildrenList>
+										<Action Name="" ID="{7ABB4C32-4E95-4DE6-BB25-922B97B700C4}" ShortID="960694098">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
+										<Action Name="" ID="{56EB6D85-C12A-4645-9550-51FEB8C798C0}" ShortID="963901027">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Piplets_MainTheme_FINAL" ID="{3DE2E9EC-F015-48E7-89E5-02301E80CEAA}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Ladder_Climb" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}">
+									<ChildrenList>
+										<Action Name="" ID="{238B0FBE-AFE0-4ED9-ABAE-32A2E4B8DC3B}" ShortID="29625668">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ladder" ID="{EEDF85EA-3022-423D-87E6-81C124CB7F7E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}">
+									<ChildrenList>
+										<Action Name="" ID="{D595286B-EF22-4290-A2B4-91F5DBFF4F6E}" ShortID="954557694">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="planting_harvesting" ID="{CD5F77A3-9D76-409E-A232-BAA2879D1F64}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}">
+									<ChildrenList>
+										<Action Name="" ID="{6BE24A82-27CB-49BD-9891-5A1B6EB2BBF8}" ShortID="593254033">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="greenhouse door" ID="{F8D9716E-0704-4382-9A1A-EAB69B65669E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}">
+									<ChildrenList>
+										<Action Name="" ID="{5C50B226-C3F0-4DC1-A1FF-D5BB3608BCBB}" ShortID="664643833">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Water pour" ID="{41E55179-D531-412A-93B6-EB02CB14E6BA}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
-				</Event>
-				<Event Name="Seed_planting" ID="{86FDED27-0B22-46B6-8AB0-64C0D88028DF}">
-					<ChildrenList>
-						<Action Name="" ID="{077BCA06-C428-4A65-9E49-1CCEA95EF603}" ShortID="263460145">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="seed planting" ID="{333E05D6-1465-4E75-9EFD-B29ECBE7ED01}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Walking" ID="{A459C612-590F-4918-8244-FBC533D84FA4}">
-					<ChildrenList>
-						<Action Name="" ID="{48AA287B-AA54-4305-AF15-95717D06047E}" ShortID="382884762">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Steps" ID="{24544906-B9F5-40F1-B9B6-7C109BB0E79B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Ladder_Climb" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}">
-					<ChildrenList>
-						<Action Name="" ID="{238B0FBE-AFE0-4ED9-ABAE-32A2E4B8DC3B}" ShortID="29625668">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ladder" ID="{EEDF85EA-3022-423D-87E6-81C124CB7F7E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}">
-					<ChildrenList>
-						<Action Name="" ID="{D595286B-EF22-4290-A2B4-91F5DBFF4F6E}" ShortID="954557694">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="planting_harvesting" ID="{CD5F77A3-9D76-409E-A232-BAA2879D1F64}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PlayMusic" ID="{232DC11F-6CEE-4D0F-AC5E-B754B028930D}">
-					<ChildrenList>
-						<Action Name="" ID="{56EB6D85-C12A-4645-9550-51FEB8C798C0}" ShortID="963901027">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Piplets_MainTheme_FINAL" ID="{3DE2E9EC-F015-48E7-89E5-02301E80CEAA}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}">
-					<ChildrenList>
-						<Action Name="" ID="{6BE24A82-27CB-49BD-9891-5A1B6EB2BBF8}" ShortID="593254033">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="greenhouse door" ID="{F8D9716E-0704-4382-9A1A-EAB69B65669E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Ladder_Descend" ID="{3D3C988B-6BE4-4021-92F0-942C7EE53F4B}">
-					<ChildrenList>
-						<Action Name="" ID="{866FF21E-578E-4D80-950E-E5A9C1752852}" ShortID="1045876338">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ladder slide" ID="{38D769FA-38FF-4DC2-A892-090D1C1015B6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

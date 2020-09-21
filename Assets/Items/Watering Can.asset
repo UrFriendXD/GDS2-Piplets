@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 531b48a7458873942abb743e980d78a1
   itemName: Watering Can
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 383c8e4f82df21c45ac3e6a01511b3ac, type: 3}
   maximumStack: 1
