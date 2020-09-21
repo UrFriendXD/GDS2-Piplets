@@ -42,24 +42,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Image.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Image.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/OptionsCanvas.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/OptionsCanvas.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Terminal Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Terminal Object.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Player Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Player Stats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.wsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Bed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Bed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkAudioInput.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkAudioInput.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkCompressor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkCompressor.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkConvolutionReverb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkConvolutionReverb.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkDelay.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkDelay.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkExpander.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkExpander.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkFlanger.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkFlanger.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkGain.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkGain.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkGuitarDistortion.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkGuitarDistortion.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkHarmonizer.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkHarmonizer.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkMatrixReverb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkMatrixReverb.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkMotion.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkMotion.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkParametricEQ.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkParametricEQ.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkPeakLimiter.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkPeakLimiter.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkPitchShifter.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkPitchShifter.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkRecorder.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkRecorder.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkReflect.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkReflect.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkRoomVerb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkRoomVerb.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSilenceGenerator.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSilenceGenerator.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSineTone.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSineTone.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedAir.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedAir.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedGrain.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedGrain.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedImpact.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedImpact.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkStereoDelay.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkStereoDelay.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSynthOne.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSynthOne.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTimeStretch.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTimeStretch.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkToneGen.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkToneGen.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTremolo.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTremolo.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/Auro.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/Auro.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/MSSpatial.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/MSSpatial.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/MasteringSuite.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/MasteringSuite.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/McDSP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/McDSP.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/iZotope.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/iZotope.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Debug/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Debug/AkSoundEngine.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Debug/AkWaapiClient.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Debug/AkWaapiClient.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Release/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Release/AkSoundEngine.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Release/AkWaapiClient.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86/Release/AkWaapiClient.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkAudioInput.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkAudioInput.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkCompressor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkCompressor.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkConvolutionReverb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkConvolutionReverb.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkDelay.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkDelay.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkExpander.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkExpander.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkFlanger.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkFlanger.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkGain.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkGain.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkGuitarDistortion.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkGuitarDistortion.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkHarmonizer.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkHarmonizer.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkMatrixReverb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkMatrixReverb.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkMotion.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkMotion.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkParametricEQ.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkParametricEQ.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkPeakLimiter.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkPeakLimiter.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkPitchShifter.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkPitchShifter.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkRecorder.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkRecorder.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkReflect.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkReflect.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkRoomVerb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkRoomVerb.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSilenceGenerator.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSilenceGenerator.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSineTone.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSineTone.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedAir.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedAir.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedGrain.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedGrain.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedImpact.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedImpact.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkStereoDelay.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkStereoDelay.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSynthOne.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSynthOne.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTimeStretch.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTimeStretch.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkToneGen.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkToneGen.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTremolo.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTremolo.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/Auro.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/Auro.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/MSSpatial.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/MSSpatial.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/MasteringSuite.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/MasteringSuite.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/McDSP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/McDSP.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/iZotope.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/iZotope.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Debug/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Debug/AkSoundEngine.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Debug/AkWaapiClient.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Debug/AkWaapiClient.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Release/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Release/AkSoundEngine.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Release/AkWaapiClient.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Release/AkWaapiClient.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +182,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" />
       </list>
     </option>
   </component>
@@ -187,7 +246,7 @@
       <workItem from="1600587933271" duration="622000" />
       <workItem from="1600597938582" duration="2021000" />
       <workItem from="1600607473070" duration="7631000" />
-      <workItem from="1600621610599" duration="2425000" />
+      <workItem from="1600621610599" duration="3166000" />
     </task>
     <servers />
   </component>

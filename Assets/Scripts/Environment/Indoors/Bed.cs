@@ -17,7 +17,6 @@ namespace Environment.Indoors
         
         public override void InteractBare(PlayerScript playerScript)
         {
-            base.InteractBare(playerScript);
             dayPass.Invoke();
         }
     }

@@ -224,6 +224,7 @@ MonoBehaviour:
   LadderMovement: 0
   endLadder: 0
   GroundCheck: 0
+  GroundCheck2: 0
   WallCheck: 0
   isInteracting: 0
   falling: 0
@@ -238,10 +239,11 @@ MonoBehaviour:
   interactingObjectPos: 0
   plantSeedType: 0
   UI: {fileID: 0}
+  UI2: {fileID: 0}
   menu: {fileID: 0}
   On: 0
-  movementAudioTimerDelay: 0.8
-  movementLadderUpAudioTimerDelay: 0.8
+  movementAudioTimerDelay: 0.4
+  movementLadderUpAudioTimerDelay: 0.4
   movementLadderDownAudioDelay: 0.8
 --- !u!114 &1273165475
 MonoBehaviour:
@@ -261,6 +263,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   PlayerAudio: {fileID: 6208465324433729384}
   PlayerMovement: {fileID: 7072382248368338961}
+  PlayerAnimationController: {fileID: 0}
 --- !u!114 &1447940501
 MonoBehaviour:
   m_ObjectHideFlags: 0
