@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 4e04df9a931345640a143e6ab7488145
   itemName: Mask
-  icon: {fileID: 0}
+  icon: {fileID: 1447187925931213244, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   maximumStack: 99
   buyingPrice: 10
   sellingPrice: 9

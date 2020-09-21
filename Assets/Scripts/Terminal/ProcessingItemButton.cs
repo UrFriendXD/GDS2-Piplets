@@ -13,7 +13,7 @@ public class ProcessingItemButton : TerminalAddRemoveButton
         // Adds amount
         if (_adding && _delay <= 0)
         {
-            if (_craftingRecipe.CanCraft(PlayerInventory, _amount))
+            if (_craftingRecipe.CanCraft(PlayerInventory, _amount + 1))
             {
                 UpdateAmount(_amount += 1);
                 _delay = delayReset;
