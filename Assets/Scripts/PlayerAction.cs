@@ -97,6 +97,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""08ad964b-3b1c-49c4-b1f3-712355ba0555"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -253,6 +261,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""052bc2e0-b1b5-4771-9ca1-b77c5734c329"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -271,6 +290,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player_SelectWateringCan = m_player.FindAction("Select Watering Can", throwIfNotFound: true);
         m_player_SelectAxe = m_player.FindAction("Select Axe", throwIfNotFound: true);
         m_player_Cancel = m_player.FindAction("Cancel", throwIfNotFound: true);
+        m_player_Menu = m_player.FindAction("Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -330,6 +350,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_player_SelectWateringCan;
     private readonly InputAction m_player_SelectAxe;
     private readonly InputAction m_player_Cancel;
+    private readonly InputAction m_player_Menu;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -344,6 +365,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @SelectWateringCan => m_Wrapper.m_player_SelectWateringCan;
         public InputAction @SelectAxe => m_Wrapper.m_player_SelectAxe;
         public InputAction @Cancel => m_Wrapper.m_player_Cancel;
+        public InputAction @Menu => m_Wrapper.m_player_Menu;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -383,6 +405,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @Cancel.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
                 @Cancel.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
                 @Cancel.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
+                @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -417,6 +442,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @Cancel.started += instance.OnCancel;
                 @Cancel.performed += instance.OnCancel;
                 @Cancel.canceled += instance.OnCancel;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -433,5 +461,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnSelectWateringCan(InputAction.CallbackContext context);
         void OnSelectAxe(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
 }
