@@ -1,87 +1,68 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Farming;
+﻿using Player;
 using UnityEngine;
-using UnityEngine.Events;
 
-[RequireComponent(typeof(PlantFunctions))]
-public class FarmPlot : MonoBehaviour
+namespace Farming
 {
-    [SerializeField] private PlantSeed currentPlantType;
-
-    private PlantFunctions _currentPlant;
-    
-
-    /*public FarmPlot(Plant currentPlant)
+    [RequireComponent(typeof(PlantFunctions))]
+    public class FarmPlot : InteractableObject
     {
-        _currentPlant = currentPlant;
-    }*/
+        // Plant variables
+        [SerializeField] private PlantSeed currentPlantType;
+        private PlantFunctions _currentPlant;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        _currentPlant = GetComponent<PlantFunctions>();
-        if (currentPlantType != null)
+        // Initialise variables
+        private void Start()
         {
-            OnPlant(currentPlantType);
-        }
-    }
-
-    private void Update()
-    {
-        /*if (Input.GetKeyDown(KeyCode.A))
-        {
-            OnPlant(currentPlantType);
-        }*/
-    }
-
-    // Interacting with bare hands/no items in hands
-    public void InteractBare(Player player)
-    {
-        if (_currentPlant.IsPlanted())
-        {
-            _currentPlant.OnInteract(player);
-        }
-    }
-
-    //Interacting with item in hand/use
-    public void InteractWithItem(Item item, Player player)
-    {
-        // Watering can waters plants
-        if (item.name == "Watering Can")
-        {
-            _currentPlant.OnWatered();
-        }
-        
-        //If it's a seed it'll plant if it's empty
-        else if (item as PlantSeed)
-        {
-            // If plant is empty and player has room
-            if (!_currentPlant.IsPlanted()  && player.inventory.RemoveItem(item))
+            _currentPlant = GetComponent<PlantFunctions>();
+            if (currentPlantType != null)
             {
-                OnPlant(item as PlantSeed);
+                OnPlant(currentPlantType);
             }
         }
-    }
 
-    // Plants the plant
-    private void OnPlant(PlantSeed plantSeed)
-    {
-        _currentPlant.Plant(plantSeed);
-        currentPlantType = plantSeed;
-        //Add grow to day pass delegate
-        // delegate += DaysPassed();
-        // Or subscribe object to days passing script
-    }
-    
-    public void OnDestroyCrop()
-    {
-        _currentPlant.DestroyPlant();
-    }
+        // Interacting with bare hands/no items in hands
+        public override void InteractBare(PlayerScript playerScript)
+        {
+            if (_currentPlant.IsPlanted())
+            {
+                _currentPlant.OnInteract(playerScript);
+            }
+        }
 
-    public void OnSeasonEnd()
-    {
-        _currentPlant.OnSeasonEnd();
+        //Interacting with item in hand/use
+        public override void InteractWithItem(Item item, PlayerScript playerScript)
+        {
+            // Watering can waters plants
+            if (item.name == "Watering Can")
+            {
+                _currentPlant.OnWatered();
+                if (!playerScript.PlayerMovement.isInteracting)
+                {
+                    playerScript.PlayerAudio.PlayWaterPlantEvent();
+                    playerScript.PlayerAnimationController.WateringAnimation();
+                }
+            }
+        
+            //If it's a seed it'll plant if it's empty
+            else if (item as PlantSeed)
+            {
+                // If plant is empty and player has room
+                if (!_currentPlant.IsPlanted() && playerScript.inventory.RemoveItem(item))
+                {
+                    OnPlant(item as PlantSeed);
+                    if (!playerScript.PlayerMovement.isInteracting)
+                    {
+                        playerScript.PlayerAudio.PlaySeedPlantingEvent();
+                    }
+                }
+            }
+        }
+
+        // Plants the plant
+        private void OnPlant(PlantSeed plantSeed)
+        {
+            _currentPlant.Plant(plantSeed);
+            currentPlantType = plantSeed;
+        }
     }
 }

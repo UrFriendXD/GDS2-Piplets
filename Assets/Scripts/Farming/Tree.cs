@@ -1,84 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Player;
+using System.Collections;
 using UnityEngine;
 
-public class Tree : MonoBehaviour
+namespace Farming
 {
-    public float treepos;
-    public bool treeOn, treeDied;
-    public int treeHealth;
-    
-    // Start is called before the first frame update
-    void Start()
+    public class Tree : InteractableObject
     {
-        treepos = transform.position.x;
-        treeOn = false;
-        treeDied = false;
-    }
+        public bool treeDied;
+        public int treeHealth;
+        public GameObject treeparticle; // this should be a particle effect can have many to change the particle effect
+        private GameObject clone; // to clone the particle effect
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public override void InteractWithItem(Item item, PlayerScript player)
+        {
+            Debug.Log("hit");
+            if (item.name == "Axe")
+            {
+                hit();
+                clone = Instantiate(treeparticle, new Vector3(0f, 0f, 0f), Quaternion.identity); // clones the particle effect
+                this.GetComponent<OutsideParticleEffects>().ParticleOn(clone); // this line triggers the particle effect
+            }
+        }
 
-    public void hit()
-    {
-        if(treeOn == true)
+        public void hit()
         {
             Debug.Log("Hit");
             treeHealth = treeHealth - 1;
             DamageTree();
         }
-    }
 
-    public void DamageTree()
-    {
-        wood Wood = gameObject.GetComponentInChildren<wood>();
-        if (treeHealth == 2)
+        public void DamageTree()
         {
-            //changeTreeColour for now then changeTreeSprite
-            Wood.woodDrop(2);
+            Wood wood = gameObject.GetComponentInChildren<Wood>();
+            if (treeHealth == 2)
+            {
+                //changeTreeColour for now then changeTreeSprite
+                wood.WoodDrop(2);
+            }
+            if (treeHealth == 1)
+            {
+                //changeTreeColour for now then changeTreeSprite
+                wood.WoodDrop(2);
+            }
+            if (treeHealth == 0)
+            {
+                wood.WoodDrop(1);
+                Death();
+            }
         }
-        if(treeHealth == 1)
-        {
-            //changeTreeColour for now then changeTreeSprite
-            Wood.woodDrop(2);
-        }
-        if(treeHealth == 0)
-        {
-            Wood.woodDrop(1);
-            Death();
-        }
-    }
 
-    public void Death()
-    {
-        treeDied = true;
-        MeshRenderer m = GetComponent<MeshRenderer>();
-        m.enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
-        wood Wood = gameObject.GetComponentInChildren<wood>();
-        Wood.woodOn();
-    }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        Debug.Log("on");
-        if (col.tag == "Player")
+        public void Death()
         {
-            treeOn = true;
-            col.GetComponent<playerMovement>().chopOn(treepos);
+            treeDied = true;
+            SpriteRenderer m = GetComponent<SpriteRenderer>();
+            m.enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            Wood Wood = gameObject.GetComponentInChildren<Wood>();
+            Wood.woodOn();
         }
     }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        Debug.Log("off");
-        if (col.tag == "Player")
-        {
-            treeOn = false;
-            col.GetComponent<playerMovement>().chopOff(0f);
-        }
-    }
 }

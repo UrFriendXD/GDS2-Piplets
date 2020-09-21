@@ -35,7 +35,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Harvesting"",
+                    ""name"": ""InteractBare"",
                     ""type"": ""Button"",
                     ""id"": ""57e26702-95cd-4f5e-9ad7-0c3374691c72"",
                     ""expectedControlType"": ""Button"",
@@ -86,6 +86,22 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""name"": ""Select Axe"",
                     ""type"": ""Button"",
                     ""id"": ""040b422d-73f7-4098-b9f2-7ac096582851"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Cancel"",
+                    ""type"": ""Button"",
+                    ""id"": ""cf706427-f80a-4c7c-955d-6b66a492f875"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""08ad964b-3b1c-49c4-b1f3-712355ba0555"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -209,7 +225,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Harvesting"",
+                    ""action"": ""InteractBare"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -234,6 +250,28 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""Select Axe"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e8a86a02-feff-47d0-a69d-e0be277abba5"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Cancel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""052bc2e0-b1b5-4771-9ca1-b77c5734c329"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -244,13 +282,15 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player = asset.FindActionMap("player", throwIfNotFound: true);
         m_player_movement = m_player.FindAction("movement", throwIfNotFound: true);
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
-        m_player_Harvesting = m_player.FindAction("Harvesting", throwIfNotFound: true);
+        m_player_InteractBare = m_player.FindAction("InteractBare", throwIfNotFound: true);
         m_player_Action = m_player.FindAction("Action", throwIfNotFound: true);
         m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
         m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
         m_player_Sapling = m_player.FindAction("Sapling", throwIfNotFound: true);
         m_player_SelectWateringCan = m_player.FindAction("Select Watering Can", throwIfNotFound: true);
         m_player_SelectAxe = m_player.FindAction("Select Axe", throwIfNotFound: true);
+        m_player_Cancel = m_player.FindAction("Cancel", throwIfNotFound: true);
+        m_player_Menu = m_player.FindAction("Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -302,26 +342,30 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_player_movement;
     private readonly InputAction m_player_LadderMovement;
-    private readonly InputAction m_player_Harvesting;
+    private readonly InputAction m_player_InteractBare;
     private readonly InputAction m_player_Action;
     private readonly InputAction m_player_AloeSeed;
     private readonly InputAction m_player_CottonSeed;
     private readonly InputAction m_player_Sapling;
     private readonly InputAction m_player_SelectWateringCan;
     private readonly InputAction m_player_SelectAxe;
+    private readonly InputAction m_player_Cancel;
+    private readonly InputAction m_player_Menu;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
         public PlayerActions(@PlayerAction wrapper) { m_Wrapper = wrapper; }
         public InputAction @movement => m_Wrapper.m_player_movement;
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
-        public InputAction @Harvesting => m_Wrapper.m_player_Harvesting;
+        public InputAction @InteractBare => m_Wrapper.m_player_InteractBare;
         public InputAction @Action => m_Wrapper.m_player_Action;
         public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
         public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
         public InputAction @Sapling => m_Wrapper.m_player_Sapling;
         public InputAction @SelectWateringCan => m_Wrapper.m_player_SelectWateringCan;
         public InputAction @SelectAxe => m_Wrapper.m_player_SelectAxe;
+        public InputAction @Cancel => m_Wrapper.m_player_Cancel;
+        public InputAction @Menu => m_Wrapper.m_player_Menu;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -337,9 +381,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
                 @LadderMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLadderMovement;
-                @Harvesting.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
-                @Harvesting.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
-                @Harvesting.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHarvesting;
+                @InteractBare.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteractBare;
+                @InteractBare.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteractBare;
+                @InteractBare.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteractBare;
                 @Action.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @Action.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @Action.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
@@ -358,6 +402,12 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @SelectAxe.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
                 @SelectAxe.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
                 @SelectAxe.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
+                @Cancel.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
+                @Cancel.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
+                @Cancel.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
+                @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -368,9 +418,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @LadderMovement.started += instance.OnLadderMovement;
                 @LadderMovement.performed += instance.OnLadderMovement;
                 @LadderMovement.canceled += instance.OnLadderMovement;
-                @Harvesting.started += instance.OnHarvesting;
-                @Harvesting.performed += instance.OnHarvesting;
-                @Harvesting.canceled += instance.OnHarvesting;
+                @InteractBare.started += instance.OnInteractBare;
+                @InteractBare.performed += instance.OnInteractBare;
+                @InteractBare.canceled += instance.OnInteractBare;
                 @Action.started += instance.OnAction;
                 @Action.performed += instance.OnAction;
                 @Action.canceled += instance.OnAction;
@@ -389,6 +439,12 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @SelectAxe.started += instance.OnSelectAxe;
                 @SelectAxe.performed += instance.OnSelectAxe;
                 @SelectAxe.canceled += instance.OnSelectAxe;
+                @Cancel.started += instance.OnCancel;
+                @Cancel.performed += instance.OnCancel;
+                @Cancel.canceled += instance.OnCancel;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -397,12 +453,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLadderMovement(InputAction.CallbackContext context);
-        void OnHarvesting(InputAction.CallbackContext context);
+        void OnInteractBare(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
         void OnAloeSeed(InputAction.CallbackContext context);
         void OnCottonSeed(InputAction.CallbackContext context);
         void OnSapling(InputAction.CallbackContext context);
         void OnSelectWateringCan(InputAction.CallbackContext context);
         void OnSelectAxe(InputAction.CallbackContext context);
+        void OnCancel(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
 }

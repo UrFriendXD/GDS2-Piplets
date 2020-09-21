@@ -1,18 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, chopping, watering, enoughSeed, planting, harvesting;
-    [SerializeField] private float walkspeed, ladderspeed, fallspeed;
-    public float treePos, plantPos;
+    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2, WallCheck, isInteracting, falling;
+    [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    public float interactingObjectPos;
     public int plantSeedType;
-
-
-    private Player player;
+    public GameObject UI, UI2;
+    public GameObject menu;
+    public bool On;
+    
+    private PlayerScript _playerScript;
+    private float movementAudioTimer;
+    [SerializeField] private float movementAudioTimerDelay = 0.7f;
+    private float movementLadderUpAudioTimer;
+    [SerializeField] private float movementLadderUpAudioTimerDelay = 0.7f;    
+    private float movementLadderDownAudioTimer;
+    [SerializeField] private float movementLadderDownAudioDelay = 0.7f;
 
     void Awake()
     {
@@ -33,138 +42,84 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         plantSeedType = 0;
-        control.player.Action.performed += cxt => action();
-        control.player.Sapling.performed += cxt => sap();
-        control.player.AloeSeed.performed += cxt => aloe();
-        control.player.CottonSeed.performed += cxt => cotton();
-        control.player.Harvesting.performed += cxt => harvest();
+        control.player.Sapling.performed += cxt => Sap();
+        control.player.AloeSeed.performed += cxt => Aloe();
+        control.player.CottonSeed.performed += cxt => Cotton();
         control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
         control.player.SelectAxe.performed += cxt => SelectAxe();
-
-        player = GetComponent<Player>();
+        control.player.Menu.performed += ctx => Menu();
+        _playerScript = GetComponent<PlayerScript>();
     }
 
-    public void aloe()
+    public void Menu()
     {
-        player.SelectItem("Aloe Seed");
+        menu.SetActive(!menu.activeSelf);
     }
 
-    public void cotton()
+    #region Selecting Items
+    public void Aloe()
     {
-        player.SelectItem("Cotton Seed");
+        _playerScript.SelectItem("Aloe Seed");
     }
 
-    public void sap()
+    public void Cotton()
     {
-        player.SelectItem("Tree Seed");
+        _playerScript.SelectItem("Cotton Seed");
     }
 
-    public void plant()
+    public void Sap()
     {
-        rotatePlayer();
-        //runs planting animation
-        StartCoroutine(coolDownPlant(2f));
+        _playerScript.SelectItem("Tree Seed");
     }
-
+    
     private void SelectWateringCan()
     {
-        player.SelectItem("Watering Can");
+        _playerScript.SelectItem("Watering Can");
     }
 
     private void SelectAxe()
     {
-        player.SelectItem("Axe");
+        _playerScript.SelectItem("Axe");
     }
+    #endregion
 
-    public void action()
+    // Stops player movement when interacting
+    public void Interact()
     {
-        player.InteractWithItem();
-    }
-
-    public void harvest()
-    {
-        player.InteractBare();
-        rotatePlayer();
-        //runs harvesting animation
-        StartCoroutine(coolDownHarvest(2f));
-    }
-
-    public void plantOn(float value)
-    {
-        plantPos = value;
-    }
-
-    public void plantOff(float value)
-    {
-        plantPos = value;
-    }
-
-    public void chopOn(float value)
-    {
-        treePos = value;
-    }
-
-    public void chopOff(float value)
-    {
-        treePos = value;
-    }
-
-
-    public void chop() 
-    { 
-        rotatePlayer();
-        //runs chopping animation
-        StartCoroutine(coolDownAxe(2f));
-    }
-
-    public void Water()
-    {
-        rotatePlayer();
-        //runs chopping animation
-        StartCoroutine(coolDownWaterCan(2f));
-    }
-
-    public void rotatePlayer()
-    {
-        if ((chopping == false || watering == false ) || (planting == false  || (harvesting == false)))
+        if (!isInteracting)
         {
-            if (((transform.position.x > treePos && treePos !=0)|| (transform.position.x > plantPos && plantPos != 0)) && transform.rotation.y == 0)
+            StartCoroutine(PlayAnimation(1f));
+        }
+    }
+    
+    // Sets objectPos to parameter when player touches an object
+    public void TouchObject(float objectPos)
+    {
+        interactingObjectPos = objectPos;
+    }
+
+    private void RotatePlayer()
+    {
+        if (!isInteracting)
+        {
+            if (((transform.position.x > interactingObjectPos && interactingObjectPos !=0) && transform.rotation.y == 0))
             {
                 this.transform.Rotate(0f, -180f, 0f);
             }
-            if (((transform.position.x < treePos && treePos != 0) || (transform.position.x < plantPos && plantPos != 0)) && transform.rotation.y != 0)
+            if (((transform.position.x < interactingObjectPos && interactingObjectPos != 0)  && transform.rotation.y != 0))
             {
                 this.transform.Rotate(0f, 180f, 0f);
             }
         }
     }
-
-    IEnumerator coolDownAxe(float time)
+    
+    // Stops player and rotates 
+    private IEnumerator PlayAnimation(float time)
     {
-        chopping = true;
+        isInteracting = true;
+        RotatePlayer();
         yield return new WaitForSeconds(time);
-        chopping = false;
-    }
-
-    IEnumerator coolDownHarvest(float time)
-    {
-        harvesting = true;
-        yield return new WaitForSeconds(time);
-        harvesting = false;
-    }
-
-    IEnumerator coolDownPlant(float time)
-    {
-        planting = true;
-        yield return new WaitForSeconds(time);
-        planting = false;
-    }
-
-    IEnumerator coolDownWaterCan(float time)
-    {
-        watering = true;
-        yield return new WaitForSeconds(time);
-        watering = false;
+        isInteracting = false;
     }
 
     public void LadderOn()
@@ -196,18 +151,66 @@ public class playerMovement : MonoBehaviour
     {
         GroundCheck = false;
     }
+    public void GroundOn2()
+    {
+        GroundCheck2 = true;
+    }
+
+    public void GroundOff2()
+    {
+        GroundCheck2 = false;
+    }
+
+    public void WallOn()
+    {
+        WallCheck = true;
+    }
+
+    public void WallOff()
+    {
+        WallCheck = false;
+    }
+
+    public void PlayerMovementOn()
+    {
+        if (UI.activeSelf || menu.activeSelf || UI2.activeSelf)
+        {
+            On = false;
+        }
+        else
+        {
+            On = true;
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        playerMoveRightAndLeft();
-        if(LadderMovement == true)
+        PlayerMovementOn();
+        if (On)
         {
-            LadderMoveUpAndDown();
-        }
-        if(LadderMovement == false && GroundCheck == false)
-        {
-            fall();
+            playerMoveRightAndLeft();
+            if (LadderMovement == true)
+            {
+                LadderMoveUpAndDown();
+            }
+            if (LadderMovement == false && GroundCheck == false && GroundCheck2 == false)
+            {
+                falling = true;
+                if (fallspeed < maxfallspeed)
+                {
+                    fallspeed += fallspeedovertime * Time.deltaTime;
+                }
+                if (falling == true)
+                {
+                    fall();
+                }
+            }
+            if (GroundCheck || LadderMovement || GroundCheck2)
+            {
+                fallspeed = startfallspeed;
+                falling = false;
+            }
         }
     }
 
@@ -221,6 +224,14 @@ public class playerMovement : MonoBehaviour
     public void LadderMoveUpAndDown()
     {
         float movementInput = control.player.LadderMovement.ReadValue<float>();
+        if(movementInput == 1)
+        {
+            ladderspeed = upLadderSpeed;
+        }
+        if(movementInput == -1)
+        {
+            ladderspeed = downLadderSpeed;
+        }
         if(movementInput == 1 && endLadder == true)
         {
             movementInput = 0;
@@ -229,6 +240,40 @@ public class playerMovement : MonoBehaviour
         {
             movementInput = 0;
         }
+        if(movementInput == -1 && LadderMovement == true && GroundCheck2 == true)
+        {
+            movementInput = 0;
+        }
+
+        if (LadderMovement)
+        {
+            switch (movementInput)
+            {
+                case -1: 
+                    if (movementLadderDownAudioTimer <= 0)
+                    {
+                        _playerScript.PlayerAudio.PlayLadderDescentEvent();
+                        movementLadderDownAudioTimer = movementLadderDownAudioDelay;
+                    }
+                    break;
+                case 1:
+                    if (movementLadderUpAudioTimer <= 0)
+                    {
+                        _playerScript.PlayerAudio.PlayLadderClimbEvent();
+                        movementLadderUpAudioTimer = movementLadderUpAudioTimerDelay;
+                    }
+                    break;
+            }
+        }
+        if (movementLadderDownAudioTimer > 0)
+        {
+            movementLadderDownAudioTimer -= Time.deltaTime;
+        }
+        if (movementLadderUpAudioTimer > 0)
+        {
+            movementLadderUpAudioTimer -= Time.deltaTime;
+        }
+
         Vector3 currentPosition = transform.position;
         currentPosition.y += movementInput * ladderspeed * Time.deltaTime;
         transform.position = currentPosition;
@@ -236,12 +281,37 @@ public class playerMovement : MonoBehaviour
 
     public void playerMoveRightAndLeft()
     {
-        if (chopping == false && watering == false && planting == false && harvesting == false)
+        if (!isInteracting)
         {
             if (endLadder == false)
             {
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
+                if(WallCheck == true && movementInput ==1 && transform.rotation.y == 0)
+                {
+                    movementInput = 0;
+                }
+                if (WallCheck == true && movementInput == -1 && transform.rotation.y != 0)
+                {
+                    movementInput = 0;
+                }
+
+                if ((movementInput == 1 || movementInput == -1) && (GroundCheck || GroundCheck2))
+                {
+                    if (movementAudioTimer <= 0)
+                    {
+                        _playerScript.PlayerAudio.PlayWalkEvent();
+                        movementAudioTimer = movementAudioTimerDelay;
+                    }
+                }
+
+                if (movementAudioTimer > 0)
+                {
+                    movementAudioTimer -= Time.deltaTime;
+                }
+                
+                _playerScript.PlayerAnimationController.WalkAnimation(Mathf.Abs(movementInput));
+
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * walkspeed * Time.deltaTime;
                 transform.position = currentPosition;
@@ -268,5 +338,4 @@ public class playerMovement : MonoBehaviour
             this.transform.Rotate(0f, 180f, 0f);
         }
     }
-
 }

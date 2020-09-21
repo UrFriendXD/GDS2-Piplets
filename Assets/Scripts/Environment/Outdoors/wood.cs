@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
-public class wood : MonoBehaviour
+public class Wood : MonoBehaviour
 {
     public bool picked;
-    public int WoodDrop;
+    private PlayerScript _player;
+    public PlantSeed plantSeed;
+    public int wooddrop;
+
     // Start is called before the first frame update
     void Start()
     {
-        WoodDrop = 0;
         GetComponent<BoxCollider2D>().enabled = false;
         picked = false;
+        //wooddrop = 0;
     }
 
     // Update is called once per frame
@@ -20,32 +24,38 @@ public class wood : MonoBehaviour
         
     }
 
-    public void woodDrop(int drop)
+    public void WoodDrop(int drop)
     {
-        WoodDrop = WoodDrop + drop; 
+        wooddrop = wooddrop + drop; 
     }
 
     public void woodOn()
     {
+        GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<BoxCollider2D>().enabled = true;
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("on");
-        if (col.tag == "Player" && picked == false)
+        if (other.CompareTag("Player"))
         {
             picked = true;
-            col.GetComponent<MaterialManagement>().AddMaterial(WoodDrop);
-            woodPicked();
+            plantSeed.amountToGive = wooddrop;
+            for (var i = 0; i < plantSeed.amountToGive; i++)
+            {
+                _player = other.GetComponent<PlayerScript>();
+                _player.inventory.AddItem(plantSeed.rawGoodToGive);
+            }
+            plantSeed.amountToGive = 0;
+            WoodPicked();
         }
     }
 
-    public void woodPicked()
+    public void WoodPicked()
     {
         if (picked == true)
         {
-            Destroy(transform.parent.gameObject);
+            transform.parent.gameObject.SetActive(false);
         }
     }
 }

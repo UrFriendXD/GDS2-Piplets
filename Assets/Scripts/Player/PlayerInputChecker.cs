@@ -1,14 +1,46 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerInputChecker : MonoBehaviour
+namespace Player
 {
-    public delegate void PlantUseEvent(GameObject player);
-    public event PlantUseEvent ToolButtonPressed;
-    // Start is called before the first frame update
-    private void OnToolUse()
+    public class PlayerInputChecker : MonoBehaviour
     {
-        ToolButtonPressed?.Invoke(gameObject);
+        public delegate void OnActionPressed();
+        public event OnActionPressed Pressed;
+        public delegate void OnActionBare();
+        public event OnActionBare BarePressed;
+        public delegate void OnCancelButton();
+        public event OnCancelButton OnCancelButtonPressed;
+
+        private playerMovement playerMovement;
+        private PlayerScript playerScript;
+
+        private void Start()
+        {
+            playerMovement = GetComponent<playerMovement>();
+            playerScript = GetComponent<PlayerScript>();
+        }
+
+        // Calls Pressed event when Action is pressed
+        private void OnAction()
+        {
+            if (!playerScript.itemHeld) return;
+            if (Pressed == null) return;
+            Pressed();
+            playerMovement.Interact(); 
+            Debug.Log("Action");
+        }
+    
+        // Calls BarePressed event when Interact bare is pressed
+        private void OnInteractBare()
+        {
+            BarePressed?.Invoke();
+        }
+
+        public void OnCancel()
+        {
+            OnCancelButtonPressed?.Invoke();
+            OnCancelButtonPressed = null;
+            //Debug.Log("Canceled");
+        }
     }
 }

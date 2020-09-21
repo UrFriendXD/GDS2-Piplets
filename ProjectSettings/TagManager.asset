@@ -11,6 +11,9 @@ TagManager:
   - Cotton
   - Tree
   - Plant
+  - Wall
+  - Door
+  - Ground2
   layers:
   - Default
   - TransparentFX
