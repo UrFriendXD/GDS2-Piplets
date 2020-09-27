@@ -45,6 +45,7 @@
             <e p="ItemSaveManager.cs" t="Include" />
           </e>
           <e p="Interaction" t="Include">
+            <e p="DoorPlayerDetector.cs" t="Include" />
             <e p="InteractableObject.cs" t="Include" />
             <e p="PlayerDetector.cs" t="Include" />
           </e>

@@ -1,72 +1,88 @@
 ﻿using Player;
 using UnityEngine;
 
-public class PlayerDetector : MonoBehaviour
+namespace Interaction
 {
-    private PlayerScript playerScript;
-    private playerMovement playerMovement;
-    private PlayerInputChecker playerInputChecker;
-    private Item plantSeed;
-    private InteractableObject interactableObject;
-    private float objectPos;
-
-    // Start is called before the first frame update
-    private void Start()
+    public class PlayerDetector : MonoBehaviour
     {
-        interactableObject = GetComponent<InteractableObject>();
-    }
+        private PlayerScript playerScript;
+        private playerMovement playerMovement;
+        private PlayerInputChecker playerInputChecker;
+        private Item plantSeed;
+        private InteractableObject interactableObject;
+        private float objectPos;
+        protected SpriteRenderer _spriteRenderer;
 
-    // Calls interactableObjects InteractBare()
-    protected virtual void InteractBare()
-    {
-        interactableObject.InteractBare(playerScript);
-    }
+        // Start is called before the first frame update
+        private void Start()
+        {
+            interactableObject = GetComponent<InteractableObject>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
-    // Calls interactableObjects InteractWithItem()
-    protected virtual void InteractWithItem()
-    {
-        interactableObject.InteractWithItem(playerScript.itemHeld, playerScript);
-        //Debug.Log("Planted");
-    }
+        // Calls interactableObjects InteractBare()
+        protected virtual void InteractBare()
+        {
+            interactableObject.InteractBare(playerScript);
+        }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        CheckPlayer(other.gameObject);
-    }
+        // Calls interactableObjects InteractWithItem()
+        protected virtual void InteractWithItem()
+        {
+            interactableObject.InteractWithItem(playerScript.itemHeld, playerScript);
+            //Debug.Log("Planted");
+        }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        RemovePlayer(other.gameObject);
-    }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            CheckPlayer(other.gameObject);
+        }
 
-    private void CheckPlayer(GameObject other)
-    {
-        if (!other.CompareTag("Player")) return;
-        playerScript = other.GetComponent<PlayerScript>();
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            RemovePlayer(other.gameObject);
+        }
+
+        private void CheckPlayer(GameObject other)
+        {
+            if (!other.CompareTag("Player")) return;
+            playerScript = other.GetComponent<PlayerScript>();
             
-        // Send objects x position for playerMovement
-        playerMovement = other.GetComponent<playerMovement>();
-        playerMovement.TouchObject(transform.position.x);
+            // Send objects x position for playerMovement
+            playerMovement = other.GetComponent<playerMovement>();
+            playerMovement.TouchObject(transform.position.x);
 
-        // Adds functions to delegate
-        playerInputChecker = other.GetComponent<PlayerInputChecker>();
-        playerInputChecker.Pressed += InteractWithItem;
-        playerInputChecker.BarePressed += InteractBare;
-    }
+            // Adds functions to delegate
+            playerInputChecker = other.GetComponent<PlayerInputChecker>();
+            playerInputChecker.Pressed += InteractWithItem;
+            playerInputChecker.BarePressed += InteractBare;
+        
+            // Changes sprite to be slightly transparent to show it's the current object
+            _spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
+        }
 
-    private void RemovePlayer(GameObject other)
-    {
-        if (!other.CompareTag("Player")) return;
-        // Reset object x position
-        playerMovement.TouchObject(0);
+        private void RemovePlayer(GameObject other)
+        {
+            if (!other.CompareTag("Player")) return;
+            // Reset object x position
+            playerMovement.TouchObject(0);
             
-        // Removes functions from delegate
-        playerInputChecker.Pressed -= InteractWithItem;
-        playerInputChecker.BarePressed -= InteractBare;
+            // Removes functions from delegate
+            playerInputChecker.Pressed -= InteractWithItem;
+            playerInputChecker.BarePressed -= InteractBare;
             
-        // Resets variables
-        playerScript = null;
-        playerMovement = null;
-        playerInputChecker = null;
+            // Resets variables
+            playerScript = null;
+            playerMovement = null;
+            playerInputChecker = null;
+        
+            // Changes sprite to be back to normal transparency
+            AlphaToggle(other);
+        }
+
+        protected virtual void AlphaToggle(GameObject other)
+        {
+            _spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+        }
     }
 }

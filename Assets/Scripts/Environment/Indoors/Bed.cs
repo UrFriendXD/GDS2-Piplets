@@ -1,5 +1,4 @@
 ﻿using Player;
-using UnityEngine;
 using UnityEngine.Events;
 
 namespace Environment.Indoors
