@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using RoboRyanTron.Unite2017.Events;
+using Unity.Mathematics;
 using UnityEngine;
 
 /*
@@ -16,6 +18,9 @@ public class DayManager : MonoBehaviour
     
     // Change later with service locator pattern
     [SerializeField] private ItemContainer playerInventory;
+    
+    // Money stat change with service locator later on
+    [SerializeField] private PlayerStats playerStats;
 
     // Called on event DayPassed
     public void DayPassed()
@@ -63,6 +68,8 @@ public class DayManager : MonoBehaviour
     private void PassOut()
     {
         // just idk end game? pfft dunno
-        Debug.Log("Passed out");
+        //Debug.Log("Passed out");
+        playerStats.money = (int)math.round((playerStats.money * 0.8));
+        //Debug.Log("Player has: " + _playerStats.money);
     }
 }

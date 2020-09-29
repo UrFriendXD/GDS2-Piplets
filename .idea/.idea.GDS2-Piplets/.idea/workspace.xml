@@ -37,14 +37,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/EndLadder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/EndLadder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Ladder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Ladder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +87,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SurvivialItemUsed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/WildPlant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
@@ -111,6 +104,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DoorPlayerDetector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
       </list>
     </option>
   </component>
@@ -183,7 +177,9 @@
       <workItem from="1600597938582" duration="2021000" />
       <workItem from="1600607473070" duration="7631000" />
       <workItem from="1600621610599" duration="3166000" />
-      <workItem from="1601190787934" duration="2233000" />
+      <workItem from="1601190787934" duration="3672000" />
+      <workItem from="1601355454170" duration="609000" />
+      <workItem from="1601378047204" duration="451000" />
     </task>
     <servers />
   </component>
