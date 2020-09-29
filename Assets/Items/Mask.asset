@@ -16,5 +16,5 @@ MonoBehaviour:
   itemName: Mask
   icon: {fileID: 1447187925931213244, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   maximumStack: 99
-  buyingPrice: 10
-  sellingPrice: 9
+  baseSellingPrice: 15
+  currentSellingPrice: 0

@@ -16,5 +16,5 @@ MonoBehaviour:
   itemName: Wood
   icon: {fileID: 5716252147960737917, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   maximumStack: 99
-  buyingPrice: 1
-  sellingPrice: 3
+  baseSellingPrice: 6
+  currentSellingPrice: 7

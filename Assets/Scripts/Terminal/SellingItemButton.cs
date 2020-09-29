@@ -11,6 +11,12 @@ public class SellingItemButton : TerminalAddRemoveButton
     // Item that it sells
     [SerializeField] private TradableItem item;
     public PlayerStats playerStats;
+    private MarketManager _marketManager;
+
+    private void Start()
+    {
+        _marketManager = ServiceLocator.Current.Get<MarketManager>();
+    }
 
     private void Update()
     {
@@ -50,7 +56,8 @@ public class SellingItemButton : TerminalAddRemoveButton
             PlayerInventory.RemoveItem(item);
         }
 
-        playerStats.money += item.sellingPrice * _amount;
+        playerStats.money += item.currentSellingPrice * _amount;
+        _marketManager.ItemSold(item, _amount);
         UpdateAmount(0);
     }
 }

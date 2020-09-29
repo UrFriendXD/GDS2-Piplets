@@ -7,12 +7,11 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AddMoneyTest.cs" t="Include" />
         <e p="botsmatic-font" t="Include">
           <e p="info.txt" t="Include" />
         </e>
-        <e p="PlayMusic.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AddMoneyTest.cs" t="Include" />
           <e p="DontDestroy" t="Include">
             <e p="DontDestroy.cs" t="Include" />
           </e>
@@ -62,6 +61,8 @@
           </e>
           <e p="Managers" t="Include">
             <e p="DayManager.cs" t="Include" />
+            <e p="MarketManager.cs" t="Include" />
+            <e p="ServiceLocator.cs" t="Include" />
             <e p="SurvivialItemUsed.cs" t="Include" />
           </e>
           <e p="MaterialManagement.cs" t="Include" />
@@ -79,6 +80,7 @@
             <e p="WallCheck.cs" t="Include" />
           </e>
           <e p="PlayerAction.cs" t="Include" />
+          <e p="PlayMusic.cs" t="Include" />
           <e p="SceneManagement.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="Events" t="Include">

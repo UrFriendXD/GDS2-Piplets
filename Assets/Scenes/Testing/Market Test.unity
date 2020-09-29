@@ -1731,6 +1731,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c9a7dc9cc9b9241875e7412f8f0b49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &593638091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593638093}
+  - component: {fileID: 593638092}
+  - component: {fileID: 593638094}
+  m_Layer: 0
+  m_Name: MarketManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &593638092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593638091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598c8a92f1a912b469eeb4a3e10991ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tradableItems:
+  - {fileID: 11400000, guid: e79d190f3499cba409b6b701696a266d, type: 2}
+  - {fileID: 11400000, guid: b46d27292c6714243899634802e45936, type: 2}
+  - {fileID: 11400000, guid: 0f04804e9fe36314da7f6bbfaa711716, type: 2}
+  - {fileID: 11400000, guid: 4e04df9a931345640a143e6ab7488145, type: 2}
+  - {fileID: 11400000, guid: 3f5cf1493d272214fa1aaac3292a141a, type: 2}
+  - {fileID: 11400000, guid: c5e4fa70868948d4bb02e3f3b3f78ae4, type: 2}
+  newGame: 0
+--- !u!4 &593638093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593638091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &593638094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593638091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e839e4c12473014b9b3d3faccc0f61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 663d0b9bd067b9f42bb85574594e974c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 593638092}
+        m_TargetAssemblyTypeName: MarketManager, Assembly-CSharp
+        m_MethodName: OnDayPassed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &601263239
 GameObject:
   m_ObjectHideFlags: 0
@@ -5635,10 +5715,6 @@ PrefabInstance:
       propertyPath: playerInventory
       value: 
       objectReference: {fileID: 413961636}
-    - target: {fileID: 2019908139, guid: 01bdad5fb92f277468417cbc1076fedb, type: 3}
-      propertyPath: _playerStats
-      value: 
-      objectReference: {fileID: 11400000, guid: 24fa3d1811d7d5644b18f96179542668, type: 2}
     - target: {fileID: 5732898310076772445, guid: 01bdad5fb92f277468417cbc1076fedb, type: 3}
       propertyPath: m_Name
       value: DayManager
