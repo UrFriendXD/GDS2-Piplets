@@ -18,7 +18,7 @@ MonoBehaviour:
   maximumStack: 99
   plantType: 3
   daysToStage1: 0
-  daysToHarvest: 0
+  daysToHarvest: 10
   plantSprites: []
-  amountToGive: 5
+  amountToGive: 12
   rawGoodToGive: {fileID: 11400000, guid: 3f5cf1493d272214fa1aaac3292a141a, type: 2}

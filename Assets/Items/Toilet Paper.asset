@@ -16,5 +16,5 @@ MonoBehaviour:
   itemName: Toilet Paper
   icon: {fileID: 4399753819827433819, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   maximumStack: 99
-  buyingPrice: 19
-  sellingPrice: 13
+  baseSellingPrice: 24
+  currentSellingPrice: 36

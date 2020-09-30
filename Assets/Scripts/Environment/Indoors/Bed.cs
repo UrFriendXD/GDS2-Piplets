@@ -6,7 +6,7 @@ namespace Environment.Indoors
     public class Bed : InteractableObject
     {
         public UnityEvent dayPass;
-        private PlayerScript playerScript;
+        //private PlayerScript playerScript;
         
         // Calls day pass event regardless of interaction key
         public override void InteractWithItem(Item item, PlayerScript playerScript)

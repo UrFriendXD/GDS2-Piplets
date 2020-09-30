@@ -30,29 +30,6 @@ public class Door : InteractableObject
         PlayDoorEvent();
     }
 
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, .5f);
-    //     }
-    // }
-    //
-    // private void OnTriggerExit2D(Collider2D other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         if (CompareTag("Door") && other.GetComponent<SpriteRenderer>().sortingOrder == 2)
-    //         {
-    //             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
-    //         }
-    //         else
-    //         {
-    //             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-    //         }
-    //     }
-    // }
-
     private void PlayDoorEvent()
     {
         doorEvent.Post(gameObject);
