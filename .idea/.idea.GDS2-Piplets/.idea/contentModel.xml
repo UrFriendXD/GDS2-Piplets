@@ -61,9 +61,11 @@
           </e>
           <e p="Managers" t="Include">
             <e p="DayManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="MarketManager.cs" t="Include" />
             <e p="ServiceLocator.cs" t="Include" />
             <e p="SurvivialItemUsed.cs" t="Include" />
+            <e p="TradableItemsList.cs" t="Include" />
           </e>
           <e p="MaterialManagement.cs" t="Include" />
           <e p="Piplet" t="Include">

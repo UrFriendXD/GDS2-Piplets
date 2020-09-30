@@ -10,12 +10,14 @@ public class UIPlayerDetector : MonoBehaviour
     private PlayerScript playerScript;
     private PlayerInputChecker playerInputChecker;
     private UIInteractableObject uiInteractableObject;
+    private SpriteRenderer _spriteRenderer;
 
     private bool _activated;
 
     private new void Start()
     {
         uiInteractableObject = GetComponent<UIInteractableObject>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void InteractBare()
@@ -47,7 +49,7 @@ public class UIPlayerDetector : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         CheckPlayer(other.gameObject);
-        Debug.Log("touch");
+        //Debug.Log("touch");
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -63,6 +65,9 @@ public class UIPlayerDetector : MonoBehaviour
         // Adds functions to delegate
         playerInputChecker = other.GetComponent<PlayerInputChecker>();
         AddInteraction();
+        
+        // Changes sprite to be slightly transparent to show it's the current object
+        _spriteRenderer.color = new Color(1f, 1f, 1f, .5f);
     }
 
     private void RemovePlayer(GameObject other)
@@ -77,6 +82,10 @@ public class UIPlayerDetector : MonoBehaviour
         playerScript = null;
         playerInputChecker = null;
         
+        // Reset Transparency
+        _spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+        
+        // Close UI if player walks out though players shouldn't be able to move if they activate UI
         uiInteractableObject.CloseUI();
     }
 }

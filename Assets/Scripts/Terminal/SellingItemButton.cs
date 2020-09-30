@@ -12,10 +12,18 @@ public class SellingItemButton : TerminalAddRemoveButton
     [SerializeField] private TradableItem item;
     public PlayerStats playerStats;
     private MarketManager _marketManager;
+    private Image icon;
 
     private void Start()
     {
         _marketManager = ServiceLocator.Current.Get<MarketManager>();
+    }
+
+    private void OnValidate()
+    {
+        // Sets the ui image to be the ui icon
+        icon = GetComponent<Image>();
+        icon.sprite = item.icon;
     }
 
     private void Update()

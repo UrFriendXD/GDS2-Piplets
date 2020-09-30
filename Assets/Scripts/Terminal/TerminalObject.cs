@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace Terminal
 {
+    [RequireComponent(typeof(UIPlayerDetector))]
     public class TerminalObject : UIInteractableObject
     {
-        // 
+        // Terminal window, to be allocated. Could be changed to a service locator
         [SerializeField] private TerminalUIWindow _terminalUIWindow;
 
         public override void Start()

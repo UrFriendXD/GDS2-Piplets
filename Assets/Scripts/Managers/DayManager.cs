@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Player;
 using RoboRyanTron.Unite2017.Events;
@@ -21,6 +22,14 @@ public class DayManager : MonoBehaviour
     
     // Money stat change with service locator later on
     [SerializeField] private PlayerStats playerStats;
+    
+    // For day passed cause I don't have a clue how to call it else wise
+    private MarketManager _marketManager;
+
+    private void Start()
+    {
+        _marketManager = ServiceLocator.Current.Get<MarketManager>();
+    }
 
     // Called on event DayPassed
     public void DayPassed()
@@ -30,6 +39,8 @@ public class DayManager : MonoBehaviour
         {
             ConsumeSurvivalItems();
         }
+
+        _marketManager.OnDayPassed();
     }
 
     // Checks if a week passed. If it's 14 days ends the season

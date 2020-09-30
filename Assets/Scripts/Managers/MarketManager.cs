@@ -7,44 +7,46 @@ using Random = UnityEngine.Random;
 
 public class MarketManager : IGameService
 {
-    [SerializeField] private List<TradableItem> tradableItems = new List<TradableItem>();
+    private TradableItemsList _tradableItemsList;
     private Dictionary<TradableItem, int> _itemsSold = new Dictionary<TradableItem, int>();
-
-    public bool newGame;
     
-    // Sets price to base if its 0. Adds items to the dictionary
-    private void OnValidate()
+    // On start, if it's a new game reset prices
+    public void Setup(bool isNewGame, TradableItemsList tradableItemsList)
     {
-        foreach (var tradableItem in tradableItems)
+        _tradableItemsList = tradableItemsList; 
+        
+        // For each items add to dict and set their current price to base price
+        foreach (var tradableItem in _tradableItemsList.TradableItems)
         {
-            if ( tradableItem.currentSellingPrice == 0)
-            {
-                tradableItem.currentSellingPrice = tradableItem.baseSellingPrice;
-            }
+            // Was meant to be for onvalidate so you didn't need to manually set current price as base price but now is redundant
+            // if ( tradableItem.currentSellingPrice == 0)
+            // {
+            //     tradableItem.currentSellingPrice = tradableItem.baseSellingPrice;
+            // }
             
+            // Initialise the dictionary so all items start with amount of 0
             _itemsSold.Add(tradableItem, 0);
         }
-    }
-
-    // On start, if it's a new game reset prices
-    private void Start()
-    {
-        if (newGame)
+        
+        // If it's a new game, reset item prices
+        if (isNewGame)
         {
             ResetMarketPrices();
         }
+        Debug.Log("Market manager intialised");
     }
 
     // Called to add how many items are sold
     public void ItemSold(TradableItem tradableItem, int amount)
     {
         _itemsSold[tradableItem] += amount;
+        Debug.Log(tradableItem + " " + amount);
     }
 
     // Resets the item prices. Can be called during end of season or something?
     private void ResetMarketPrices()
     {
-        foreach (var tradableItem in tradableItems)
+        foreach (var tradableItem in _tradableItemsList.TradableItems)
         {
             tradableItem.currentSellingPrice = tradableItem.baseSellingPrice;
             _itemsSold[tradableItem] = 0;
@@ -69,16 +71,16 @@ public class MarketManager : IGameService
             switch (_itemsSold[key])
             {
                 // Trend upwards
-                case var _ when _itemsSold[key] < 3:
-                    priceModifier = Random.Range(1,1.7f);
+                case var _ when _itemsSold[key] < 4:
+                    priceModifier = Random.Range(0.8f, 1.6f);
                     break;
                 // Down or up if sold a few
                 case var _ when _itemsSold[key] < 10:
-                    priceModifier = Random.Range(0.85f,  1.5f);
+                    priceModifier = Random.Range(0.70f,  1.4f);
                     break;
                 // Likely to go down if sold a lot
                 case var _ when _itemsSold[key] < 15:
-                    priceModifier = Random.Range(0.7f, 1.1f);
+                    priceModifier = Random.Range(0.55f, 1.1f);
                     break;
             }
             priceModifier = Mathf.Round(priceModifier * 100f) / 100f;
