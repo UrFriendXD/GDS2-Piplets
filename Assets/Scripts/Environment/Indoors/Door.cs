@@ -8,6 +8,7 @@ public class Door : InteractableObject
 {
     public GameObject greenhouse;
     public GameObject outsideGreenHouse;
+    public GameObject fireFlies;
     public GameObject piplet;
     public GameObject lights;
     public GameObject globalLights;
@@ -22,6 +23,7 @@ public class Door : InteractableObject
         {
             globalLights.SetActive(!globalLights.activeSelf);
         }
+        fireFlies.SetActive(!fireFlies.activeSelf);
         greenhouse.SetActive(!greenhouse.activeSelf);
         outsideGreenHouse.SetActive(!outsideGreenHouse.activeSelf);
         if (!globalLights.activeSelf && !greenhouse.activeSelf)
