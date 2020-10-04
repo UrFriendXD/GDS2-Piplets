@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MasterVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="4238926114" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Greenhouse</ObjectPath>
+			<ShortName>Greenhouse</ShortName>
+			<Path>Greenhouse.bnk</Path>
+			<IncludedEvents>
+				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Door_Open" DurationType="OneShot" DurationMin="2.317896" DurationMax="2.317896">
+					<IncludedMemoryFiles>
+						<File Id="605023815" Language="SFX">
+							<ShortName>greenhouse door.wav</ShortName>
+							<Path>SFX\greenhouse door_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1707141479" Name="Ladder_Climb" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Ladder_Climb" DurationType="OneShot" DurationMin="0.337292" DurationMax="0.500042">
+					<IncludedMemoryFiles>
+						<File Id="315187937" Language="SFX">
+							<ShortName>metal ladder 1 (1).wav</ShortName>
+							<Path>SFX\metal ladder 1 (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="956541507" Language="SFX">
+							<ShortName>metal ladder 4.wav</ShortName>
+							<Path>SFX\metal ladder 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3610060586" Name="Ladder_Descend" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Ladder_Descend" DurationType="OneShot" DurationMin="1.285771" DurationMax="1.285771">
+					<IncludedMemoryFiles>
+						<File Id="795952486" Language="SFX">
+							<ShortName>Ladder slide.wav</ShortName>
+							<Path>SFX\Ladder slide_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3735191866" Name="Plant_Harvest" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Plant_Harvest" DurationType="OneShot" DurationMin="0.536771" DurationMax="0.536771">
+					<IncludedMemoryFiles>
+						<File Id="402537829" Language="SFX">
+							<ShortName>piplet wavs\planting_harvesting.wav</ShortName>
+							<Path>SFX\piplet wavs\planting_harvesting_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\PlayMusic" DurationType="OneShot" DurationMin="268.799988" DurationMax="268.799988">
+					<IncludedMemoryFiles>
+						<File Id="413528737" Language="SFX">
+							<ShortName>Piplets_MainTheme_FINAL.wav</ShortName>
+							<Path>SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2449075236" Name="Seed_planting" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Seed_planting" DurationType="OneShot" DurationMin="0.498208" DurationMax="0.498208">
+					<IncludedMemoryFiles>
+						<File Id="293591642" Language="SFX">
+							<ShortName>piplet wavs\seed planting.wav</ShortName>
+							<Path>SFX\piplet wavs\seed planting_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="340271938" Name="Walking" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Walking" DurationType="OneShot" DurationMin="0.262437" DurationMax="0.270333">
+					<IncludedMemoryFiles>
+						<File Id="276486449" Language="SFX">
+							<ShortName>piplet wavs\stone step 2.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="670780140" Language="SFX">
+							<ShortName>piplet wavs\stone step 1.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Greenhouse\Indoors\Water" DurationType="OneShot" DurationMin="1.835833" DurationMax="1.835833">
+					<IncludedMemoryFiles>
+						<File Id="1013900543" Language="SFX">
+							<ShortName>piplet wavs\water pour 4.wav</ShortName>
+							<Path>SFX\piplet wavs\water pour 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
