@@ -30,6 +30,14 @@ public class Piplet : MonoBehaviour
 
     void Update()
     {
+        if (target.transform.position.x < this.transform.position.x && transform.rotation.y != 0)
+        {
+            this.transform.Rotate(0f, 180f, 0f);
+        }
+        if (target.transform.position.x > this.transform.position.x &&  transform.rotation.y == 0)
+        { 
+            this.transform.Rotate(0f, -180f, 0f);
+        }
         if (_PlayerMovement.GroundCheck == true && target.transform.position.y == transform.position.y)
         {
             if (Vector2.Distance(transform.position, target.position) > stoppingDistance)

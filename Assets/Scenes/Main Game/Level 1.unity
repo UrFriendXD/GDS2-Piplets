@@ -475,7 +475,9 @@ MonoBehaviour:
   greenhouse: {fileID: 2014342183}
   outsideGreenHouse: {fileID: 1065728756}
   fireFlies: {fileID: 499709420}
-  piplet: {fileID: 48763977}
+  piplet0: {fileID: 48763977}
+  piplet1: {fileID: 1200183312}
+  piplet2: {fileID: 1573780593}
   lights: {fileID: 424797489}
   globalLights: {fileID: 21599043}
   doorEvent:
@@ -521,7 +523,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 0ca4242db10a1644e8d25c785bccda98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -4146,6 +4148,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1200183312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8829463082077968739, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
+  m_PrefabInstance: {fileID: 1932326019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1214149324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4376,14 +4383,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2886909644927340360, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2886909644927340360, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: stoppingDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2886909644927340360, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1273165475}
@@ -4431,21 +4430,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2886909644927340372, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5161723
-      objectReference: {fileID: 0}
-    - target: {fileID: 2886909644927340372, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: m_Center.y
-      value: 0.24191374
-      objectReference: {fileID: 0}
     - target: {fileID: 2886909644927340373, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
       propertyPath: m_Name
       value: PipletWaterPup
       objectReference: {fileID: 0}
     - target: {fileID: 2886909644927340373, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
@@ -5850,6 +5841,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
+--- !u!1 &1573780593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2886909644927340373, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
+  m_PrefabInstance: {fileID: 1344381530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1611483715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6543,10 +6539,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7347632799492201971, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 7435405763261632034, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03
@@ -6592,44 +6584,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1273165475}
-    - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1273165475}
-    - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: stoppingDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: offset.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7435405763261632062, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
       propertyPath: m_Name
       value: Piplet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435405763261632063, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: m_Size.y
-      value: 0.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435405763261632063, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: m_Size.x
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435405763261632063, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: m_Size.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435405763261632063, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: m_Center.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
@@ -7301,15 +7261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8829463082077968739, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8829463082077968766, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
-      propertyPath: stoppingDistance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8829463082077968766, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
-      propertyPath: speed
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8829463082077968766, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
       propertyPath: playerScript
