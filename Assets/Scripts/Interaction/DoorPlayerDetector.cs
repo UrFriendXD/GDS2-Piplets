@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Interaction;
+﻿using Interaction;
 using UnityEngine;
 
 public class DoorPlayerDetector : PlayerDetector

@@ -1,44 +1,54 @@
-﻿using System;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
-public class ProcessingItemButton : TerminalAddRemoveButton
+namespace Terminal
 {
-    [HideInInspector]
-    public CraftingRecipe _craftingRecipe;
-
-    private void Update()
+    public class ProcessingItemButton : TerminalAddRemoveButton
     {
-        // Adds amount
-        if (_adding && _delay <= 0)
+        [HideInInspector]
+        public CraftingRecipe craftingRecipe;
+
+        [SerializeField] private TextMeshProUGUI amountRequiredText;
+
+        private void Update()
         {
-            if (_craftingRecipe.CanCraft(PlayerInventory, _amount + 1))
+            // Adds amount
+            if (_adding && _delay <= 0)
             {
-                UpdateAmount(_amount += 1);
-                _delay = delayReset;
+                if (craftingRecipe.CanCraft(PlayerInventory, _amount + 1))
+                {
+                    UpdateAmount(_amount += 1);
+                    _delay = delayReset;
+                }
+            }
+
+            // Removes amount
+            if (_removing && _delay <= 0)
+            {
+                if (_amount > 0)
+                {
+                    UpdateAmount(_amount -= 1);
+                    _delay = delayReset;
+                }
+            }
+
+            // Timer
+            if (_delay > 0)
+            {
+                _delay -= Time.deltaTime;
             }
         }
 
-        // Removes amount
-        if (_removing && _delay <= 0)
+        public void ResetAmount()
         {
-            if (_amount > 0)
-            {
-                UpdateAmount(_amount -= 1);
-                _delay = delayReset;
-            }
+            UpdateAmount(0);
         }
 
-        // Timer
-        if (_delay > 0)
+        private new void UpdateAmount(int changeAmount)
         {
-            _delay -= Time.deltaTime;
+            _amount = changeAmount;
+            amountText.text = "" + changeAmount * craftingRecipe.Results[0].Amount;
+            amountRequiredText.text = "" + craftingRecipe.Materials[0].Amount * _amount;
         }
-    }
-
-    public void ResetAmount()
-    {
-        UpdateAmount(0);
     }
 }
