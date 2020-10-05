@@ -63,6 +63,7 @@
             <e p="DayManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="MarketManager.cs" t="Include" />
+            <e p="PlayersManager.cs" t="Include" />
             <e p="ServiceLocator.cs" t="Include" />
             <e p="SurvivialItemUsed.cs" t="Include" />
             <e p="TradableItemsList.cs" t="Include" />
@@ -70,6 +71,7 @@
           <e p="MaterialManagement.cs" t="Include" />
           <e p="Piplet" t="Include">
             <e p="Piplet.cs" t="Include" />
+            <e p="PipletStats.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="GroundCheck.cs" t="Include" />
@@ -79,6 +81,10 @@
             <e p="playerMovement.cs" t="Include" />
             <e p="PlayerScript.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
+            <e p="Stats" t="Include">
+              <e p="CharacterStat.cs" t="Include" />
+              <e p="StatModifier.cs" t="Include" />
+            </e>
             <e p="WallCheck.cs" t="Include" />
           </e>
           <e p="PlayerAction.cs" t="Include" />
@@ -101,11 +107,13 @@
             <e p="CraftingRecipe.cs" t="Include" />
             <e p="CraftingRecipeUI.cs" t="Include" />
             <e p="ItemPrices.cs" t="Include" />
+            <e p="PriceChangeChecker.cs" t="Include" />
             <e p="ProcessingCanvasUI.cs" t="Include" />
             <e p="ProcessingItemButton.cs" t="Include" />
             <e p="SellingCanvasUI.cs" t="Include" />
             <e p="SellingItemButton.cs" t="Include" />
             <e p="SellingManager.cs" t="Include" />
+            <e p="SetCratingRatios.cs" t="Include" />
             <e p="TerminalAddRemoveButton.cs" t="Include" />
             <e p="TerminalObject.cs" t="Include" />
             <e p="TerminalUIWindow.cs" t="Include" />

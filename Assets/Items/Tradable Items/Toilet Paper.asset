@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd034ca8f125e2846b361fd5b359a89d, type: 3}
-  m_Name: Raw Cotton
+  m_Name: Toilet Paper
   m_EditorClassIdentifier: 
-  id: 0f04804e9fe36314da7f6bbfaa711716
-  itemName: Cotton
-  icon: {fileID: -4033630884399129975, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  id: c5e4fa70868948d4bb02e3f3b3f78ae4
+  itemName: Toilet Paper
+  icon: {fileID: 4399753819827433819, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   maximumStack: 99
-  baseSellingPrice: 3
-  currentSellingPrice: 3
+  baseSellingPrice: 24
+  currentSellingPrice: 22

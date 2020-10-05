@@ -19,8 +19,12 @@ MonoBehaviour:
   plantType: 1
   daysToStage1: 0
   daysToHarvest: 1
-  plantSprites:
-  - {fileID: -4150176314059901787, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-  - {fileID: 3492415661574000411, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+  spritesList:
+  - sprites:
+    - {fileID: -4150176314059901787, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: 3700964955968444548, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+  - sprites:
+    - {fileID: 3492415661574000411, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: -5932862748826219965, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
   amountToGive: 1
   rawGoodToGive: {fileID: 11400000, guid: b46d27292c6714243899634802e45936, type: 2}

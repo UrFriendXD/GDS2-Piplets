@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Terminal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,7 +32,7 @@ public class CraftingRecipeUI : MonoBehaviour
 	{
 		// Initialise values of button
 		processingItemButton.PlayerInventory = inventory;
-		processingItemButton._craftingRecipe = craftingRecipe;
+		processingItemButton.craftingRecipe = craftingRecipe;
 	}
 
 	public void OnCraftButtonClick()

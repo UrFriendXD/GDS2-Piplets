@@ -9,7 +9,7 @@ namespace Player
         public AK.Wwise.Event walkEvent;
         public AK.Wwise.Event harvestEvent;
         public AK.Wwise.Event seedPlantingEvent;
-        public AK.Wwise.Event diggingEvent;
+        //public AK.Wwise.Event diggingEvent;
         public AK.Wwise.Event ladderClimbEvent;
         public AK.Wwise.Event ladderDescentEvent;
     
@@ -34,10 +34,10 @@ namespace Player
             seedPlantingEvent.Post(gameObject);
         }
         
-        public void PlayDiggingEvent()
-        {
-            diggingEvent.Post(gameObject);
-        }
+        // public void PlayDiggingEvent()
+        // {
+        //     diggingEvent.Post(gameObject);
+        // }
 
         public void PlayLadderClimbEvent()
         {

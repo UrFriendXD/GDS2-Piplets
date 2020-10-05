@@ -33,6 +33,7 @@ namespace Terminal
         public override void CloseUI()
         {
             _terminalUIWindow.CloseUI();
+            uiPlayerDetector.AddInteraction();
         }
     }
 }

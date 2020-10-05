@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     // Player variables set from terminal
-    //[NonSerialized]
+    [HideInInspector]
     public Inventory PlayerInventory;
     
     // Values for selling 
@@ -43,12 +39,12 @@ public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPoin
         _removing = false;
     }
 
-    protected void UpdateAmount(int changeAmount)
+    protected virtual void UpdateAmount(int changeAmount)
     {
         _amount = changeAmount;
         amountText.text = _amount.ToString();
     }
-    
+
     private void OnDisable()
     {
         UpdateAmount(0);

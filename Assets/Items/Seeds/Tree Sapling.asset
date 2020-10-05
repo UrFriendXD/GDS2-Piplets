@@ -19,6 +19,6 @@ MonoBehaviour:
   plantType: 3
   daysToStage1: 0
   daysToHarvest: 10
-  plantSprites: []
+  spritesList: []
   amountToGive: 12
   rawGoodToGive: {fileID: 11400000, guid: 3f5cf1493d272214fa1aaac3292a141a, type: 2}

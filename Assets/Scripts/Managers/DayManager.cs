@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Player;
+﻿using Player;
 using RoboRyanTron.Unite2017.Events;
 using Unity.Mathematics;
 using UnityEngine;

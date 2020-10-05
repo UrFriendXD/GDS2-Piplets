@@ -1,22 +1,28 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using Player;
+using Terminal;
+using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SellingItemButton : TerminalAddRemoveButton
 {
     // Item that it sells
     [SerializeField] private TradableItem item;
+    
+    [HideInInspector]
     public PlayerStats playerStats;
+    
     private MarketManager _marketManager;
     private Image icon;
 
-    private void Start()
+    [SerializeField] private TextMeshProUGUI totalCostText;
+
+    private void Awake()
     {
+        GetComponentInChildren<PriceChangeChecker>()._item = item;
         _marketManager = ServiceLocator.Current.Get<MarketManager>();
+
     }
 
     private void OnValidate()
@@ -55,6 +61,12 @@ public class SellingItemButton : TerminalAddRemoveButton
         }
     }
 
+    protected override void UpdateAmount(int changeAmount)
+    {
+        base.UpdateAmount(changeAmount);
+        totalCostText.text = "" + item.currentSellingPrice * _amount;
+    }
+
     // Sells items
     public void SellItems()
     {
@@ -68,4 +80,5 @@ public class SellingItemButton : TerminalAddRemoveButton
         _marketManager.ItemSold(item, _amount);
         UpdateAmount(0);
     }
+    
 }
