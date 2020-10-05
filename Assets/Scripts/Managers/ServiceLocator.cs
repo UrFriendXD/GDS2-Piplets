@@ -14,6 +14,7 @@ public class ServiceLocator
     {
         Register(new MarketManager());
         Register(new PlayersManager());
+        Register(new PipletManager());
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
 
     [SerializeField] private TradableItemsList tradableItemsList;
+    [SerializeField] private int amountOfPipletNeededToWin;
     
     private void Awake()
     {
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour
         }
 
         SetupMarket();
+        SetupPiplets();
     }
 
     #region Game setup functions
@@ -29,6 +32,11 @@ public class GameManager : MonoBehaviour
         marketManager.Setup(true, tradableItemsList);
     }
 
+    private void SetupPiplets()
+    {
+        ServiceLocator.Current.Get<PipletManager>().Setup(amountOfPipletNeededToWin);
+    }
+
     #endregion
-    
+
 }

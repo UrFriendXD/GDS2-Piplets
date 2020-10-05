@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Player;
 using UnityEngine;
 
@@ -24,7 +25,10 @@ public class Piplet : MonoBehaviour
         target = playerScript.transform;
         level = 1;
         _PlayerMovement = playerScript.PlayerMovement;
-        ActivatePiplet();
+        if (gameObject.activeSelf)
+        {
+            ActivatePiplet();
+        }
     }
 
     void Update()
@@ -78,7 +82,12 @@ public class Piplet : MonoBehaviour
        pipletStats.Unequip(playerScript.playerStats);
    }
 
-   private void OnDestroy()
+   private void OnEnable()
+   {
+       ActivatePiplet();
+   }
+
+   private void OnDisable()
    {
        DeactivatePiplet();
    }
