@@ -21,6 +21,7 @@ public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPoin
         // If already add or removing ignore. Forces only one MB active
         if (_adding || _removing) return;
         
+        Debug.Log(eventData.pointerId);
         // If LMB add, RMB remove
         switch (eventData.pointerId)
         {
@@ -31,6 +32,7 @@ public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPoin
                 _removing = true;
                 break;
         }
+        //Debug.Log("click");
     }
     
     public void OnPointerUp(PointerEventData eventData)

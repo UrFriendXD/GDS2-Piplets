@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7964787977466774193}
   - component: {fileID: 5226176068345775642}
   - component: {fileID: 8340085255396229987}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 9064395998448719103}
   - component: {fileID: 9064395998448719096}
   - component: {fileID: 9064395998448719097}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Terminal Sell Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -8849012156274886634, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -320,7 +320,7 @@ MonoBehaviour:
   PlayerInventory: {fileID: 0}
   delayReset: 0.2
   amountText: {fileID: 357704573872433565}
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: b46d27292c6714243899634802e45936, type: 2}
   playerStats: {fileID: 0}
   totalCostText: {fileID: 8086075562188781457}
 --- !u!1 &9064395998470441354
