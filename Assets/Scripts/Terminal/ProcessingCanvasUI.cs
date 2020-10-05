@@ -40,6 +40,8 @@ public class ProcessingCanvasUI : MonoBehaviour
         {
             craftingRecipeUi.inventory = null;
         }
+
+        _inventory = null;
         gameObject.SetActive(false);
     }
     

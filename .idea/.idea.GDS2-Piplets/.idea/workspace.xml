@@ -40,10 +40,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +85,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" />
@@ -129,9 +129,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
       </list>
     </option>
   </component>
@@ -262,9 +264,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601737477564" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601882654573">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601892823987">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601882654573" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601892823987" />
   </component>
 </project>

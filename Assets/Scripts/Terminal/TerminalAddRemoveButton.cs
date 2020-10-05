@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     // Player variables set from terminal
-    [HideInInspector]
+    //[HideInInspector]
     public Inventory PlayerInventory;
     
     // Values for selling 

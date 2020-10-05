@@ -49,6 +49,10 @@ public class SellingCanvasUI : MonoBehaviour
             sellingItemButton.PlayerInventory = null;
             sellingItemButton.playerStats = null;
         }
+
+        _inventory = null;
+        _playerStats = null;
+        
         gameObject.SetActive(false);
     }
     
