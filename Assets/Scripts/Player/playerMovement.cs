@@ -219,6 +219,8 @@ public class playerMovement : MonoBehaviour
         Vector3 currentPosition = transform.position;
         currentPosition.y +=  -1 * fallspeed * Time.deltaTime;
         transform.position = currentPosition;
+        _playerScript.PlayerAnimationController.OffLadder();
+
     }
 
     public void LadderMoveUpAndDown()
@@ -227,24 +229,29 @@ public class playerMovement : MonoBehaviour
         if(movementInput == 1)
         {
             ladderspeed = upLadderSpeed;
+            _playerScript.PlayerAnimationController.ClimbingAnimation();
         }
         if(movementInput == -1)
         {
             ladderspeed = downLadderSpeed;
+            _playerScript.PlayerAnimationController.SlidingAnimation();
         }
         if(movementInput == 1 && endLadder == true)
         {
+            _playerScript.PlayerAnimationController.OffLadder();
             movementInput = 0;
         }
         if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
         {
+            _playerScript.PlayerAnimationController.OffLadder();
             movementInput = 0;
         }
         if(movementInput == -1 && LadderMovement == true && GroundCheck2 == true)
         {
+            _playerScript.PlayerAnimationController.OffLadder();
             movementInput = 0;
         }
-
+        
         if (LadderMovement)
         {
             switch (movementInput)
@@ -318,6 +325,7 @@ public class playerMovement : MonoBehaviour
             }
             if (endLadder == true)
             {
+                _playerScript.PlayerAnimationController.OffLadder();
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
                 Vector3 currentPosition = transform.position;

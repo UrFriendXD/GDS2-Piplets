@@ -53,6 +53,7 @@ namespace Farming
                     if (!playerScript.PlayerMovement.isInteracting)
                     {
                         playerScript.PlayerAudio.PlaySeedPlantingEvent();
+                        playerScript.PlayerAnimationController.PlantingAnimation();
                     }
                 }
             }
