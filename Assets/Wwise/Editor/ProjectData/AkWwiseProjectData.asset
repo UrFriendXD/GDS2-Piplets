@@ -12,116 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 282c391c0df7dc84c97882d4cb9a20ff, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 62a60295786acd42911c59a454e62a62
-    GuidInternal: 
-    m_lastTime: -8586010132464446198
-    List: []
-  AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: ed36d88e3bdf0749bfd26878e4f764af
-    GuidInternal: 
-    m_lastTime: -8586010132465727363
-    List:
-    - name: Master Audio Bus
-      guid: d8a41415a61d2a41a17e75ca0c2149f3
-      id: 3803692087
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      Path: Default Work Unit\Master Audio Bus
-  BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 6989237d3912934489625055a18be506
-    GuidInternal: 
-    m_lastTime: -8586010090192945174
-    List:
-    - name: Greenhouse
-      guid: 7b4e43bda4116d41bb86fb2f831b7f7b
-      id: 4238926114
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Greenhouse
-        ObjectType: 7
-      Path: Default Work Unit\Greenhouse
-  EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 32ecf16cee4a1847861eb24e5b73e746
-    GuidInternal: 
-    m_lastTime: -8586010090193055267
-    List:
-    - name: Water
-      guid: 0caa3d57dd1ff74f963ec2854c38ca00
-      id: 2654748154
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Water
-        ObjectType: 3
-      Path: Default Work Unit\Water
-      maxAttenuation: 0
-      maxDuration: 3.707708
-      minDuration: 1.835833
-  RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 681552d0231fa340b04cac11a87167b5
-    GuidInternal: 
-    m_lastTime: -8586010132464676407
-    List: []
-  StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 95fea25b7d51214ca7b32e336c5359ed
-    GuidInternal: 
-    m_lastTime: -8586010132464556303
-    List: []
-  SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 01ea2e51c5042244a3468105dd3b28d4
-    GuidInternal: 
-    m_lastTime: -8586010132464616352
-    List: []
-  TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: 3b2557f46dd25b4bae736833da4c1d9c
-    GuidInternal: 
-    m_lastTime: -8586010132465316984
-    List: []
+  AcousticTextureWwu: []
+  AuxBusWwu: []
+  BankWwu: []
+  EventWwu: []
+  RtpcWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  TriggerWwu: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,0 +1,688 @@
+fileFormatVersion: 2
+guid: 63a91744c32edba499f40474f26edb72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1922017675630595693
+    second: Terminal UI Icons_0
+  - first:
+      213: 8584587226930119738
+    second: Terminal UI Icons_1
+  - first:
+      213: -4154976941804015649
+    second: Terminal UI Icons_2
+  - first:
+      213: -8282265219059294474
+    second: Terminal UI Icons_3
+  - first:
+      213: 5268867734426243220
+    second: Terminal UI Icons_4
+  - first:
+      213: 8747767607676957334
+    second: Terminal UI Icons_5
+  - first:
+      213: -8462498946152810289
+    second: Terminal UI Icons_6
+  - first:
+      213: -6748333872055037400
+    second: Terminal UI Icons_7
+  - first:
+      213: 1661119746133139161
+    second: Terminal UI Icons_8
+  - first:
+      213: -3920030740889880026
+    second: Terminal UI Icons_9
+  - first:
+      213: -499462899545691611
+    second: Terminal UI Icons_10
+  - first:
+      213: 1447187925931213244
+    second: Terminal UI Icons_11
+  - first:
+      213: -4033630884399129975
+    second: Terminal UI Icons_12
+  - first:
+      213: 5716252147960737917
+    second: Terminal UI Icons_13
+  - first:
+      213: -1680098829050560063
+    second: Terminal UI Icons_14
+  - first:
+      213: -8849012156274886634
+    second: Terminal UI Icons_15
+  - first:
+      213: 4399753819827433819
+    second: Terminal UI Icons_16
+  - first:
+      213: 8665741447047466187
+    second: Terminal UI Icons_17
+  - first:
+      213: 1896949672946082794
+    second: Terminal UI Icons_18
+  - first:
+      213: 4507050439509145553
+    second: Terminal UI Icons_19
+  - first:
+      213: 2242475398245901978
+    second: Terminal UI Icons_20
+  - first:
+      213: 8354513673178222850
+    second: Terminal UI Icons_21
+  - first:
+      213: -2888076765875137492
+    second: Terminal UI Icons_22
+  - first:
+      213: 3897246669194102279
+    second: Terminal UI Icons_23
+  - first:
+      213: -4890215865088765053
+    second: Terminal UI Icons_6
+  - first:
+      213: -2910900139530089422
+    second: Terminal UI Icons_7
+  - first:
+      213: 3367093729940202020
+    second: Terminal UI Icons_8
+  - first:
+      213: -3798197188873742791
+    second: Terminal UI Icons_9
+  - first:
+      213: 1570625295720900540
+    second: Terminal UI Icons_10
+  - first:
+      213: 5554817465312321070
+    second: Terminal UI Icons_11
+  - first:
+      213: 2770214351377509946
+    second: Terminal UI Icons_12
+  - first:
+      213: 5484065314855306649
+    second: Terminal UI Icons_13
+  - first:
+      213: 5106928531790674687
+    second: Terminal UI Icons_14
+  - first:
+      213: -8752140893896121166
+    second: Terminal UI Icons_15
+  - first:
+      213: 7797236859859726194
+    second: Terminal UI Icons_16
+  - first:
+      213: -8362430662214492763
+    second: Terminal UI Icons_17
+  - first:
+      213: 2316174972836130033
+    second: Terminal UI Icons_18
+  - first:
+      213: 4681137302382485677
+    second: Terminal UI Icons_19
+  - first:
+      213: -2538091748005391941
+    second: Terminal UI Icons_20
+  - first:
+      213: -2432677814375137296
+    second: Terminal UI Icons_21
+  - first:
+      213: 3694867747183788242
+    second: Terminal UI Icons_22
+  - first:
+      213: 2137174050349949100
+    second: Terminal UI Icons_23
+  - first:
+      213: -254430030701725247
+    second: Terminal UI Icons_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terminal UI Icons_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 480
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38397668496722cb0800000000000000
+      internalID: -4890215865088765053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 456
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c8ca6eeb76a97d0800000000000000
+      internalID: -2910900139530089422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 456
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422e78268e15abe20800000000000000
+      internalID: 3367093729940202020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 456
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9361b4ac7c71a4bc0800000000000000
+      internalID: -3798197188873742791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 456
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7efaa826bfbc510800000000000000
+      internalID: 1570625295720900540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 456
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e9314dd0da61d40800000000000000
+      internalID: 5554817465312321070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_12
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 444
+        width: 138
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eab8d7647c17620800000000000000
+      internalID: 2770214351377509946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 300
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995cdf819505b1c40800000000000000
+      internalID: 5484065314855306649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 300
+        width: 162
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffab0b621747fd640800000000000000
+      internalID: 5106928531790674687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_15
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 282
+        width: 90
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4e6235a362a8680800000000000000
+      internalID: -8752140893896121166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 162
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f658dcc99553c60800000000000000
+      internalID: 7797236859859726194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 144
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5added76e9da2fb80800000000000000
+      internalID: -8362430662214492763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 78
+        width: 66
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc2c8dbdd4b42020800000000000000
+      internalID: 2316174972836130033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_19
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 72
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0a655239db6f040800000000000000
+      internalID: 4681137302382485677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_20
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 66
+        width: 78
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1d9c8a003e6ccd0800000000000000
+      internalID: -2538091748005391941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 66
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff323daa646d3ed0800000000000000
+      internalID: -2432677814375137296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d000fac3aec64330800000000000000
+      internalID: 3694867747183788242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_23
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 252
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0aa4eb974c8ad10800000000000000
+      internalID: 2137174050349949100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9f4df2c35187cf0800000000000000
+      internalID: -254430030701725247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 168
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39134087b1f9355e0800000000000000
+      internalID: -1922017675630595693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terminal UI Icons_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 174
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34868c8994922770800000000000000
+      internalID: 8584587226930119738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Terminal;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CraftingRecipeUI : MonoBehaviour
 {
@@ -10,6 +10,11 @@ public class CraftingRecipeUI : MonoBehaviour
 	[HideInInspector]
 	public ProcessingItemButton processingItemButton;
 
+	[Header("Icons")] 
+	[SerializeField] private Image rawGoodItemIcon;
+	[SerializeField] private Image processingItemIcon;
+	
+
 	[Header("Public Variables")]
 	public Inventory inventory;
 
@@ -17,14 +22,17 @@ public class CraftingRecipeUI : MonoBehaviour
 
 	private void OnValidate()
 	{
-		processingItemButton = GetComponentInChildren<ProcessingItemButton>(includeInactive: true);
+		processingItemButton = GetComponentInChildren<ProcessingItemButton>(true);
+
+		rawGoodItemIcon.sprite = craftingRecipe.Materials[0].Item.icon;
+		processingItemIcon.sprite = craftingRecipe.Results[0].Item.icon;
 	}
 
 	private void Start()
 	{
 		// Initialise values of button
 		processingItemButton.PlayerInventory = inventory;
-		processingItemButton._craftingRecipe = craftingRecipe;
+		processingItemButton.craftingRecipe = craftingRecipe;
 	}
 
 	public void OnCraftButtonClick()

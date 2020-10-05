@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "Items/TradableItem")]
 public class TradableItem : Item
 {
-    public int buyingPrice;
-    public int sellingPrice;
+    public int baseSellingPrice;
+    public int currentSellingPrice;
 }

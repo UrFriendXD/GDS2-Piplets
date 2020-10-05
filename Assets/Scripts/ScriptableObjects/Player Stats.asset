@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Player Stats
   m_EditorClassIdentifier: 
   money: 0
+  movespeed:
+    BaseValue: 1
+  harvestingDoublerModifier:
+    BaseValue: 0
+  harvestingSeedModifier:
+    BaseValue: 0

@@ -8,13 +8,14 @@ using UnityEditor;
 [System.Serializable]
 public class Item : ScriptableObject
 {
-    [SerializeField] string id;
-    public string ID { get { return id; } }
+    [SerializeField] private string id;
+    public string ID => id;
     public string itemName;
     public Sprite icon;
     [Range(1,99)]
     public int maximumStack = 1;
     
+    protected static readonly StringBuilder sb = new StringBuilder();
 
     #if UNITY_EDITOR
     protected virtual void OnValidate()
@@ -32,5 +33,14 @@ public class Item : ScriptableObject
     public virtual void Destroy()
     {
 
+    }
+    public virtual string GetItemType()
+    {
+        return "";
+    }
+
+    public virtual string GetDescription()
+    {
+        return "";
     }
 }

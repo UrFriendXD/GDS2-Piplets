@@ -1,16 +1,14 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using Player;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
     public bool LadderMovement, endLadder, GroundCheck, GroundCheck2, WallCheck, isInteracting, falling;
-    [SerializeField] private float walkspeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    public float ladderspeed;
     public float interactingObjectPos;
-    public int plantSeedType;
     public GameObject UI, UI2;
     public GameObject menu;
     public bool On;
@@ -41,7 +39,6 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        plantSeedType = 0;
         control.player.Sapling.performed += cxt => Sap();
         control.player.AloeSeed.performed += cxt => Aloe();
         control.player.CottonSeed.performed += cxt => Cotton();
@@ -219,6 +216,8 @@ public class playerMovement : MonoBehaviour
         Vector3 currentPosition = transform.position;
         currentPosition.y +=  -1 * fallspeed * Time.deltaTime;
         transform.position = currentPosition;
+        _playerScript.PlayerAnimationController.OffLadder();
+
     }
 
     public void LadderMoveUpAndDown()
@@ -227,24 +226,29 @@ public class playerMovement : MonoBehaviour
         if(movementInput == 1)
         {
             ladderspeed = upLadderSpeed;
+            _playerScript.PlayerAnimationController.ClimbingAnimation();
         }
         if(movementInput == -1)
         {
             ladderspeed = downLadderSpeed;
+            _playerScript.PlayerAnimationController.SlidingAnimation();
         }
         if(movementInput == 1 && endLadder == true)
         {
+            _playerScript.PlayerAnimationController.OffLadder();
             movementInput = 0;
         }
         if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
         {
+            _playerScript.PlayerAnimationController.OffLadder();
             movementInput = 0;
         }
         if(movementInput == -1 && LadderMovement == true && GroundCheck2 == true)
         {
+            _playerScript.PlayerAnimationController.OffLadder();
             movementInput = 0;
         }
-
+        
         if (LadderMovement)
         {
             switch (movementInput)
@@ -313,15 +317,16 @@ public class playerMovement : MonoBehaviour
                 _playerScript.PlayerAnimationController.WalkAnimation(Mathf.Abs(movementInput));
 
                 Vector3 currentPosition = transform.position;
-                currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+                currentPosition.x += movementInput * (baseWalkSpeed * _playerScript.playerStats.movespeed.Value) * Time.deltaTime;
                 transform.position = currentPosition;
             }
             if (endLadder == true)
             {
+                _playerScript.PlayerAnimationController.OffLadder();
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
                 Vector3 currentPosition = transform.position;
-                currentPosition.x += movementInput * walkspeed * Time.deltaTime;
+                currentPosition.x += movementInput * (baseWalkSpeed * _playerScript.playerStats.movespeed.Value) * Time.deltaTime;
                 transform.position = currentPosition;
             }
         }
