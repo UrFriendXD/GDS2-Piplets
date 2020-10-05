@@ -18,5 +18,5 @@ MonoBehaviour:
   maximumStack: 1
   movespeedPercentBonus: 0
   harvestingDoublerBonus: 0
-  harvestingSeedBonus: 0
+  harvestingSeedBonus: 10
   pipletType: 2

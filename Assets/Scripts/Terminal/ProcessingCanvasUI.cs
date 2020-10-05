@@ -6,6 +6,8 @@ public class ProcessingCanvasUI : MonoBehaviour
 
     private Inventory _inventory;
 
+    [SerializeField] private AK.Wwise.Event processingEvent;
+
     // Start is called before the first frame update
     public void Initialise()
     {
@@ -52,6 +54,8 @@ public class ProcessingCanvasUI : MonoBehaviour
         {
             craftingRecipeUi.OnCraftButtonClick();
         }
+        
+        // Plays audio
+        processingEvent.Post(gameObject);
     }
-
 }

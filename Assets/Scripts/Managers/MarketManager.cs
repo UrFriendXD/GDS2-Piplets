@@ -10,6 +10,7 @@ public class MarketManager : IGameService
     private Dictionary<TradableItem, int> _itemsSold = new Dictionary<TradableItem, int>();
 
     public Action PriceChanged;
+    public Action MoneyChanged;
     
     // On start, if it's a new game reset prices
     public void Setup(bool isNewGame, TradableItemsList tradableItemsList)

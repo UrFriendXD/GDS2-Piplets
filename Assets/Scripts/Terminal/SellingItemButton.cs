@@ -22,7 +22,6 @@ public class SellingItemButton : TerminalAddRemoveButton
     {
         GetComponentInChildren<PriceChangeChecker>()._item = item;
         _marketManager = ServiceLocator.Current.Get<MarketManager>();
-
     }
 
     private void OnValidate()
@@ -41,6 +40,11 @@ public class SellingItemButton : TerminalAddRemoveButton
             {
                 UpdateAmount(_amount += 1);
                 _delay = delayReset;
+                Success = true;
+            }
+            else
+            {
+                Success = false;
             }
         }
 
@@ -79,6 +83,6 @@ public class SellingItemButton : TerminalAddRemoveButton
         playerStats.money += item.currentSellingPrice * _amount;
         _marketManager.ItemSold(item, _amount);
         UpdateAmount(0);
+        _marketManager.MoneyChanged?.Invoke();
     }
-    
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7ef759cc7df722744bbf1c208a518334
   itemName: Tree sapling
-  icon: {fileID: 0}
+  icon: {fileID: 2514004559234900711, guid: bdc3e1e4d68c38941a59b194212e1b5d, type: 3}
   maximumStack: 99
   plantType: 3
   daysToStage1: 0

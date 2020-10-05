@@ -15,8 +15,11 @@ namespace AK
     {
         static const AkUniqueID AI_BUTTON_SELECT = 100709541U;
         static const AkUniqueID AI_PROCESSING = 2569711091U;
+        static const AkUniqueID CHANGE_TO_DIRT = 1676133841U;
+        static const AkUniqueID CHANGE_TO_STONE = 337775249U;
         static const AkUniqueID DOOR_OPEN = 535830432U;
         static const AkUniqueID FAIL = 2596272617U;
+        static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LADDER_CLIMB = 1707141479U;
         static const AkUniqueID LADDER_DESCEND = 3610060586U;
         static const AkUniqueID MENU_BUTTON_SELECT = 4007661982U;
@@ -37,6 +40,22 @@ namespace AK
         static const AkUniqueID WATER_DROPLET_ATMOS = 909052898U;
         static const AkUniqueID WOOD_CHOP = 1483562389U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace FOOTSTEP_MATERIAL
+        {
+            static const AkUniqueID GROUP = 684570577U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace STATE
+        } // namespace FOOTSTEP_MATERIAL
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using System;
+using Player;
 using UnityEngine;
 using Event = AK.Wwise.Event;
 
@@ -7,10 +8,19 @@ public class Door : InteractableObject
     public GameObject greenhouse;
     public GameObject outsideGreenHouse;
     public GameObject fireFlies;
-    public GameObject piplet;
+    public GameObject piplet0;
+    public GameObject piplet1;
+    public GameObject piplet2;
     public GameObject lights;
     public GameObject globalLights;
-    public Event doorEvent;
+
+    private DoorAudioController _doorAudioController;
+
+    private void Start()
+    {
+        _doorAudioController = GetComponent<DoorAudioController>();
+    }
+
 
     public override void InteractBare(PlayerScript player)
     {
@@ -31,20 +41,37 @@ public class Door : InteractableObject
         if (greenhouse.activeSelf)
         {
             player.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            piplet.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            if (piplet0.activeSelf)
+            {
+                piplet0.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            }
+            if (piplet1.activeSelf)
+            {
+                piplet1.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            }
+            if (piplet2.activeSelf)
+            {
+                piplet2.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            }
+            _doorAudioController.LoadInside();
         }
         else
         {
-            player.GetComponent<SpriteRenderer>().sortingOrder = 3;
-            piplet.GetComponent<SpriteRenderer>().sortingOrder = 3;
+            player.GetComponent<SpriteRenderer>().sortingOrder = 4;
+            if (piplet0.activeSelf)
+            {
+                piplet0.GetComponent<SpriteRenderer>().sortingOrder = 4;
+            }
+            if (piplet1.activeSelf)
+            {
+                piplet1.GetComponent<SpriteRenderer>().sortingOrder = 4;
+            }
+            if (piplet2.activeSelf)
+            {
+                piplet2.GetComponent<SpriteRenderer>().sortingOrder = 4;
+            }
+            _doorAudioController.LoadOutside();
         }
-        
-        // Plays audio 
-        PlayDoorEvent();
     }
-
-    private void PlayDoorEvent()
-    {
-        doorEvent.Post(gameObject);
-    }
+    
 }

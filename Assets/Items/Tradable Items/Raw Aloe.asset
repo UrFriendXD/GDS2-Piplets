@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: b46d27292c6714243899634802e45936
   itemName: Aloe
-  icon: {fileID: -8849012156274886634, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  icon: {fileID: 4399753819827433819, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   maximumStack: 99
   baseSellingPrice: 2
-  currentSellingPrice: 3
+  currentSellingPrice: 2

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: e79d190f3499cba409b6b701696a266d
   itemName: Hand Sanitiser
-  icon: {fileID: -1680098829050560063, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  icon: {fileID: -8849012156274886634, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   maximumStack: 99
   baseSellingPrice: 5
   currentSellingPrice: 5

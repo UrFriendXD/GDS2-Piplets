@@ -1,4 +1,6 @@
-﻿using Player;
+﻿using System;
+using Player;
+using TMPro;
 using UnityEngine;
 
 public class TerminalUIWindow : MonoBehaviour
@@ -16,13 +18,16 @@ public class TerminalUIWindow : MonoBehaviour
     private Inventory _inventory;
     private PlayerStats _playerStats;
     private PlayerInputChecker _playerInputChecker;
+    
+    // Audio
+    public AK.Wwise.Event buttonSelect;
 
     private bool _inUse;
+    
+    // Money changes
+    //public Action moneyChanged;
 
-    private void Start()
-    {
-        
-    }
+    [SerializeField] private TextMeshProUGUI moneyText;
 
     // Calls when terminal is opened on the first interact of the session
     public void OpenTerminal(Inventory playerInventory, PlayerStats playerStatsParam, PlayerInputChecker inputChecker)
@@ -43,6 +48,8 @@ public class TerminalUIWindow : MonoBehaviour
             // Adds closeUI to "esc"
             _playerInputChecker.OnCancelButtonPressed += CloseUI;
         }
+        ChangeMoneyText();
+        ServiceLocator.Current.Get<MarketManager>().MoneyChanged += ChangeMoneyText;
     }
 
     // Called when you want to close terminalUI completely. It removes all data of the player to allow for multiplayer?
@@ -126,5 +133,15 @@ public class TerminalUIWindow : MonoBehaviour
         _sellingCanvasUI.Initialise();
         _processingCanvasUI.Initialise();
         _pipletCanvasUI.Initialise();
+    }
+
+    public void PlayButtonSelect()
+    {
+        buttonSelect.Post(gameObject);
+    }
+
+    public void ChangeMoneyText()
+    {
+        moneyText.text = "TP: " + _playerStats.money;
     }
 }

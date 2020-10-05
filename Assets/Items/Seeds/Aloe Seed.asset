@@ -14,17 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 9221445f5fdd4784d915fed27fd4a4a5
   itemName: Aloe Seed
-  icon: {fileID: 3700964955968444548, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+  icon: {fileID: -5925890003656416073, guid: bdc3e1e4d68c38941a59b194212e1b5d, type: 3}
   maximumStack: 99
   plantType: 1
   daysToStage1: 0
   daysToHarvest: 1
   spritesList:
   - sprites:
-    - {fileID: -4150176314059901787, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: 3700964955968444548, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: -737943235894776312, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -7149551068079155410, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -6404887804027818240, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -4489544213873530800, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
   - sprites:
-    - {fileID: 3492415661574000411, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: -5932862748826219965, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: 638703042238458185, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: 4120825788695695135, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+  - sprites:
+    - {fileID: -8586308074696805227, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: 4033087168957797577, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
   amountToGive: 1
   rawGoodToGive: {fileID: 11400000, guid: b46d27292c6714243899634802e45936, type: 2}

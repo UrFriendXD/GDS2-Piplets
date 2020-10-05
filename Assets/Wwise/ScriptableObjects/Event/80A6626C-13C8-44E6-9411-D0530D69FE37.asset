@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b9294c429cc0541807b47643a9406b, type: 3}
+  m_Name: 80A6626C-13C8-44E6-9411-D0530D69FE37
+  m_EditorClassIdentifier: 
+  objectName: Fail
+  id: 2596272617
+  guid: 80A6626C-13C8-44E6-9411-D0530D69FE37

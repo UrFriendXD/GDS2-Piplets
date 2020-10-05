@@ -169,7 +169,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1612838630514607229
 CanvasRenderer:
@@ -199,9 +199,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3920030740889880026, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8849012156274886634, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  m_Sprite: {fileID: 4399753819827433819, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1680098829050560063, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  m_Sprite: {fileID: -8849012156274886634, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -567,5 +567,15 @@ MonoBehaviour:
   PlayerInventory: {fileID: 0}
   delayReset: 0.2
   amountText: {fileID: 2666954025573451334}
-  _craftingRecipe: {fileID: 0}
+  hoverCursorTexture: {fileID: 2800000, guid: a846ca02bdbb05e4dab9612a0227cc08, type: 3}
+  normalCursorTexture: {fileID: 2800000, guid: 130bfb8363f2eb445af937469f050469, type: 3}
+  pass:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f42b05c0ddeff9945a5c3b3437d3e7ac, type: 2}
+  fail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 921f14d019c1ecb4ea51e83d89a0383c, type: 2}
+  craftingRecipe: {fileID: 0}
   amountRequiredText: {fileID: 4284658532156700324}

@@ -141,7 +141,7 @@ namespace Farming
                         break;
                     case var _ when daysSincePlanted == _plantSeed.daysToHarvest:
                         _currentPlantStage = PlantStages.Harvestable;
-                        UpdateSprite(_plantSeed.spritesList.Length-1);
+                        UpdateSprite(_plantSeed.spritesList.Length-2);
                         break;
                     default:
                         Debug.Log("Grew over harvest");
@@ -216,7 +216,7 @@ namespace Farming
         }
 
         // Updates sprite base on parameter/stage. Randomly picks between that stage's sprites
-        private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.spritesList[value].sprites[Random.Range(0, _plantSeed.spritesList.Length)];
+        private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.spritesList[value].sprites[Random.Range(0, _plantSeed.spritesList.Length-1)];
 
         // Destroys plant and resets it's values
         private void DestroyPlant()

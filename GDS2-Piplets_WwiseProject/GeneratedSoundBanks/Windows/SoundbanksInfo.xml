@@ -16,6 +16,42 @@
 			<ShortName>Outdoor</ShortName>
 			<Path>Outdoor.bnk</Path>
 			<IncludedEvents>
+				<Event Id="337775249" Name="Change_To_Stone" ObjectPath="\Events\Default Work Unit\Changing_Footstep\Change_To_Stone" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.473146">
+					<IncludedMemoryFiles>
+						<File Id="276486449" Language="SFX">
+							<ShortName>piplet wavs\stone step 2.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="554705134" Language="SFX">
+							<ShortName>piplet wavs\single footstep 1.wav</ShortName>
+							<Path>SFX\piplet wavs\single footstep 1_10C4C929.wem</Path>
+						</File>
+						<File Id="670780140" Language="SFX">
+							<ShortName>piplet wavs\stone step 1.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}">
+							<Media>
+								<File Id="670780140"/>
+								<File Id="276486449"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{96FCAE78-47FA-40B3-AA6C-2FAA4FF2AF8A}">
+							<Media>
+								<File Id="554705134"/>
+								<File Id="554705134"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="10183550" Name="Minecart" ObjectPath="\Events\Default Work Unit\Minecart" DurationType="OneShot" DurationMin="6.188640" DurationMax="6.188640">
 					<IncludedMemoryFiles>
 						<File Id="700196015" Language="SFX">
@@ -24,11 +60,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3460054317" Name="Outside_Atmos" ObjectPath="\Events\Default Work Unit\Outside_Atmos" DurationType="OneShot" DurationMin="78.333603" DurationMax="78.333603">
+				<Event Id="3460054317" Name="Outside_Atmos" ObjectPath="\Events\Default Work Unit\Outside_Atmos" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="998344690" Language="SFX">
 							<ShortName>Nature ambiance .wav</ShortName>
-							<Path>SFX\Nature ambiance _10C4C929.wem</Path>
+							<Path>SFX\Nature ambiance _D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -69,6 +105,18 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="684570577" Name="Footstep_Material" ObjectPath="\States\Default Work Unit\Footstep_Material">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Footstep_Material\None"/>
+						<State Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
+						<State Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
@@ -163,6 +211,16 @@
 			<ShortName>Greenhouse</ShortName>
 			<Path>Greenhouse.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1676133841" Name="Change_To_Dirt" ObjectPath="\Events\Default Work Unit\Changing_Footstep\Change_To_Dirt" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="337775249" Name="Change_To_Stone" ObjectPath="\Events\Default Work Unit\Changing_Footstep\Change_To_Stone" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Default Work Unit\Door_Open" DurationType="OneShot" DurationMin="2.317896" DurationMax="2.317896">
 					<IncludedMemoryFiles>
 						<File Id="605023815" Language="SFX">
@@ -170,6 +228,37 @@
 							<Path>SFX\greenhouse door_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.473146">
+					<IncludedMemoryFiles>
+						<File Id="276486449" Language="SFX">
+							<ShortName>piplet wavs\stone step 2.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="554705134" Language="SFX">
+							<ShortName>piplet wavs\single footstep 1.wav</ShortName>
+							<Path>SFX\piplet wavs\single footstep 1_10C4C929.wem</Path>
+						</File>
+						<File Id="670780140" Language="SFX">
+							<ShortName>piplet wavs\stone step 1.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}">
+							<Media>
+								<File Id="670780140"/>
+								<File Id="276486449"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{96FCAE78-47FA-40B3-AA6C-2FAA4FF2AF8A}">
+							<Media>
+								<File Id="554705134"/>
+								<File Id="554705134"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1707141479" Name="Ladder_Climb" ObjectPath="\Events\Default Work Unit\Ladder_Climb" DurationType="OneShot" DurationMin="0.267709" DurationMax="0.500042">
 					<IncludedMemoryFiles>
@@ -246,6 +335,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1342968680" Name="Walking_stone" ObjectPath="\Events\Default Work Unit\Walking_stone" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.191155">
+					<IncludedMemoryFiles>
+						<File Id="276486449" Language="SFX">
+							<ShortName>piplet wavs\stone step 2.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="670780140" Language="SFX">
+							<ShortName>piplet wavs\stone step 1.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="OneShot" DurationMin="1.835833" DurationMax="1.835833">
 					<IncludedMemoryFiles>
 						<File Id="1013900543" Language="SFX">
@@ -263,6 +364,21 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="684570577" Name="Footstep_Material" ObjectPath="\States\Default Work Unit\Footstep_Material">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Footstep_Material\None"/>
+						<State Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
+						<State Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

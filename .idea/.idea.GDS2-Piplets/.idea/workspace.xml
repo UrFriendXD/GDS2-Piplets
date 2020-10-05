@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -37,25 +40,154 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Wild Plant (Sapling).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Wild Plant (Sapling).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LoadBankOnTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LoadBankOnTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/AvoPiplet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/AvoPiplet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Testing/TutorialText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Testing/TutorialText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprint 4/CursorDefault.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprint 4/CursorDefault.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprint 4/CursorSelect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprint 4/CursorSelect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3984DB37-15BF-42DD-8F9C-00CCC1C58980.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/4B839A09-86F9-445E-B646-EDBE75F54122.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/5F9F9EF4-4E27-4030-90D9-4E1FCAAF5332.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/5F9F9EF4-4E27-4030-90D9-4E1FCAAF5332.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/62388C0B-49A4-494E-BEDE-C23D59DC566D.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/62388C0B-49A4-494E-BEDE-C23D59DC566D.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/6831E231-D1DD-4534-B8D4-E6C5B8A7C617.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/6831E231-D1DD-4534-B8D4-E6C5B8A7C617.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/70FA6BED-B634-4355-A569-D76D2CC984A0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/70FA6BED-B634-4355-A569-D76D2CC984A0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/80A6626C-13C8-44E6-9411-D0530D69FE37.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/80A6626C-13C8-44E6-9411-D0530D69FE37.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/8DD187B3-4B9B-4742-9BC5-20C7ED0DAD3F.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/8DD187B3-4B9B-4742-9BC5-20C7ED0DAD3F.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/C3475FBF-D291-4981-97F1-1A0006C29573.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/C3475FBF-D291-4981-97F1-1A0006C29573.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/37F1A90A-3288-4ED1-9339-F47B2EE53E88.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/37F1A90A-3288-4ED1-9339-F47B2EE53E88.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/A93B84FF-FC79-4DD7-B1AB-397DACE6BCB3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/A93B84FF-FC79-4DD7-B1AB-397DACE6BCB3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/C65D1173-F71D-425F-918D-3FB565C8AC66.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/C65D1173-F71D-425F-918D-3FB565C8AC66.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/._logan_kruger read me.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/._logan_kruger read me.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/dotty.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/dotty.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/logan_kruger read me.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/logan_kruger read me.html.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/logan_kruger read me.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dotty/dotty/logan_kruger read me.rtf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Aloe Seed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Aloe Seed.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3984DB37-15BF-42DD-8F9C-00CCC1C58980.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Axe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3B325C2C-D7FA-4BED-9E7B-15E21518FE88.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Axe.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/4B839A09-86F9-445E-B646-EDBE75F54122.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Cotton Seed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Cotton Seed.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/30953696-7DAB-4961-950C-9143A9924F42.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Hand Sanitiser.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Hand Sanitiser.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3B325C2C-D7FA-4BED-9E7B-15E21518FE88.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Mask.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Mask.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Aloe.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Aloe.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Cotton.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Cotton.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Seeds/Aloe Seed.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Seeds/Aloe Seed.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Seeds/Cotton Seed.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Seeds/Cotton Seed.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Seeds/Tree Sapling.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Seeds/Tree Sapling.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tools/Axe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tools/Axe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tools/Watering Can.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tools/Watering Can.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tradable Items/Hand Sanitiser.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tradable Items/Hand Sanitiser.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tradable Items/Mask.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tradable Items/Mask.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tradable Items/Raw Aloe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tradable Items/Raw Aloe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tradable Items/Raw Cotton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tradable Items/Raw Cotton.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tradable Items/Toilet Paper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tradable Items/Toilet Paper.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tradable Items/Wood.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tradable Items/Wood.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tree Sapling.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Tree Sapling.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Watering Can.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/30953696-7DAB-4961-950C-9143A9924F42.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Watering Can.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Wood.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Wood.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Pots.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Pots.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Terminal Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Terminal Object.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Tree.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Wild Plant (Aloe).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Wild Plant (Aloe).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Environment/Wild Plant (Cotton).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Environment/Wild Plant (Cotton).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/PauseMenuCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/PauseMenuCanvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Piplet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Piplet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/PipletAvoPenguin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/PipletAvoPenguin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/PipletWaterPup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/PipletWaterPup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player/Main Camera.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Crafting Recipe Ratio UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Crafting Recipe Ratio UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Crafting Recipe UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Crafting Recipe UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/OptionsCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/OptionsCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Sell Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Sell Button.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Wwise.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Wwise.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing/Market Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/Market Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wwise/ScriptableObjects/Event/A459C612-590F-4918-8244-FBC533D84FA4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wwise/ScriptableObjects/Event/A459C612-590F-4918-8244-FBC533D84FA4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Player Stats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Player Stats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Deployment/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.wsettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Menu.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Menu.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Outdoor.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Outdoor.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Outdoor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Outdoor.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Menu.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Menu.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Outdoor.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Outdoor.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Outdoor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Outdoor.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession2.prof" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession2.prof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/SoundBanks/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/SoundBanks/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/States/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/States/Default Work Unit.wwu" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,32 +198,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Testing/TutorialText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/AddMoneyTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/SellableItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemDatabase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CraftingRecipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CraftingRecipeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputChecker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/Tree.cs" />
@@ -99,9 +227,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SurvivialItemUsed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/WildPlant.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayMusic.cs" />
@@ -110,7 +235,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/TradableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipe.cs" />
@@ -118,15 +242,29 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Testing/TutorialText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/LoadBankOnTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PipletManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" />
       </list>
     </option>
   </component>
@@ -247,9 +385,9 @@
       <screen x="0" y="0" width="1881" height="1018" />
     </state>
     <state x="934" y="0" width="954" height="1025" key="dock-window-1/0.0.1881.1018@0.0.1881.1018" timestamp="1600620671175" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601459988084">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601917358882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601459988084" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601917358882" />
   </component>
 </project>

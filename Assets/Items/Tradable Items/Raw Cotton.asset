@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0f04804e9fe36314da7f6bbfaa711716
   itemName: Cotton
-  icon: {fileID: -4033630884399129975, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  icon: {fileID: 5716252147960737917, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   maximumStack: 99
   baseSellingPrice: 3
-  currentSellingPrice: 4
+  currentSellingPrice: 3

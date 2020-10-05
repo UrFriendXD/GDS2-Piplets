@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3f5cf1493d272214fa1aaac3292a141a
   itemName: Wood
-  icon: {fileID: 5716252147960737917, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  icon: {fileID: -1680098829050560063, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   maximumStack: 99
   baseSellingPrice: 6
-  currentSellingPrice: 8
+  currentSellingPrice: 6

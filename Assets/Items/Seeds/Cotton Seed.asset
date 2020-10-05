@@ -14,22 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0a4d6733a767de242a91fda931f5a574
   itemName: Cotton Seed
-  icon: {fileID: -7052646978787364308, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+  icon: {fileID: 8558203965515749781, guid: bdc3e1e4d68c38941a59b194212e1b5d, type: 3}
   maximumStack: 99
   plantType: 2
   daysToStage1: 1
   daysToHarvest: 3
   spritesList:
   - sprites:
-    - {fileID: 4719880923984940435, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: -7052646978787364308, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: -737943235894776312, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: -7149551068079155410, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: 4719880923984940435, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -7052646978787364308, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -4150176314059901787, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: 3700964955968444548, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
   - sprites:
-    - {fileID: -6404887804027818240, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: -4489544213873530800, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: 7909349551120183273, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: 1347494148684388122, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
   - sprites:
-    - {fileID: -8924838130865898737, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
-    - {fileID: 1078262282487390478, guid: 3dcd7fee8349807499a8bb788a836805, type: 3}
+    - {fileID: 3492415661574000411, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -5932862748826219965, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+  - sprites:
+    - {fileID: 2329962169478386180, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
+    - {fileID: -36446539907663602, guid: 2a87fe19f5a568c43bc23e2efd84f08c, type: 3}
   amountToGive: 4
   rawGoodToGive: {fileID: 11400000, guid: 0f04804e9fe36314da7f6bbfaa711716, type: 2}

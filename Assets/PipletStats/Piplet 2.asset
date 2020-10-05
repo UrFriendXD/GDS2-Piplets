@@ -16,7 +16,7 @@ MonoBehaviour:
   itemName: 
   icon: {fileID: 0}
   maximumStack: 1
-  movespeedPercentBonus: 0
+  movespeedPercentBonus: 0.2
   harvestingDoublerBonus: 0
   harvestingSeedBonus: 0
   pipletType: 1

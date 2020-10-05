@@ -295,7 +295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8849012156274886634, guid: 50c946e88a927b54c8c22449389b9225, type: 3}
+  m_Sprite: {fileID: 4399753819827433819, guid: 63a91744c32edba499f40474f26edb72, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -320,6 +320,16 @@ MonoBehaviour:
   PlayerInventory: {fileID: 0}
   delayReset: 0.2
   amountText: {fileID: 357704573872433565}
+  hoverCursorTexture: {fileID: 2800000, guid: a846ca02bdbb05e4dab9612a0227cc08, type: 3}
+  normalCursorTexture: {fileID: 2800000, guid: 130bfb8363f2eb445af937469f050469, type: 3}
+  pass:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f42b05c0ddeff9945a5c3b3437d3e7ac, type: 2}
+  fail:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 921f14d019c1ecb4ea51e83d89a0383c, type: 2}
   item: {fileID: 11400000, guid: b46d27292c6714243899634802e45936, type: 2}
   playerStats: {fileID: 0}
   totalCostText: {fileID: 8086075562188781457}

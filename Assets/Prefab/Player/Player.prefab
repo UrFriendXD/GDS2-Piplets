@@ -229,14 +229,14 @@ MonoBehaviour:
   WallCheck: 0
   isInteracting: 0
   falling: 0
-  baseWalkSpeed: 0
-  ladderspeed: 2
+  baseWalkSpeed: 4
   fallspeed: 3
   upLadderSpeed: 2.5
   downLadderSpeed: 5
   maxfallspeed: 5
   fallspeedovertime: 0.6
   startfallspeed: 3
+  ladderspeed: 2
   interactingObjectPos: 0
   UI: {fileID: 0}
   UI2: {fileID: 0}
@@ -263,7 +263,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   PlayerAudio: {fileID: 6208465324433729384}
   PlayerMovement: {fileID: 7072382248368338961}
-  PlayerAnimationController: {fileID: 0}
+  PlayerAnimationController: {fileID: 1002434139973221403}
   PlayerID: 0
 --- !u!114 &1447940501
 MonoBehaviour:
@@ -326,7 +326,7 @@ MonoBehaviour:
   walkEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2c5e5b14832345d4287f4b4f571a18ce, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 979a830cc50559b4fb0038bb9fbeef6d, type: 2}
   harvestEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -343,6 +343,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 659ee23c4eb13ad4d971c2cf66135cae, type: 2}
+  stoneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 48742f54d4351fc4d80f5d226d1bff80, type: 2}
 --- !u!95 &6143971938110101802
 Animator:
   serializedVersion: 3

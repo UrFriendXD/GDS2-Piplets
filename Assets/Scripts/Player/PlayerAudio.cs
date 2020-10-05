@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Player
 {
@@ -12,8 +13,15 @@ namespace Player
         //public AK.Wwise.Event diggingEvent;
         public AK.Wwise.Event ladderClimbEvent;
         public AK.Wwise.Event ladderDescentEvent;
-    
-        
+
+        public AK.Wwise.Event stoneEvent;
+
+        private void Start()
+        {
+            stoneEvent.Post(gameObject);
+        }
+
+
         public void PlayWaterPlantEvent()
         {
             waterPlantEvent.Post(gameObject);

@@ -6,7 +6,8 @@ public class playerMovement : MonoBehaviour
 {
     private PlayerAction control;
     public bool LadderMovement, endLadder, GroundCheck, GroundCheck2, WallCheck, isInteracting, falling;
-    [SerializeField] private float baseWalkSpeed, ladderspeed, fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    public float ladderspeed;
     public float interactingObjectPos;
     public GameObject UI, UI2;
     public GameObject menu;

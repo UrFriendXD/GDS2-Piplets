@@ -128,11 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6050053528973497293, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
   m_PrefabInstance: {fileID: 227283904}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &48763977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7435405763261632062, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-  m_PrefabInstance: {fileID: 1784869095}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &69811976
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +331,9 @@ MonoBehaviour:
   greenhouse: {fileID: 2014342183}
   outsideGreenHouse: {fileID: 1065728756}
   fireFlies: {fileID: 811744173}
-  piplet: {fileID: 48763977}
+  piplet0: {fileID: 0}
+  piplet1: {fileID: 0}
+  piplet2: {fileID: 0}
   lights: {fileID: 628023704}
   globalLights: {fileID: 1623944633}
   doorEvent:
@@ -2791,14 +2788,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 268180134}
-    - target: {fileID: 4928066088444723281, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnCancel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4928066088444723281, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Player.PlayerInputChecker, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 4928066088678466095, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2862,14 +2851,6 @@ PrefabInstance:
     - target: {fileID: 7970249442195364590, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8392236599853716497, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 330428275}
-    - target: {fileID: 8392236599853716497, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenPipletMenu
       objectReference: {fileID: 0}
     - target: {fileID: 8856692810400137602, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
       propertyPath: m_IsActive

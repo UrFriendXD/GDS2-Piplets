@@ -5,6 +5,8 @@ public class SetVolumeSliders : MonoBehaviour
     [SerializeField] private float masterVolume;
     [SerializeField] private float musicVolume;
     [SerializeField] private float sfxVolume;
+
+    [SerializeField] private AK.Wwise.Event buttonEvent;
     
     public void SetMasterVolume(float value)
     {
@@ -20,5 +22,10 @@ public class SetVolumeSliders : MonoBehaviour
     {
         AkSoundEngine.SetRTPCValue("MusicVolume", value);
         musicVolume = value;
+    }
+
+    public void PlayButtonSound()
+    {
+        buttonEvent.Post(gameObject);
     }
 }
