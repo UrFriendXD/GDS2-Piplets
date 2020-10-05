@@ -1,5 +1,4 @@
 ﻿using Player;
-using UnityEngine;
 using UnityEngine.Events;
 
 namespace Environment.Indoors
@@ -7,7 +6,7 @@ namespace Environment.Indoors
     public class Bed : InteractableObject
     {
         public UnityEvent dayPass;
-        private PlayerScript playerScript;
+        //private PlayerScript playerScript;
         
         // Calls day pass event regardless of interaction key
         public override void InteractWithItem(Item item, PlayerScript playerScript)
@@ -17,7 +16,6 @@ namespace Environment.Indoors
         
         public override void InteractBare(PlayerScript playerScript)
         {
-            base.InteractBare(playerScript);
             dayPass.Invoke();
         }
     }

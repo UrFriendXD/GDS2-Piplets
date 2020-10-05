@@ -17,6 +17,11 @@ public class MainMenu : MonoBehaviour
         
     }
 
+    public void returnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void ExitGame()
     {
         //debug to check without building. Closes the game

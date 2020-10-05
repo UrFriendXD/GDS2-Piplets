@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Wwise
+/GDS2-Piplets_WwiseProject/Originals/SFX/*.akd
+/GDS2-Piplets_WwiseProject/.cache/

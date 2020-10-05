@@ -86,6 +86,8 @@ GameObject:
   - component: {fileID: 1273165475}
   - component: {fileID: 1447940501}
   - component: {fileID: 1447940502}
+  - component: {fileID: 6208465324433729384}
+  - component: {fileID: 6143971938110101802}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -102,7 +104,7 @@ Transform:
   m_GameObject: {fileID: 7072382248368338954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.9040003, z: 1}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 1}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_Children:
   - {fileID: 7072382248468513763}
   - {fileID: 8229466861707969367}
@@ -149,7 +151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 3427114271967980436, guid: b4738e16978a2d940a874135b669790a, type: 3}
+  m_Sprite: {fileID: 5750260970139952512, guid: 51922f4c35b0c78439e35ba2b66de478, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -198,14 +200,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.32, y: 3.12}
+    oldSize: {x: 0.66, y: 1.56}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.32, y: 3.12}
+  m_Size: {x: 0.67, y: 1.56}
   m_EdgeRadius: 0
 --- !u!114 &7072382248368338961
 MonoBehaviour:
@@ -222,13 +224,14 @@ MonoBehaviour:
   LadderMovement: 0
   endLadder: 0
   GroundCheck: 0
+  GroundCheck2: 0
   WallCheck: 0
   isInteracting: 0
   falling: 0
   walkspeed: 3.5
   ladderspeed: 2
   fallspeed: 3
-  upLadderSpeed: 2
+  upLadderSpeed: 2.5
   downLadderSpeed: 5
   maxfallspeed: 5
   fallspeedovertime: 0.6
@@ -236,6 +239,12 @@ MonoBehaviour:
   interactingObjectPos: 0
   plantSeedType: 0
   UI: {fileID: 0}
+  UI2: {fileID: 0}
+  menu: {fileID: 0}
+  On: 0
+  movementAudioTimerDelay: 0.4
+  movementLadderUpAudioTimerDelay: 0.4
+  movementLadderDownAudioDelay: 0.8
 --- !u!114 &1273165475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +261,9 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 24fa3d1811d7d5644b18f96179542668, type: 2}
   itemHeld: {fileID: 0}
   inventory: {fileID: 0}
+  PlayerAudio: {fileID: 6208465324433729384}
+  PlayerMovement: {fileID: 7072382248368338961}
+  PlayerAnimationController: {fileID: 0}
 --- !u!114 &1447940501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +306,65 @@ MonoBehaviour:
   m_DefaultActionMap: player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6208465324433729384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1482a75c45e987141b175ec892bdee25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterPlantEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a84404aefac959d46a0d58201d0a8c82, type: 2}
+  walkEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2c5e5b14832345d4287f4b4f571a18ce, type: 2}
+  harvestEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ca9e9de24a8833d4db7011dfbe46b253, type: 2}
+  seedPlantingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27f055df682aed4489d51fb3030f1675, type: 2}
+  diggingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  ladderClimbEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9e62232708aa4c4f89fcf2dfd1407d9, type: 2}
+  ladderDescentEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 659ee23c4eb13ad4d971c2cf66135cae, type: 2}
+--- !u!95 &6143971938110101802
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8baff83556749274798aa3b98e28e4be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7072382248468513760
 GameObject:
   m_ObjectHideFlags: 0
