@@ -1254,6 +1254,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 687439966, guid: 67eb891da5fb07f49b6f25c4871ec675, type: 3}
+      propertyPath: Event.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a7e4cd31b7960f444ab36dbf28df0cbe, type: 2}
     - target: {fileID: 3372639774696269659, guid: 67eb891da5fb07f49b6f25c4871ec675, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2003201
@@ -2340,6 +2344,10 @@ PrefabInstance:
       propertyPath: UI2
       value: 
       objectReference: {fileID: 1884635320}
+    - target: {fileID: 7072382248368338961, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
+      propertyPath: baseWalkSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7072382248468513763, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.81
@@ -5774,6 +5782,10 @@ PrefabInstance:
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1273165475}
+    - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
+      propertyPath: pipletStats
+      value: 
+      objectReference: {fileID: 11400000, guid: bb83255f029214248934f97a56c5f0d3, type: 2}
     - target: {fileID: 7435405763261632062, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
       propertyPath: m_Name
       value: Piplet

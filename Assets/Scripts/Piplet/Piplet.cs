@@ -72,6 +72,7 @@ public class Piplet : MonoBehaviour
    public void ActivatePiplet()
    {
        pipletStats.Equip(playerScript.playerStats);
+       //Debug.Log("Pip");
        //Debug.Log(playerScript.playerStats.movespeed.Value);
        //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);
        //Debug.Log(playerScript.playerStats.harvestingSeedModifier.Value);
@@ -82,10 +83,10 @@ public class Piplet : MonoBehaviour
        pipletStats.Unequip(playerScript.playerStats);
    }
 
-   private void OnEnable()
-   {
-       ActivatePiplet();
-   }
+   // private void OnEnable()
+   // {
+   //     ActivatePiplet();
+   // }
 
    private void OnDisable()
    {

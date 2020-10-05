@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b9294c429cc0541807b47643a9406b, type: 3}
   m_Name: A459C612-590F-4918-8244-FBC533D84FA4
   m_EditorClassIdentifier: 
-  objectName: Walking
-  id: 340271938
+  objectName: Walking_stone
+  id: 1342968680
   guid: A459C612-590F-4918-8244-FBC533D84FA4

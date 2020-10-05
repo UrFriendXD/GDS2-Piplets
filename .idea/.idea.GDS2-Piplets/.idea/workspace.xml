@@ -37,32 +37,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Aloe Seed.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Aloe Seed.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Axe.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Axe.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Cotton Seed.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Cotton Seed.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Hand Sanitiser.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Hand Sanitiser.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Mask.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Mask.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Aloe.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Raw Aloe.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Raw Cotton.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Raw Cotton.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Toilet Paper.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Tree Sapling.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Tree Sapling.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Watering Can.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Watering Can.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Wood.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Wood.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Piplet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Piplet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing/Market Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/Market Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wwise/ScriptableObjects/Event/A459C612-590F-4918-8244-FBC533D84FA4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wwise/ScriptableObjects/Event/A459C612-590F-4918-8244-FBC533D84FA4.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.wsettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Greenhouse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Menu.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Menu.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Outdoor.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/Outdoor.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Greenhouse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Menu.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Menu.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Outdoor.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/Outdoor.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/SoundBanks/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/SoundBanks/Default Work Unit.wwu" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +126,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" />
       </list>
     </option>
   </component>

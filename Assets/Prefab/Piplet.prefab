@@ -115,4 +115,4 @@ MonoBehaviour:
   steps: 0
   level2Threshold: 300
   level3Threshold: 3000
-  playerScript: {fileID: 0}
+  pipletStats: {fileID: 11400000, guid: bb83255f029214248934f97a56c5f0d3, type: 2}

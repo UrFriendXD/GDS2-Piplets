@@ -32,7 +32,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2002210646" Name="PlayOutdoorMusic" ObjectPath="\Events\Default Work Unit\Music\PlayOutdoorMusic" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2002210646" Name="PlayOutdoorMusic" ObjectPath="\Events\Default Work Unit\Music\PlayOutdoorMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="622323957" Language="SFX">
 							<ShortName>Piplets-Outside Theme Rough.wav</ShortName>
@@ -148,7 +148,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="562315821" Language="SFX">
 							<ShortName>piplets BEDROOM THEME rough.wav</ShortName>
@@ -222,7 +222,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="562315821" Language="SFX">
 							<ShortName>piplets BEDROOM THEME rough.wav</ShortName>
@@ -230,7 +230,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1744321513" Name="PlayGreenhouseMusic" ObjectPath="\Events\Default Work Unit\Music\PlayGreenhouseMusic" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1744321513" Name="PlayGreenhouseMusic" ObjectPath="\Events\Default Work Unit\Music\PlayGreenhouseMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="413528737" Language="SFX">
 							<ShortName>Piplets_MainTheme_FINAL.wav</ShortName>
@@ -243,6 +243,18 @@
 						<File Id="293591642" Language="SFX">
 							<ShortName>piplet wavs\seed planting.wav</ShortName>
 							<Path>SFX\piplet wavs\seed planting_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1342968680" Name="Walking_stone" ObjectPath="\Events\Default Work Unit\Walking_stone" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.191155">
+					<IncludedMemoryFiles>
+						<File Id="276486449" Language="SFX">
+							<ShortName>piplet wavs\stone step 2.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
+						</File>
+						<File Id="670780140" Language="SFX">
+							<ShortName>piplet wavs\stone step 1.wav</ShortName>
+							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

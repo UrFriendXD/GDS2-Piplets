@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	535830432	Door_Open			\Default Work Unit\Door_Open	
 	909052898	Water_Droplet_Atmos			\Default Work Unit\Water_Droplet_Atmos	
+	1342968680	Walking_stone			\Default Work Unit\Walking_stone	
 	1586650550	PlayBedroomMusic			\Default Work Unit\Music\PlayBedroomMusic	
 	1707141479	Ladder_Climb			\Default Work Unit\Ladder_Climb	
 	1744321513	PlayGreenhouseMusic			\Default Work Unit\Music\PlayGreenhouseMusic	
@@ -13,12 +14,14 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	65561872	chime 3	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\chime 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Plant harvest chime\chime 3		528300
 	197502205	water droplet	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\water droplet_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\water droplet		37016
+	276486449	stone step 2	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\stone step 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Steps\stone step 2		51968
 	293591642	seed planting	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\seed planting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\seed planting		95720
 	315187937	metal ladder 1 (1)	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\metal ladder 1 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Ladder\metal ladder 1 (1)		96072
 	402537829	planting_harvesting	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\planting_harvesting_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\planting_harvesting		103124
 	413528737	Piplets_MainTheme_FINAL	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_Greenhouse\Piplets_MainTheme_FINAL\Piplets_MainTheme_FINAL		47416496
 	562315821	piplets BEDROOM THEME rough	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplets BEDROOM THEME rough_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_Bedroom\piplets BEDROOM THEME rough\piplets BEDROOM THEME rough		19073220
 	605023815	greenhouse door	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\greenhouse door_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\greenhouse door		445100
+	670780140	stone step 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\stone step 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Steps\stone step 1		50452
 	795952486	Ladder slide	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Ladder slide_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Ladder slide		246932
 	864939667	chime 4	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\chime 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Plant harvest chime\chime 4		432876
 	956541507	metal ladder 4	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\metal ladder 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Ladder\metal ladder 4		64824
