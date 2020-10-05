@@ -7,18 +7,7 @@ using UnityEngine.UI;
 public class TutorialText : MonoBehaviour
 
 {
-    public Image tutorialText; 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Image tutorialText;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -31,7 +20,7 @@ public class TutorialText : MonoBehaviour
 
     private IEnumerator DisableImage()
     {
-        yield return new WaitForSeconds(45);
+        yield return new WaitForSeconds(35);
         tutorialText.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
     }

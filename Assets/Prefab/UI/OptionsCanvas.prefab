@@ -1315,6 +1315,10 @@ MonoBehaviour:
   masterVolume: 0
   musicVolume: 0
   sfxVolume: 0
+  buttonEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4cd41b186c901cf459cf0886aa5e2a65, type: 2}
 --- !u!1 &761974014784297672
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ProcessingCanvasUI : MonoBehaviour
 {
     private CraftingRecipeUI[] craftingRecipeUis;
 
     private Inventory _inventory;
+
+    [SerializeField] private AK.Wwise.Event processingEvent;
 
     // Start is called before the first frame update
     public void Initialise()
@@ -42,6 +42,8 @@ public class ProcessingCanvasUI : MonoBehaviour
         {
             craftingRecipeUi.inventory = null;
         }
+
+        _inventory = null;
         gameObject.SetActive(false);
     }
     
@@ -52,6 +54,8 @@ public class ProcessingCanvasUI : MonoBehaviour
         {
             craftingRecipeUi.OnCraftButtonClick();
         }
+        
+        // Plays audio
+        processingEvent.Post(gameObject);
     }
-
 }

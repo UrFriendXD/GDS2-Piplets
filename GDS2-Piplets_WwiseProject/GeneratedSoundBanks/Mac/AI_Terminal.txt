@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	100709541	AI_Button_Select			\Default Work Unit\AI_Button_Select	
+	1218670268	Notification_1			\Default Work Unit\Notification_1	
+	1218670271	Notification_2			\Default Work Unit\Notification_2	
+	1627031574	Pass			\Default Work Unit\Pass	
+	2569711091	AI_processing			\Default Work Unit\AI_processing	
+	2596272617	Fail			\Default Work Unit\Fail	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	54007310	notification 2	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\notification 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\notification 2		235216
+	296196542	notification	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\notification_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\notification		201128
+	596689217	menu button 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\menu button 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\menu button 1		72868
+	636351262	Pass	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Pass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Pass		185984
+	1024975717	magical whir	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\magical whir_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\magical whir		883612
+	1035197914	Fail	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Fail_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Fail		210860
+

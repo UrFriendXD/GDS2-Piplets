@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Threading;
+﻿using System;
+using System.Collections;
 using Player;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Piplet : MonoBehaviour
 {
@@ -15,18 +12,24 @@ public class Piplet : MonoBehaviour
     [SerializeField] private int steps = 0;
     [SerializeField] private int level2Threshold = 300;
     [SerializeField] private int level3Threshold = 3000;
-    public PlayerScript playerScript;
+    private PlayerScript playerScript;
     private Transform target;
     private bool stepping;
     private playerMovement _PlayerMovement;
 
+    [SerializeField] private PipletStats pipletStats;
+
     void Start()
     {
+        playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
         target = playerScript.transform;
         level = 1;
-        _PlayerMovement = playerScript.GetComponent<playerMovement>();
+        _PlayerMovement = playerScript.PlayerMovement;
+        if (gameObject.activeSelf)
+        {
+            ActivatePiplet();
+        }
     }
-
 
     void Update()
     {
@@ -73,4 +76,28 @@ public class Piplet : MonoBehaviour
         yield return new WaitForSeconds(1);
         stepping = false;
     }
+
+   public void ActivatePiplet()
+   {
+       pipletStats.Equip(playerScript.playerStats);
+       //Debug.Log("Pip");
+       //Debug.Log(playerScript.playerStats.movespeed.Value);
+       //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);
+       //Debug.Log(playerScript.playerStats.harvestingSeedModifier.Value);
+   }
+
+   public void DeactivatePiplet()
+   {
+       pipletStats.Unequip(playerScript.playerStats);
+   }
+
+   // private void OnEnable()
+   // {
+   //     ActivatePiplet();
+   // }
+
+   private void OnDisable()
+   {
+       DeactivatePiplet();
+   }
 }

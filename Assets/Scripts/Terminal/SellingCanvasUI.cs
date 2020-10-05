@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Player;
+﻿using Player;
 using UnityEngine;
 
 public class SellingCanvasUI : MonoBehaviour
@@ -51,6 +49,10 @@ public class SellingCanvasUI : MonoBehaviour
             sellingItemButton.PlayerInventory = null;
             sellingItemButton.playerStats = null;
         }
+
+        _inventory = null;
+        _playerStats = null;
+        
         gameObject.SetActive(false);
     }
     

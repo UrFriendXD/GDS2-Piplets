@@ -102,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011004925, y: 0.011007309}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -140,10 +140,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   daysSincePlanted: 0
+  doubleAmountThreshold: 95
+  seedGiveBackThreshold: 50
   waterParticle: {fileID: 277575513896351015, guid: 8a334da2db4d9dd4e8e82454c154502b, type: 3}
   harvestParticle: {fileID: 5792810775116595073, guid: 7b0987e55cafbe64a981d19f61f93c0b, type: 3}
   plantParticle: {fileID: 8613388125271510794, guid: a69f68b7987754a4bb092913b466c43e, type: 3}
-  isTesting: 0
   dayPassEventListener: {fileID: 1008662567}
   seasonEndEventListener: {fileID: 734288940797006791}
 --- !u!114 &615335089184662520

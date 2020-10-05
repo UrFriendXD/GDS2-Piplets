@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,6 +8,9 @@ public class MarketManager : IGameService
 {
     private TradableItemsList _tradableItemsList;
     private Dictionary<TradableItem, int> _itemsSold = new Dictionary<TradableItem, int>();
+
+    public Action PriceChanged;
+    public Action MoneyChanged;
     
     // On start, if it's a new game reset prices
     public void Setup(bool isNewGame, TradableItemsList tradableItemsList)
@@ -58,6 +60,7 @@ public class MarketManager : IGameService
     {
         FluctuatePrices();
         ResetAmount();
+        PriceChanged?.Invoke();
     }
     
     // Changes price of items based on amount sold
@@ -86,7 +89,7 @@ public class MarketManager : IGameService
             priceModifier = Mathf.Round(priceModifier * 100f) / 100f;
             key.currentSellingPrice = (int) Mathf.Round(Mathf.Clamp(key.currentSellingPrice * priceModifier,
                 key.baseSellingPrice * 0.3f, key.baseSellingPrice * 2.5f));
-            Debug.Log(key.currentSellingPrice);
+            //Debug.Log(key.currentSellingPrice);
         }
     }
     
