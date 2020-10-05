@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Player;
 using RoboRyanTron.Unite2017.Events;
+using Unity.Mathematics;
 using UnityEngine;
 
 /*
@@ -16,6 +19,17 @@ public class DayManager : MonoBehaviour
     
     // Change later with service locator pattern
     [SerializeField] private ItemContainer playerInventory;
+    
+    // Money stat change with service locator later on
+    [SerializeField] private PlayerStats playerStats;
+    
+    // For day passed cause I don't have a clue how to call it else wise
+    private MarketManager _marketManager;
+
+    private void Start()
+    {
+        _marketManager = ServiceLocator.Current.Get<MarketManager>();
+    }
 
     // Called on event DayPassed
     public void DayPassed()
@@ -25,6 +39,8 @@ public class DayManager : MonoBehaviour
         {
             ConsumeSurvivalItems();
         }
+
+        _marketManager.OnDayPassed();
     }
 
     // Checks if a week passed. If it's 14 days ends the season
@@ -63,6 +79,8 @@ public class DayManager : MonoBehaviour
     private void PassOut()
     {
         // just idk end game? pfft dunno
-        Debug.Log("Passed out");
+        //Debug.Log("Passed out");
+        playerStats.money = (int)math.round((playerStats.money * 0.8));
+        //Debug.Log("Player has: " + _playerStats.money);
     }
 }

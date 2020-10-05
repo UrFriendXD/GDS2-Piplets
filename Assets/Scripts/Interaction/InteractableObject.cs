@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Interaction;
 using Player;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerDetector))]
 public class InteractableObject : MonoBehaviour
 {
     // Interacting with bare hands

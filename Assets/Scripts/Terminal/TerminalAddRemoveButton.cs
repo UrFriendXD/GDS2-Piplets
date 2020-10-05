@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -17,7 +18,7 @@ public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPoin
     protected int _amount;
     [SerializeField] protected float delayReset = 0.2f;
 
-    [SerializeField] private Text amountText;
+    [SerializeField] private TextMeshProUGUI amountText;
 
     public void OnPointerDown(PointerEventData eventData)
     {
