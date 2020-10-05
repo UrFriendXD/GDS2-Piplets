@@ -120,14 +120,14 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="NatureAmbience" ID="{19A2E6E0-7687-4652-A9AE-E95A7A115816}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Nature ambiance" ID="{55CB7FC3-7B1D-4005-BF04-2D11ACEAB0E6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{EED215FC-C362-4968-A3CC-7859A1BB6743}" ShortID="910939530">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="NatureAmbience" ID="{19A2E6E0-7687-4652-A9AE-E95A7A115816}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Nature ambiance" ID="{55CB7FC3-7B1D-4005-BF04-2D11ACEAB0E6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
