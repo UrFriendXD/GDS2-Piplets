@@ -94,6 +94,14 @@
 							<PropertyList>
 								<Property Name="LoopCount" Type="int16" Value="0"/>
 							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{5FE88521-3538-4ACE-9EC8-E103A23026FC}" ShortID="96361973">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="piplets BEDROOM THEME rough" ID="{5C159458-4A51-4DFF-89CE-EC0831471C7C}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
@@ -188,6 +196,14 @@
 							<PropertyList>
 								<Property Name="LoopCount" Type="int16" Value="0"/>
 							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{B6014B85-9EDE-4A53-9D01-FC919DB6AC22}" ShortID="906023564">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Piplets-Outside Theme Rough" ID="{5FEEFF85-6479-4FDA-923D-56F575E4FA89}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
@@ -282,6 +298,14 @@
 							<PropertyList>
 								<Property Name="LoopCount" Type="int16" Value="0"/>
 							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{2E93D3DB-87DC-4F3E-8F35-8E24C1EAC7C7}" ShortID="692191670">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Piplets_MainTheme_FINAL" ID="{3DE2E9EC-F015-48E7-89E5-02301E80CEAA}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>

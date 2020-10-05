@@ -1168,9 +1168,6 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
 								</Reference>
 							</ReferenceList>
-							<Playlist>
-								<ItemRef Name="piplets BEDROOM THEME rough" ID="{BAA7D987-7443-40E6-BF12-5BB9B1E18343}"/>
-							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

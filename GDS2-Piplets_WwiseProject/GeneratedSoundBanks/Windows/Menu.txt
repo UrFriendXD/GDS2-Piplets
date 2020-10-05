@@ -1,8 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1586650550	PlayBedroomMusic			\Default Work Unit\Music\PlayBedroomMusic	
+	1744321513	PlayGreenhouseMusic			\Default Work Unit\Music\PlayGreenhouseMusic	
 	4007661982	Menu_Button_Select			\Default Work Unit\Menu_Button_Select	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	562315821	piplets BEDROOM THEME rough	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplets BEDROOM THEME rough_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_Bedroom\piplets BEDROOM THEME rough\piplets BEDROOM THEME rough		19073220
+	413528737	Piplets_MainTheme_FINAL	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_Greenhouse\Piplets_MainTheme_FINAL\Piplets_MainTheme_FINAL		47416496
 	930448184	menu select	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\menu select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\menu select		25604
 
