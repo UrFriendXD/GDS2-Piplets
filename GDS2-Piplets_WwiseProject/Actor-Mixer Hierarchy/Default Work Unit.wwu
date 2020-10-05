@@ -276,6 +276,20 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="wood chop 2" ID="{230F723E-BEFA-4F52-917F-C746C9006D64}" ShortID="929821873">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4BCB2FC0-E436-40E1-85E8-7266FD1C2935}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -862,7 +876,7 @@
 											<Modifier Name="" ID="{CD0B9A87-BAD2-46AC-A803-7298FBED425F}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="30"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -1002,6 +1016,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1129,6 +1148,29 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{5276FA28-5A54-4348-A217-92428D8AEBCC}" ShortID="1007369219">
+					<ChildrenList>
+						<RandomSequenceContainer Name="BGM_Bedroom" ID="{88A2924A-54DD-4479-BD82-E93CF026818C}" ShortID="408398316">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<Playlist>
+								<ItemRef Name="piplets BEDROOM THEME rough" ID="{BAA7D987-7443-40E6-BF12-5BB9B1E18343}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

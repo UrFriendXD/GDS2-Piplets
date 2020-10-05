@@ -56,6 +56,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{27713728-4BB9-45C8-A440-66960FB3980B}" ShortID="821284471">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plant_Harvest_Chime" ID="{006058AE-215F-4845-8358-7A290081C25A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}">
@@ -223,6 +233,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Music" ID="{AAC3765E-46E3-4D7A-9D7A-761AF0DB9F3B}" ShortID="1060468801">
+					<ChildrenList>
+						<Event Name="PlayBedroomMusic" ID="{5F9F9EF4-4E27-4030-90D9-4E1FCAAF5332}">
+							<ChildrenList>
+								<Action Name="" ID="{D796A82E-570D-40C5-80B6-84D09351AC86}" ShortID="702836177">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BGM_Bedroom" ID="{089384DF-B43E-4CE9-92A1-8B4E0886528A}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayGreenhouseMusic" ID="{9BE80160-F7E9-4A7D-821A-475C9A342D2E}">
+							<ChildrenList>
+								<Action Name="" ID="{212343FA-881A-448F-A252-5233E2B04C13}" ShortID="883751605">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BGM_Greenhouse" ID="{A118B29E-BDE6-4EDF-AF65-D7A9F45D93C5}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayOutdoorMusic" ID="{3984DB37-15BF-42DD-8F9C-00CCC1C58980}">
+							<ChildrenList>
+								<Action Name="" ID="{57CFE819-3C10-4E50-BEDE-DDF3634E854A}" ShortID="437573536">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BGM_Outdoors" ID="{2E3A4778-D9F2-48A7-A6BE-F94D6D0903C6}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
