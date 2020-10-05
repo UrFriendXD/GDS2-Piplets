@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Player;
+﻿using Player;
 using UnityEngine;
+using Event = AK.Wwise.Event;
 
 public class Door : InteractableObject
 {
@@ -12,7 +10,7 @@ public class Door : InteractableObject
     public GameObject piplet;
     public GameObject lights;
     public GameObject globalLights;
-    public AK.Wwise.Event doorEvent;
+    public Event doorEvent;
 
     public override void InteractBare(PlayerScript player)
     {
@@ -43,29 +41,6 @@ public class Door : InteractableObject
         
         // Plays audio 
         PlayDoorEvent();
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, .5f);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            if (CompareTag("Door") && other.GetComponent<SpriteRenderer>().sortingOrder == 2)
-            {
-                this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
-            }
-            else
-            {
-                this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-            }
-        }
     }
 
     private void PlayDoorEvent()
