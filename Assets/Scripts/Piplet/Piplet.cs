@@ -10,7 +10,7 @@ public class Piplet : MonoBehaviour
 {
 
     [SerializeField] private float speed = 2;
-    [SerializeField] private float stoppingDistance = 3;
+    [SerializeField] private float stoppingDistance = 1;
     public int level; 
     [SerializeField] private int steps = 0;
     [SerializeField] private int level2Threshold = 300;
@@ -44,7 +44,7 @@ public class Piplet : MonoBehaviour
         }
         else if (_PlayerMovement.GroundCheck == true && target.transform.position.y != transform.position.y)
         {
-            transform.position = new Vector3(transform.position.x, target.transform.position.y,transform.position.z);
+            transform.position = new Vector3(transform.position.x, target.transform.position.y ,transform.position.z);
         }
 
         if (steps > level2Threshold)
