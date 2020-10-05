@@ -40,17 +40,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Sell Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/Terminal Sell Button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing/Market Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing/Market Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,20 +54,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/a4/99b9bb9a/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TradableItemsList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/06/4f65792c/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -103,11 +91,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayMusic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DoorPlayerDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
@@ -126,6 +111,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
       </list>
     </option>
   </component>
@@ -203,6 +191,7 @@
       <workItem from="1601378047204" duration="8620000" />
       <workItem from="1601434990861" duration="2403000" />
       <workItem from="1601454032069" duration="10587000" />
+      <workItem from="1601882995830" duration="4506000" />
     </task>
     <servers />
   </component>
