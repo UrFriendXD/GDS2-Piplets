@@ -7,6 +7,7 @@ public class Parallax : MonoBehaviour
     private float length, startpos;
     public GameObject cam;
     public float parallaxEffect;
+    public float offset;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,11 @@ public class Parallax : MonoBehaviour
         float temp = (cam.transform.position.x * (1 - parallaxEffect));
         float dist = (cam.transform.position.x * parallaxEffect);
         transform.position = new Vector3(startpos + dist, transform.position.y);
-        if (temp > startpos + length)
+        if (temp > startpos + (length - offset))
         {
             startpos += length;
         }
-        else if (temp < startpos - length)
+        else if (temp < startpos - (length - offset))
         {
             startpos -= length;
         }
