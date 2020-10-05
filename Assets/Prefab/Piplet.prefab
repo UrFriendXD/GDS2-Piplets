@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: -0.00000011920929, z: 0}
+  m_Size: {x: 0.63, y: 0.66, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7435405763261632035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,4 +115,4 @@ MonoBehaviour:
   steps: 0
   level2Threshold: 300
   level3Threshold: 3000
-  playerScript: {fileID: 0}
+  pipletStats: {fileID: 11400000, guid: bb83255f029214248934f97a56c5f0d3, type: 2}

@@ -12,6 +12,13 @@ namespace Player
         public playerMovement PlayerMovement;
         public PlayerAnimationController PlayerAnimationController;
 
+        public int PlayerID;
+
+        private void Awake()
+        {
+            PlayerID = ServiceLocator.Current.Get<PlayersManager>().AddPlayer(this);
+        }
+
         // Selects players item from inventory based on parameter
         public void SelectItem(string itemSelectName)
         {

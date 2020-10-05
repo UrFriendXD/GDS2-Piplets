@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Player;
+﻿using Player;
 using UnityEngine;
 
 public class UIInteractableObject : MonoBehaviour
 {
-    private UIPlayerDetector uiPlayerDetector;
+    protected UIPlayerDetector uiPlayerDetector;
     // Interacting with bare hands
 
     public virtual void Start()

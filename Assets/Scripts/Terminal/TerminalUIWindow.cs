@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Player;
+﻿using Player;
 using UnityEngine;
 
 public class TerminalUIWindow : MonoBehaviour
 {
     // Canvases
-    [SerializeField] private Canvas _terminalCanvas;
+    [SerializeField] private Canvas terminalCanvas;
     [SerializeField] private Canvas mainTerminalCanvas;
 
     // Scripts of respective UI
     private SellingCanvasUI _sellingCanvasUI;
     private ProcessingCanvasUI _processingCanvasUI;
+    private PipletCanvasUI _pipletCanvasUI;
     
     // Player variables
     private Inventory _inventory;
@@ -39,7 +37,7 @@ public class TerminalUIWindow : MonoBehaviour
             _playerInputChecker = inputChecker;
             
             // Open initial UI
-            _terminalCanvas.gameObject.SetActive(true);
+            terminalCanvas.gameObject.SetActive(true);
             OpenMainTerminalUI();
 
             // Adds closeUI to "esc"
@@ -55,7 +53,7 @@ public class TerminalUIWindow : MonoBehaviour
         _inUse = false;
             
         // Change to close menu entirely
-        _terminalCanvas.gameObject.SetActive(false);
+        terminalCanvas.gameObject.SetActive(false);
         mainTerminalCanvas.gameObject.SetActive(false);
         _processingCanvasUI.CloseUI();
         _sellingCanvasUI.CloseUI();
@@ -97,6 +95,22 @@ public class TerminalUIWindow : MonoBehaviour
         }
     }
 
+    public void OpenPipletMenu()
+    {
+        _pipletCanvasUI.OpenBuyingMenu(_playerStats);
+        mainTerminalCanvas.gameObject.SetActive(false);
+        // Only turns off main terminal canvas if off else turn off selling
+        // if (mainTerminalCanvas.gameObject.activeSelf)
+        // {
+        //     mainTerminalCanvas.gameObject.SetActive(false);
+        // }
+        // else
+        // {
+        //     _sellingCanvasUI.CloseSellingMenu();
+        // }
+        
+    }
+
     public void OpenMainTerminalUI()
     {
         // Open initial UI
@@ -108,7 +122,9 @@ public class TerminalUIWindow : MonoBehaviour
         // Initialise values 
         _processingCanvasUI = GetComponentInChildren<ProcessingCanvasUI>(true);
         _sellingCanvasUI = GetComponentInChildren<SellingCanvasUI>(true);
+        _pipletCanvasUI = GetComponentInChildren<PipletCanvasUI>(true);
         _sellingCanvasUI.Initialise();
         _processingCanvasUI.Initialise();
+        _pipletCanvasUI.Initialise();
     }
 }

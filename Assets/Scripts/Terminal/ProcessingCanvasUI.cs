@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ProcessingCanvasUI : MonoBehaviour
 {
@@ -42,6 +40,8 @@ public class ProcessingCanvasUI : MonoBehaviour
         {
             craftingRecipeUi.inventory = null;
         }
+
+        _inventory = null;
         gameObject.SetActive(false);
     }
     
