@@ -5,24 +5,44 @@
 			<ChildrenList>
 				<SoundBank Name="Greenhouse" ID="{BD434E7B-11A4-416D-BB86-FB2F831B7F7B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Ladder_Descend" ID="{3D3C988B-6BE4-4021-92F0-942C7EE53F4B}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Seed_planting" ID="{86FDED27-0B22-46B6-8AB0-64C0D88028DF}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ladder_Climb" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Water_Droplet_Atmos" ID="{BB6E1DD8-C21D-4FE2-8EEE-90FCB904027B}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="AI_Terminal" ID="{A93B84FF-FC79-4DD7-B1AB-397DACE6BCB3}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="AI_Button_Select" ID="{70FA6BED-B634-4355-A569-D76D2CC984A0}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Notification_1" ID="{FED7C56F-36C3-43D9-88AD-69BE54D42009}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Fail" ID="{80A6626C-13C8-44E6-9411-D0530D69FE37}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Notification_2" ID="{7ACFAD01-2CDD-492C-ADDB-EF33A2ADBC2A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AI_processing" ID="{62388C0B-49A4-494E-BEDE-C23D59DC566D}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pass" ID="{3B325C2C-D7FA-4BED-9E7B-15E21518FE88}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Menu" ID="{37F1A90A-3288-4ED1-9339-F47B2EE53E88}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Menu_Button_Select" ID="{4B839A09-86F9-445E-B646-EDBE75F54122}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Outdoor" ID="{C65D1173-F71D-425F-918D-3FB565C8AC66}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Wood_chop" ID="{61F0B42D-6A68-4356-B6B2-6CFD70CAB578}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Minecart" ID="{981BA921-0977-4799-BB35-4CC38A694649}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Walking_Dirt" ID="{D8BD07FB-7775-4843-9E23-332151ECBEB4}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Walking_stone" ID="{A459C612-590F-4918-8244-FBC533D84FA4}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Outside_Atmos" ID="{30953696-7DAB-4961-950C-9143A9924F42}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
