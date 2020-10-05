@@ -44,9 +44,10 @@ namespace Terminal
             UpdateAmount(0);
         }
 
-        protected override void UpdateAmount(int changeAmount)
+        private new void UpdateAmount(int changeAmount)
         {
-            base.UpdateAmount(changeAmount);
+            _amount = changeAmount;
+            amountText.text = "" + changeAmount * craftingRecipe.Results[0].Amount;
             amountRequiredText.text = "" + craftingRecipe.Materials[0].Amount * _amount;
         }
     }

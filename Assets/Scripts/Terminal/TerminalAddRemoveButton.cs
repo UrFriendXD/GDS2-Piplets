@@ -14,7 +14,7 @@ public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPoin
     protected int _amount;
     [SerializeField] protected float delayReset = 0.2f;
 
-    [SerializeField] private TextMeshProUGUI amountText;
+    [SerializeField] protected TextMeshProUGUI amountText;
 
     public void OnPointerDown(PointerEventData eventData)
     {
