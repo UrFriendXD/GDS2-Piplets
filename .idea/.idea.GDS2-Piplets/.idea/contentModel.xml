@@ -27,6 +27,7 @@
             <e p="Outdoors" t="Include">
               <e p="OutsideParticleEffects.cs" t="Include" />
               <e p="Parallax.cs" t="Include" />
+              <e p="ParallaxChild.cs" t="Include" />
               <e p="WildPlant.cs" t="Include" />
               <e p="wood.cs" t="Include" />
             </e>
