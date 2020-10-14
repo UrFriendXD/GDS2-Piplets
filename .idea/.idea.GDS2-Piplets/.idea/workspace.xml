@@ -41,11 +41,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Background.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/Parallax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/Parallax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession1.prof" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession3.prof" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession3.prof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession4.prof" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession4.prof" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +67,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/5a/fa21b341/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -96,7 +102,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TradableItemsList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/BaseItemSlot.cs" />
@@ -108,12 +113,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/LoadBankOnTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PipletManager.cs" />
@@ -121,9 +124,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/Parallax.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/ParallaxChild.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       </list>
     </option>
   </component>
