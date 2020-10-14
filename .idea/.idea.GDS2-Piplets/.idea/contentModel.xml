@@ -67,6 +67,7 @@
             <e p="DayManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="MarketManager.cs" t="Include" />
+            <e p="MusicManager.cs" t="Include" />
             <e p="PipletManager.cs" t="Include" />
             <e p="PlayersManager.cs" t="Include" />
             <e p="ServiceLocator.cs" t="Include" />

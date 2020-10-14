@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TradableItemsList tradableItemsList;
     [SerializeField] private int amountOfPipletNeededToWin;
+    public GameObject MusicManager;
     
     private void Awake()
     {
@@ -22,6 +24,14 @@ public class GameManager : MonoBehaviour
 
         SetupMarket();
         SetupPiplets();
+    }
+
+    private void OnValidate()
+    {
+        if (!MusicManager)
+        {
+            MusicManager = GetComponentInChildren<MusicManager>().gameObject;
+        }
     }
 
     #region Game setup functions
