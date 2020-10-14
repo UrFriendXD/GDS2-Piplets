@@ -13,6 +13,8 @@ public class PlantSeed : Item
     
     public PlantType plantType;
     public int daysToStage1;
+    public int daysToStage2;
+    public int daysToStage3;
     public int daysToHarvest;
     public SpriteArray[] spritesList;
     public float amountToGive;
