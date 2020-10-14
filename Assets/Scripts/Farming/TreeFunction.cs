@@ -55,8 +55,9 @@ namespace Farming
 
         public void Plant(PlantSeed plantSeed)
         {
+           
             _plantSeed = plantSeed;
-            clone = Instantiate(plantParticle, new Vector3(0, 0, 0), quaternion.identity);
+             clone = Instantiate(plantParticle, new Vector3(0, 0, 0), quaternion.identity);
             this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
             dayPassEventListener.Response.AddListener(Grow);
             _thisPlantType = _plantSeed.plantType;
@@ -84,11 +85,12 @@ namespace Farming
                     break;
                 case var _ when daysSincePlanted == _plantSeed.daysToStage2:
                     _currentPlantStage = TreeStages.MediumTree;
-                    UpdateSprite(2);
+                    UpdateSprite(_plantSeed.spritesList.Length - 2);
                     break;
                 case var _ when daysSincePlanted == _plantSeed.daysToStage3:
                     _currentPlantStage = TreeStages.BigTree;
-                    UpdateSprite(3);
+                    UpdateSprite(_plantSeed.spritesList.Length - 1);
+                    dayPassEventListener.Response.RemoveListener(Grow);
                     break;
                 default:
                     Debug.Log("Grew over harvest");
@@ -157,7 +159,7 @@ namespace Farming
 
 
                 // Particle systems
-                clone = Instantiate(harvestParticle, new Vector3(0, 0, 0), quaternion.identity);
+                clone = Instantiate(harvestParticle, new Vector3(0, 5, 0), quaternion.identity);
                 this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
 
                 // Plays audio for harvest
@@ -189,7 +191,9 @@ namespace Farming
             _plantSeed = null;
             _thisPlantType = PlantType.None;
             _currentPlantStage = TreeStages.None;
+            daysSincePlanted = 0;
             dayPassEventListener.Response.RemoveListener(Grow);
+            Debug.Log("removed");
         }
 
         public bool IsPlanted() => _thisPlantType != PlantType.None;
