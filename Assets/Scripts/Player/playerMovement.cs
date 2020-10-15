@@ -216,7 +216,7 @@ public class playerMovement : MonoBehaviour
         Vector3 currentPosition = transform.position;
         currentPosition.y +=  -1 * fallspeed * Time.deltaTime;
         transform.position = currentPosition;
-        _playerScript.PlayerAnimationController.OffLadder();
+        _playerScript.playerAnimationController.OffLadder();
 
     }
 
@@ -226,26 +226,26 @@ public class playerMovement : MonoBehaviour
         if(movementInput == 1)
         {
             ladderspeed = upLadderSpeed;
-            _playerScript.PlayerAnimationController.ClimbingAnimation();
+            _playerScript.playerAnimationController.ClimbingAnimation();
         }
         if(movementInput == -1)
         {
             ladderspeed = downLadderSpeed;
-            _playerScript.PlayerAnimationController.SlidingAnimation();
+            _playerScript.playerAnimationController.SlidingAnimation();
         }
         if(movementInput == 1 && endLadder == true)
         {
-            _playerScript.PlayerAnimationController.OffLadder();
+            _playerScript.playerAnimationController.OffLadder();
             movementInput = 0;
         }
         if (movementInput == -1 && GroundCheck == true && LadderMovement == false)
         {
-            _playerScript.PlayerAnimationController.OffLadder();
+            _playerScript.playerAnimationController.OffLadder();
             movementInput = 0;
         }
         if(movementInput == -1 && LadderMovement == true && GroundCheck2 == true)
         {
-            _playerScript.PlayerAnimationController.OffLadder();
+            _playerScript.playerAnimationController.OffLadder();
             movementInput = 0;
         }
         
@@ -256,14 +256,14 @@ public class playerMovement : MonoBehaviour
                 case -1: 
                     if (movementLadderDownAudioTimer <= 0)
                     {
-                        _playerScript.PlayerAudio.PlayLadderDescentEvent();
+                        _playerScript.playerAudio.PlayLadderDescentEvent();
                         movementLadderDownAudioTimer = movementLadderDownAudioDelay;
                     }
                     break;
                 case 1:
                     if (movementLadderUpAudioTimer <= 0)
                     {
-                        _playerScript.PlayerAudio.PlayLadderClimbEvent();
+                        _playerScript.playerAudio.PlayLadderClimbEvent();
                         movementLadderUpAudioTimer = movementLadderUpAudioTimerDelay;
                     }
                     break;
@@ -304,7 +304,7 @@ public class playerMovement : MonoBehaviour
                 {
                     if (movementAudioTimer <= 0)
                     {
-                        _playerScript.PlayerAudio.PlayWalkEvent();
+                        _playerScript.playerAudio.PlayWalkEvent();
                         movementAudioTimer = movementAudioTimerDelay;
                     }
                 }
@@ -314,7 +314,7 @@ public class playerMovement : MonoBehaviour
                     movementAudioTimer -= Time.deltaTime;
                 }
                 
-                _playerScript.PlayerAnimationController.WalkAnimation(Mathf.Abs(movementInput));
+                _playerScript.playerAnimationController.WalkAnimation(Mathf.Abs(movementInput));
 
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * (baseWalkSpeed * _playerScript.playerStats.movespeed.Value) * Time.deltaTime;
@@ -322,7 +322,7 @@ public class playerMovement : MonoBehaviour
             }
             if (endLadder == true)
             {
-                _playerScript.PlayerAnimationController.OffLadder();
+                _playerScript.playerAnimationController.OffLadder();
                 float movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
                 Vector3 currentPosition = transform.position;

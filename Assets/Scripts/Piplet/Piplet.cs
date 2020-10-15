@@ -24,7 +24,7 @@ public class Piplet : MonoBehaviour
         playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
         target = playerScript.transform;
         level = 1;
-        _PlayerMovement = playerScript.PlayerMovement;
+        _PlayerMovement = playerScript.playerMovement;
         if (gameObject.activeSelf)
         {
             ActivatePiplet();

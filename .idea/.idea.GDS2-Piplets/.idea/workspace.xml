@@ -40,17 +40,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/GDS2-Piplets_WwiseProject.Sam.validationcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession1.prof" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession3.prof" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession3.prof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession4.prof" beforeDir="false" afterPath="$PROJECT_DIR$/GDS2-Piplets_WwiseProject/ProfilingSession4.prof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/Terminal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingConfirmButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" />
@@ -90,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SurvivialItemUsed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/WildPlant.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingItemButton.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerDetector.cs" />
@@ -130,6 +125,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
       </list>
     </option>
   </component>
@@ -210,6 +207,7 @@
       <workItem from="1601882995830" duration="4506000" />
       <workItem from="1601902986907" duration="40000" />
       <workItem from="1602463443982" duration="2420000" />
+      <workItem from="1602749522463" duration="2433000" />
     </task>
     <servers />
   </component>
@@ -251,9 +249,10 @@
       <screen x="0" y="0" width="1881" height="1018" />
     </state>
     <state x="934" y="0" width="954" height="1025" key="dock-window-1/0.0.1881.1018@0.0.1881.1018" timestamp="1600620671175" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601917358882">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602749824290">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601917358882" />
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1602749582376" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1602749824290" />
   </component>
 </project>

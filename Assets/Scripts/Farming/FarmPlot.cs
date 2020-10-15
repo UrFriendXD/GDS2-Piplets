@@ -36,10 +36,10 @@ namespace Farming
             if (item.name == "Watering Can")
             {
                 _currentPlant.OnWatered();
-                if (!playerScript.PlayerMovement.isInteracting)
+                if (!playerScript.playerMovement.isInteracting)
                 {
-                    playerScript.PlayerAudio.PlayWaterPlantEvent();
-                    playerScript.PlayerAnimationController.WateringAnimation();
+                    playerScript.playerAudio.PlayWaterPlantEvent();
+                    playerScript.playerAnimationController.WateringAnimation();
                 }
             }
         
@@ -50,10 +50,10 @@ namespace Farming
                 if (!_currentPlant.IsPlanted() && playerScript.inventory.RemoveItem(item))
                 {
                     OnPlant(item as PlantSeed);
-                    if (!playerScript.PlayerMovement.isInteracting)
+                    if (!playerScript.playerMovement.isInteracting)
                     {
-                        playerScript.PlayerAudio.PlaySeedPlantingEvent();
-                        playerScript.PlayerAnimationController.PlantingAnimation();
+                        playerScript.playerAudio.PlaySeedPlantingEvent();
+                        playerScript.playerAnimationController.PlantingAnimation();
                     }
                 }
             }
