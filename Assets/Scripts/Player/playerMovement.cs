@@ -66,7 +66,7 @@ public class playerMovement : MonoBehaviour
 
     public void Sap()
     {
-        _playerScript.SelectItem("Tree Seed");
+        _playerScript.SelectItem("Tree Sapling");
     }
     
     private void SelectWateringCan()
