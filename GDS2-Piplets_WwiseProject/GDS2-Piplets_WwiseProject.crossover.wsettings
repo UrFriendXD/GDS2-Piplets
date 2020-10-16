@@ -3,7 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{CB5185FD-ACA2-4151-8DDE-DD373BDFA199}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\piplets submission 2 \"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\"/>
+				<Property Name="Event Action List\{006058AE-215F-4845-8358-7A290081C25A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2F51EE72-59AA-4AAF-AB8C-6B558BA43C05}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{30953696-7DAB-4961-950C-9143A9924F42}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3B325C2C-D7FA-4BED-9E7B-15E21518FE88}\x64_Expand States" Type="string" Value=""/>

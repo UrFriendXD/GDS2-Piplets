@@ -88,6 +88,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{343E9F88-EDF1-423C-8E0F-24D88E73DCA3}" ShortID="711492183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ladder slide cleaned" ID="{CBC1746D-6222-44DE-8FB9-1FFAF10805DF}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Minecart" ID="{981BA921-0977-4799-BB35-4CC38A694649}">
