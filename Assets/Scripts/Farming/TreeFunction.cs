@@ -85,11 +85,11 @@ namespace Farming
                     break;
                 case var _ when daysSincePlanted == _plantSeed.daysToStage2:
                     _currentPlantStage = TreeStages.MediumTree;
-                    UpdateSprite(_plantSeed.spritesList.Length - 2);
+                    UpdateSprite(2);
                     break;
                 case var _ when daysSincePlanted == _plantSeed.daysToStage3:
                     _currentPlantStage = TreeStages.BigTree;
-                    UpdateSprite(_plantSeed.spritesList.Length - 1);
+                    UpdateSprite(3);
                     dayPassEventListener.Response.RemoveListener(Grow);
                     break;
                 default:
