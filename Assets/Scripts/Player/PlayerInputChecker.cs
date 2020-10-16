@@ -11,12 +11,12 @@ namespace Player
         public delegate void OnCancelButton();
         public event OnCancelButton OnCancelButtonPressed;
 
-        private playerMovement playerMovement;
+        private PlayerMovement playerMovement;
         private PlayerScript playerScript;
 
         private void Start()
         {
-            playerMovement = GetComponent<playerMovement>();
+            playerMovement = GetComponent<PlayerMovement>();
             playerScript = GetComponent<PlayerScript>();
         }
 

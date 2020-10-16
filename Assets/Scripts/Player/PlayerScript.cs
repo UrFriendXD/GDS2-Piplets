@@ -9,8 +9,9 @@ namespace Player
         public Item itemHeld;
         public Inventory inventory;
         public PlayerAudio PlayerAudio;
-        public playerMovement PlayerMovement;
+        public PlayerMovement PlayerMovement;
         public PlayerAnimationController PlayerAnimationController;
+        public PlayerInputChecker PlayerInputChecker;
 
         public int PlayerID;
 

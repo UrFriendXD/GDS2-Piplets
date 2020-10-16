@@ -42,5 +42,6 @@ public class PipletCanvasUI : MonoBehaviour
         }
 
         _playerStats = null;
+        ClosePipletMenu();
     }
 }

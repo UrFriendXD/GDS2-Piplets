@@ -241,7 +241,7 @@ MonoBehaviour:
   UI: {fileID: 0}
   UI2: {fileID: 0}
   menu: {fileID: 0}
-  On: 0
+  isUIOn: 0
   movementAudioTimerDelay: 0.4
   movementLadderUpAudioTimerDelay: 0.4
   movementLadderDownAudioDelay: 0.8
@@ -264,6 +264,7 @@ MonoBehaviour:
   PlayerAudio: {fileID: 6208465324433729384}
   PlayerMovement: {fileID: 7072382248368338961}
   PlayerAnimationController: {fileID: 1002434139973221403}
+  PlayerInputChecker: {fileID: 1447940501}
   PlayerID: 0
 --- !u!114 &1447940501
 MonoBehaviour:

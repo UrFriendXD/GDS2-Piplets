@@ -2,7 +2,7 @@
 using Player;
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private PlayerAction control;
     public bool LadderMovement, endLadder, GroundCheck, GroundCheck2, WallCheck, isInteracting, falling;
@@ -11,7 +11,7 @@ public class playerMovement : MonoBehaviour
     public float interactingObjectPos;
     public GameObject UI, UI2;
     public GameObject menu;
-    public bool On;
+    public bool isUIOn;
     
     private PlayerScript _playerScript;
     private float movementAudioTimer;
@@ -51,6 +51,7 @@ public class playerMovement : MonoBehaviour
     public void Menu()
     {
         menu.SetActive(!menu.activeSelf);
+        isUIOn = !isUIOn;
     }
 
     #region Selecting Items
@@ -168,23 +169,28 @@ public class playerMovement : MonoBehaviour
         WallCheck = false;
     }
 
-    public void PlayerMovementOn()
+    public void ToggleMovement()
     {
-        if (UI.activeSelf || menu.activeSelf || UI2.activeSelf)
-        {
-            On = false;
-        }
-        else
-        {
-            On = true;
-        }
+        isUIOn = !isUIOn;
     }
+
+    // public void PlayerMovementOn()
+    // {
+    //     if (UI.activeSelf || UI2.activeSelf)
+    //     {
+    //         isUIOn = false;
+    //     }
+    //     else
+    //     {
+    //         isUIOn = true;
+    //     }
+    // }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerMovementOn();
-        if (On)
+        //PlayerMovementOn();
+        if (!isUIOn)
         {
             playerMoveRightAndLeft();
             if (LadderMovement == true)

@@ -45,8 +45,8 @@ public class TerminalUIWindow : MonoBehaviour
             terminalCanvas.gameObject.SetActive(true);
             OpenMainTerminalUI();
 
-            // Adds closeUI to "esc"
-            _playerInputChecker.OnCancelButtonPressed += CloseUI;
+            // // Adds closeUI to "esc"
+            // _playerInputChecker.OnCancelButtonPressed += CloseUI;
         }
         ChangeMoneyText();
         ServiceLocator.Current.Get<MarketManager>().MoneyChanged += ChangeMoneyText;
@@ -64,9 +64,10 @@ public class TerminalUIWindow : MonoBehaviour
         mainTerminalCanvas.gameObject.SetActive(false);
         _processingCanvasUI.CloseUI();
         _sellingCanvasUI.CloseUI();
+        _pipletCanvasUI.CloseUI();
 
-        // Remove closeUI from "esc"
-        _playerInputChecker.OnCancelButtonPressed -= CloseUI;
+        // // Remove closeUI from "esc"
+        // _playerInputChecker.OnCancelButtonPressed -= CloseUI;
     }
 
     // Opens selling menu, called by buttons
