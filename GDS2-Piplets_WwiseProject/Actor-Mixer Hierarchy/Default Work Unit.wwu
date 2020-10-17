@@ -9,9 +9,7 @@
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
-										<RTPC Name="" ID="{EAF25AC3-F35A-48EE-B7AA-451590EB0DB8}" ShortID="1067518900">
-											<ReferenceList/>
-										</RTPC>
+										<RTPC Name="" ID="{EAF25AC3-F35A-48EE-B7AA-451590EB0DB8}" ShortID="1067518900"/>
 									</RTPCList>
 								</Property>
 							</PropertyList>
@@ -645,6 +643,9 @@
 						<Sound Name="menu button 1" ID="{B5A60C08-6DA0-4226-973D-44FFF3ED118E}" ShortID="737243684">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{A8CEA79E-21A2-40F0-947B-257B3E9AF253}"/>
@@ -761,6 +762,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Minecart" ID="{4527A9A0-35E0-4E3C-96DE-5DEBECF86A1B}" ShortID="431321392">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>38</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -873,6 +881,9 @@
 						<Sound Name="water droplet" ID="{05C34E4C-8A34-476C-8654-BC0509769E4C}" ShortID="1049132794">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>46</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{8D4D97BB-E78D-4D8B-B7FC-43D981D10FD8}">
@@ -902,7 +913,7 @@
 											<Modifier Name="" ID="{CD0B9A87-BAD2-46AC-A803-7298FBED425F}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="30"/>
+													<Property Name="Max" Type="Real64" Value="12"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -1238,6 +1249,11 @@
 						</Sound>
 						<Sound Name="Menu Back Button" ID="{5619E5B4-33A2-46B0-92CD-303F72443C2E}" ShortID="458590035">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-200</Value>
@@ -1326,6 +1342,57 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Pass sound" ID="{54191845-63FD-49D0-A8A8-3E109E84212A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Watering Plant" ID="{CCB234B9-62B3-4C5B-BF27-7A51DFF4CB5B}" ShortID="523617630">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Watering Plant" ID="{0C7BB94C-0220-4051-B0E7-10A4FAF8EE07}">
+									<Language>SFX</Language>
+									<AudioFile>Watering Plant.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="953806277"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Watering Plant" ID="{0C7BB94C-0220-4051-B0E7-10A4FAF8EE07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Minecart rolling" ID="{24E49B28-5BCF-46FF-8528-E95CA449A03B}" ShortID="924064675">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Minecart rolling" ID="{02E13D02-F5CA-4ACF-8D6D-4F13B444D675}">
+									<Language>SFX</Language>
+									<AudioFile>Minecart rolling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="312294729"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Minecart rolling" ID="{02E13D02-F5CA-4ACF-8D6D-4F13B444D675}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
