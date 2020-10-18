@@ -3,14 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Fade : MonoBehaviour
 {
     public Image fade;
-    public Text date;
-    public Text year;
-    public Text dateCrn;
-    public Text yearCrn;
+    public TextMeshProUGUI date;
+    public TextMeshProUGUI year;
+    public TextMeshProUGUI dateCrn;
+    public TextMeshProUGUI yearCrn;
     public float Time;
     public int dateNum;
     public int yearNum;
