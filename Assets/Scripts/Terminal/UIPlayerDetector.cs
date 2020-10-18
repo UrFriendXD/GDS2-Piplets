@@ -82,6 +82,6 @@ public class UIPlayerDetector : MonoBehaviour
         _spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
         
         // Close UI if player walks out though players shouldn't be able to move if they activate UI
-        uiInteractableObject.CloseUI();
+        //uiInteractableObject.CloseUI();
     }
 }

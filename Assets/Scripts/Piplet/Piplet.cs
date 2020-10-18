@@ -15,7 +15,7 @@ public class Piplet : MonoBehaviour
     private PlayerScript playerScript;
     private Transform target;
     private bool stepping;
-    private playerMovement _PlayerMovement;
+    private PlayerMovement _PlayerMovement;
 
     [SerializeField] private PipletStats pipletStats;
 

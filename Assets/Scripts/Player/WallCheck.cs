@@ -5,7 +5,7 @@ public class WallCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+        PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class WallCheck : MonoBehaviour
         //Debug.Log("on");
         if (col.tag == "Wall")
         {
-            playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+            PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
             player.WallOn();
         }
     }
@@ -29,7 +29,7 @@ public class WallCheck : MonoBehaviour
         //Debug.Log("off");
         if (col.tag == "Wall")
         {
-            playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+            PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
             player.WallOff();
         }
     }

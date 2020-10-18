@@ -6,7 +6,7 @@ namespace Interaction
     public class PlayerDetector : MonoBehaviour
     {
         private PlayerScript playerScript;
-        private playerMovement playerMovement;
+        private PlayerMovement playerMovement;
         private PlayerInputChecker playerInputChecker;
         private Item plantSeed;
         private InteractableObject interactableObject;
@@ -49,7 +49,7 @@ namespace Interaction
             playerScript = other.GetComponent<PlayerScript>();
             
             // Send objects x position for playerMovement
-            playerMovement = other.GetComponent<playerMovement>();
+            playerMovement = other.GetComponent<PlayerMovement>();
             playerMovement.TouchObject(transform.position.x);
 
             // Adds functions to delegate

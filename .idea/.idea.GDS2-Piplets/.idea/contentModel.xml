@@ -31,13 +31,16 @@
               <e p="WildPlant.cs" t="Include" />
               <e p="wood.cs" t="Include" />
             </e>
+            <e p="Tree.cs" t="Include" />
           </e>
           <e p="Farming" t="Include">
             <e p="FarmPlot.cs" t="Include" />
             <e p="PlantFunctions.cs" t="Include" />
             <e p="PlantStages.cs" t="Include" />
+            <e p="PlantTree.cs" t="Include" />
             <e p="PlantType.cs" t="Include" />
-            <e p="Tree.cs" t="Include" />
+            <e p="TreeFunction.cs" t="Include" />
+            <e p="TreeStages.cs" t="Include" />
           </e>
           <e p="FileIO" t="Include">
             <e p="FileReadWrite.cs" t="Include" />

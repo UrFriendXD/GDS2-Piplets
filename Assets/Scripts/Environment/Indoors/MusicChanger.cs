@@ -14,7 +14,7 @@ public class MusicChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerMovement playerMovement = other.GetComponent<playerMovement>();
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
             if (playerMovement.ladderspeed == 2.5)
             {
                 if (_bedroom)
@@ -39,7 +39,7 @@ public class MusicChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerMovement playerMovement = other.GetComponent<playerMovement>();
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
             if (playerMovement.ladderspeed == 2.5)
             {
                 _bedroom = false;

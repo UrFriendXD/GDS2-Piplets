@@ -18,13 +18,13 @@ public class AvoPiplet : MonoBehaviour
     public PlayerScript playerScript;
     private Transform target;
     private bool stepping;
-    private playerMovement _PlayerMovement;
+    private PlayerMovement _PlayerMovement;
 
     void Start()
     {
         target = playerScript.transform;
         level = 1;
-        _PlayerMovement = playerScript.GetComponent<playerMovement>();
+        _PlayerMovement = playerScript.GetComponent<PlayerMovement>();
     }
 
 

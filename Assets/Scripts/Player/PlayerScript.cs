@@ -9,9 +9,11 @@ namespace Player
         public PlayerStats playerStats;
         public Item itemHeld;
         public Inventory inventory;
-        public PlayerAudio playerAudio;
-        public playerMovement playerMovement;
-        public PlayerAnimationController playerAnimationController;
+        public PlayerAudio PlayerAudio;
+        public PlayerMovement PlayerMovement;
+        public PlayerAnimationController PlayerAnimationController;
+        public PlayerInputChecker PlayerInputChecker;
+
         public int PlayerID;
 
         [Header("Serialize Field")]
