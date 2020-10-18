@@ -38,7 +38,7 @@ namespace Farming
             if (item.name == "Axe")
             {
                 _currentTree.Onchop(playerScript);
-                if (!playerScript.PlayerMovement.isInteracting)
+                if (!playerScript.playerMovement.isInteracting)
                 {
                     //playerScript.PlayerAudio
                     //playerScript.PlayerAnimationController
@@ -54,7 +54,7 @@ namespace Farming
                     if (!_currentTree.IsPlanted() && playerScript.inventory.RemoveItem(item))
                     {
                         OnPlant(item as PlantSeed);
-                        if (!playerScript.PlayerMovement.isInteracting)
+                        if (!playerScript.playerMovement.isInteracting)
                         {
                             //playerScript.PlayerAudio.PlaySeedPlantingEvent();
                             //playerScript.PlayerAnimationController.PlantingAnimation();

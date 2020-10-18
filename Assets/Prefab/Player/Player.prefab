@@ -257,15 +257,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f880e921397c5d40ac0facb41633db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSaveManager: {fileID: 0}
   playerStats: {fileID: 11400000, guid: 24fa3d1811d7d5644b18f96179542668, type: 2}
   itemHeld: {fileID: 0}
   inventory: {fileID: 0}
-  PlayerAudio: {fileID: 6208465324433729384}
-  PlayerMovement: {fileID: 7072382248368338961}
-  PlayerAnimationController: {fileID: 1002434139973221403}
-  PlayerInputChecker: {fileID: 1447940501}
+  playerAudio: {fileID: 6208465324433729384}
+  playerMovement: {fileID: 7072382248368338961}
+  playerAnimationController: {fileID: 1002434139973221403}
+  playerInputChecker: {fileID: 1447940501}
   PlayerID: 0
+  itemSaveManager: {fileID: 0}
+  draggableItem: {fileID: 0}
 --- !u!114 &1447940501
 MonoBehaviour:
   m_ObjectHideFlags: 0

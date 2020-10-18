@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Player;
 using UnityEngine;
 
@@ -8,6 +9,11 @@ public class ItemSaveManager : MonoBehaviour
 
 	private const string InventoryFileName = "Inventory";
 	//private const string EquipmentFileName = "Equipment";
+
+	public void Awake()
+	{
+		ServiceLocator.Current.Get<SaveManager>().ItemSaveManager = this;
+	}
 
 	public void LoadInventory(PlayerScript character)
 	{

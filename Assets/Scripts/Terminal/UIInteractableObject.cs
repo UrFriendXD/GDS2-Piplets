@@ -16,7 +16,7 @@ public class UIInteractableObject : MonoBehaviour
     {
         UIPlayerDetector.RemoveInteraction();
         _usingPlayerID = playerScript.PlayerID;
-        playerScript.PlayerMovement.ToggleMovement();
+        playerScript.playerMovement.ToggleMovement();
         // Adds closeUI to "esc"
         playerInputChecker.OnCancelButtonPressed += CloseUI;
     }
@@ -26,7 +26,7 @@ public class UIInteractableObject : MonoBehaviour
     {
         UIPlayerDetector.RemoveInteraction();
         _usingPlayerID = playerScript.PlayerID;
-        playerScript.PlayerMovement.ToggleMovement();
+        playerScript.playerMovement.ToggleMovement();
         // Adds closeUI to "esc"
         playerInputChecker.OnCancelButtonPressed += CloseUI;
     }
@@ -34,8 +34,8 @@ public class UIInteractableObject : MonoBehaviour
     public virtual void CloseUI()
     {
         // Remove closeUI from "esc"
-        ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(_usingPlayerID).PlayerInputChecker.OnCancelButtonPressed -= CloseUI;
-        ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(_usingPlayerID).PlayerMovement.ToggleMovement();
+        ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(_usingPlayerID).playerInputChecker.OnCancelButtonPressed -= CloseUI;
+        ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(_usingPlayerID).playerMovement.ToggleMovement();
         _usingPlayerID = 0;
     }
 }

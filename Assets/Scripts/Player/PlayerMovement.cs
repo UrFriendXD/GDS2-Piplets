@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
     public float ladderspeed;
     public float interactingObjectPos;
-    public GameObject UI, UI2;
+    // public GameObject UI, UI2;
     public GameObject menu;
     public bool isUIOn;
     

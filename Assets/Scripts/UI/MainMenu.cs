@@ -21,14 +21,17 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
         AkBankManager.DoUnloadBanks();
-        menuBank.Unload();
+        //menuBank.Unload();
+        ServiceLocator.Current.Get<SaveManager>().NewGame();
         SceneManager.LoadScene("Level 1");
     }
 
     public void LoadGame()
     {
-        //scenemanager.loadscene...?
-        
+        AkBankManager.DoUnloadBanks();
+        //menuBank.Unload();
+        ServiceLocator.Current.Get<SaveManager>().LoadGame();
+        SceneManager.LoadScene("Level 1");
     }
 
     public void ReturnToMenu()

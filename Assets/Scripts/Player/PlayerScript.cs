@@ -9,10 +9,10 @@ namespace Player
         public PlayerStats playerStats;
         public Item itemHeld;
         public Inventory inventory;
-        public PlayerAudio PlayerAudio;
-        public PlayerMovement PlayerMovement;
-        public PlayerAnimationController PlayerAnimationController;
-        public PlayerInputChecker PlayerInputChecker;
+        public PlayerAudio playerAudio;
+        public PlayerMovement playerMovement;
+        public PlayerAnimationController playerAnimationController;
+        public PlayerInputChecker playerInputChecker;
 
         public int PlayerID;
 
@@ -20,7 +20,7 @@ namespace Player
         [SerializeField] private ItemSaveManager itemSaveManager;
         [SerializeField] Image draggableItem;
         
-        private BaseItemSlot dragItemSlot;
+        private BaseItemSlot _dragItemSlot;
 
         private void Awake()
         {
@@ -73,7 +73,7 @@ namespace Player
         {
             if (itemSlot.Item != null)
             {
-                dragItemSlot = itemSlot;
+                _dragItemSlot = itemSlot;
                 draggableItem.sprite = itemSlot.Item.icon;
                 draggableItem.transform.position = Input.mousePosition;
                 draggableItem.gameObject.SetActive(true);
@@ -87,19 +87,19 @@ namespace Player
 
         private void EndDrag(BaseItemSlot itemSlot)
         {
-            dragItemSlot = null;
+            _dragItemSlot = null;
             draggableItem.gameObject.SetActive(false);
         }
 
         private void Drop(BaseItemSlot dropItemSlot)
         {
-            if (dragItemSlot == null) return;
+            if (_dragItemSlot == null) return;
 
-            if (dropItemSlot.CanAddStack(dragItemSlot.Item))
+            if (dropItemSlot.CanAddStack(_dragItemSlot.Item))
             {
                 AddStacks(dropItemSlot);
             }
-            else if (dropItemSlot.CanReceiveItem(dragItemSlot.Item) && dragItemSlot.CanReceiveItem(dropItemSlot.Item))
+            else if (dropItemSlot.CanReceiveItem(_dragItemSlot.Item) && _dragItemSlot.CanReceiveItem(dropItemSlot.Item))
             {
                 SwapItems(dropItemSlot);
             }
@@ -108,19 +108,19 @@ namespace Player
         private void AddStacks(BaseItemSlot dropItemSlot)
         {
             int numAddableStacks = dropItemSlot.Item.maximumStack - dropItemSlot.Amount;
-            int stacksToAdd = Mathf.Min(numAddableStacks, dragItemSlot.Amount);
+            int stacksToAdd = Mathf.Min(numAddableStacks, _dragItemSlot.Amount);
 
             dropItemSlot.Amount += stacksToAdd;
-            dragItemSlot.Amount -= stacksToAdd;
+            _dragItemSlot.Amount -= stacksToAdd;
         }
         
         private void SwapItems(BaseItemSlot dropItemSlot)
         {
-            Item draggedItem = dragItemSlot.Item;
-            int draggedItemAmount = dragItemSlot.Amount;
+            Item draggedItem = _dragItemSlot.Item;
+            int draggedItemAmount = _dragItemSlot.Amount;
 
-            dragItemSlot.Item = dropItemSlot.Item;
-            dragItemSlot.Amount = dropItemSlot.Amount;
+            _dragItemSlot.Item = dropItemSlot.Item;
+            _dragItemSlot.Amount = dropItemSlot.Amount;
 
             dropItemSlot.Item = draggedItem;
             dropItemSlot.Amount = draggedItemAmount;

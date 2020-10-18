@@ -163,7 +163,7 @@ namespace Farming
                 this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
 
                 // Plays audio for harvest
-                playerScript.PlayerAudio.PlayHarvestEvent();
+                playerScript.playerAudio.PlayHarvestEvent();
 
                 // Gives a seed depending on RNG. Base value of 50.
                 var randomSeed = Random.Range(0, 101);

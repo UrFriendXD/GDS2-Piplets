@@ -46,16 +46,16 @@ namespace Farming
             //If it's a seed it'll plant if it's empty
             else if (item as PlantSeed)
             {
-                if (currentPlantType.itemName != "Tree Sapling")
+                if (item.itemName != "Tree Sapling")
                 {
                     // If plant is empty and player has room
                     if (!_currentPlant.IsPlanted() && playerScript.inventory.RemoveItem(item))
                     {
                         OnPlant(item as PlantSeed);
-                        if (!playerScript.PlayerMovement.isInteracting)
+                        if (!playerScript.playerMovement.isInteracting)
                         {
-                            playerScript.PlayerAudio.PlaySeedPlantingEvent();
-                            playerScript.PlayerAnimationController.PlantingAnimation();
+                            playerScript.playerAudio.PlaySeedPlantingEvent();
+                            playerScript.playerAnimationController.PlantingAnimation();
                         }
                     }
                 }

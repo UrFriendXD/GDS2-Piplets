@@ -18,4 +18,9 @@ public class PlayersManager : IGameService
     {
         return _players[playerID];
     }
+
+    public List<PlayerScript> GetAllPlayers()
+    {
+        return _players;
+    }
 }

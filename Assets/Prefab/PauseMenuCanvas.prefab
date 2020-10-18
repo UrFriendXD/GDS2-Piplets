@@ -370,10 +370,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ea9f5c88ee608a44b988eccafa61cc0a, type: 2}
-  allBank:
+  playMainMenu:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4cd41b186c901cf459cf0886aa5e2a65, type: 2}
 --- !u!114 &6281384399795564960
 MonoBehaviour:
   m_ObjectHideFlags: 0

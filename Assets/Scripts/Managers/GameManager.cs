@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TradableItemsList tradableItemsList;
     [SerializeField] private int amountOfPipletNeededToWin;
     public GameObject MusicManager;
+    private bool _isNewGame;
+    private SaveManager _saveManager;
     
     private void Awake()
     {
@@ -21,7 +23,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        SetupSaveManger();
         SetupMarket();
         SetupPiplets();
     }
@@ -36,10 +38,24 @@ public class GameManager : MonoBehaviour
 
     #region Game setup functions
 
+    private void SetupSaveManger()
+    {
+        _saveManager = ServiceLocator.Current.Get<SaveManager>();
+        _isNewGame = _saveManager.Setup();
+        if (_isNewGame)
+        {
+            _saveManager.NewGame();
+        }
+        else
+        {
+            _saveManager.LoadGame();
+        }
+    }
+    
     private void SetupMarket()
     {
         var marketManager = ServiceLocator.Current.Get<MarketManager>();
-        marketManager.Setup(true, tradableItemsList);
+        marketManager.Setup(_isNewGame, tradableItemsList);
     }
 
     private void SetupPiplets()
@@ -49,4 +65,8 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    public void SaveGame()
+    {
+        _saveManager.SaveGame();
+    }
 }

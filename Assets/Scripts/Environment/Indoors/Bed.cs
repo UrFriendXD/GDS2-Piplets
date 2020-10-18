@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using System;
+using Player;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,13 +13,19 @@ namespace Environment.Indoors
         public GameObject player;
         public GameObject insideBed;
         public float time;
+
+        private SaveManager _saveManager;
         //private PlayerScript playerScript;
-        
+
+        private void Awake()
+        {
+            _saveManager = ServiceLocator.Current.Get<SaveManager>();
+        }
+
         // Calls day pass event regardless of interaction key
         public override void InteractWithItem(Item item, PlayerScript playerScript)
         {
-            dayPass.Invoke();
-            
+            Sleep();
         }
         
         private IEnumerator fadeToNextDay(float Time)
@@ -31,8 +38,14 @@ namespace Environment.Indoors
 
         public override void InteractBare(PlayerScript playerScript)
         {
+            Sleep();
+        }
+
+        private void Sleep()
+        {
             dayPass.Invoke();
             StartCoroutine(fadeToNextDay(time));
+            _saveManager.SaveGame();
         }
     }
 }

@@ -33,6 +33,9 @@
             </e>
             <e p="Tree.cs" t="Include" />
           </e>
+          <e p="Fade" t="Include">
+            <e p="Fade.cs" t="Include" />
+          </e>
           <e p="Farming" t="Include">
             <e p="FarmPlot.cs" t="Include" />
             <e p="PlantFunctions.cs" t="Include" />
@@ -73,6 +76,7 @@
             <e p="MusicManager.cs" t="Include" />
             <e p="PipletManager.cs" t="Include" />
             <e p="PlayersManager.cs" t="Include" />
+            <e p="SaveManager.cs" t="Include" />
             <e p="ServiceLocator.cs" t="Include" />
             <e p="SurvivialItemUsed.cs" t="Include" />
             <e p="TradableItemsList.cs" t="Include" />
