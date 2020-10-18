@@ -14,6 +14,8 @@ public class Fade : MonoBehaviour
     public float Time;
     public int dateNum;
     public int yearNum;
+    public GameObject outsideOfBed;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -88,5 +90,7 @@ public class Fade : MonoBehaviour
         year.CrossFadeAlpha(0, 2, false);
         dateCrn.CrossFadeAlpha(1, 2, false);
         yearCrn.CrossFadeAlpha(1, 2, false);
+        player.transform.position = outsideOfBed.transform.position;
+        player.gameObject.GetComponent<PlayerMovement>().isUIOn = false;
     }
 }
