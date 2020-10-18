@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
     {
         AkBankManager.DoUnloadBanks();
         //menuBank.Unload();
-        ServiceLocator.Current.Get<SaveManager>().NewGame();
+        ServiceLocator.Current.Get<SaveManager>().IsNewGame = true;
         SceneManager.LoadScene("Level 1");
     }
 
@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour
     {
         AkBankManager.DoUnloadBanks();
         //menuBank.Unload();
-        ServiceLocator.Current.Get<SaveManager>().LoadGame();
+        ServiceLocator.Current.Get<SaveManager>().IsNewGame = false;
         SceneManager.LoadScene("Level 1");
     }
 

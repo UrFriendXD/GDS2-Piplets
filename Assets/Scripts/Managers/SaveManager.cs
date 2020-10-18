@@ -21,18 +21,18 @@ public class SaveManager : IGameService
     
     public void SaveGame()
     {
-        foreach (var player in _playersManager.GetAllPlayers())
-        {
-            ItemSaveManager.SaveInventory(player);
-        }
+        // foreach (var player in _playersManager.GetAllPlayers())
+        // {
+        ItemSaveManager.SaveInventory(_playersManager.GetPlayerFromID(0));
+        // }
     }
 
     public void LoadGame()
     {
-        foreach (var player in _playersManager.GetAllPlayers())
-        {
-            ItemSaveManager.LoadInventory(player);
-        }
+        // foreach (var player in _playersManager.GetAllPlayers())
+        // {
+        ItemSaveManager.LoadInventory(_playersManager.GetPlayerFromID(0));
+        // }
     }
 
     private void ClearSave()

@@ -22,7 +22,7 @@ public class Piplet : MonoBehaviour
     void Start()
     {
         playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
-        target = playerScript.transform;
+        target = playerScript.gameObject.transform;
         level = 1;
         _PlayerMovement = playerScript.playerMovement;
         if (gameObject.activeSelf)

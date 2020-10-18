@@ -45,7 +45,7 @@ namespace Environment.Indoors
         {
             dayPass.Invoke();
             StartCoroutine(fadeToNextDay(time));
-            _saveManager.SaveGame();
+            GameManager.instance.SaveGame();
         }
     }
 }
