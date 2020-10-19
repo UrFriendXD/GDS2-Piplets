@@ -43,7 +43,7 @@ public class DayManager : MonoBehaviour
     // Checks if a week passed. If it's 14 days ends the season
     private bool WeekCheck()
     {
-        if (days == 14)
+        if (days == 15)
         {
             SeasonEnd();
         }
@@ -69,7 +69,7 @@ public class DayManager : MonoBehaviour
     {
         seasonEndEvent.Raise();
         Debug.Log("Season ended " + days);
-        days = 0;
+        days = 1;
         years++;
     }
 
