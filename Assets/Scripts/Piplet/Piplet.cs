@@ -22,7 +22,14 @@ public class Piplet : MonoBehaviour
     void Start()
     {
         playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
-        target = playerScript.gameObject.transform;
+        if (playerScript)
+        {
+            target = playerScript.gameObject.transform;
+        }
+        else
+        {
+            Debug.Log("Player not found");
+        }
         level = 1;
         _PlayerMovement = playerScript.playerMovement;
         if (gameObject.activeSelf)

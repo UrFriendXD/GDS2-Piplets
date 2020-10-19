@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class SaveManager : IGameService
 {
-    public bool IsNewGame;
-    public ItemSaveManager ItemSaveManager;
+    public ItemDatabase ItemDatabase;
     private PlayersManager _playersManager;
-
-    public bool Setup()
+    
+    // Save managers
+    public ItemSaveManager ItemSaveManager;
+    public MarketPriceSaveManager MarketPriceSaveManager;
+    
+    public bool IsNewGame;
+    public void Setup()
     {
-        _playersManager = ServiceLocator.Current.Get<PlayersManager>();
-        return IsNewGame;
+        if (_playersManager == null)
+        {
+            _playersManager = ServiceLocator.Current.Get<PlayersManager>();
+        }
     }
     
     public void NewGame()
@@ -24,6 +30,7 @@ public class SaveManager : IGameService
         // foreach (var player in _playersManager.GetAllPlayers())
         // {
         ItemSaveManager.SaveInventory(_playersManager.GetPlayerFromID(0));
+        MarketPriceSaveManager.SavePrices();
         // }
     }
 
@@ -31,12 +38,15 @@ public class SaveManager : IGameService
     {
         // foreach (var player in _playersManager.GetAllPlayers())
         // {
+        Debug.Log(_playersManager.GetPlayerFromID(0));
         ItemSaveManager.LoadInventory(_playersManager.GetPlayerFromID(0));
+        MarketPriceSaveManager.LoadPrices();
+        Debug.Log("Loaded inventory");
         // }
     }
 
     private void ClearSave()
     {
-        
+        //_playersManager.ClearList();
     }
 }

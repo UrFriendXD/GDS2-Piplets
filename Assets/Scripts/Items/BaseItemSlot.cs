@@ -19,6 +19,15 @@ public class BaseItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 	protected Color disabledColor = new Color(1, 1, 1, 0);
 
 	protected Item _item;
+
+	private void Awake()
+	{
+		if (image == null)
+		{
+			image = GetComponent<Image>();
+		}
+	}
+
 	public Item Item {
 		get { return _item; }
 		set {
@@ -72,7 +81,10 @@ public class BaseItemSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 	protected virtual void OnValidate()
 	{
 		if (image == null)
+		{
 			image = GetComponent<Image>();
+			image.preserveAspect = true;
+		}
 
 		if (amountText == null)
 			amountText = GetComponentInChildren<TextMeshProUGUI>();

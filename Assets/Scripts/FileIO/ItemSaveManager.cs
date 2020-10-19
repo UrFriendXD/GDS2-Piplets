@@ -13,6 +13,7 @@ public class ItemSaveManager : MonoBehaviour
 	public void Awake()
 	{
 		ServiceLocator.Current.Get<SaveManager>().ItemSaveManager = this;
+		ServiceLocator.Current.Get<SaveManager>().ItemDatabase = itemDatabase;
 	}
 
 	public void LoadInventory(PlayerScript character)

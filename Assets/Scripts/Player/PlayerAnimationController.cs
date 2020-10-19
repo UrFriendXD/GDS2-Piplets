@@ -45,19 +45,19 @@ public class PlayerAnimationController : MonoBehaviour
     
     public void ClimbingAnimation()
     {
-        animator.SetBool(Climbing, true);
-        animator.SetBool(Sliding, false);
+        // animator.SetBool(Climbing, true);
+        // animator.SetBool(Sliding, false);
     }
     
     public void SlidingAnimation()
     {
-        animator.SetBool(Climbing, false);
-        animator.SetBool(Sliding, true);
+        // animator.SetBool(Climbing, false);
+        // animator.SetBool(Sliding, true);
     }
 
     public void OffLadder()
     {
-        animator.SetBool(Climbing, false);
-        animator.SetBool(Sliding, false);
+        // animator.SetBool(Climbing, false);
+        // animator.SetBool(Sliding, false);
     }
 }

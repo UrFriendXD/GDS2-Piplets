@@ -51,6 +51,9 @@
             <e p="ItemSaveData.cs" t="Include" />
             <e p="ItemSaveIO.cs" t="Include" />
             <e p="ItemSaveManager.cs" t="Include" />
+            <e p="MarketPriceSaveManager.cs" t="Include" />
+            <e p="TradableItemSaveData.cs" t="Include" />
+            <e p="TradableItemSaveIO.cs" t="Include" />
           </e>
           <e p="Interaction" t="Include">
             <e p="DoorPlayerDetector.cs" t="Include" />
