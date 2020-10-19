@@ -51,7 +51,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""AloeSeed"",
+                    ""name"": ""Zero"",
                     ""type"": ""Button"",
                     ""id"": ""8bff560a-d451-479f-b59c-d98e34f39bc7"",
                     ""expectedControlType"": ""Button"",
@@ -59,7 +59,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""CottonSeed"",
+                    ""name"": ""One"",
                     ""type"": ""Button"",
                     ""id"": ""8acdf920-52b3-43de-8646-c5d38dbefa84"",
                     ""expectedControlType"": ""Button"",
@@ -67,7 +67,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Sapling"",
+                    ""name"": ""Two"",
                     ""type"": ""Button"",
                     ""id"": ""db1eb91f-fe6e-426f-bd77-6d1145856e17"",
                     ""expectedControlType"": ""Button"",
@@ -75,7 +75,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Select Watering Can"",
+                    ""name"": ""Three"",
                     ""type"": ""Button"",
                     ""id"": ""de150bb8-6d0e-4fae-a551-e9dda4a745b9"",
                     ""expectedControlType"": ""Button"",
@@ -83,7 +83,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Select Axe"",
+                    ""name"": ""Four"",
                     ""type"": ""Button"",
                     ""id"": ""040b422d-73f7-4098-b9f2-7ac096582851"",
                     ""expectedControlType"": ""Button"",
@@ -102,6 +102,62 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""name"": ""Menu"",
                     ""type"": ""Button"",
                     ""id"": ""08ad964b-3b1c-49c4-b1f3-712355ba0555"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Five"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8bab1b3-2d91-483c-b5d3-c5ad3d481d54"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Six"",
+                    ""type"": ""Button"",
+                    ""id"": ""410600ab-17ba-4c79-8d12-04cb0cba2040"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Seven"",
+                    ""type"": ""Button"",
+                    ""id"": ""0c3d9c21-8e55-445b-bcfd-e7b6a6a8cf38"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Eight"",
+                    ""type"": ""Button"",
+                    ""id"": ""e3f30d33-60b2-415a-b957-112bd3d0fc92"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Nine"",
+                    ""type"": ""Button"",
+                    ""id"": ""630c2a3d-ceea-4c02-b335-a1407a52d16a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Ten"",
+                    ""type"": ""Button"",
+                    ""id"": ""272c0abe-fa86-4b73-87cc-ef60eb436ea6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Eleven"",
+                    ""type"": ""Button"",
+                    ""id"": ""23a70487-7842-4db8-aa0b-35cfe4551027"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -181,7 +237,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AloeSeed"",
+                    ""action"": ""Zero"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -192,7 +248,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""CottonSeed"",
+                    ""action"": ""One"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -203,7 +259,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Sapling"",
+                    ""action"": ""Two"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -214,7 +270,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Select Watering Can"",
+                    ""action"": ""Three"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -247,7 +303,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Select Axe"",
+                    ""action"": ""Four"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -272,6 +328,83 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""38b395be-e258-4c1d-bfdc-aaad0cd066d6"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Five"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fcdda311-c025-4b69-8a1b-99e7e77c9f0c"",
+                    ""path"": ""<Keyboard>/7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Six"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""acceb690-f1f0-4e75-b61d-bdc09be665f3"",
+                    ""path"": ""<Keyboard>/8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Seven"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1874b1f8-17f2-4bf4-9ef1-4c2c1682e184"",
+                    ""path"": ""<Keyboard>/9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Eight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0b439cd9-d2b1-415f-aaa8-463bc69392f8"",
+                    ""path"": ""<Keyboard>/0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Nine"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""225c3e35-736c-4f8a-98ad-93b0b26199d6"",
+                    ""path"": ""<Keyboard>/minus"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ten"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""21278050-da9e-4159-b5f8-e9b21a1794c8"",
+                    ""path"": ""<Keyboard>/equals"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Eleven"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -284,13 +417,20 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player_LadderMovement = m_player.FindAction("LadderMovement", throwIfNotFound: true);
         m_player_InteractBare = m_player.FindAction("InteractBare", throwIfNotFound: true);
         m_player_Action = m_player.FindAction("Action", throwIfNotFound: true);
-        m_player_AloeSeed = m_player.FindAction("AloeSeed", throwIfNotFound: true);
-        m_player_CottonSeed = m_player.FindAction("CottonSeed", throwIfNotFound: true);
-        m_player_Sapling = m_player.FindAction("Sapling", throwIfNotFound: true);
-        m_player_SelectWateringCan = m_player.FindAction("Select Watering Can", throwIfNotFound: true);
-        m_player_SelectAxe = m_player.FindAction("Select Axe", throwIfNotFound: true);
+        m_player_Zero = m_player.FindAction("Zero", throwIfNotFound: true);
+        m_player_One = m_player.FindAction("One", throwIfNotFound: true);
+        m_player_Two = m_player.FindAction("Two", throwIfNotFound: true);
+        m_player_Three = m_player.FindAction("Three", throwIfNotFound: true);
+        m_player_Four = m_player.FindAction("Four", throwIfNotFound: true);
         m_player_Cancel = m_player.FindAction("Cancel", throwIfNotFound: true);
         m_player_Menu = m_player.FindAction("Menu", throwIfNotFound: true);
+        m_player_Five = m_player.FindAction("Five", throwIfNotFound: true);
+        m_player_Six = m_player.FindAction("Six", throwIfNotFound: true);
+        m_player_Seven = m_player.FindAction("Seven", throwIfNotFound: true);
+        m_player_Eight = m_player.FindAction("Eight", throwIfNotFound: true);
+        m_player_Nine = m_player.FindAction("Nine", throwIfNotFound: true);
+        m_player_Ten = m_player.FindAction("Ten", throwIfNotFound: true);
+        m_player_Eleven = m_player.FindAction("Eleven", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -344,13 +484,20 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_player_LadderMovement;
     private readonly InputAction m_player_InteractBare;
     private readonly InputAction m_player_Action;
-    private readonly InputAction m_player_AloeSeed;
-    private readonly InputAction m_player_CottonSeed;
-    private readonly InputAction m_player_Sapling;
-    private readonly InputAction m_player_SelectWateringCan;
-    private readonly InputAction m_player_SelectAxe;
+    private readonly InputAction m_player_Zero;
+    private readonly InputAction m_player_One;
+    private readonly InputAction m_player_Two;
+    private readonly InputAction m_player_Three;
+    private readonly InputAction m_player_Four;
     private readonly InputAction m_player_Cancel;
     private readonly InputAction m_player_Menu;
+    private readonly InputAction m_player_Five;
+    private readonly InputAction m_player_Six;
+    private readonly InputAction m_player_Seven;
+    private readonly InputAction m_player_Eight;
+    private readonly InputAction m_player_Nine;
+    private readonly InputAction m_player_Ten;
+    private readonly InputAction m_player_Eleven;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -359,13 +506,20 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @LadderMovement => m_Wrapper.m_player_LadderMovement;
         public InputAction @InteractBare => m_Wrapper.m_player_InteractBare;
         public InputAction @Action => m_Wrapper.m_player_Action;
-        public InputAction @AloeSeed => m_Wrapper.m_player_AloeSeed;
-        public InputAction @CottonSeed => m_Wrapper.m_player_CottonSeed;
-        public InputAction @Sapling => m_Wrapper.m_player_Sapling;
-        public InputAction @SelectWateringCan => m_Wrapper.m_player_SelectWateringCan;
-        public InputAction @SelectAxe => m_Wrapper.m_player_SelectAxe;
+        public InputAction @Zero => m_Wrapper.m_player_Zero;
+        public InputAction @One => m_Wrapper.m_player_One;
+        public InputAction @Two => m_Wrapper.m_player_Two;
+        public InputAction @Three => m_Wrapper.m_player_Three;
+        public InputAction @Four => m_Wrapper.m_player_Four;
         public InputAction @Cancel => m_Wrapper.m_player_Cancel;
         public InputAction @Menu => m_Wrapper.m_player_Menu;
+        public InputAction @Five => m_Wrapper.m_player_Five;
+        public InputAction @Six => m_Wrapper.m_player_Six;
+        public InputAction @Seven => m_Wrapper.m_player_Seven;
+        public InputAction @Eight => m_Wrapper.m_player_Eight;
+        public InputAction @Nine => m_Wrapper.m_player_Nine;
+        public InputAction @Ten => m_Wrapper.m_player_Ten;
+        public InputAction @Eleven => m_Wrapper.m_player_Eleven;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -387,27 +541,48 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @Action.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @Action.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
                 @Action.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAction;
-                @AloeSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
-                @AloeSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
-                @AloeSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAloeSeed;
-                @CottonSeed.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
-                @CottonSeed.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
-                @CottonSeed.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCottonSeed;
-                @Sapling.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
-                @Sapling.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
-                @Sapling.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSapling;
-                @SelectWateringCan.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectWateringCan;
-                @SelectWateringCan.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectWateringCan;
-                @SelectWateringCan.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectWateringCan;
-                @SelectAxe.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
-                @SelectAxe.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
-                @SelectAxe.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectAxe;
+                @Zero.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnZero;
+                @Zero.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnZero;
+                @Zero.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnZero;
+                @One.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOne;
+                @One.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOne;
+                @One.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOne;
+                @Two.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTwo;
+                @Two.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTwo;
+                @Two.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTwo;
+                @Three.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnThree;
+                @Three.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnThree;
+                @Three.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnThree;
+                @Four.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFour;
+                @Four.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFour;
+                @Four.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFour;
                 @Cancel.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
                 @Cancel.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
                 @Cancel.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCancel;
                 @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
                 @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
                 @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
+                @Five.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFive;
+                @Five.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFive;
+                @Five.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFive;
+                @Six.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSix;
+                @Six.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSix;
+                @Six.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSix;
+                @Seven.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSeven;
+                @Seven.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSeven;
+                @Seven.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSeven;
+                @Eight.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEight;
+                @Eight.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEight;
+                @Eight.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEight;
+                @Nine.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNine;
+                @Nine.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNine;
+                @Nine.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNine;
+                @Ten.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTen;
+                @Ten.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTen;
+                @Ten.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTen;
+                @Eleven.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEleven;
+                @Eleven.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEleven;
+                @Eleven.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEleven;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -424,27 +599,48 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @Action.started += instance.OnAction;
                 @Action.performed += instance.OnAction;
                 @Action.canceled += instance.OnAction;
-                @AloeSeed.started += instance.OnAloeSeed;
-                @AloeSeed.performed += instance.OnAloeSeed;
-                @AloeSeed.canceled += instance.OnAloeSeed;
-                @CottonSeed.started += instance.OnCottonSeed;
-                @CottonSeed.performed += instance.OnCottonSeed;
-                @CottonSeed.canceled += instance.OnCottonSeed;
-                @Sapling.started += instance.OnSapling;
-                @Sapling.performed += instance.OnSapling;
-                @Sapling.canceled += instance.OnSapling;
-                @SelectWateringCan.started += instance.OnSelectWateringCan;
-                @SelectWateringCan.performed += instance.OnSelectWateringCan;
-                @SelectWateringCan.canceled += instance.OnSelectWateringCan;
-                @SelectAxe.started += instance.OnSelectAxe;
-                @SelectAxe.performed += instance.OnSelectAxe;
-                @SelectAxe.canceled += instance.OnSelectAxe;
+                @Zero.started += instance.OnZero;
+                @Zero.performed += instance.OnZero;
+                @Zero.canceled += instance.OnZero;
+                @One.started += instance.OnOne;
+                @One.performed += instance.OnOne;
+                @One.canceled += instance.OnOne;
+                @Two.started += instance.OnTwo;
+                @Two.performed += instance.OnTwo;
+                @Two.canceled += instance.OnTwo;
+                @Three.started += instance.OnThree;
+                @Three.performed += instance.OnThree;
+                @Three.canceled += instance.OnThree;
+                @Four.started += instance.OnFour;
+                @Four.performed += instance.OnFour;
+                @Four.canceled += instance.OnFour;
                 @Cancel.started += instance.OnCancel;
                 @Cancel.performed += instance.OnCancel;
                 @Cancel.canceled += instance.OnCancel;
                 @Menu.started += instance.OnMenu;
                 @Menu.performed += instance.OnMenu;
                 @Menu.canceled += instance.OnMenu;
+                @Five.started += instance.OnFive;
+                @Five.performed += instance.OnFive;
+                @Five.canceled += instance.OnFive;
+                @Six.started += instance.OnSix;
+                @Six.performed += instance.OnSix;
+                @Six.canceled += instance.OnSix;
+                @Seven.started += instance.OnSeven;
+                @Seven.performed += instance.OnSeven;
+                @Seven.canceled += instance.OnSeven;
+                @Eight.started += instance.OnEight;
+                @Eight.performed += instance.OnEight;
+                @Eight.canceled += instance.OnEight;
+                @Nine.started += instance.OnNine;
+                @Nine.performed += instance.OnNine;
+                @Nine.canceled += instance.OnNine;
+                @Ten.started += instance.OnTen;
+                @Ten.performed += instance.OnTen;
+                @Ten.canceled += instance.OnTen;
+                @Eleven.started += instance.OnEleven;
+                @Eleven.performed += instance.OnEleven;
+                @Eleven.canceled += instance.OnEleven;
             }
         }
     }
@@ -455,12 +651,19 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnLadderMovement(InputAction.CallbackContext context);
         void OnInteractBare(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
-        void OnAloeSeed(InputAction.CallbackContext context);
-        void OnCottonSeed(InputAction.CallbackContext context);
-        void OnSapling(InputAction.CallbackContext context);
-        void OnSelectWateringCan(InputAction.CallbackContext context);
-        void OnSelectAxe(InputAction.CallbackContext context);
+        void OnZero(InputAction.CallbackContext context);
+        void OnOne(InputAction.CallbackContext context);
+        void OnTwo(InputAction.CallbackContext context);
+        void OnThree(InputAction.CallbackContext context);
+        void OnFour(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
+        void OnFive(InputAction.CallbackContext context);
+        void OnSix(InputAction.CallbackContext context);
+        void OnSeven(InputAction.CallbackContext context);
+        void OnEight(InputAction.CallbackContext context);
+        void OnNine(InputAction.CallbackContext context);
+        void OnTen(InputAction.CallbackContext context);
+        void OnEleven(InputAction.CallbackContext context);
     }
 }

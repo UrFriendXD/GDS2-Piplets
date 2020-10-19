@@ -22,6 +22,8 @@ namespace Player
         
         private BaseItemSlot _dragItemSlot;
 
+        private int lastNumHeld = 0;
+
         private void Awake()
         {
             PlayerID = ServiceLocator.Current.Get<PlayersManager>().AddPlayer(this);
@@ -56,19 +58,18 @@ namespace Player
         }
 
         // Selects players item from inventory based on parameter
-        public void SelectItem(string itemSelectName)
+        public void SelectItem(int itemSelectNum)
         {
-            itemHeld = null;
-            Debug.Log(itemSelectName);
-            foreach (var item in inventory.ItemSlots)
-            {
-                if (!item.Item) continue;
-                if (itemSelectName != item.Item.itemName) continue;
-                itemHeld = item.Item;
-                return;
-            }
+            lastNumHeld = itemSelectNum;
+            itemHeld = inventory.ItemSlots[itemSelectNum].Item;
+            Debug.Log(itemSelectNum);
         }
-        
+
+        private void Update()
+        {
+            SelectItem(lastNumHeld);
+        }
+
         private void BeginDrag(BaseItemSlot itemSlot)
         {
             if (itemSlot.Item != null)
