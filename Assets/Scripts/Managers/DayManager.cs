@@ -47,7 +47,7 @@ public class DayManager : MonoBehaviour
         {
             SeasonEnd();
         }
-        return days % 7 == 0;
+        return (days - 1) % 7 == 0;
     }
 
     private void ConsumeSurvivalItems()
