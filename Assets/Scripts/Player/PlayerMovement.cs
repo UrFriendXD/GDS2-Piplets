@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Player;
+using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     // public GameObject UI, UI2;
     public GameObject menu;
     public bool isUIOn;
+    public int input;
     
     private PlayerScript _playerScript;
     private float movementAudioTimer;
@@ -39,11 +41,18 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        control.player.Sapling.performed += cxt => Sap();
-        control.player.AloeSeed.performed += cxt => Aloe();
-        control.player.CottonSeed.performed += cxt => Cotton();
-        control.player.SelectWateringCan.performed += cxt => SelectWateringCan();
-        control.player.SelectAxe.performed += cxt => SelectAxe();
+        control.player.Zero.performed += cxt => Zero();
+        control.player.One.performed += cxt => One();
+        control.player.Two.performed += cxt => Two();
+        control.player.Three.performed += cxt => Three();
+        control.player.Four.performed += cxt => Four();
+        control.player.Five.performed += cxt => Five();
+        control.player.Six.performed += cxt => Six();
+        control.player.Seven.performed += cxt => Seven();
+        control.player.Eight.performed += cxt => Eight();
+        control.player.Nine.performed += cxt => Nine();
+        control.player.Ten.performed += cxt => Ten();
+        control.player.Eleven.performed += cxt => Eleven();
         control.player.Menu.performed += ctx => Menu();
         _playerScript = GetComponent<PlayerScript>();
     }
@@ -55,29 +64,60 @@ public class PlayerMovement : MonoBehaviour
     }
 
     #region Selecting Items
-    public void Aloe()
+
+    public void Zero()
     {
-        _playerScript.SelectItem("Aloe Seed");
+        _playerScript.SelectItem(0);
+    } 
+
+    public void One()
+    {
+        _playerScript.SelectItem(1);
     }
 
-    public void Cotton()
+    public void Two()
     {
-        _playerScript.SelectItem("Cotton Seed");
+        _playerScript.SelectItem(2);
     }
 
-    public void Sap()
+    public void Three()
     {
-        _playerScript.SelectItem("Tree Sapling");
+        _playerScript.SelectItem(3);
     }
     
-    private void SelectWateringCan()
+    private void Four()
     {
-        _playerScript.SelectItem("Watering Can");
+        _playerScript.SelectItem(4);
     }
 
-    private void SelectAxe()
+    private void Five()
     {
-        _playerScript.SelectItem("Axe");
+        _playerScript.SelectItem(5);
+    }
+    private void Six()
+    {
+        _playerScript.SelectItem(6);
+    }
+    private void Seven()
+    {
+        _playerScript.SelectItem(7);
+    }
+    private void Eight()
+    {
+        _playerScript.SelectItem(8);
+    }
+    private void Nine()
+    {
+        _playerScript.SelectItem(9);
+    }
+
+    private void Ten()
+    {
+        _playerScript.SelectItem(10);
+    }
+    private void Eleven()
+    {
+        _playerScript.SelectItem(11);
     }
     #endregion
 
