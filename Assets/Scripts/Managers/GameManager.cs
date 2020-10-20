@@ -27,6 +27,12 @@ public class GameManager : MonoBehaviour
         }
         SetupPiplets();
         SetupSaveManger();
+        SetupPlantsManager();
+    }
+
+    private void SetupPlantsManager()
+    {
+        ServiceLocator.Current.Get<PlantsManager>().Setup();
     }
 
     // To call functions that need to be done after scene is loaded. Like a start but persists between loading
@@ -34,6 +40,7 @@ public class GameManager : MonoBehaviour
     {
         if (scene.name == "Level 1")
         {
+            _isNewGame = _saveManager.IsNewGame;
             SetupMarket();
             CheckSave();
         }
@@ -45,8 +52,6 @@ public class GameManager : MonoBehaviour
     {
         _saveManager = ServiceLocator.Current.Get<SaveManager>();
         _saveManager.Setup();
-        _isNewGame = _saveManager.IsNewGame;
-        Debug.Log(_isNewGame);
     }
 
     private void CheckSave()

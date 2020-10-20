@@ -16,7 +16,7 @@ public class ServiceLocator
         Register(new PlayersManager());
         Register(new PipletManager());
         Register(new SaveManager());
-        
+        Register(new PlantsManager());
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

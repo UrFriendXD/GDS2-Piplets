@@ -61,9 +61,15 @@ namespace Farming
             seasonEndEventListener.Response.AddListener(OnSeasonEnd);
         
             // If this is a new plant set stage to seed and seedling sprite
-            if (daysSincePlanted != 0) return;
-            _currentPlantStage = PlantStages.Seed;
-            UpdateSprite(0);
+            if (daysSincePlanted == 0)
+            {
+                _currentPlantStage = PlantStages.Seed;
+                UpdateSprite(0);
+            }
+            else
+            {
+                UpdateSpriteOnDay();
+            }
         }
 
         /*// Update is called once per frame
@@ -132,24 +138,29 @@ namespace Farming
                 daysSincePlanted++;
 
                 // Depending on day since planted, grow a stage
-                switch (daysSincePlanted)
-                {
-                    // var _ is nothing
-                    case var _ when daysSincePlanted == _plantSeed.daysToStage1:
-                        _currentPlantStage = PlantStages.Growing;
-                        UpdateSprite(1);
-                        break;
-                    case var _ when daysSincePlanted == _plantSeed.daysToHarvest:
-                        _currentPlantStage = PlantStages.Harvestable;
-                        UpdateSprite(_plantSeed.spritesList.Length-2);
-                        break;
-                    default:
-                        Debug.Log("Grew over harvest");
-                        break;
-                }
+                UpdateSpriteOnDay();
             }
             Debug.Log($"Growth {daysSincePlanted}, {_currentPlantStage}");
 
+        }
+
+        private void UpdateSpriteOnDay()
+        {
+            switch (daysSincePlanted)
+            {
+                // var _ is nothing
+                case var _ when daysSincePlanted == _plantSeed.daysToStage1:
+                    _currentPlantStage = PlantStages.Growing;
+                    UpdateSprite(1);
+                    break;
+                case var _ when daysSincePlanted == _plantSeed.daysToHarvest:
+                    _currentPlantStage = PlantStages.Harvestable;
+                    UpdateSprite(_plantSeed.spritesList.Length - 2);
+                    break;
+                default:
+                    Debug.Log("Grew over harvest");
+                    break;
+            }
         }
 
         private void Harvest(PlayerScript playerScript)
@@ -230,5 +241,15 @@ namespace Farming
         }
 
         public bool IsPlanted() => _thisPlantType != PlantType.None;
+
+        public int SavePlant()
+        {
+            return daysSincePlanted;
+        }
+
+        public void LoadPlant(int days)
+        {
+            daysSincePlanted = days;
+        }
     }
 }
