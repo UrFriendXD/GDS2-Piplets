@@ -245,6 +245,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Menu_Button_Back" ID="{A931647F-A958-4617-A586-F4AC1B772C1F}">
+					<ChildrenList>
+						<Action Name="" ID="{96D1DE58-7AF7-42FC-9942-A52437C89DCD}" ShortID="900946329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu select back" ID="{B8460ACB-5FD3-47A5-9E2F-C965F1978B5E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
