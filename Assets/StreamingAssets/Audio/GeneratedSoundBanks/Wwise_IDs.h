@@ -32,7 +32,8 @@ namespace AK
         static const AkUniqueID PLANT_HARVEST_CHIME = 3450230255U;
         static const AkUniqueID PLAYBEDROOMMUSIC = 1586650550U;
         static const AkUniqueID PLAYGREENHOUSEMUSIC = 1744321513U;
-        static const AkUniqueID PLAYOUTDOORMUSIC = 2002210646U;
+        static const AkUniqueID PLAYOUTDOORSMUSIC = 2392128485U;
+        static const AkUniqueID PLAYTITLESCREENMUSIC = 2109147180U;
         static const AkUniqueID SEED_PLANTING = 2449075236U;
         static const AkUniqueID WALKING_DIRT = 3729352910U;
         static const AkUniqueID WALKING_STONE = 1342968680U;
@@ -55,7 +56,40 @@ namespace AK
             } // namespace STATE
         } // namespace FOOTSTEP_MATERIAL
 
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BASEMENT = 1413413702U;
+                static const AkUniqueID BEDROOM = 3788924735U;
+                static const AkUniqueID GREENHOUSE = 4238926114U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTSIDE = 438105790U;
+                static const AkUniqueID TERMINAL = 414380065U;
+            } // namespace STATE
+        } // namespace MUSIC
+
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BASEMENT = 1413413702U;
+                static const AkUniqueID BEDROOM = 3788924735U;
+                static const AkUniqueID GREENHOUSE = 4238926114U;
+                static const AkUniqueID OUTSIDE = 438105790U;
+                static const AkUniqueID TERMINAL = 414380065U;
+            } // namespace SWITCH
+        } // namespace MUSIC
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
