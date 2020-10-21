@@ -20,7 +20,7 @@ public class TutorialText : MonoBehaviour
 
     private IEnumerator DisableImage()
     {
-        yield return new WaitForSeconds(35);
+        yield return new WaitForSeconds(25);
         tutorialText.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
     }
