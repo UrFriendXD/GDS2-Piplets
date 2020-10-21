@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2,GroundCheck3, WallCheck, isInteracting, falling, Stairs, endStairs, Out;
+    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2,GroundCheck3, WallCheck, isInteracting, falling, Stairs, endStairs, Out, isInside;
     [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed, upStairSpeed, downStairSpeed, stairSpeed;
     public float ladderspeed;
     public float interactingObjectPos;
@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public GameObject menu;
     public bool isUIOn, isSleeping;
     public int input;
-    public GameObject piplet;
 
     private PlayerScript _playerScript;
     private float movementAudioTimer;
@@ -42,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isInside = true;
         isSleeping = false;
         control.player.Zero.performed += cxt => Zero();
         control.player.One.performed += cxt => One();
@@ -307,12 +307,13 @@ public class PlayerMovement : MonoBehaviour
             if(GroundCheck3 == true)
             {
                 this.GetComponent<SpriteRenderer>().sortingOrder = 5;
-                piplet.GetComponent<SpriteRenderer>().sortingOrder = 5;
             }
-            else
+            else if((GroundCheck == true || GroundCheck2 == true) && isInside == true)
             {
                 this.GetComponent<SpriteRenderer>().sortingOrder = 2;
-                piplet.GetComponent<SpriteRenderer>().sortingOrder = 2;
+            }else if ((GroundCheck == true || GroundCheck2 == true) && isInside == false)
+            {
+                this.GetComponent<SpriteRenderer>().sortingOrder = 5;
             }
         }
     }

@@ -638,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6254571942818434797, guid: 8731c3ecc672761459a69bd858e8104e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8731c3ecc672761459a69bd858e8104e, type: 3}
@@ -684,9 +684,6 @@ MonoBehaviour:
   greenhouse: {fileID: 2014342183}
   outsideGreenHouse: {fileID: 1065728756}
   fireFlies: {fileID: 499709420}
-  piplet0: {fileID: 48763977}
-  piplet1: {fileID: 1200183312}
-  piplet2: {fileID: 1573780593}
   lights: {fileID: 424797489}
   globalLights: {fileID: 21599043}
 --- !u!212 &134419485
@@ -5594,11 +5591,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1200183312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8829463082077968739, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
-  m_PrefabInstance: {fileID: 1932326019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1200183313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8829463082077968767, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
@@ -5825,13 +5817,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 1673242783}
     m_Modifications:
     - target: {fileID: 2886909644927340360, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: playerScript
+      propertyPath: player
       value: 
-      objectReference: {fileID: 1273165475}
-    - target: {fileID: 2886909644927340360, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: pipletStats
-      value: 
-      objectReference: {fileID: 11400000, guid: 96a7bd0437353bf48a129587835843b7, type: 2}
+      objectReference: {fileID: 323245728}
     - target: {fileID: 2886909644927340361, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.83
@@ -5880,10 +5868,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PipletWaterPup
       objectReference: {fileID: 0}
-    - target: {fileID: 2886909644927340373, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
 --- !u!114 &1344381531 stripped
@@ -5891,7 +5875,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2886909644927340360, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
   m_PrefabInstance: {fileID: 1344381530}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573780593}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b452f1a5efc0e94ab5c5400317d8431, type: 3}
@@ -6272,8 +6256,8 @@ Transform:
   - {fileID: 1822378420}
   - {fileID: 445454828}
   - {fileID: 1401774581}
-  - {fileID: 1854930867}
   - {fileID: 561531043}
+  - {fileID: 1854930867}
   m_Father: {fileID: 997472298}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7459,11 +7443,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
---- !u!1 &1573780593 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2886909644927340373, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
-  m_PrefabInstance: {fileID: 1344381530}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1573780594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2886909644927340361, guid: 7efedef641f73e243bd2cbfc65c2496b, type: 3}
@@ -8038,6 +8017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 979690294487965740, guid: 54913a240df6d194b88af09ba005c5e6, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 979690294487965741, guid: 54913a240df6d194b88af09ba005c5e6, type: 3}
       propertyPath: m_Offset.y
       value: 0
@@ -8295,13 +8278,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: playerScript
+      propertyPath: player
       value: 
-      objectReference: {fileID: 1273165475}
-    - target: {fileID: 7435405763261632035, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
-      propertyPath: pipletStats
-      value: 
-      objectReference: {fileID: 11400000, guid: bb83255f029214248934f97a56c5f0d3, type: 2}
+      objectReference: {fileID: 323245728}
     - target: {fileID: 7435405763261632062, guid: 2380b2160867dde43a3190d4cbc3ce22, type: 3}
       propertyPath: m_Name
       value: Piplet
@@ -8721,18 +8700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PipletAvoPenguin
       objectReference: {fileID: 0}
-    - target: {fileID: 8829463082077968739, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8829463082077968766, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
-      propertyPath: playerScript
+      propertyPath: player
       value: 
-      objectReference: {fileID: 1273165475}
-    - target: {fileID: 8829463082077968766, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
-      propertyPath: pipletStats
-      value: 
-      objectReference: {fileID: 11400000, guid: 885664784ff139c40b350b2a42ae96d0, type: 2}
+      objectReference: {fileID: 323245728}
     - target: {fileID: 8829463082077968767, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.76
@@ -8784,7 +8755,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8829463082077968766, guid: 6cdbf3bcbb2434f41bcc9d411b9e28e1, type: 3}
   m_PrefabInstance: {fileID: 1932326019}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200183312}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b452f1a5efc0e94ab5c5400317d8431, type: 3}

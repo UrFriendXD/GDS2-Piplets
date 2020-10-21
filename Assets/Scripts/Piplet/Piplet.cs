@@ -16,6 +16,8 @@ public class Piplet : MonoBehaviour
     private Transform target;
     private bool stepping;
     private PlayerMovement _PlayerMovement;
+    public GameObject player;
+    public int layer;
 
     [SerializeField] private PipletStats pipletStats;
 
@@ -33,6 +35,11 @@ public class Piplet : MonoBehaviour
 
     void Update()
     {
+        layer = player.GetComponent<SpriteRenderer>().sortingOrder;
+        if(this.GetComponent<SpriteRenderer>().sortingOrder != layer)
+        {
+            this.GetComponent<SpriteRenderer>().sortingOrder = layer;
+        }
         if (target.transform.position.x < this.transform.position.x && transform.rotation.y != 0)
         {
             this.transform.Rotate(0f, 180f, 0f);
