@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2,GroundCheck3, WallCheck, isInteracting, falling, Stairs, endStairs;
+    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2,GroundCheck3, WallCheck, isInteracting, falling, Stairs, endStairs, Out;
     [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed, upStairSpeed, downStairSpeed, stairSpeed;
     public float ladderspeed;
     public float interactingObjectPos;
@@ -182,6 +182,16 @@ public class PlayerMovement : MonoBehaviour
         endStairs = true;
     }
 
+    public void OutOff()
+    {
+        Out = false;
+    }
+
+    public void OutOn()
+    {
+        Out = true;
+    }
+
     public void EndOff2()
     {
         endStairs = false;
@@ -284,6 +294,10 @@ public class PlayerMovement : MonoBehaviour
                 {
                     fall();
                 }
+            }
+            if(Stairs == true && falling == true)
+            {
+                fall();
             }
             if (GroundCheck || LadderMovement || GroundCheck2 || GroundCheck3)
             {
@@ -439,27 +453,30 @@ public class PlayerMovement : MonoBehaviour
 
     public void StairMoveUpAndDown()
     {
-        float movementInput = control.player.LadderMovement.ReadValue<float>();
-        if (movementInput == 1)
-        {
-            stairSpeed = upStairSpeed;
-        }
-        if (movementInput == -1)
-        {
-            stairSpeed = downStairSpeed;
-        }
-        if (movementInput == 1 && endStairs == true)
-        {
-            movementInput = 0;
-        }
-        if (movementInput == -1 && GroundCheck3 == true && Stairs == true)
-        {
-            movementInput = 0;
-        }
-
-        Vector3 currentPosition = transform.position;
-        currentPosition.y += movementInput * stairSpeed * Time.deltaTime;
-        transform.position = currentPosition;
+            float movementInput = control.player.LadderMovement.ReadValue<float>();
+            if (movementInput == 1)
+            {
+                stairSpeed = upStairSpeed;
+            }
+            if (movementInput == -1)
+            {
+                stairSpeed = downStairSpeed;
+            }
+            if (movementInput == 1 && endStairs == true)
+            {
+                movementInput = 0;
+            }
+            if (movementInput == -1 && GroundCheck3 == true && Stairs == true)
+            {
+                movementInput = 0;
+            }
+            if(Out == true && movementInput == -1)
+            {
+                movementInput = 0;
+            }
+            Vector3 currentPosition = transform.position;
+            currentPosition.y += movementInput * stairSpeed * Time.deltaTime;
+            transform.position = currentPosition;
     }
 
 }

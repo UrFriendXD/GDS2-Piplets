@@ -16,6 +16,7 @@ TagManager:
   - Ground2
   - Ground3
   - Stairs
+  - Out
   layers:
   - Default
   - TransparentFX
