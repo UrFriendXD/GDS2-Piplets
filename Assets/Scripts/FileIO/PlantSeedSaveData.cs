@@ -4,24 +4,24 @@
 public class PlantSeedSaveData
 {
     public string itemID;
-    public int daysSincePlanted;
     public int farmPlotID;
+    public int daysSincePlanted;
 
-    public PlantSeedSaveData(string id, int daysSincePlanted, int farmPlotID)
+    public PlantSeedSaveData(string id, int farmPlotID, int daysSincePlanted)
     {
         itemID = id;
-        this.daysSincePlanted = daysSincePlanted;
         this.farmPlotID = farmPlotID;
+        this.daysSincePlanted = daysSincePlanted;
     }
-    
-    [Serializable]
-    public class PlantSeedListSaveData
-    {
-        public PlantSeedSaveData[] savedPlantSeeds;
+}
 
-        public PlantSeedListSaveData(int numItems)
-        {
-            savedPlantSeeds = new PlantSeedSaveData[numItems];
-        }
+[Serializable]
+public class PlantSeedListSaveData
+{
+    public PlantSeedSaveData[] savedPlantSeeds;
+
+    public PlantSeedListSaveData(int numItems)
+    {
+        savedPlantSeeds = new PlantSeedSaveData[numItems];
     }
 }

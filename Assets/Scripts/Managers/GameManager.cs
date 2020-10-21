@@ -59,12 +59,12 @@ public class GameManager : MonoBehaviour
         if (_isNewGame)
         {
             _saveManager.NewGame();
-            Debug.Log("New");
+            //Debug.Log("New");
         }
         else
         {
             _saveManager.LoadGame();
-            Debug.Log("Loaded");
+            //Debug.Log("Loaded");
         }
     }
 

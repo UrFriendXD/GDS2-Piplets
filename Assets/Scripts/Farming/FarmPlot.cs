@@ -18,7 +18,7 @@ namespace Farming
         }
 
         // Initialise variables
-        private void Start()
+        private void OnEnable()
         {
             _currentPlant = GetComponent<PlantFunctions>();
             if (currentPlantType != null)
@@ -74,16 +74,19 @@ namespace Farming
         {
             _currentPlant.Plant(plantSeed);
             currentPlantType = plantSeed;
+            
+            ServiceLocator.Current.Get<PlantsManager>().AddToSaveFarmPlots(this);
         }
 
-        public void SavePlant()
+        public (string, int, int) SavePlant()
         {
-            
+            return (currentPlantType.ID, FarmPlotID, _currentPlant.SavePlant());
         }
 
-        public void LoadPlant()
+        public void LoadPlant(PlantSeed plantSeed, int daysSincePlanted)
         {
-            
+            _currentPlant.LoadPlant(daysSincePlanted);
+            OnPlant(plantSeed);
         }
     }
 }

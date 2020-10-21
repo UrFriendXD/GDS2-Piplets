@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - tradableItemsList: {fileID: 11400000, guid: 75dd068f5229a294e90828cb9399565d, type: 2}
-  executionOrder: 0
+  executionOrder: -2
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 

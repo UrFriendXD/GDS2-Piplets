@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class PlantsManager : IGameService
 {
-    private readonly List<FarmPlot> _farmPlots = new List<FarmPlot>();
+    public List<FarmPlot> _farmPlots = new List<FarmPlot>();
+    private List<FarmPlot> _saveFarmPlots = new List<FarmPlot>();
     
     public void Setup()
     {
@@ -20,5 +21,31 @@ public class PlantsManager : IGameService
         if (_farmPlots.Contains(farmPlot)) return 0;
         _farmPlots.Add(farmPlot);
         return _farmPlots.IndexOf(farmPlot);
+    }
+
+    public void AddToSaveFarmPlots(FarmPlot farmPlot)
+    {
+        if (!_saveFarmPlots.Contains(farmPlot))
+        {
+            _saveFarmPlots.Add(farmPlot);
+        }
+    }
+    
+    public void RemoveToSaveFarmPlots(FarmPlot farmPlot)
+    {
+        if (_saveFarmPlots.Contains(farmPlot))
+        {
+            _saveFarmPlots.Remove(farmPlot);
+        }
+    }
+
+    public List<FarmPlot> SavePlants()
+    {
+        return _saveFarmPlots;
+    }
+
+    public List<FarmPlot> LoadPlants()
+    {
+        return _farmPlots;
     }
 }

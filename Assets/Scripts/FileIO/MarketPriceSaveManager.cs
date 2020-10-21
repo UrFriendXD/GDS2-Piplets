@@ -33,9 +33,16 @@ public class MarketPriceSaveManager : MonoBehaviour
         {
             TradableItemsList tradableItemsList = ServiceLocator.Current.Get<MarketManager>()._tradableItemsList;
             TradableItemSaveData savedPrice = savedPrices.SavedTradableItems[i];
-
+            // Debug.Log(savedPrice);
+            // Debug.Log(savedPrices.SavedTradableItems.Length);
+            
             foreach (var tradableItem in tradableItemsList.TradableItems)
             {
+                if (savedPrice == null)
+                {
+                    break;
+                }
+                
                 if (savedPrice.itemID == tradableItem.ID)
                 {
                     tradableItem.currentSellingPrice = savedPrice.currentSellingPrice;
@@ -62,6 +69,8 @@ public class MarketPriceSaveManager : MonoBehaviour
                 //Debug.Log(saveData.SavedTradableItems[i].currentSellingPrice);
             } 
         }
+        
+        //Debug.Log(saveData);
 
         // Save the prices to persistent data
         TradableItemSaveIO.SaveMarketPrices(saveData, fileName);
