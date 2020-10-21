@@ -6,15 +6,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerAction control;
-    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2, WallCheck, isInteracting, falling;
-    [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed;
+    public bool LadderMovement, endLadder, GroundCheck, GroundCheck2,GroundCheck3, WallCheck, isInteracting, falling, Stairs, endStairs;
+    [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed, upStairSpeed, downStairSpeed, stairSpeed;
     public float ladderspeed;
     public float interactingObjectPos;
     // public GameObject UI, UI2;
     public GameObject menu;
-    public bool isUIOn;
+    public bool isUIOn, isSleeping;
     public int input;
-    
+    public GameObject piplet;
+
     private PlayerScript _playerScript;
     private float movementAudioTimer;
     [SerializeField] private float movementAudioTimerDelay = 0.7f;
@@ -41,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isSleeping = false;
         control.player.Zero.performed += cxt => Zero();
         control.player.One.performed += cxt => One();
         control.player.Two.performed += cxt => Two();
@@ -175,6 +177,16 @@ public class PlayerMovement : MonoBehaviour
         endLadder = false;
     }
 
+    public void EndOn2()
+    {
+        endStairs = true;
+    }
+
+    public void EndOff2()
+    {
+        endStairs = false;
+    }
+
     public void LadderOff()
     {
         LadderMovement = false;
@@ -197,6 +209,26 @@ public class PlayerMovement : MonoBehaviour
     public void GroundOff2()
     {
         GroundCheck2 = false;
+    }
+
+    public void GroundOn3()
+    {
+        GroundCheck3 = true;
+    }
+
+    public void GroundOff3()
+    {
+        GroundCheck3 = false;
+    }
+
+    public void StairsOff()
+    {
+        Stairs = false;
+    }
+
+    public void StairsOn()
+    {
+        Stairs = true;
     }
 
     public void WallOn()
@@ -237,7 +269,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 LadderMoveUpAndDown();
             }
-            if (LadderMovement == false && GroundCheck == false && GroundCheck2 == false)
+            if(Stairs == true)
+            {
+                StairMoveUpAndDown();
+            }
+            if (LadderMovement == false && GroundCheck == false && GroundCheck2 == false && GroundCheck3 == false && Stairs == false)
             {
                 falling = true;
                 if (fallspeed < maxfallspeed)
@@ -249,10 +285,20 @@ public class PlayerMovement : MonoBehaviour
                     fall();
                 }
             }
-            if (GroundCheck || LadderMovement || GroundCheck2)
+            if (GroundCheck || LadderMovement || GroundCheck2 || GroundCheck3)
             {
                 fallspeed = startfallspeed;
                 falling = false;
+            }
+            if(GroundCheck3 == true)
+            {
+                this.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                piplet.GetComponent<SpriteRenderer>().sortingOrder = 5;
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().sortingOrder = 2;
+                piplet.GetComponent<SpriteRenderer>().sortingOrder = 2;
             }
         }
     }
@@ -346,7 +392,7 @@ public class PlayerMovement : MonoBehaviour
                     movementInput = 0;
                 }
 
-                if ((movementInput == 1 || movementInput == -1) && (GroundCheck || GroundCheck2))
+                if ((movementInput == 1 || movementInput == -1) && (GroundCheck || GroundCheck2 || GroundCheck3))
                 {
                     if (movementAudioTimer <= 0)
                     {
@@ -389,4 +435,31 @@ public class PlayerMovement : MonoBehaviour
             this.transform.Rotate(0f, 180f, 0f);
         }
     }
+
+
+    public void StairMoveUpAndDown()
+    {
+        float movementInput = control.player.LadderMovement.ReadValue<float>();
+        if (movementInput == 1)
+        {
+            stairSpeed = upStairSpeed;
+        }
+        if (movementInput == -1)
+        {
+            stairSpeed = downStairSpeed;
+        }
+        if (movementInput == 1 && endStairs == true)
+        {
+            movementInput = 0;
+        }
+        if (movementInput == -1 && GroundCheck3 == true && Stairs == true)
+        {
+            movementInput = 0;
+        }
+
+        Vector3 currentPosition = transform.position;
+        currentPosition.y += movementInput * stairSpeed * Time.deltaTime;
+        transform.position = currentPosition;
+    }
+
 }

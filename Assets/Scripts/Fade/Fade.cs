@@ -93,5 +93,6 @@ public class Fade : MonoBehaviour
         yearCrn.CrossFadeAlpha(1, 2, false);
         player.transform.position = outsideOfBed.transform.position;
         player.gameObject.GetComponent<PlayerMovement>().isUIOn = false;
+        player.gameObject.GetComponent<PlayerMovement>().isSleeping = false;
     }
 }

@@ -14,6 +14,8 @@ TagManager:
   - Wall
   - Door
   - Ground2
+  - Ground3
+  - Stairs
   layers:
   - Default
   - TransparentFX

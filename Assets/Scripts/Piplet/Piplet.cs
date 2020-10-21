@@ -37,25 +37,28 @@ public class Piplet : MonoBehaviour
         {
             this.transform.Rotate(0f, 180f, 0f);
         }
-        if (target.transform.position.x > this.transform.position.x &&  transform.rotation.y == 0)
-        { 
+        if (target.transform.position.x > this.transform.position.x && transform.rotation.y == 0)
+        {
             this.transform.Rotate(0f, -180f, 0f);
         }
-        if (_PlayerMovement.GroundCheck == true && target.transform.position.y == transform.position.y)
+        if (!_PlayerMovement.isSleeping)
         {
-            if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
+            if ((_PlayerMovement.GroundCheck == true || _PlayerMovement.GroundCheck2 == true || _PlayerMovement.GroundCheck3 == true) && target.transform.position.y == transform.position.y)
             {
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-                if (!stepping)
+                if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
                 {
-                    StartCoroutine(BuildTrust());
+                    transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    if (!stepping)
+                    {
+                        StartCoroutine(BuildTrust());
+                    }
                 }
-            }
 
-        }
-        else if (_PlayerMovement.GroundCheck == true && target.transform.position.y != transform.position.y)
-        {
-            transform.position = new Vector3(transform.position.x, target.transform.position.y ,transform.position.z);
+            }
+            else if ((_PlayerMovement.GroundCheck == true || _PlayerMovement.GroundCheck2 == true || _PlayerMovement.GroundCheck3 == true) && target.transform.position.y != transform.position.y)
+            {
+                transform.position = new Vector3(transform.position.x, target.transform.position.y, transform.position.z);
+            }
         }
 
         if (steps > level2Threshold)

@@ -30,6 +30,7 @@ namespace Environment.Indoors
         
         private IEnumerator fadeToNextDay(float Time)
         {
+            player.gameObject.GetComponent<PlayerMovement>().isSleeping = true;
             player.transform.position = insideBed.transform.position;
             player.gameObject.GetComponent<PlayerMovement>().isUIOn = true;
             yield return new WaitForSeconds(Time); 
