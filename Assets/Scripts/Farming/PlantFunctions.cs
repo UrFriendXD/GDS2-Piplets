@@ -19,17 +19,22 @@ namespace Farming
         // Values to relating to farming
         [SerializeField] private int daysSincePlanted = 0;
 
+        // Is the plant watered
         private bool _bIsWatered;
 
+        // Plant variables
         private PlantType _thisPlantType;
         private PlantSeed _plantSeed;
+        [SerializeField] private int doubleAmountThreshold = 95;
+        [SerializeField] private int seedGiveBackThreshold = 50;
 
+        // Particle systems
         public GameObject waterParticle;
         public GameObject harvestParticle;
         public GameObject plantParticle;
         private GameObject clone;
 
-        public bool isTesting;
+        //public bool isTesting;
 
         // Player modifiers to be implemented later
         // private int playerModifier
@@ -136,7 +141,7 @@ namespace Farming
                         break;
                     case var _ when daysSincePlanted == _plantSeed.daysToHarvest:
                         _currentPlantStage = PlantStages.Harvestable;
-                        UpdateSprite(_plantSeed.plantSprites.Length-1);
+                        UpdateSprite(_plantSeed.spritesList.Length-2);
                         break;
                     default:
                         Debug.Log("Grew over harvest");
@@ -151,46 +156,49 @@ namespace Farming
         {
             if (_currentPlantStage == PlantStages.Harvestable)
             {
-                // give player resource based on chance
+                // Give player resource based on chance
                 // higher amt is rarer
-                /*var random = Random.Range(0,101);
-            switch (random)
-            {
+                var amountToGive = _plantSeed.amountToGive;
+                var random = Random.Range(0,101);
                 
-                case var _ when random >= 80:
-                    _amountToGive = giveResourceMax;
-                    break;
-                default:
-                    Debug.Log("Random is out of bounds");
-                    break;
-            }*/
+                // Threshold based on player stat 
+                doubleAmountThreshold -= (int)playerScript.playerStats.harvestingDoublerModifier.Value;
+                switch (random)
+                {
+                    case var _ when random >= doubleAmountThreshold:
+                        amountToGive *= 2;
+                        break;
+                    default:
+                        Debug.Log("Random is out of bounds");
+                        break;
+                }
+                
+                //Give raw good to player
+                for (var i = 0; i < amountToGive; i++)
+                {
+                    playerScript.inventory.AddItem(_plantSeed.rawGoodToGive);
+                }
+                Debug.Log($"Gave {amountToGive} of {_plantSeed.rawGoodToGive}");
 
-                //Inventory.Gain(amountToGive)
-                
                 
                 // Particle systems
                 clone = Instantiate(harvestParticle, new Vector3(0, 0, 0), quaternion.identity);
                 this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
                 
                 // Plays audio for harvest
-                playerScript.PlayerAudio.PlayHarvestEvent();
-                
-                //Give raw good to player
-                for (var i = 0; i < _plantSeed.amountToGive; i++)
-                {
-                    playerScript.inventory.AddItem(_plantSeed.rawGoodToGive);
-                }
-            
-                // Give raw good based on chance * modifier (later on)
+                playerScript.playerAudio.PlayHarvestEvent();
+
+                // Gives a seed depending on RNG. Base value of 50.
                 var randomSeed = Random.Range(0, 101);
-                if (randomSeed > 50)
+                seedGiveBackThreshold -= (int)playerScript.playerStats.harvestingSeedModifier.Value;
+                if (randomSeed > seedGiveBackThreshold)
                 {
                     playerScript.inventory.AddItem(_plantSeed);
-                    Debug.Log($"Gave {_plantSeed.amountToGive}");
+                    Debug.Log($"Gave a {_plantSeed}");
                 }
                 else
                 {
-                    Debug.Log($"Gave no seed");
+                    Debug.Log("Gave no seed");
                 }
 
                 // Show particles based on amount or just particles
@@ -202,13 +210,13 @@ namespace Farming
         public void OnSeasonEnd()
         {
             _currentPlantStage = PlantStages.Wilted;
-            UpdateSprite(_plantSeed.plantSprites.Length-1);
+            UpdateSprite(_plantSeed.spritesList.Length-1);
             dayPassEventListener.Response.RemoveListener(Grow);
             seasonEndEventListener.Response.RemoveListener(OnSeasonEnd);
         }
 
-        // Updates sprite base on parameter
-        private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.plantSprites[value];
+        // Updates sprite base on parameter/stage. Randomly picks between that stage's sprites
+        private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.spritesList[value].sprites[Random.Range(0, _plantSeed.spritesList.Length-1)];
 
         // Destroys plant and resets it's values
         private void DestroyPlant()

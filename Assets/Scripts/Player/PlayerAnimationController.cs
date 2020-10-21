@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Environment.Indoors;
-using UnityEngine;
-using Player;
+﻿using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
 {

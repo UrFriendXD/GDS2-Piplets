@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Threading;
+﻿using System;
+using System.Collections;
 using Player;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Piplet : MonoBehaviour
 {
@@ -15,21 +12,35 @@ public class Piplet : MonoBehaviour
     [SerializeField] private int steps = 0;
     [SerializeField] private int level2Threshold = 300;
     [SerializeField] private int level3Threshold = 3000;
-    public PlayerScript playerScript;
+    private PlayerScript playerScript;
     private Transform target;
     private bool stepping;
-    private playerMovement _PlayerMovement;
+    private PlayerMovement _PlayerMovement;
+
+    [SerializeField] private PipletStats pipletStats;
 
     void Start()
     {
+        playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
         target = playerScript.transform;
         level = 1;
-        _PlayerMovement = playerScript.GetComponent<playerMovement>();
+        _PlayerMovement = playerScript.playerMovement;
+        if (gameObject.activeSelf)
+        {
+            ActivatePiplet();
+        }
     }
-
 
     void Update()
     {
+        if (target.transform.position.x < this.transform.position.x && transform.rotation.y != 0)
+        {
+            this.transform.Rotate(0f, 180f, 0f);
+        }
+        if (target.transform.position.x > this.transform.position.x &&  transform.rotation.y == 0)
+        { 
+            this.transform.Rotate(0f, -180f, 0f);
+        }
         if (_PlayerMovement.GroundCheck == true && target.transform.position.y == transform.position.y)
         {
             if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
@@ -65,4 +76,28 @@ public class Piplet : MonoBehaviour
         yield return new WaitForSeconds(1);
         stepping = false;
     }
+
+   public void ActivatePiplet()
+   {
+       pipletStats.Equip(playerScript.playerStats);
+       //Debug.Log("Pip");
+       //Debug.Log(playerScript.playerStats.movespeed.Value);
+       //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);
+       //Debug.Log(playerScript.playerStats.harvestingSeedModifier.Value);
+   }
+
+   public void DeactivatePiplet()
+   {
+       pipletStats.Unequip(playerScript.playerStats);
+   }
+
+   // private void OnEnable()
+   // {
+   //     ActivatePiplet();
+   // }
+
+   private void OnDisable()
+   {
+       DeactivatePiplet();
+   }
 }

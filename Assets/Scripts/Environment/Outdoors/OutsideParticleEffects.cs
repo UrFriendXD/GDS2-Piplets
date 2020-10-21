@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class OutsideParticleEffects : MonoBehaviour
 {
@@ -22,7 +20,14 @@ public class OutsideParticleEffects : MonoBehaviour
         {
             particle.SetActive(false);
         }
-        particle.transform.position = transform.position;
+        if (particle.transform.position.y <= 4)
+        {
+            particle.transform.position = transform.position;
+        }
+        else
+        {
+            particle.transform.position = transform.position + new Vector3(0, 1.5f, 0);
+        }
         particle.SetActive(true);
         //StartCoroutine(ParticleOff(particle));
     }
