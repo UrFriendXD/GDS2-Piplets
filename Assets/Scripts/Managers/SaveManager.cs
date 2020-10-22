@@ -51,6 +51,7 @@ public class SaveManager : IGameService
         _dateSaveManager.SaveGame();
         PipletSaveManager.SaveGame();
         PlayerSaveManager.SaveGame(_playersManager.GetPlayerFromID(0).playerStats);
+        WildPlantsSaveManager.SaveGame();
         Debug.Log("Saved game");
         // }
     }
@@ -66,6 +67,7 @@ public class SaveManager : IGameService
         _dateSaveManager.LoadDate();
         PipletSaveManager.LoadGame();
         PlayerSaveManager.LoadGame(_playersManager.GetPlayerFromID(0).playerStats);
+        WildPlantsSaveManager.LoadGame();
         Debug.Log("Loaded Game");
         // }
     }

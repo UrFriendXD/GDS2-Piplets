@@ -67,6 +67,9 @@
             <e p="PlayerSaveManager.cs" t="Include" />
             <e p="TradableItemSaveData.cs" t="Include" />
             <e p="TradableItemSaveIO.cs" t="Include" />
+            <e p="WildPlantSaveData.cs" t="Include" />
+            <e p="WildPlantSaveIO.cs" t="Include" />
+            <e p="WildPlantsSaveManager.cs" t="Include" />
           </e>
           <e p="Interaction" t="Include">
             <e p="DoorPlayerDetector.cs" t="Include" />
@@ -97,6 +100,7 @@
             <e p="ServiceLocator.cs" t="Include" />
             <e p="SurvivialItemUsed.cs" t="Include" />
             <e p="TradableItemsList.cs" t="Include" />
+            <e p="WildPlantManager.cs" t="Include" />
           </e>
           <e p="MaterialManagement.cs" t="Include" />
           <e p="Piplet" t="Include">

@@ -28,6 +28,12 @@ public class GameManager : MonoBehaviour
         SetupPiplets();
         SetupSaveManger();
         SetupPlantsManager();
+        SetupWildPlantsManager();
+    }
+
+    private void SetupWildPlantsManager()
+    {
+        ServiceLocator.Current.Get<WildPlantManager>().Setup();
     }
 
     private void SetupPlantsManager()

@@ -21,4 +21,4 @@ MonoBehaviour:
   harvestingSeedBonus: 0
   pipletType: 1
   level: 1
-  isUnlocked: 1
+  isUnlocked: 0
