@@ -28,8 +28,16 @@ public class PlayersManager : IGameService
         return _players;
     }
 
-    public void ClearList()
+    private void ClearList()
     {
         _players.Clear();
+    }
+
+    public void NewGame()
+    {
+        foreach (var player in _players)
+        {
+            player.playerStats.money = 0;
+        }
     }
 }

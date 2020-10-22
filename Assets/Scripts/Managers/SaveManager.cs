@@ -10,8 +10,12 @@ public class SaveManager : IGameService
     // Save managers
     public ItemSaveManager ItemSaveManager;
     public MarketPriceSaveManager MarketPriceSaveManager;
+    public PipletSaveManager PipletSaveManager;
     private PlantSaveManager _plantSaveManager;
+    private DateSaveManager _dateSaveManager;
+    
     public bool IsNewGame;
+    
     public void Setup()
     {
         if (_playersManager == null)
@@ -23,11 +27,18 @@ public class SaveManager : IGameService
         {
             _plantSaveManager = ServiceLocator.Current.Get<PlantSaveManager>();
         }
+
+        if (_dateSaveManager == null)
+        {
+            _dateSaveManager = ServiceLocator.Current.Get<DateSaveManager>();
+        }
     }
     
     public void NewGame()
     {
-        ClearSave();
+        PipletSaveManager.NewGame();
+        _playersManager.NewGame();
+        GameManager.instance.DayManager.NewGame();
     }
     
     public void SaveGame()
@@ -37,6 +48,9 @@ public class SaveManager : IGameService
         ItemSaveManager.SaveInventory(_playersManager.GetPlayerFromID(0));
         MarketPriceSaveManager.SavePrices();
         _plantSaveManager.SaveGame();
+        _dateSaveManager.SaveGame();
+        PipletSaveManager.SaveGame();
+        PlayerSaveManager.SaveGame(_playersManager.GetPlayerFromID(0).playerStats);
         Debug.Log("Saved game");
         // }
     }
@@ -49,6 +63,9 @@ public class SaveManager : IGameService
         ItemSaveManager.LoadInventory(_playersManager.GetPlayerFromID(0));
         _plantSaveManager.LoadGame();
         MarketPriceSaveManager.LoadPrices();
+        _dateSaveManager.LoadDate();
+        PipletSaveManager.LoadGame();
+        PlayerSaveManager.LoadGame(_playersManager.GetPlayerFromID(0).playerStats);
         Debug.Log("Loaded Game");
         // }
     }

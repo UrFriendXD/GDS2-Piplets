@@ -35,25 +35,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveIO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveIO.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Market.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Market.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PipletStats/Piplet 6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PipletStats/Piplet 6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI_Inventory.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Game/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileIO/MarketPriceSaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/MarketPriceSaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlantsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlantsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piplet/PipletStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/PipletStats.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,44 +64,39 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PipletSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/5a/fa21b341/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/ParallaxChild.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/TradableItemSaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/DateSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PlantsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/TradableItemSaveIO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PlayerSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PipletSaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PipletsDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/MarketPriceSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PlayerSaveIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/ItemPrices.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/SellingCanvasUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PlayerSaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../../../Program Files/Unity/Hub/Editor/2020.1.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/DateSaveIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Testing/TutorialText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FileIO/PipletSaveIO.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/DoorPlayerDetector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/InteractableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/TradableItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TradableItemsList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/CraftingRecipeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Testing/TutorialText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/ProcessingCanvasUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SetVolumeSliders.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/LoadBankOnTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalAddRemoveButton.cs" />
@@ -127,10 +119,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/TradableItemSaveIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/TradableItemSaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSeedSaveIO.cs" />
@@ -141,8 +131,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlantsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/FarmPlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Farming/PlantFunctions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/TradableItemSaveIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/DateSaveIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/DateSaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/DateSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PipletSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/PipletStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PipletsDatabase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PlantSaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PipletSaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayersManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PlayerSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PlayerSaveIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PipletSaveIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/PlayerSaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/DayManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" />
       </list>
     </option>
@@ -226,7 +230,8 @@
       <workItem from="1602463443982" duration="2420000" />
       <workItem from="1602849761551" duration="2311000" />
       <workItem from="1603012605469" duration="18455000" />
-      <workItem from="1603282384701" duration="8516000" />
+      <workItem from="1603282384701" duration="9148000" />
+      <workItem from="1603374198749" duration="5584000" />
     </task>
     <servers />
   </component>
@@ -248,9 +253,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="256" key="RiderGenerateDialog" timestamp="1601436389742">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="-1126" y="256" key="RiderGenerateDialog" timestamp="1603378655279">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="-1126" y="256" key="RiderGenerateDialog/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603378655279" />
     <state x="794" y="256" key="RiderGenerateDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1601436389742" />
     <state x="441" y="153" key="SettingsEditor" timestamp="1600620005026">
       <screen x="0" y="0" width="1881" height="1018" />
@@ -272,10 +278,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603286765311" />
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603290972333">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603379791329">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603290972333" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1603014741382" />
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603378820302" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1603379791329" />
   </component>
 </project>

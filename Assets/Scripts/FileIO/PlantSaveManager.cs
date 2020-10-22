@@ -23,9 +23,9 @@ public class PlantSaveManager : IGameService
         Debug.Log(farmPlots.Count);
         for (int i = 0; i < savedPlants.savedPlantSeeds.Length; i++)
         {
+            PlantSeedSaveData savedFarmPlot = savedPlants.savedPlantSeeds[i];
             foreach (var farmPlot in farmPlots)
             {
-                PlantSeedSaveData savedFarmPlot = savedPlants.savedPlantSeeds[i];
                 if (farmPlot.FarmPlotID == savedFarmPlot.farmPlotID)
                 {
                     farmPlot.LoadPlant(itemDatabase.GetItemCopy(savedFarmPlot.itemID) as PlantSeed, savedFarmPlot.daysSincePlanted);
@@ -47,8 +47,7 @@ public class PlantSaveManager : IGameService
             var (item1, item2, item3) = savedFarmPlots[i].SavePlant();
 
             saveData.savedPlantSeeds[i] = new PlantSeedSaveData(item1, item2,item3);
-            Debug.Log(item1 + " " + item2 + " " + item3);
-            
+            //Debug.Log(item1 + " " + item2 + " " + item3);
         }
         //Debug.Log(saveData);
         // Save the prices to persistent data

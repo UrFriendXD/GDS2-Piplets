@@ -75,9 +75,14 @@ public class DayManager : MonoBehaviour
 
     private void PassOut()
     {
-        // just idk end game? pfft dunno
-        //Debug.Log("Passed out");
+        // Player loses some money
         playerStats.money = (int)math.round((playerStats.money * 0.8));
         //Debug.Log("Player has: " + _playerStats.money);
+    }
+
+    public void NewGame()
+    {
+        days = 1;
+        years = 3000;
     }
 }
