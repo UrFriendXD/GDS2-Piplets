@@ -58,7 +58,7 @@ public class Piplet : MonoBehaviour
 
     void Update()
     {
-        layer = player.GetComponent<SpriteRenderer>().sortingOrder;
+        layer = player.GetComponent<SpriteRenderer>().sortingOrder - 1;
         if(this.GetComponent<SpriteRenderer>().sortingOrder != layer)
         {
             this.GetComponent<SpriteRenderer>().sortingOrder = layer;
