@@ -1,4 +1,5 @@
 ﻿using System;
+using Farming;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
     public DayManager DayManager;
     private bool _isNewGame;
     private SaveManager _saveManager;
+
+    public GameObject FinalDoorStopper;
     
     private void Awake()
     {
@@ -83,6 +86,11 @@ public class GameManager : MonoBehaviour
     private void SetupPiplets()
     {
         ServiceLocator.Current.Get<PipletManager>().Setup(amountOfPipletNeededToWin);
+    }
+
+    public void OpenEnding()
+    {
+        FinalDoorStopper.SetActive(false);
     }
 
     #endregion

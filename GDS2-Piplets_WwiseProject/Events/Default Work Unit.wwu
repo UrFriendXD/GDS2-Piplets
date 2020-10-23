@@ -340,6 +340,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="PlayBasementMusic" ID="{8BE5F18F-0BE0-4E79-84A8-7B1616653465}">
+							<ChildrenList>
+								<Action Name="" ID="{98CA6AC0-CF27-444C-9780-073EBD4FB98D}" ShortID="67245655">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Basement" ID="{C7665BAC-7E9C-4685-B851-684A163F3CA6}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{78BDFF8C-C648-46C5-A884-E4A75BE13F26}" ShortID="511918582">

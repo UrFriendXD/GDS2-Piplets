@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID PASS = 1627031574U;
         static const AkUniqueID PLANT_HARVEST = 3735191866U;
         static const AkUniqueID PLANT_HARVEST_CHIME = 3450230255U;
+        static const AkUniqueID PLAYBASEMENTMUSIC = 3760498357U;
         static const AkUniqueID PLAYBEDROOMMUSIC = 1586650550U;
         static const AkUniqueID PLAYGREENHOUSEMUSIC = 1744321513U;
         static const AkUniqueID PLAYMUSIC = 417627684U;

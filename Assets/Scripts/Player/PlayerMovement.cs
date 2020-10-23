@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerAction control;
     public bool LadderMovement, endLadder, GroundCheck, GroundCheck2,GroundCheck3, WallCheck, isInteracting, falling, Stairs, endStairs, Out, isInside;
     [SerializeField] private float baseWalkSpeed,  fallspeed, upLadderSpeed, downLadderSpeed, maxfallspeed, fallspeedovertime, startfallspeed, upStairSpeed, downStairSpeed, stairSpeed;
+    public float movementInput;
     public float ladderspeed;
     public float interactingObjectPos;
     // public GameObject UI, UI2;
@@ -399,7 +400,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (endLadder == false)
             {
-                float movementInput = control.player.movement.ReadValue<float>();
+                movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
                 if(WallCheck == true && movementInput ==1 && transform.rotation.y == 0)
                 {
@@ -433,7 +434,7 @@ public class PlayerMovement : MonoBehaviour
             if (endLadder == true)
             {
                 _playerScript.playerAnimationController.OffLadder();
-                float movementInput = control.player.movement.ReadValue<float>();
+                movementInput = control.player.movement.ReadValue<float>();
                 rotatePlayerMovement(movementInput);
                 Vector3 currentPosition = transform.position;
                 currentPosition.x += movementInput * (baseWalkSpeed * _playerScript.playerStats.movespeed.Value) * Time.deltaTime;

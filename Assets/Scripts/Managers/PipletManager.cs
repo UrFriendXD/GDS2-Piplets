@@ -45,5 +45,9 @@ public class PipletManager : IGameService
     public void PipletBought()
     {
         amountOfPipletUnlocked++;
+        if (amountOfPipletUnlocked == amountOfPipletNeededToWin)
+        {
+            GameManager.instance.OpenEnding();
+        }
     }
 }
