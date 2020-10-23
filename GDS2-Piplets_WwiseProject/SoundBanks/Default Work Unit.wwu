@@ -8,16 +8,13 @@
 						<ObjectRef Name="Ladder_Descend" ID="{3D3C988B-6BE4-4021-92F0-942C7EE53F4B}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayGreenhouseMusic" ID="{96FBBBAB-1E6E-451C-83F9-C3D49E597913}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Footstep" ID="{FA320F11-B77C-457F-877B-A9E1AF6182CC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Seed_planting" ID="{86FDED27-0B22-46B6-8AB0-64C0D88028DF}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Change_To_Dirt" ID="{68DB5C0C-18CA-46DA-BB86-9DB306BD5FD6}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopAll" ID="{6CFA2112-BB98-47EF-9021-A21314F3F097}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Plant_Harvest_Chime" ID="{006058AE-215F-4845-8358-7A290081C25A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ladder_Climb" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Walking_stone" ID="{A459C612-590F-4918-8244-FBC533D84FA4}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Change_To_Stone" ID="{00E98307-350B-493D-BED9-157C1ADBA485}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="BGM_Bedroom" ID="{089384DF-B43E-4CE9-92A1-8B4E0886528A}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayBedroomMusic" ID="{D0C36349-76CE-4DD0-887B-12FD7EEF7883}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayOutdoorsMusic" ID="{F4E18889-E093-4F00-828B-B5E7F7898CAC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Water_Droplet_Atmos" ID="{BB6E1DD8-C21D-4FE2-8EEE-90FCB904027B}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
@@ -31,16 +28,21 @@
 						<ObjectRef Name="Fail" ID="{80A6626C-13C8-44E6-9411-D0530D69FE37}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Notification_2" ID="{7ACFAD01-2CDD-492C-ADDB-EF33A2ADBC2A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AI_processing" ID="{62388C0B-49A4-494E-BEDE-C23D59DC566D}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Minecart_Loading" ID="{69EB8421-D2D4-4A97-B4BB-5B91B1BE6E33}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AI_Button_Select_Back" ID="{9AB91AE8-8CA6-4B79-B552-C4A835258F91}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pass" ID="{3B325C2C-D7FA-4BED-9E7B-15E21518FE88}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="BGM_Terminal" ID="{5AF44CB2-C874-4CB8-92F1-6BA794D9B7BA}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayTerminalMusic" ID="{6103DFD3-1052-4E52-BE25-0E285944F6D0}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Menu" ID="{37F1A90A-3288-4ED1-9339-F47B2EE53E88}">
 					<ObjectInclusionList>
+						<ObjectRef Name="PlayTitleScreenMusic" ID="{14AAA763-E4CC-400E-9F01-17AFBF1E9036}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BGM_TitleScreen" ID="{B2DEFF9B-6192-4080-8082-912B5CA0FF74}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Menu_Button_Select" ID="{4B839A09-86F9-445E-B646-EDBE75F54122}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Menu_Button_Back" ID="{A931647F-A958-4617-A586-F4AC1B772C1F}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopAll" ID="{6CFA2112-BB98-47EF-9021-A21314F3F097}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -48,13 +50,22 @@
 				<SoundBank Name="Outdoor" ID="{C65D1173-F71D-425F-918D-3FB565C8AC66}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Wood_chop" ID="{61F0B42D-6A68-4356-B6B2-6CFD70CAB578}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Footstep" ID="{FA320F11-B77C-457F-877B-A9E1AF6182CC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Minecart" ID="{981BA921-0977-4799-BB35-4CC38A694649}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Walking_Dirt" ID="{D8BD07FB-7775-4843-9E23-332151ECBEB4}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Walking_stone" ID="{A459C612-590F-4918-8244-FBC533D84FA4}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Change_To_Stone" ID="{00E98307-350B-493D-BED9-157C1ADBA485}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Outside_Atmos" ID="{30953696-7DAB-4961-950C-9143A9924F42}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayOutdoorsMusic" ID="{F4E18889-E093-4F00-828B-B5E7F7898CAC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Player" ID="{FC417F7B-0504-4ECF-BE11-1181BD21C90D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Menu_Button_Select" ID="{4B839A09-86F9-445E-B646-EDBE75F54122}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep" ID="{FA320F11-B77C-457F-877B-A9E1AF6182CC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Menu_Button_Back" ID="{A931647F-A958-4617-A586-F4AC1B772C1F}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Change_To_Dirt" ID="{68DB5C0C-18CA-46DA-BB86-9DB306BD5FD6}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopAll" ID="{6CFA2112-BB98-47EF-9021-A21314F3F097}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayMusic" ID="{4555BCC9-EBEC-4857-9071-4C10C24E92C5}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Change_To_Stone" ID="{00E98307-350B-493D-BED9-157C1ADBA485}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

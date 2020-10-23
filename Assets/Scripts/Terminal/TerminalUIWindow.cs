@@ -21,6 +21,7 @@ public class TerminalUIWindow : MonoBehaviour
     
     // Audio
     public AK.Wwise.Event buttonSelect;
+    public AK.Wwise.Event buttonBack;
 
     private bool _inUse;
     
@@ -139,6 +140,11 @@ public class TerminalUIWindow : MonoBehaviour
     public void PlayButtonSelect()
     {
         buttonSelect.Post(gameObject);
+    }
+
+    public void PlayButtonBack()
+    {
+        buttonBack.Post(gameObject);
     }
 
     public void ChangeMoneyText()

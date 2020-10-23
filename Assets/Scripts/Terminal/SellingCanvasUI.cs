@@ -8,6 +8,8 @@ public class SellingCanvasUI : MonoBehaviour
     private Inventory _inventory;
     private PlayerStats _playerStats;
 
+    // Audio
+    public AK.Wwise.Event minecartLoadingSound;
     
     // Start is called before the first frame update
     public void Initialise()
@@ -63,5 +65,7 @@ public class SellingCanvasUI : MonoBehaviour
         {
             sellingItemButton.SellItems();
         }
+
+        minecartLoadingSound.Post(gameObject);
     }
 }

@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AI_BUTTON_SELECT = 100709541U;
+        static const AkUniqueID AI_BUTTON_SELECT_BACK = 2964552185U;
         static const AkUniqueID AI_PROCESSING = 2569711091U;
         static const AkUniqueID CHANGE_TO_DIRT = 1676133841U;
         static const AkUniqueID CHANGE_TO_STONE = 337775249U;
@@ -22,8 +23,10 @@ namespace AK
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID LADDER_CLIMB = 1707141479U;
         static const AkUniqueID LADDER_DESCEND = 3610060586U;
+        static const AkUniqueID MENU_BUTTON_BACK = 1284910139U;
         static const AkUniqueID MENU_BUTTON_SELECT = 4007661982U;
         static const AkUniqueID MINECART = 10183550U;
+        static const AkUniqueID MINECART_LOADING = 3688866299U;
         static const AkUniqueID NOTIFICATION_1 = 1218670268U;
         static const AkUniqueID NOTIFICATION_2 = 1218670271U;
         static const AkUniqueID OUTSIDE_ATMOS = 3460054317U;
@@ -32,11 +35,12 @@ namespace AK
         static const AkUniqueID PLANT_HARVEST_CHIME = 3450230255U;
         static const AkUniqueID PLAYBEDROOMMUSIC = 1586650550U;
         static const AkUniqueID PLAYGREENHOUSEMUSIC = 1744321513U;
+        static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID PLAYOUTDOORSMUSIC = 2392128485U;
+        static const AkUniqueID PLAYTERMINALMUSIC = 3425704496U;
         static const AkUniqueID PLAYTITLESCREENMUSIC = 2109147180U;
         static const AkUniqueID SEED_PLANTING = 2449075236U;
-        static const AkUniqueID WALKING_DIRT = 3729352910U;
-        static const AkUniqueID WALKING_STONE = 1342968680U;
+        static const AkUniqueID STOPALL = 3086540886U;
         static const AkUniqueID WATER = 2654748154U;
         static const AkUniqueID WATER_DROPLET_ATMOS = 909052898U;
         static const AkUniqueID WOOD_CHOP = 1483562389U;
@@ -96,6 +100,7 @@ namespace AK
         static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SFXVOLUME = 988953028U;
+        static const AkUniqueID TREEHEALTH = 1985814903U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -105,6 +110,7 @@ namespace AK
         static const AkUniqueID GREENHOUSE = 4238926114U;
         static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID OUTDOOR = 144697359U;
+        static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BANKS
 
     namespace BUSSES

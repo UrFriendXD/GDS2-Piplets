@@ -19,7 +19,7 @@ public class MusicChanger : MonoBehaviour
             {
                 if (_bedroom)
                 {
-                    playBedroomMusic.Stop(GameManager.instance.MusicManager);
+                    //playBedroomMusic.Stop(GameManager.instance.MusicManager);
                     playGreenhouseMusic.Post(GameManager.instance.MusicManager);
                     
                 }
@@ -28,7 +28,7 @@ public class MusicChanger : MonoBehaviour
             {
                 if (!_bedroom)
                 {
-                    playGreenhouseMusic.Stop(GameManager.instance.MusicManager);
+                    //playGreenhouseMusic.Stop(GameManager.instance.MusicManager);
                     playBedroomMusic.Post(GameManager.instance.MusicManager);
                 }
             }
