@@ -13,21 +13,22 @@ public class WildPlant : MonoBehaviour
     [SerializeField] private int daysToRefresh;
     private int _daysSinceHarvest;
     [SerializeField] private bool canRefresh;
-    
+
+    public int wildPlantID;
     // For "disabling sprite"
-    
     
     private int _currentAmount;
     private bool _isEmpty;
 
     private GameEventListener _gameEventListener;
 
-    private void Start()
+    private void Awake()
     {
         _currentAmount = refreshAmount;
         _gameEventListener = GetComponent<GameEventListener>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
+        wildPlantID = ServiceLocator.Current.Get<WildPlantManager>().AddWildPlant(this);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -83,5 +84,22 @@ public class WildPlant : MonoBehaviour
         _daysSinceHarvest = 0;
         RefreshWildPlant();
         _gameEventListener.Response.RemoveListener(DayPass);
+    }
+
+    public (int, int, int, bool) SaveWildPlant()
+    {
+        return (wildPlantID, _daysSinceHarvest, _currentAmount, _isEmpty);
+    }
+
+    public void LoadWildPlant(int daysSinceHarvest, int currentAmount, bool isEmpty)
+    {
+        _daysSinceHarvest = daysSinceHarvest;
+        _currentAmount = currentAmount;
+        _isEmpty = isEmpty;
+
+        if (isEmpty)
+        {
+            SeedPicked();
+        }
     }
 }

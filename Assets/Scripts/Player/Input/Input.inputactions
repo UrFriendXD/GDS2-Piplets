@@ -38,7 +38,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "AloeSeed",
+                    "name": "Zero",
                     "type": "Button",
                     "id": "8bff560a-d451-479f-b59c-d98e34f39bc7",
                     "expectedControlType": "Button",
@@ -46,7 +46,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "CottonSeed",
+                    "name": "One",
                     "type": "Button",
                     "id": "8acdf920-52b3-43de-8646-c5d38dbefa84",
                     "expectedControlType": "Button",
@@ -54,7 +54,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Sapling",
+                    "name": "Two",
                     "type": "Button",
                     "id": "db1eb91f-fe6e-426f-bd77-6d1145856e17",
                     "expectedControlType": "Button",
@@ -62,7 +62,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Select Watering Can",
+                    "name": "Three",
                     "type": "Button",
                     "id": "de150bb8-6d0e-4fae-a551-e9dda4a745b9",
                     "expectedControlType": "Button",
@@ -70,7 +70,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Select Axe",
+                    "name": "Four",
                     "type": "Button",
                     "id": "040b422d-73f7-4098-b9f2-7ac096582851",
                     "expectedControlType": "Button",
@@ -89,6 +89,70 @@
                     "name": "Menu",
                     "type": "Button",
                     "id": "08ad964b-3b1c-49c4-b1f3-712355ba0555",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Five",
+                    "type": "Button",
+                    "id": "d8bab1b3-2d91-483c-b5d3-c5ad3d481d54",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Six",
+                    "type": "Button",
+                    "id": "410600ab-17ba-4c79-8d12-04cb0cba2040",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Seven",
+                    "type": "Button",
+                    "id": "0c3d9c21-8e55-445b-bcfd-e7b6a6a8cf38",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Eight",
+                    "type": "Button",
+                    "id": "e3f30d33-60b2-415a-b957-112bd3d0fc92",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Nine",
+                    "type": "Button",
+                    "id": "630c2a3d-ceea-4c02-b335-a1407a52d16a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Ten",
+                    "type": "Button",
+                    "id": "272c0abe-fa86-4b73-87cc-ef60eb436ea6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Eleven",
+                    "type": "Button",
+                    "id": "23a70487-7842-4db8-aa0b-35cfe4551027",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Space",
+                    "type": "Button",
+                    "id": "66ee1ac3-0227-4a0e-b1a6-ff2eebf1973a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -168,7 +232,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AloeSeed",
+                    "action": "Zero",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -179,7 +243,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CottonSeed",
+                    "action": "One",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -190,7 +254,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Sapling",
+                    "action": "Two",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -201,7 +265,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Select Watering Can",
+                    "action": "Three",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -234,7 +298,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Select Axe",
+                    "action": "Four",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -257,6 +321,94 @@
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38b395be-e258-4c1d-bfdc-aaad0cd066d6",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Five",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fcdda311-c025-4b69-8a1b-99e7e77c9f0c",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Six",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "acceb690-f1f0-4e75-b61d-bdc09be665f3",
+                    "path": "<Keyboard>/8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Seven",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1874b1f8-17f2-4bf4-9ef1-4c2c1682e184",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Eight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b439cd9-d2b1-415f-aaa8-463bc69392f8",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nine",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "225c3e35-736c-4f8a-98ad-93b0b26199d6",
+                    "path": "<Keyboard>/minus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ten",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21278050-da9e-4159-b5f8-e9b21a1794c8",
+                    "path": "<Keyboard>/equals",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Eleven",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a29a3b2-108a-48aa-9de0-0da90ef430e7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Space",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

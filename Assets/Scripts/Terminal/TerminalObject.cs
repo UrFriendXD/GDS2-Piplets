@@ -32,6 +32,7 @@ namespace Terminal
 
         public override void CloseUI()
         {
+            base.CloseUI();
             _terminalUIWindow.CloseUI();
         }
     }

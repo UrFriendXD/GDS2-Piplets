@@ -8,9 +8,6 @@ public class Door : InteractableObject
     public GameObject greenhouse;
     public GameObject outsideGreenHouse;
     public GameObject fireFlies;
-    public GameObject piplet0;
-    public GameObject piplet1;
-    public GameObject piplet2;
     public GameObject lights;
     public GameObject globalLights;
 
@@ -40,36 +37,12 @@ public class Door : InteractableObject
         }
         if (greenhouse.activeSelf)
         {
-            player.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            if (piplet0.activeSelf)
-            {
-                piplet0.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            }
-            if (piplet1.activeSelf)
-            {
-                piplet1.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            }
-            if (piplet2.activeSelf)
-            {
-                piplet2.GetComponent<SpriteRenderer>().sortingOrder = 2;
-            }
+            player.GetComponent<PlayerMovement>().isInside = true;
             _doorAudioController.LoadInside();
         }
-        else
+        else if(!greenhouse.activeSelf)
         {
-            player.GetComponent<SpriteRenderer>().sortingOrder = 4;
-            if (piplet0.activeSelf)
-            {
-                piplet0.GetComponent<SpriteRenderer>().sortingOrder = 4;
-            }
-            if (piplet1.activeSelf)
-            {
-                piplet1.GetComponent<SpriteRenderer>().sortingOrder = 4;
-            }
-            if (piplet2.activeSelf)
-            {
-                piplet2.GetComponent<SpriteRenderer>().sortingOrder = 4;
-            }
+            player.GetComponent<PlayerMovement>().isInside = false;
             _doorAudioController.LoadOutside();
         }
     }
