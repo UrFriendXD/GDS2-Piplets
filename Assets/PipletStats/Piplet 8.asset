@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 836bd6f2623bc74469263940e9c23bc8, type: 3}
-  m_Name: Piplet 5
+  m_Name: Piplet 8
   m_EditorClassIdentifier: 
-  id: 11a28fbe13911fa4daaaf122bc2c8686
+  id: d3a9f7cae1d93014882bfffadb261e0f
   itemName: 
   icon: {fileID: 0}
   maximumStack: 1
   movespeedPercentBonus: 0.1
-  harvestingDoublerBonus: 0
-  harvestingSeedBonus: 5
-  pipletType: 4
-  level: 1
+  harvestingDoublerBonus: 6
+  harvestingSeedBonus: 6
+  pipletType: 0
+  level: 0
   steps: 0
   isUnlocked: 0
