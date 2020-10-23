@@ -10,6 +10,7 @@ public class PlayerAnimationController : MonoBehaviour
     private static readonly int Sliding = Animator.StringToHash("Sliding");
     private static readonly int Chopping = Animator.StringToHash("Chopping");
     private static readonly int Planting = Animator.StringToHash("Planting");
+    private static readonly int Interacting = Animator.StringToHash("Interacting");
 
 
     // Start is called before the first frame update
@@ -59,5 +60,10 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetBool(Climbing, false);
         animator.SetBool(Sliding, false);
+    }
+    
+    public void InteractingAnimation()
+    {
+        animator.SetTrigger(Interacting);
     }
 }
