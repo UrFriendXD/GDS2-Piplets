@@ -17,6 +17,7 @@ TagManager:
   - Ground3
   - Stairs
   - Out
+  - Bed
   layers:
   - Default
   - TransparentFX

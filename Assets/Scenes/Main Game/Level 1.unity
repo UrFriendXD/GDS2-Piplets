@@ -963,7 +963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6254571942818434797, guid: 8731c3ecc672761459a69bd858e8104e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8731c3ecc672761459a69bd858e8104e, type: 3}
@@ -1652,8 +1652,20 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3677086137604960671, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 3677086137827997425, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_StartCorner
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677086137827997426, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677086137894234051, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3677086137946585128, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
@@ -4168,6 +4180,10 @@ PrefabInstance:
       propertyPath: itemSaveManager
       value: 
       objectReference: {fileID: 1052757086}
+    - target: {fileID: 1273165475, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
+      propertyPath: selectUISprite
+      value: 
+      objectReference: {fileID: 1899137911}
     - target: {fileID: 516475075022877323, guid: 4bcbbbe4b337a8b49ad0cc7bcf7828e7, type: 3}
       propertyPath: m_Offset.y
       value: 0.034240842
@@ -10425,6 +10441,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6fbca72807e68e4f8fe17a0775a4bc2, type: 3}
+--- !u!114 &1899137911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8950096238826230240, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
+  m_PrefabInstance: {fileID: 273660095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1925000217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6050053528973497293, guid: 63c97197c6802f248b81123f8c00e515, type: 3}
@@ -11533,6 +11560,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 4253873714864493212, guid: e49ff3d91e1cb88458cbd1b560c2576f, type: 3}
       propertyPath: m_Name
+      value: Bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253873714864493212, guid: e49ff3d91e1cb88458cbd1b560c2576f, type: 3}
+      propertyPath: m_TagString
       value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 4253873714864493214, guid: e49ff3d91e1cb88458cbd1b560c2576f, type: 3}
