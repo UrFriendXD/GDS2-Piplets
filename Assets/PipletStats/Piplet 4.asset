@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: e9b063c46c7702c47b90ffa46380c1d6
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 8209034515823919106, guid: 467c55034cf46474796856733ab68413, type: 3}
   maximumStack: 1
-  movespeedPercentBonus: 0.1
-  harvestingDoublerBonus: 5
+  movespeedPercentBonus: 0
+  harvestingDoublerBonus: 0
   harvestingSeedBonus: 0
   pipletType: 3
   level: 1

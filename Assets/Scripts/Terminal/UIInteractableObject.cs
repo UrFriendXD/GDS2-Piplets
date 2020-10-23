@@ -1,6 +1,8 @@
-﻿using Player;
+﻿using Interaction;
+using Player;
 using UnityEngine;
 
+[RequireComponent(typeof(UIPlayerDetector))]
 public class UIInteractableObject : MonoBehaviour
 {
     protected UIPlayerDetector UIPlayerDetector;
