@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: d3a9f7cae1d93014882bfffadb261e0f
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: -3539183830513585278, guid: e56805e2696a19f4f83a9ae3c55c8623, type: 3}
   maximumStack: 1
   movespeedPercentBonus: 0.1
   harvestingDoublerBonus: 6

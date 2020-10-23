@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6569080879426949888}
   - component: {fileID: 6569080879426949891}
   - component: {fileID: 6569080879426949889}
-  - component: {fileID: 6569080879426949890}
-  - component: {fileID: 6569080879426949916}
+  - component: {fileID: 7679252206850392254}
+  - component: {fileID: 5075549421817269191}
   m_Layer: 0
   m_Name: PCButton
   m_TagString: Untagged
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6569080879426949890
+--- !u!114 &7679252206850392254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,10 +120,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6569080879426949895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52b7ef47e2a15b748b8f93892a7f3ba2, type: 3}
+  m_Script: {fileID: 11500000, guid: 657645fc46847af4285a6d20311f44fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6569080879426949916
+--- !u!114 &5075549421817269191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
