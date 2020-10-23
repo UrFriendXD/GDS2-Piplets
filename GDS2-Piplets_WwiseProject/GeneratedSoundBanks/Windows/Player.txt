@@ -1,0 +1,38 @@
+Event	ID	Name			Wwise Object Path	Notes
+	337775249	Change_To_Stone			\Default Work Unit\Player\Change_To_Stone	
+	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
+	1284910139	Menu_Button_Back			\Default Work Unit\Menu_Button_Back	
+	1676133841	Change_To_Dirt			\Default Work Unit\Player\Change_To_Dirt	
+	1866025847	Footstep			\Default Work Unit\Player\Footstep	
+	3086540886	StopAll			\Default Work Unit\StopAll	
+	4007661982	Menu_Button_Select			\Default Work Unit\Menu_Button_Select	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	684570577	Footstep_Material			\Default Work Unit\Footstep_Material	
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Footstep_Material			
+	1216965916	Stone	Footstep_Material			
+	2195636714	Dirt	Footstep_Material			
+	414380065	Terminal	Music			
+	438105790	Outside	Music			
+	748895195	None	Music			
+	1413413702	Basement	Music			
+	3788924735	Bedroom	Music			
+	4238926114	Greenhouse	Music			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	58833486	BEDROOM THEME loop	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\BEDROOM THEME loop_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Bedroom\BEDROOM THEME loop\BEDROOM THEME loop		1102657
+	230312442	Menu select back	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\AI menu back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Menu select back		25604
+	245901968	MAIN THEME loop	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\MAIN THEME loop_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Greenhouse\MAIN THEME loop\MAIN THEME loop		3550501
+	276486449	stone step 2	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\stone step 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Footsteps\Stone Steps\stone step 2		51968
+	439803078	INTRO SOUND bedroom	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\INTRO SOUND bedroom_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Bedroom\INTRO SOUND bedroom\INTRO SOUND bedroom		75904
+	554705134	single footstep 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\single footstep 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Footsteps\Dirt Steps\single footstep 1		90908
+	623319675	BASEMENT THEME	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\BASEMENT THEME_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Basement\BASEMENT THEME\BASEMENT THEME		1114215
+	670780140	stone step 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\stone step 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Footsteps\Stone Steps\stone step 1		50452
+	897578871	Intro sound main theme	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Intro sound main theme_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Greenhouse\Intro sound main theme\Intro sound main theme		27784
+	930448184	menu select	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\menu select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\menu select		25604
+	1045103953	TERMINAL THEME	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\TERMINAL THEME_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Terminal\TERMINAL THEME\TERMINAL THEME		1767876
+	1056251533	OUTSIDE THEME	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\OUTSIDE THEME_4766FE73.wem		\Interactive Music Hierarchy\Default Work Unit\InGameMusic\BGM_Outdoors\OUTSIDE THEME\OUTSIDE THEME		1771262
+

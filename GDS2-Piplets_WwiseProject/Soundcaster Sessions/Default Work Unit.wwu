@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EEA95439-EB97-4F46-BF3F-9AD6482FB721}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{EEA95439-EB97-4F46-BF3F-9AD6482FB721}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EEA95439-EB97-4F46-BF3F-9AD6482FB721}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{AA3CABAD-7D55-4F9F-A492-FDFDF272C596}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayBedroomMusic" ID="{D0C36349-76CE-4DD0-887B-12FD7EEF7883}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayMusic" ID="{4555BCC9-EBEC-4857-9071-4C10C24E92C5}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayGreenhouseMusic" ID="{96FBBBAB-1E6E-451C-83F9-C3D49E597913}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayOutdoorsMusic" ID="{F4E18889-E093-4F00-828B-B5E7F7898CAC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayTitleScreenMusic" ID="{14AAA763-E4CC-400E-9F01-17AFBF1E9036}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{5649B073-D9B7-4219-ADB4-7CB8BF143FA7}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{9B1EF3A0-DCDE-4812-84B3-358241AAAEC9}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TreeHealth" ID="{0A0C6734-05C9-4EDE-B60D-DE42751818E8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{5DC0077B-0623-4EEE-B03D-E2843A15FAA1}"/>
+							<Value>75</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{2EA72490-EF8D-4468-9E3F-4174CA19C48D}"/>
+						<CurrentStateRef Name="Stone" ID="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Bedroom" ID="{D42377B8-C20F-4FEA-B488-1C8589583D0A}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
