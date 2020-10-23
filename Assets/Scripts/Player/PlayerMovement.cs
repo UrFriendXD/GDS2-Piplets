@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Menu()
     {
-        if (!isUIOn)
+        if (!isUIOn || menu.activeSelf)
         {
             menu.SetActive(!menu.activeSelf);
             isUIOn = !isUIOn;
