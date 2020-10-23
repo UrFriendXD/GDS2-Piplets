@@ -30,6 +30,16 @@ namespace Player
                 PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
                 player.GroundOn2();
             }
+            if (col.tag == "Ground3")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.GroundOn3();
+            }
+            if (col.tag == "Out")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.OutOn();
+            }
         }
 
         void OnTriggerExit2D(Collider2D col)
@@ -44,6 +54,17 @@ namespace Player
             {
                 PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
                 player.GroundOff2();
+            }
+            if (col.tag == "Ground3")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.GroundOff3();
+            }
+
+            if(col.tag == "Out")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.OutOff();
             }
         }
     }

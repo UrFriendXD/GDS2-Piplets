@@ -25,6 +25,7 @@ public class PipletCanvasUI : MonoBehaviour
             foreach (var button in buyPipletButtons)
             {
                 button.playerStats = playerStatsParam;
+                //button.Open();
             }
         }
     }

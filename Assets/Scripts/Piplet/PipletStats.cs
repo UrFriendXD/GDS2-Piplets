@@ -21,6 +21,10 @@ public class PipletStats : Item
     [Space]
     public PipletType pipletType;
 
+    public int level;
+
+    [Space] public bool isUnlocked;
+
     public override Item GetCopy()
     {
         return Instantiate(this);

@@ -37,14 +37,7 @@ public class Fade : MonoBehaviour
 
     public void FadeEffect()
     {
-        if (dateNum == 0 || yearNum == 0)
-        {
-            resetDate();
-        }
-        else
-        {
-            incrementDate();
-        }
+        incrementDate();
         updateDate();
         useEffect();
     }
@@ -64,18 +57,9 @@ public class Fade : MonoBehaviour
 
     public void incrementDate()
     {
-        dateNum += 1;
-        if (dateNum > 14)
-        {
-            dateNum = 1;
-            yearNum += 1;
-        }
-    }
+        dateNum = GameManager.instance.DayManager.days;
+        yearNum = GameManager.instance.DayManager.years;
 
-    public void resetDate()
-    {
-        dateNum = 1;
-        yearNum = 3000;
     }
 
     private IEnumerator FadeProcess (float time)
@@ -93,5 +77,6 @@ public class Fade : MonoBehaviour
         yearCrn.CrossFadeAlpha(1, 2, false);
         player.transform.position = outsideOfBed.transform.position;
         player.gameObject.GetComponent<PlayerMovement>().isUIOn = false;
+        player.gameObject.GetComponent<PlayerMovement>().isSleeping = false;
     }
 }

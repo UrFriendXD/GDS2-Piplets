@@ -20,3 +20,5 @@ MonoBehaviour:
   harvestingDoublerBonus: 0
   harvestingSeedBonus: 10
   pipletType: 2
+  level: 1
+  isUnlocked: 0

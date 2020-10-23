@@ -16,13 +16,22 @@ public class Piplet : MonoBehaviour
     private Transform target;
     private bool stepping;
     private PlayerMovement _PlayerMovement;
+    public GameObject player;
+    public int layer;
 
-    [SerializeField] private PipletStats pipletStats;
+    public PipletStats pipletStats;
 
     void Start()
     {
         playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
-        target = playerScript.transform;
+        if (playerScript)
+        {
+            target = playerScript.gameObject.transform;
+        }
+        else
+        {
+            Debug.Log("Player not found");
+        }
         level = 1;
         _PlayerMovement = playerScript.playerMovement;
         if (gameObject.activeSelf)
@@ -33,29 +42,37 @@ public class Piplet : MonoBehaviour
 
     void Update()
     {
+        layer = player.GetComponent<SpriteRenderer>().sortingOrder;
+        if(this.GetComponent<SpriteRenderer>().sortingOrder != layer)
+        {
+            this.GetComponent<SpriteRenderer>().sortingOrder = layer;
+        }
         if (target.transform.position.x < this.transform.position.x && transform.rotation.y != 0)
         {
             this.transform.Rotate(0f, 180f, 0f);
         }
-        if (target.transform.position.x > this.transform.position.x &&  transform.rotation.y == 0)
-        { 
+        if (target.transform.position.x > this.transform.position.x && transform.rotation.y == 0)
+        {
             this.transform.Rotate(0f, -180f, 0f);
         }
-        if (_PlayerMovement.GroundCheck == true && target.transform.position.y == transform.position.y)
+        if (!_PlayerMovement.isSleeping)
         {
-            if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
+            if ((_PlayerMovement.GroundCheck == true || _PlayerMovement.GroundCheck2 == true || _PlayerMovement.GroundCheck3 == true) && target.transform.position.y == transform.position.y)
             {
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-                if (!stepping)
+                if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
                 {
-                    StartCoroutine(BuildTrust());
+                    transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    if (!stepping)
+                    {
+                        StartCoroutine(BuildTrust());
+                    }
                 }
-            }
 
-        }
-        else if (_PlayerMovement.GroundCheck == true && target.transform.position.y != transform.position.y)
-        {
-            transform.position = new Vector3(transform.position.x, target.transform.position.y ,transform.position.z);
+            }
+            else if ((_PlayerMovement.GroundCheck == true || _PlayerMovement.GroundCheck2 == true || _PlayerMovement.GroundCheck3 == true) && target.transform.position.y != transform.position.y)
+            {
+                transform.position = new Vector3(transform.position.x, target.transform.position.y, transform.position.z);
+            }
         }
 
         if (steps > level2Threshold)
@@ -80,6 +97,10 @@ public class Piplet : MonoBehaviour
    public void ActivatePiplet()
    {
        pipletStats.Equip(playerScript.playerStats);
+       if (!gameObject.activeSelf)
+       {
+           gameObject.SetActive(true);
+       }
        //Debug.Log("Pip");
        //Debug.Log(playerScript.playerStats.movespeed.Value);
        //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);

@@ -17,7 +17,6 @@ namespace Player
         public int PlayerID;
 
         [Header("Serialize Field")]
-        [SerializeField] private ItemSaveManager itemSaveManager;
         [SerializeField] Image draggableItem;
         
         private BaseItemSlot _dragItemSlot;
@@ -40,29 +39,13 @@ namespace Player
             // Drop
             inventory.OnDropEvent += Drop;
         }
-        
-        private void Start()
-        {
-            if (itemSaveManager != null)
-            {
-                itemSaveManager.LoadInventory(this);
-            }
-        }
-
-        private void OnDestroy()
-        {
-            if (itemSaveManager != null)
-            {
-                itemSaveManager.SaveInventory(this);
-            }
-        }
 
         // Selects players item from inventory based on parameter
         public void SelectItem(int itemSelectNum)
         {
             lastNumHeld = itemSelectNum;
             itemHeld = inventory.ItemSlots[itemSelectNum].Item;
-            Debug.Log(itemSelectNum);
+            //Debug.Log(itemSelectNum);
         }
 
         private void Update()
