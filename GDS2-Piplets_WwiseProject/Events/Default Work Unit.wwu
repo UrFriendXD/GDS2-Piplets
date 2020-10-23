@@ -5,10 +5,10 @@
 			<ChildrenList>
 				<Event Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}">
 					<ChildrenList>
-						<Action Name="" ID="{5C50B226-C3F0-4DC1-A1FF-D5BB3608BCBB}" ShortID="664643833">
+						<Action Name="" ID="{84F0466B-AF57-4C71-94BB-8C7B848ACFF2}" ShortID="199701037">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="water pour 4" ID="{233BC6C7-3408-4497-A66B-BEF323C33503}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Watering Plant" ID="{CCB234B9-62B3-4C5B-BF27-7A51DFF4CB5B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -20,17 +20,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="seed planting" ID="{333E05D6-1465-4E75-9EFD-B29ECBE7ED01}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Walking_stone" ID="{A459C612-590F-4918-8244-FBC533D84FA4}">
-					<ChildrenList>
-						<Action Name="" ID="{48AA287B-AA54-4305-AF15-95717D06047E}" ShortID="382884762">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Stone Steps" ID="{24544906-B9F5-40F1-B9B6-7C109BB0E79B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -56,16 +45,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{27713728-4BB9-45C8-A440-66960FB3980B}" ShortID="821284471">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Plant_Harvest_Chime" ID="{006058AE-215F-4845-8358-7A290081C25A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}">
@@ -81,10 +60,10 @@
 				</Event>
 				<Event Name="Ladder_Descend" ID="{3D3C988B-6BE4-4021-92F0-942C7EE53F4B}">
 					<ChildrenList>
-						<Action Name="" ID="{866FF21E-578E-4D80-950E-E5A9C1752852}" ShortID="1045876338">
+						<Action Name="" ID="{343E9F88-EDF1-423C-8E0F-24D88E73DCA3}" ShortID="711492183">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ladder slide" ID="{38D769FA-38FF-4DC2-A892-090D1C1015B6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Ladder slide cleaned" ID="{CBC1746D-6222-44DE-8FB9-1FFAF10805DF}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -92,10 +71,10 @@
 				</Event>
 				<Event Name="Minecart" ID="{981BA921-0977-4799-BB35-4CC38A694649}">
 					<ChildrenList>
-						<Action Name="" ID="{22EF7551-A446-41F7-992E-F5D36ECC658F}" ShortID="868444576">
+						<Action Name="" ID="{7BCBB2FF-2250-4A38-8963-4A9EC3E3AA9C}" ShortID="728083125">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Minecart" ID="{4527A9A0-35E0-4E3C-96DE-5DEBECF86A1B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Minecart rolling" ID="{24E49B28-5BCF-46FF-8528-E95CA449A03B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -114,16 +93,6 @@
 				</Event>
 				<Event Name="Outside_Atmos" ID="{30953696-7DAB-4961-950C-9143A9924F42}">
 					<ChildrenList>
-						<Action Name="" ID="{BD220BC9-06F3-4DE4-972F-B72C42942483}" ShortID="363765569">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Nature ambiance" ID="{55CB7FC3-7B1D-4005-BF04-2D11ACEAB0E6}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{EED215FC-C362-4968-A3CC-7859A1BB6743}" ShortID="910939530">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -149,7 +118,7 @@
 						<Action Name="" ID="{17CD0200-F142-4CBB-B2F0-245429964D41}" ShortID="796986149">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Pass" ID="{4B604C46-C2E8-482E-A929-0EB6F01F0792}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Pass sound" ID="{71519205-FA69-402E-AC24-01F5AA2268C7}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -160,18 +129,7 @@
 						<Action Name="" ID="{44C7CBBB-F99F-4C8E-8D25-82282A12B57A}" ShortID="918222544">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fail" ID="{938092AF-110D-4D89-8332-0639CEE1574B}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Walking_Dirt" ID="{D8BD07FB-7775-4843-9E23-332151ECBEB4}">
-					<ChildrenList>
-						<Action Name="" ID="{17B6D3B6-E95C-4847-BE64-E080BC3DFB9B}" ShortID="878998121">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Dirt Steps" ID="{F9D37B97-1556-4BA7-AD40-251F5252FF26}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Fail Sound" ID="{83A4C40C-73A1-47FF-AE4D-BCD315B28081}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -201,10 +159,10 @@
 				</Event>
 				<Event Name="AI_processing" ID="{62388C0B-49A4-494E-BEDE-C23D59DC566D}">
 					<ChildrenList>
-						<Action Name="" ID="{4AEF3A3F-06AF-476A-B017-1435A670FD97}" ShortID="240025531">
+						<Action Name="" ID="{91581FA7-2E96-442F-B2B6-86428C223F08}" ShortID="967854340">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="magical whir" ID="{514B517D-A6DA-4C67-B181-C6DF4F7203BF}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="AI Processing" ID="{68523021-95BC-4D42-91D1-6EB41C05F4C5}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -226,7 +184,7 @@
 						<Action Name="" ID="{5DC04A22-E2F2-4BCF-AB14-8CE5FBC23B86}" ShortID="167814266">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="water droplet" ID="{05C34E4C-8A34-476C-8654-BC0509769E4C}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+									<ObjectRef Name="Water Droplet Atmos" ID="{F76B3E29-A0A2-4442-BB5C-8DC20E4B5732}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -243,66 +201,154 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="Music" ID="{AAC3765E-46E3-4D7A-9D7A-761AF0DB9F3B}" ShortID="1060468801">
+				<Event Name="Minecart_Loading" ID="{69EB8421-D2D4-4A97-B4BB-5B91B1BE6E33}">
 					<ChildrenList>
-						<Event Name="PlayBedroomMusic" ID="{5F9F9EF4-4E27-4030-90D9-4E1FCAAF5332}">
+						<Action Name="" ID="{192FB214-BB55-4284-A22B-E572BB82397B}" ShortID="349915120">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Minecart loading" ID="{4D3FC07D-0D4A-48E8-9F8E-EDFC010424CB}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AI_Button_Select_Back" ID="{9AB91AE8-8CA6-4B79-B552-C4A835258F91}">
+					<ChildrenList>
+						<Action Name="" ID="{6A9BC210-0AF7-4844-ABA0-895CAB6CE96E}" ShortID="391622356">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu Back Button" ID="{5619E5B4-33A2-46B0-92CD-303F72443C2E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Button_Back" ID="{A931647F-A958-4617-A586-F4AC1B772C1F}">
+					<ChildrenList>
+						<Action Name="" ID="{96D1DE58-7AF7-42FC-9942-A52437C89DCD}" ShortID="900946329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu select back" ID="{B8460ACB-5FD3-47A5-9E2F-C965F1978B5E}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Music" ID="{487CBB58-2193-4941-9BBB-E229052A0060}" ShortID="277770463">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="13"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="PlayGreenhouseMusic" ID="{96FBBBAB-1E6E-451C-83F9-C3D49E597913}">
 							<ChildrenList>
-								<Action Name="" ID="{8A83F60F-62DE-4E9D-BF1E-1B2622ED023A}" ShortID="129554544">
+								<Action Name="" ID="{93CF0E13-3772-4B04-9BAD-0F03F892EC4C}" ShortID="142184742">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BGM_Bedroom" ID="{089384DF-B43E-4CE9-92A1-8B4E0886528A}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{D796A82E-570D-40C5-80B6-84D09351AC86}" ShortID="702836177">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BGM_Bedroom" ID="{089384DF-B43E-4CE9-92A1-8B4E0886528A}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+											<ObjectRef Name="Greenhouse" ID="{2016FEEA-6E66-4E3B-968F-D50ADC0597C9}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PlayGreenhouseMusic" ID="{9BE80160-F7E9-4A7D-821A-475C9A342D2E}">
+						<Event Name="PlayBedroomMusic" ID="{D0C36349-76CE-4DD0-887B-12FD7EEF7883}">
 							<ChildrenList>
-								<Action Name="" ID="{1512D205-AC9D-4114-B069-6C945066A7E5}" ShortID="765567971">
+								<Action Name="" ID="{69F86104-EC13-4A67-B9B7-E67E82F3541F}" ShortID="799295357">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BGM_Greenhouse" ID="{A118B29E-BDE6-4EDF-AF65-D7A9F45D93C5}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{212343FA-881A-448F-A252-5233E2B04C13}" ShortID="883751605">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BGM_Greenhouse" ID="{A118B29E-BDE6-4EDF-AF65-D7A9F45D93C5}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+											<ObjectRef Name="Bedroom" ID="{462B9310-D5EA-4710-A9B2-1623FA07027E}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PlayOutdoorMusic" ID="{3984DB37-15BF-42DD-8F9C-00CCC1C58980}">
+						<Event Name="PlayOutdoorsMusic" ID="{F4E18889-E093-4F00-828B-B5E7F7898CAC}">
 							<ChildrenList>
-								<Action Name="" ID="{5A182165-77DD-46D5-BF10-38C3AAC824B9}" ShortID="427534274">
+								<Action Name="" ID="{B55291FA-9466-42E0-910C-549742B5DDB9}" ShortID="919273394">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BGM_Outdoors" ID="{2E3A4778-D9F2-48A7-A6BE-F94D6D0903C6}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+											<ObjectRef Name="Outside" ID="{64465498-2966-452C-847B-266B4B675C99}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{57CFE819-3C10-4E50-BEDE-DDF3634E854A}" ShortID="437573536">
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayTitleScreenMusic" ID="{14AAA763-E4CC-400E-9F01-17AFBF1E9036}">
+							<ChildrenList>
+								<Action Name="" ID="{14E9F176-1272-4C91-9438-C472C077FCC1}" ShortID="299795016">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="BGM_Outdoors" ID="{2E3A4778-D9F2-48A7-A6BE-F94D6D0903C6}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+											<ObjectRef Name="BGM_TitleScreen" ID="{B2DEFF9B-6192-4080-8082-912B5CA0FF74}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3461A0BF-A21E-4B3F-B5BF-7DB7D8D642FB}" ShortID="218187901">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BGM_TitleScreen" ID="{B2DEFF9B-6192-4080-8082-912B5CA0FF74}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayMusic" ID="{4555BCC9-EBEC-4857-9071-4C10C24E92C5}">
+							<ChildrenList>
+								<Action Name="" ID="{9113A830-311D-4C4F-AE04-53B56B24F415}" ShortID="113254567">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InGameMusic" ID="{CF10C1DE-2194-44E3-A042-A6FE73ACB30F}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FC6D9AAC-965A-45F2-ADB7-82957F5464D6}" ShortID="356796876">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="InGameMusic" ID="{CF10C1DE-2194-44E3-A042-A6FE73ACB30F}" WorkUnitID="{B4328937-8A1E-4A57-8A73-F231D65BF114}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayTerminalMusic" ID="{6103DFD3-1052-4E52-BE25-0E285944F6D0}">
+							<ChildrenList>
+								<Action Name="" ID="{329C644E-D16A-4437-AADF-79768B17CDA4}" ShortID="635330069">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Terminal" ID="{BD4AFDE3-73F4-409D-8389-F623E40CB553}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayBasementMusic" ID="{8BE5F18F-0BE0-4E79-84A8-7B1616653465}">
+							<ChildrenList>
+								<Action Name="" ID="{98CA6AC0-CF27-444C-9780-073EBD4FB98D}" ShortID="67245655">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Basement" ID="{C7665BAC-7E9C-4685-B851-684A163F3CA6}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -310,22 +356,11 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Footstep" ID="{8DD187B3-4B9B-4742-9BC5-20C7ED0DAD3F}">
+				<Folder Name="Player" ID="{78BDFF8C-C648-46C5-A884-E4A75BE13F26}" ShortID="511918582">
 					<ChildrenList>
-						<Action Name="" ID="{533CFB02-4372-4705-971F-520933D3E5C2}" ShortID="419235032">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{877ECA3B-153C-41EE-8AA1-2E343AD7BE4A}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Folder Name="Changing_Footstep" ID="{8A626465-F4AE-49DE-BFF7-83CD723D75E0}" ShortID="308158620">
-					<ChildrenList>
-						<Event Name="Change_To_Stone" ID="{C3475FBF-D291-4981-97F1-1A0006C29573}">
+						<Event Name="Change_To_Stone" ID="{00E98307-350B-493D-BED9-157C1ADBA485}">
 							<ChildrenList>
-								<Action Name="" ID="{EE7814AC-83EB-4B05-B2B2-13AD8E392658}" ShortID="788667252">
+								<Action Name="" ID="{2288866F-88CA-4039-BD11-991FCF0177F2}" ShortID="329690842">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
@@ -337,9 +372,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Change_To_Dirt" ID="{6831E231-D1DD-4534-B8D4-E6C5B8A7C617}">
+						<Event Name="Change_To_Dirt" ID="{68DB5C0C-18CA-46DA-BB86-9DB306BD5FD6}">
 							<ChildrenList>
-								<Action Name="" ID="{FDBC7E17-6052-4E2B-9EC7-F77ED9992D97}" ShortID="488129492">
+								<Action Name="" ID="{6CBC7D61-B207-4CB4-A547-CB4AE4D4D8A1}" ShortID="111356437">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
@@ -351,8 +386,30 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Footstep" ID="{FA320F11-B77C-457F-877B-A9E1AF6182CC}">
+							<ChildrenList>
+								<Action Name="" ID="{4FDF9755-26CB-4564-8F37-8786D75A0CD3}" ShortID="4349269">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{8BC84F37-28F7-4BA2-AE8F-7FB526E3CD01}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="StopAll" ID="{6CFA2112-BB98-47EF-9021-A21314F3F097}">
+					<ChildrenList>
+						<Action Name="" ID="{1DD7A476-62B6-4117-85F6-01C3C0E4B0FA}" ShortID="889151692">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

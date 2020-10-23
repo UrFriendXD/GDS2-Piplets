@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836bd6f2623bc74469263940e9c23bc8, type: 3}
+  m_Name: Piplet 8
+  m_EditorClassIdentifier: 
+  id: d3a9f7cae1d93014882bfffadb261e0f
+  itemName: 
+  icon: {fileID: -3539183830513585278, guid: e56805e2696a19f4f83a9ae3c55c8623, type: 3}
+  maximumStack: 1
+  movespeedPercentBonus: 0.1
+  harvestingDoublerBonus: 15
+  harvestingSeedBonus: 15
+  pipletType: 0
+  level: 0
+  steps: 0
+  isUnlocked: 0

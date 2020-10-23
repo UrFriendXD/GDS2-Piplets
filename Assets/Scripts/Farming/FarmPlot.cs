@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using System;
+using Player;
 using UnityEngine;
 
 namespace Farming
@@ -9,9 +10,17 @@ namespace Farming
         // Plant variables
         [SerializeField] private PlantSeed currentPlantType;
         private PlantFunctions _currentPlant;
+        public int FarmPlotID;
+
+        [SerializeField] private SpriteRenderer pot;
+
+        private void Awake()
+        {
+            FarmPlotID = ServiceLocator.Current.Get<PlantsManager>().AddFarmPlot(this);
+        }
 
         // Initialise variables
-        private void Start()
+        private void OnEnable()
         {
             _currentPlant = GetComponent<PlantFunctions>();
             if (currentPlantType != null)
@@ -36,24 +45,27 @@ namespace Farming
             if (item.name == "Watering Can")
             {
                 _currentPlant.OnWatered();
-                if (!playerScript.PlayerMovement.isInteracting)
+                if (!playerScript.playerMovement.isInteracting)
                 {
-                    playerScript.PlayerAudio.PlayWaterPlantEvent();
-                    playerScript.PlayerAnimationController.WateringAnimation();
+                    playerScript.playerAudio.PlayWaterPlantEvent();
+                    playerScript.playerAnimationController.WateringAnimation();
                 }
             }
         
             //If it's a seed it'll plant if it's empty
             else if (item as PlantSeed)
             {
-                // If plant is empty and player has room
-                if (!_currentPlant.IsPlanted() && playerScript.inventory.RemoveItem(item))
+                if (item.itemName != "Tree Sapling")
                 {
-                    OnPlant(item as PlantSeed);
-                    if (!playerScript.PlayerMovement.isInteracting)
+                    // If plant is empty and player has room
+                    if (!_currentPlant.IsPlanted() && playerScript.inventory.RemoveItem(item))
                     {
-                        playerScript.PlayerAudio.PlaySeedPlantingEvent();
-                        playerScript.PlayerAnimationController.PlantingAnimation();
+                        OnPlant(item as PlantSeed);
+                        if (!playerScript.playerMovement.isInteracting)
+                        {
+                            playerScript.playerAudio.PlaySeedPlantingEvent();
+                            playerScript.playerAnimationController.PlantingAnimation();
+                        }
                     }
                 }
             }
@@ -64,6 +76,38 @@ namespace Farming
         {
             _currentPlant.Plant(plantSeed);
             currentPlantType = plantSeed;
+            
+            ServiceLocator.Current.Get<PlantsManager>().AddToSaveFarmPlots(this);
+        }
+
+        public (string, int, int) SavePlant()
+        {
+            return (currentPlantType.ID, FarmPlotID, _currentPlant.SavePlant());
+        }
+
+        public void LoadPlant(PlantSeed plantSeed, int daysSincePlanted)
+        {
+            _currentPlant.LoadPlant(daysSincePlanted);
+            OnPlant(plantSeed);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                // Changes sprite to be slightly transparent to show it's the current object
+                pot.color = new Color(1f, 1f, 1f, .5f);
+                Debug.Log("trigger");
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                // Changes sprite to be slightly transparent to show it's the current object
+                pot.color = new Color(1f, 1f, 1f, 1f);
+            }
         }
     }
 }

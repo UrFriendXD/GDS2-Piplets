@@ -21,7 +21,7 @@ namespace Environment.Indoors
             //Debug.Log("on");
             if(col.tag == "Player")
             {
-                col.GetComponent<playerMovement>().LadderOn();
+                col.GetComponent<PlayerMovement>().LadderOn();
             }
         }
 
@@ -30,7 +30,7 @@ namespace Environment.Indoors
             //Debug.Log("off");
             if (col.tag == "Player")
             {
-                col.GetComponent<playerMovement>().LadderOff();
+                col.GetComponent<PlayerMovement>().LadderOff();
             }
         }
     }

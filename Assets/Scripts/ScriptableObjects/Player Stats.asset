@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b5c93b4b2e9a184db312bfa764cbf40, type: 3}
   m_Name: Player Stats
   m_EditorClassIdentifier: 
-  money: 0
+  money: 197850
   movespeed:
     BaseValue: 1
   harvestingDoublerModifier:

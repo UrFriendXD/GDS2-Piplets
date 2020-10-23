@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: bb83255f029214248934f97a56c5f0d3
   itemName: Piplet 1
-  icon: {fileID: 0}
+  icon: {fileID: -7282886668606283007, guid: b579e44a046b39345a7dc8ca5bd6554f, type: 3}
   maximumStack: 1
   movespeedPercentBonus: 0
   harvestingDoublerBonus: 10
   harvestingSeedBonus: 0
   pipletType: 0
+  level: 1
+  steps: 8
+  isUnlocked: 1

@@ -14,13 +14,13 @@ public class MusicChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerMovement playerMovement = other.GetComponent<playerMovement>();
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
             if (playerMovement.ladderspeed == 2.5)
             {
                 if (_bedroom)
                 {
-                    playBedroomMusic.Stop(gameObject);
-                    playGreenhouseMusic.Post(gameObject);
+                    //playBedroomMusic.Stop(GameManager.instance.MusicManager);
+                    playGreenhouseMusic.Post(GameManager.instance.MusicManager);
                     
                 }
             }
@@ -28,8 +28,8 @@ public class MusicChanger : MonoBehaviour
             {
                 if (!_bedroom)
                 {
-                    playGreenhouseMusic.Stop(gameObject);
-                    playBedroomMusic.Post(gameObject);
+                    //playGreenhouseMusic.Stop(GameManager.instance.MusicManager);
+                    playBedroomMusic.Post(GameManager.instance.MusicManager);
                 }
             }
         }
@@ -39,7 +39,7 @@ public class MusicChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerMovement playerMovement = other.GetComponent<playerMovement>();
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
             if (playerMovement.ladderspeed == 2.5)
             {
                 _bedroom = false;

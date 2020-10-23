@@ -8,7 +8,7 @@ namespace Player
         // Start is called before the first frame update
         void Start()
         {
-            playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+            PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
         }
 
         // Update is called once per frame
@@ -22,13 +22,23 @@ namespace Player
             //Debug.Log("on");
             if (col.tag == "Ground")
             {
-                playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
                 player.GroundOn();
             }
             if(col.tag == "Ground2")
             {
-                playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
                 player.GroundOn2();
+            }
+            if (col.tag == "Ground3")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.GroundOn3();
+            }
+            if (col.tag == "Out")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.OutOn();
             }
         }
 
@@ -37,13 +47,24 @@ namespace Player
             //Debug.Log("off");
             if (col.tag == "Ground")
             {
-                playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
                 player.GroundOff();
             }
             if (col.tag == "Ground2")
             {
-                playerMovement player = gameObject.GetComponentInParent<playerMovement>();
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
                 player.GroundOff2();
+            }
+            if (col.tag == "Ground3")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.GroundOff3();
+            }
+
+            if(col.tag == "Out")
+            {
+                PlayerMovement player = gameObject.GetComponentInParent<PlayerMovement>();
+                player.OutOff();
             }
         }
     }

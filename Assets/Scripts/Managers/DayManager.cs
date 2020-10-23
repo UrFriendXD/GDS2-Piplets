@@ -43,11 +43,11 @@ public class DayManager : MonoBehaviour
     // Checks if a week passed. If it's 14 days ends the season
     private bool WeekCheck()
     {
-        if (days == 14)
+        if (days == 15)
         {
             SeasonEnd();
         }
-        return days % 7 == 0;
+        return (days - 1) % 7 == 0;
     }
 
     private void ConsumeSurvivalItems()
@@ -69,15 +69,20 @@ public class DayManager : MonoBehaviour
     {
         seasonEndEvent.Raise();
         Debug.Log("Season ended " + days);
-        days = 0;
+        days = 1;
         years++;
     }
 
     private void PassOut()
     {
-        // just idk end game? pfft dunno
-        //Debug.Log("Passed out");
+        // Player loses some money
         playerStats.money = (int)math.round((playerStats.money * 0.8));
         //Debug.Log("Player has: " + _playerStats.money);
+    }
+
+    public void NewGame()
+    {
+        days = 1;
+        years = 3000;
     }
 }

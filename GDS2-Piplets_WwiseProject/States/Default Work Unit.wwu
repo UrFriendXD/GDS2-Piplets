@@ -10,6 +10,16 @@
 						<State Name="Dirt" ID="{96FCAE78-47FA-40B3-AA6C-2FAA4FF2AF8A}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Music" ID="{83870D67-B63D-4099-A02B-9F57DD9057C5}">
+					<ChildrenList>
+						<State Name="None" ID="{2EA72490-EF8D-4468-9E3F-4174CA19C48D}"/>
+						<State Name="Basement" ID="{C7665BAC-7E9C-4685-B851-684A163F3CA6}"/>
+						<State Name="Bedroom" ID="{462B9310-D5EA-4710-A9B2-1623FA07027E}"/>
+						<State Name="Greenhouse" ID="{2016FEEA-6E66-4E3B-968F-D50ADC0597C9}"/>
+						<State Name="Outside" ID="{64465498-2966-452C-847B-266B4B675C99}"/>
+						<State Name="Terminal" ID="{BD4AFDE3-73F4-409D-8389-F623E40CB553}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

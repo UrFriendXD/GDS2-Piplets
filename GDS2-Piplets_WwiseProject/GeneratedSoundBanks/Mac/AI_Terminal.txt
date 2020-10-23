@@ -3,14 +3,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	1218670268	Notification_1			\Default Work Unit\Notification_1	
 	1218670271	Notification_2			\Default Work Unit\Notification_2	
 	1627031574	Pass			\Default Work Unit\Pass	
+	1744321513	PlayGreenhouseMusic			\Default Work Unit\Music\PlayGreenhouseMusic	
 	2569711091	AI_processing			\Default Work Unit\AI_processing	
 	2596272617	Fail			\Default Work Unit\Fail	
+	2964552185	AI_Button_Select_Back			\Default Work Unit\AI_Button_Select_Back	
+	3425704496	PlayTerminalMusic			\Default Work Unit\Music\PlayTerminalMusic	
+	3688866299	Minecart_Loading			\Default Work Unit\Minecart_Loading	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2568619	Minecart loading	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Minecart loading_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Minecart loading		323724
 	54007310	notification 2	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\notification 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\notification 2		235216
 	296196542	notification	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\notification_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\notification		201128
+	422390696	Menu Back Button	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Menu Back Button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Menu Back Button		72868
+	537133613	AI Processing	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\AI Processing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\AI Processing		909376
 	596689217	menu button 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\menu button 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\menu button 1		72868
-	636351262	Pass	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Pass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Pass		185984
-	1024975717	magical whir	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\magical whir_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\magical whir		883612
-	1035197914	Fail	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Fail_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Fail		210860
+	716219899	Pass sound	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Pass sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Pass sound		39100
+	1055984957	Fail Sound	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\Fail Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Fail Sound		39100
 

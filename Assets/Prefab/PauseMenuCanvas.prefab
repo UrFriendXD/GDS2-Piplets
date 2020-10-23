@@ -366,14 +366,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4cd41b186c901cf459cf0886aa5e2a65, type: 2}
+  menuButtonBack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 57bddef33fa702b4aa9c4e1f8de76ead, type: 2}
   menuBank:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ea9f5c88ee608a44b988eccafa61cc0a, type: 2}
-  allBank:
+  stopAll:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a294fd9433c56de42a837dd7920210d4, type: 2}
+  playMainMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4cd41b186c901cf459cf0886aa5e2a65, type: 2}
 --- !u!114 &6281384399795564960
 MonoBehaviour:
   m_ObjectHideFlags: 0

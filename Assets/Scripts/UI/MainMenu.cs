@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AK.Wwise.Event menuButtonSelect;
+    [SerializeField] private AK.Wwise.Event menuButtonBack;
     [SerializeField] private AK.Wwise.Bank menuBank;
+
+    [SerializeField] private AK.Wwise.Event stopAll;
 
     public AK.Wwise.Event playMainMenu;
 
@@ -20,27 +23,34 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        AkBankManager.DoUnloadBanks();
+        stopAll.Post(gameObject);
         menuBank.Unload();
+        ServiceLocator.Current.Get<SaveManager>().IsNewGame = true;
+        //ServiceLocator.Current.Get<PlayersManager>().ClearList();
         SceneManager.LoadScene("Level 1");
     }
 
     public void LoadGame()
     {
-        //scenemanager.loadscene...?
-        
+        stopAll.Post(gameObject);
+        menuBank.Unload();
+        ServiceLocator.Current.Get<SaveManager>().IsNewGame = false;
+        //ServiceLocator.Current.Get<PlayersManager>().ClearList();
+        SceneManager.LoadScene("Level 1");
     }
 
     public void ReturnToMenu()
     {
         //AkSoundEngine.ClearBanks();
-        AkBankManager.DoUnloadBanks();
+        stopAll.Post(gameObject);
+        //AkSoundEngine.ClearBanks();
         SceneManager.LoadScene("MainMenu");
     }
 
     public void ExitGame()
     {
         //debug to check without building. Closes the game
+        stopAll.Post(gameObject);
         Debug.Log("game closed.");
         Application.Quit();
     }
@@ -48,5 +58,10 @@ public class MainMenu : MonoBehaviour
     public void PlayButtonSound()
     {
         menuButtonSelect.Post(gameObject);
+    }
+    
+    public void PlayBackButtonSound()
+    {
+        menuButtonBack.Post(gameObject);
     }
 }

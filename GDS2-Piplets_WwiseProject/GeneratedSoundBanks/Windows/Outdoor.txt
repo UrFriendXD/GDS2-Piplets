@@ -1,27 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	10183550	Minecart			\Default Work Unit\Minecart	
-	337775249	Change_To_Stone			\Default Work Unit\Changing_Footstep\Change_To_Stone	
-	1342968680	Walking_stone			\Default Work Unit\Walking_stone	
 	1483562389	Wood_chop			\Default Work Unit\Wood_chop	
-	1866025847	Footstep			\Default Work Unit\Footstep	
-	2002210646	PlayOutdoorMusic			\Default Work Unit\Music\PlayOutdoorMusic	
+	2392128485	PlayOutdoorsMusic			\Default Work Unit\Music\PlayOutdoorsMusic	
 	3460054317	Outside_Atmos			\Default Work Unit\Outside_Atmos	
-	3729352910	Walking_Dirt			\Default Work Unit\Walking_Dirt	
-
-State Group	ID	Name			Wwise Object Path	Notes
-	684570577	Footstep_Material			\Default Work Unit\Footstep_Material	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Footstep_Material			
-	1216965916	Stone	Footstep_Material			
-	2195636714	Dirt	Footstep_Material			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	276486449	stone step 2	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\stone step 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Footsteps\Stone Steps\stone step 2		51968
+	312294729	Minecart rolling	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Minecart rolling_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Minecart rolling		1113268
 	513646512	wood chop 2	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\wood chop 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\wood chop 2		157512
-	554705134	single footstep 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\single footstep 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Footsteps\Dirt Steps\single footstep 1		90908
-	622323957	Piplets-Outside Theme Rough	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Piplets-Outside Theme Rough_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BGM_Outdoors\Piplets-Outside Theme Rough\Piplets-Outside Theme Rough		22744564
-	670780140	stone step 1	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\piplet wavs\stone step 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Footsteps\Stone Steps\stone step 1		50452
-	700196015	Minecart	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Minecart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Minecart		1091740
-	998344690	Nature ambiance	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Nature ambiance _D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\NatureAmbience\Nature ambiance		15040116
+	998344690	Nature ambiance	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Windows\SFX\Nature ambiance _D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Nature ambiance		15040116
 
