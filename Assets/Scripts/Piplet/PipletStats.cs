@@ -20,8 +20,9 @@ public class PipletStats : Item
     public int harvestingSeedBonus;
     [Space]
     public PipletType pipletType;
-
+    
     public int level;
+    public int steps;
 
     [Space] public bool isUnlocked;
 

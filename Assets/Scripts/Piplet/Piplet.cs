@@ -9,7 +9,7 @@ public class Piplet : MonoBehaviour
     [SerializeField] private float speed = 2;
     [SerializeField] private float stoppingDistance = 1;
     public int level; 
-    [SerializeField] private int steps = 0;
+    //[SerializeField] private int steps = 0;
     [SerializeField] private int level2Threshold = 300;
     [SerializeField] private int level3Threshold = 3000;
     private PlayerScript playerScript;
@@ -21,7 +21,7 @@ public class Piplet : MonoBehaviour
 
     public PipletStats pipletStats;
 
-    void Start()
+    public void Setup()
     {
         playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
         if (playerScript)
@@ -32,12 +32,27 @@ public class Piplet : MonoBehaviour
         {
             Debug.Log("Player not found");
         }
-        level = 1;
         _PlayerMovement = playerScript.playerMovement;
-        if (gameObject.activeSelf)
+
+        //Debug.Log(target.name);
+
+        if (pipletStats.isUnlocked)
         {
+            //ServiceLocator.Current.Get<PipletManager>().ActivePiplets.Add(this);
+            //Debug.Log(ServiceLocator.Current.Get<PipletManager>().ActivePiplets.Count);
             ActivatePiplet();
+            //Debug.Log(pipletStats.isUnlocked);
         }
+        
+        // var pipletList = ServiceLocator.Current.Get<PipletManager>().ActivePiplets;
+        // if (pipletStats.pipletType == PipletType.Piplet1)
+        // {
+        //     target = playerScript.transform;
+        // }
+        // else
+        // {
+        //     target = pipletList[pipletList.Count-1].transform;
+        // }
     }
 
     void Update()
@@ -75,20 +90,20 @@ public class Piplet : MonoBehaviour
             }
         }
 
-        if (steps > level2Threshold)
+        if (pipletStats.steps > level2Threshold)
         {
-            level = 2;
+            pipletStats.level = 2;
         }
 
-        if (steps > level3Threshold)
+        if (pipletStats.steps > level3Threshold)
         {
-            level = 3;
+            pipletStats.level = 3;
         }
     }
 
    private IEnumerator BuildTrust()
     {
-        steps += 1;
+        pipletStats.steps += 1;
         stepping = true;
         yield return new WaitForSeconds(1);
         stepping = false;
@@ -97,10 +112,10 @@ public class Piplet : MonoBehaviour
    public void ActivatePiplet()
    {
        pipletStats.Equip(playerScript.playerStats);
-       if (!gameObject.activeSelf)
-       {
-           gameObject.SetActive(true);
-       }
+       if (gameObject.activeSelf) return;
+       transform.position = _PlayerMovement.transform.position;
+       target = playerScript.transform;
+       gameObject.SetActive(true);
        //Debug.Log("Pip");
        //Debug.Log(playerScript.playerStats.movespeed.Value);
        //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);
