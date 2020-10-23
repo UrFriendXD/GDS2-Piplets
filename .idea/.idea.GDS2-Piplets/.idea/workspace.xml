@@ -35,12 +35,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0826807-3210-4374-b64d-17fc45f0b99b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS2-Piplets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/WildPlant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/WildPlant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terminal/PipletCanvasUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terminal/PipletCanvasUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,14 +89,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/Parallax.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Outdoors/ParallaxChild.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/MusicChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/DoorAudioController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIPlayerDetector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/PipletCanvasUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/TerminalUIWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/UIInteractableObject.cs" />
@@ -108,7 +104,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/ItemSaveData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MarketManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/TradableItemSaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Indoors/Bed.cs" />
@@ -142,6 +137,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FileIO/WildPlantsSaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/WildPlantManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/PipletCanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Piplet/Piplet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terminal/BuyPipletButton.cs" />
       </list>
     </option>
   </component>
@@ -226,6 +224,8 @@
       <workItem from="1603012605469" duration="18455000" />
       <workItem from="1603282384701" duration="9148000" />
       <workItem from="1603374198749" duration="7749000" />
+      <workItem from="1603427635009" duration="76000" />
+      <workItem from="1603427729133" duration="1495000" />
     </task>
     <servers />
   </component>
@@ -272,10 +272,10 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603286765311" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603381855485">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603428708448">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1603378820302" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1603381855485" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1603428708448" />
   </component>
 </project>

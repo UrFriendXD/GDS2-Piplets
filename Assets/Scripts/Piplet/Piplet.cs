@@ -17,7 +17,7 @@ public class Piplet : MonoBehaviour
     private bool stepping;
     private PlayerMovement _PlayerMovement;
 
-    [SerializeField] private PipletStats pipletStats;
+    public PipletStats pipletStats;
 
     void Start()
     {
@@ -87,6 +87,10 @@ public class Piplet : MonoBehaviour
    public void ActivatePiplet()
    {
        pipletStats.Equip(playerScript.playerStats);
+       if (!gameObject.activeSelf)
+       {
+           gameObject.SetActive(true);
+       }
        //Debug.Log("Pip");
        //Debug.Log(playerScript.playerStats.movespeed.Value);
        //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);
