@@ -1,6 +1,7 @@
 ﻿using Player;
 using UnityEngine;
 
+
 public class UIPlayerDetector : MonoBehaviour
 {
     private PlayerScript playerScript;

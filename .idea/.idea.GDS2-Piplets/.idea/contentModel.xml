@@ -167,7 +167,10 @@
           </e>
           <e p="TutText.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="BedroomPCUIObject.cs" t="Include" />
+            <e p="BedroomPCUIWindow.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
+            <e p="PipletSilhouettes.cs" t="Include" />
             <e p="SetVolumeSliders.cs" t="Include" />
           </e>
           <e p="Wwise" t="Include">
