@@ -21,4 +21,5 @@ MonoBehaviour:
   harvestingSeedBonus: 0
   pipletType: 1
   level: 1
-  isUnlocked: 0
+  steps: 9
+  isUnlocked: 1

@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        SetupPiplets();
         SetupSaveManger();
         SetupPlantsManager();
         SetupWildPlantsManager();
@@ -47,6 +46,7 @@ public class GameManager : MonoBehaviour
         if (scene.name == "Level 1")
         {
             _isNewGame = _saveManager.IsNewGame;
+            SetupPiplets();
             SetupMarket();
             CheckSave();
         }

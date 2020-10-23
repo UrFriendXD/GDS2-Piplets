@@ -8,12 +8,14 @@ public class PipletSaveData
 {
     public string pipletId;
     public int level;
+    public int steps;
     public bool isUnlocked;
-    
-    public PipletSaveData(string pipletId, int level, bool isUnlocked)
+
+    public PipletSaveData(string pipletId, int level, int steps, bool isUnlocked)
     {
         this.pipletId = pipletId;
         this.level = level;
+        this.steps = steps;
         this.isUnlocked = isUnlocked;
     }
 }
