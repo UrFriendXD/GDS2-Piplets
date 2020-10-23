@@ -34,6 +34,7 @@ public class PipletSaveManager : MonoBehaviour
                 if (saveData.pipletId == pipletStat.ID)
                 {
                     pipletStat.level = saveData.level;
+                    pipletStat.steps = saveData.steps;
                     pipletStat.isUnlocked = saveData.isUnlocked;
                     break;
                 }
@@ -47,7 +48,7 @@ public class PipletSaveManager : MonoBehaviour
 
         for (int i = 0; i < saveData.savedPiplets.Length; i++)
         {
-            saveData.savedPiplets[i] = new PipletSaveData(pipletStats[i].ID, pipletStats[i].level, pipletStats[i].isUnlocked);
+            saveData.savedPiplets[i] = new PipletSaveData(pipletStats[i].ID, pipletStats[i].level, pipletStats[i].steps, pipletStats[i].isUnlocked);
         }
         
         PipletSaveIO.SavePiplets(saveData, fileName);
@@ -68,6 +69,7 @@ public class PipletSaveManager : MonoBehaviour
             }
 
             pipletStats.level = 1;
+            pipletStats.steps = 0;
         }
     }
 }
