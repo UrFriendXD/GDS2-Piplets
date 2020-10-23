@@ -9,22 +9,22 @@ public class PipletManager : IGameService
 {
     public List<Piplet>_piplets = new List<Piplet>();
     //public List<Piplet> ActivePiplets = new List<Piplet>();
-    //public Action PipletBoughtEvent;
+    public Action PipletBoughtEvent;
 
-    // private int amountOfPipletUnlocked;
-    //
-    // private int amountOfPipletNeededToWin;
+    private int amountOfPipletUnlocked;
+    private int amountOfPipletNeededToWin;
     // Start is called before the first frame update
     public void Setup(int amountNeeded)
     {
-        //amountOfPipletNeededToWin = amountNeeded;
-        //PipletBoughtEvent += PipletBought;
+        amountOfPipletUnlocked = 0;
+        amountOfPipletNeededToWin = amountNeeded;
+        PipletBoughtEvent += PipletBought;
         if (_piplets.Count > 0)
         {
             _piplets.Clear();
         }
-        var _pipletsList = Object.FindObjectsOfType<Piplet>(true);
 
+        var _pipletsList = Object.FindObjectsOfType<Piplet>(true);
         foreach (var piplet in _pipletsList)
         {
             _piplets.Add(piplet);
@@ -42,8 +42,8 @@ public class PipletManager : IGameService
         //     Debug.Log(_piplets);
     }
 
-    // public void PipletBought()
-    // {
-    //     amountOfPipletUnlocked++;
-    // }
+    public void PipletBought()
+    {
+        amountOfPipletUnlocked++;
+    }
 }
