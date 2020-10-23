@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8829463082077968767
 Transform:
   m_ObjectHideFlags: 0
@@ -103,7 +103,9 @@ MonoBehaviour:
   steps: 0
   level2Threshold: 300
   level3Threshold: 3000
-  playerScript: {fileID: 0}
+  player: {fileID: 0}
+  layer: 0
+  pipletStats: {fileID: 11400000, guid: 885664784ff139c40b350b2a42ae96d0, type: 2}
 --- !u!95 &8829463082077968748
 Animator:
   serializedVersion: 3
