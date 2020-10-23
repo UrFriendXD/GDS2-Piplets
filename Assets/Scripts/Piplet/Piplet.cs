@@ -41,6 +41,7 @@ public class Piplet : MonoBehaviour
             //ServiceLocator.Current.Get<PipletManager>().ActivePiplets.Add(this);
             //Debug.Log(ServiceLocator.Current.Get<PipletManager>().ActivePiplets.Count);
             ActivatePiplet();
+            ServiceLocator.Current.Get<PipletManager>().PipletBoughtEvent?.Invoke();
             //Debug.Log(pipletStats.isUnlocked);
         }
         

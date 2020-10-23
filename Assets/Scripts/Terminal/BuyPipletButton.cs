@@ -34,7 +34,7 @@ public class BuyPipletButton : MonoBehaviour
         {
             pipletObject.gameObject.SetActive(true);
             playerStats.money -= pipletCost;
-            //ServiceLocator.Current.Get<PipletManager>().PipletBoughtEvent.Invoke();
+            ServiceLocator.Current.Get<PipletManager>().PipletBoughtEvent.Invoke();
             //ServiceLocator.Current.Get<PipletManager>().ActivePiplets.Add(pipletObject);
             passEvent.Post(gameObject);
             ServiceLocator.Current.Get<MarketManager>().MoneyChanged?.Invoke();
