@@ -1498,11 +1498,11 @@ MonoBehaviour:
   changeToDirt:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 0df9504e8dd5f9f47aa2835d638cc844, type: 2}
   changeToStone:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: e2917384e72153645ba0d08dfce673c1, type: 2}
   OutsideAtmos:
     idInternal: 0
     valueGuidInternal: 

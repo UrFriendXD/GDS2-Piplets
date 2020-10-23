@@ -244,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPlantType: {fileID: 0}
   FarmPlotID: 0
+  pot: {fileID: 3705628427900301776}
 --- !u!114 &1008662567
 MonoBehaviour:
   m_ObjectHideFlags: 0

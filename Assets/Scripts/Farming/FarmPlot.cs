@@ -12,6 +12,8 @@ namespace Farming
         private PlantFunctions _currentPlant;
         public int FarmPlotID;
 
+        [SerializeField] private SpriteRenderer pot;
+
         private void Awake()
         {
             FarmPlotID = ServiceLocator.Current.Get<PlantsManager>().AddFarmPlot(this);
@@ -87,6 +89,25 @@ namespace Farming
         {
             _currentPlant.LoadPlant(daysSincePlanted);
             OnPlant(plantSeed);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                // Changes sprite to be slightly transparent to show it's the current object
+                pot.color = new Color(1f, 1f, 1f, .5f);
+                Debug.Log("trigger");
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                // Changes sprite to be slightly transparent to show it's the current object
+                pot.color = new Color(1f, 1f, 1f, 1f);
+            }
         }
     }
 }
