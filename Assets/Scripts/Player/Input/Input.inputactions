@@ -148,6 +148,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Space",
+                    "type": "Button",
+                    "id": "66ee1ac3-0227-4a0e-b1a6-ff2eebf1973a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -390,6 +398,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Eleven",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a29a3b2-108a-48aa-9de0-0da90ef430e7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Space",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
