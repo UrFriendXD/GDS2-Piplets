@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 1447940502}
   - component: {fileID: 6208465324433729384}
   - component: {fileID: 6143971938110101802}
+  - component: {fileID: 1002434139973221403}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -228,20 +229,19 @@ MonoBehaviour:
   WallCheck: 0
   isInteracting: 0
   falling: 0
-  walkspeed: 3.5
-  ladderspeed: 2
+  baseWalkSpeed: 4
   fallspeed: 3
   upLadderSpeed: 2.5
   downLadderSpeed: 5
   maxfallspeed: 5
   fallspeedovertime: 0.6
   startfallspeed: 3
+  ladderspeed: 2
   interactingObjectPos: 0
-  plantSeedType: 0
   UI: {fileID: 0}
   UI2: {fileID: 0}
   menu: {fileID: 0}
-  On: 0
+  isUIOn: 0
   movementAudioTimerDelay: 0.4
   movementLadderUpAudioTimerDelay: 0.4
   movementLadderDownAudioDelay: 0.8
@@ -257,13 +257,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f880e921397c5d40ac0facb41633db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSaveManager: {fileID: 0}
   playerStats: {fileID: 11400000, guid: 24fa3d1811d7d5644b18f96179542668, type: 2}
   itemHeld: {fileID: 0}
   inventory: {fileID: 0}
-  PlayerAudio: {fileID: 6208465324433729384}
-  PlayerMovement: {fileID: 7072382248368338961}
-  PlayerAnimationController: {fileID: 0}
+  playerAudio: {fileID: 6208465324433729384}
+  playerMovement: {fileID: 7072382248368338961}
+  playerAnimationController: {fileID: 1002434139973221403}
+  playerInputChecker: {fileID: 1447940501}
+  PlayerID: 0
+  itemSaveManager: {fileID: 0}
+  draggableItem: {fileID: 0}
 --- !u!114 &1447940501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +328,7 @@ MonoBehaviour:
   walkEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2c5e5b14832345d4287f4b4f571a18ce, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 979a830cc50559b4fb0038bb9fbeef6d, type: 2}
   harvestEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -334,10 +337,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 27f055df682aed4489d51fb3030f1675, type: 2}
-  diggingEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
   ladderClimbEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -346,6 +345,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 659ee23c4eb13ad4d971c2cf66135cae, type: 2}
+  stoneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 48742f54d4351fc4d80f5d226d1bff80, type: 2}
 --- !u!95 &6143971938110101802
 Animator:
   serializedVersion: 3
@@ -365,6 +368,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1002434139973221403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072382248368338954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ee4ad79564a5347b02c0bb4dba65ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7072382248468513760
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836bd6f2623bc74469263940e9c23bc8, type: 3}
+  m_Name: Piplet 3
+  m_EditorClassIdentifier: 
+  id: 96a7bd0437353bf48a129587835843b7
+  itemName: 
+  icon: {fileID: 0}
+  maximumStack: 1
+  movespeedPercentBonus: 0
+  harvestingDoublerBonus: 0
+  harvestingSeedBonus: 10
+  pipletType: 2

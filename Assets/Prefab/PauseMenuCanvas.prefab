@@ -362,6 +362,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e770b7cf785b14aa097e920f6ee4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuButtonSelect:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4cd41b186c901cf459cf0886aa5e2a65, type: 2}
+  menuBank:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ea9f5c88ee608a44b988eccafa61cc0a, type: 2}
+  playMainMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4cd41b186c901cf459cf0886aa5e2a65, type: 2}
 --- !u!114 &6281384399795564960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,7 +513,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6427629296244257620}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: returnToMenu
+        m_MethodName: ReturnToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,14 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayMusic : MonoBehaviour
 {
+
     public AK.Wwise.Event Event;
-    // Start is called before the first frame update
     void Start()
     {
-        Event.Post(gameObject);
+        if (GameManager.instance.MusicManager)
+        {
+            Event.Post(GameManager.instance.MusicManager);
+        }
+        else
+        {
+            Event.Post(gameObject);
+        }
     }
 
     // Update is called once per frame

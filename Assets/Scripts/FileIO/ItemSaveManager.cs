@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class ItemSaveManager : MonoBehaviour
@@ -8,15 +10,20 @@ public class ItemSaveManager : MonoBehaviour
 	private const string InventoryFileName = "Inventory";
 	//private const string EquipmentFileName = "Equipment";
 
-	/*public void LoadInventory(Character character)
+	public void Awake()
+	{
+		ServiceLocator.Current.Get<SaveManager>().ItemSaveManager = this;
+	}
+
+	public void LoadInventory(PlayerScript character)
 	{
 		ItemContainerSaveData savedSlots = ItemSaveIO.LoadItems(InventoryFileName);
 		if (savedSlots == null) return;
-		character.Inventory.Clear();
+		character.inventory.Clear();
 
 		for (int i = 0; i < savedSlots.SavedSlots.Length; i++)
 		{
-			ItemSlot itemSlot = character.Inventory.ItemSlots[i];
+			ItemSlot itemSlot = character.inventory.ItemSlots[i];
 			ItemSlotSaveData savedSlot = savedSlots.SavedSlots[i];
 
 			if (savedSlot == null)
@@ -32,32 +39,32 @@ public class ItemSaveManager : MonoBehaviour
 		}
 	}
 
-	public void LoadEquipment(Character character)
+	// public void LoadEquipment(Character character)
+	// {
+	// 	ItemContainerSaveData savedSlots = ItemSaveIO.LoadItems(EquipmentFileName);
+	// 	if (savedSlots == null) return;
+	//
+	// 	foreach (ItemSlotSaveData savedSlot in savedSlots.SavedSlots)
+	// 	{
+	// 		if (savedSlot == null) {
+	// 			continue;
+	// 		}
+	//
+	// 		Item item = itemDatabase.GetItemCopy(savedSlot.ItemID);
+	// 		character.Inventory.AddItem(item);
+	// 		character.Equip((EquippableItem)item);
+	// 	}
+	// }
+
+	public void SaveInventory(PlayerScript character)
 	{
-		ItemContainerSaveData savedSlots = ItemSaveIO.LoadItems(EquipmentFileName);
-		if (savedSlots == null) return;
-
-		foreach (ItemSlotSaveData savedSlot in savedSlots.SavedSlots)
-		{
-			if (savedSlot == null) {
-				continue;
-			}
-
-			Item item = itemDatabase.GetItemCopy(savedSlot.ItemID);
-			character.Inventory.AddItem(item);
-			character.Equip((EquippableItem)item);
-		}
+		SaveItems(character.inventory.ItemSlots, InventoryFileName);
 	}
 
-	public void SaveInventory(Character character)
-	{
-		SaveItems(character.Inventory.ItemSlots, InventoryFileName);
-	}
-
-	public void SaveEquipment(Character character)
-	{
-		SaveItems(character.EquipmentPanel.EquipmentSlots, EquipmentFileName);
-	}
+	// public void SaveEquipment(Character character)
+	// {
+	// 	SaveItems(character.EquipmentPanel.EquipmentSlots, EquipmentFileName);
+	// }
 
 	private void SaveItems(IList<ItemSlot> itemSlots, string fileName)
 	{
@@ -75,5 +82,5 @@ public class ItemSaveManager : MonoBehaviour
 		}
 
 		ItemSaveIO.SaveItems(saveData, fileName);
-	}*/
+	}
 }
