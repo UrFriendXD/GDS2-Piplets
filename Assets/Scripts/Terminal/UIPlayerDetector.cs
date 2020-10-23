@@ -1,6 +1,7 @@
 ﻿using Player;
 using UnityEngine;
 
+
 public class UIPlayerDetector : MonoBehaviour
 {
     private PlayerScript playerScript;
@@ -18,14 +19,20 @@ public class UIPlayerDetector : MonoBehaviour
 
     private void InteractBare()
     {
-        uiInteractableObject.InteractBare(playerInputChecker, playerScript);
-        playerInputChecker.OnCancelButtonPressed += AddInteraction;
+        if (!playerScript.playerMovement.isUIOn)
+        {
+            uiInteractableObject.InteractBare(playerInputChecker, playerScript);
+            playerInputChecker.OnCancelButtonPressed += AddInteraction;
+        }
     }
 
     private void InteractWithItem()
     {
-        uiInteractableObject.InteractBare(playerInputChecker, playerScript);
-        playerInputChecker.OnCancelButtonPressed += AddInteraction;
+        if (!playerScript.playerMovement.isUIOn)
+        {
+            uiInteractableObject.InteractBare(playerInputChecker, playerScript);
+            playerInputChecker.OnCancelButtonPressed += AddInteraction;
+        }
     }
 
     // Removes functions from delegate
