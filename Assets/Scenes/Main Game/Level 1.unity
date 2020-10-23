@@ -5945,7 +5945,7 @@ MonoBehaviour:
   playBedroomMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 30f0a6184898c35439f9a76ab9057e21, type: 2}
   playGreenhouseMusic:
     idInternal: 0
     valueGuidInternal: 
