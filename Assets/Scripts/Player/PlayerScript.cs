@@ -18,7 +18,8 @@ namespace Player
 
         [Header("Serialize Field")]
         [SerializeField] Image draggableItem;
-        
+        [SerializeField] Image selectUISprite;
+
         private BaseItemSlot _dragItemSlot;
 
         private int lastNumHeld = 0;
@@ -45,6 +46,8 @@ namespace Player
         {
             lastNumHeld = itemSelectNum;
             itemHeld = inventory.ItemSlots[itemSelectNum].Item;
+            Vector3 selectUIPosition = inventory.ItemSlots[itemSelectNum].transform.position;
+            selectUISprite.transform.position = selectUIPosition;
             //Debug.Log(itemSelectNum);
         }
 
