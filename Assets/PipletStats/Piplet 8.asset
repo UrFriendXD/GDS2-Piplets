@@ -17,8 +17,8 @@ MonoBehaviour:
   icon: {fileID: -3539183830513585278, guid: e56805e2696a19f4f83a9ae3c55c8623, type: 3}
   maximumStack: 1
   movespeedPercentBonus: 0.1
-  harvestingDoublerBonus: 6
-  harvestingSeedBonus: 6
+  harvestingDoublerBonus: 15
+  harvestingSeedBonus: 15
   pipletType: 0
   level: 0
   steps: 0
