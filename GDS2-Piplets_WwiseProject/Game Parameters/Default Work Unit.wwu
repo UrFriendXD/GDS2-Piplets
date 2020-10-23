@@ -22,6 +22,12 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<GameParameter Name="TreeHealth" ID="{0A0C6734-05C9-4EDE-B60D-DE42751818E8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -23,7 +23,7 @@ public class DoorAudioController : MonoBehaviour
         outsideBank.Load();
         //doorEvent.Post(gameObject);
         OutsideAtmos.Post(GameManager.instance.MusicManager);
-        playIndoorMusic.Stop(GameManager.instance.MusicManager);
+        //playIndoorMusic.Stop(GameManager.instance.MusicManager);
         playOutdoorMusic.Post(GameManager.instance.MusicManager);
         greenhouseBank.Unload();
     }
@@ -35,7 +35,7 @@ public class DoorAudioController : MonoBehaviour
         OutsideAtmos.Stop(GameManager.instance.MusicManager);
         doorEvent.Post(gameObject);
         playIndoorMusic.Post(GameManager.instance.MusicManager);
-        playOutdoorMusic.Stop(GameManager.instance.MusicManager);
+        //playOutdoorMusic.Stop(GameManager.instance.MusicManager);
         outsideBank.Unload();
     }
 }

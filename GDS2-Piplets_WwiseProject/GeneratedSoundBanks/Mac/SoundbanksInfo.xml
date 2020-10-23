@@ -16,12 +16,58 @@
 			<ShortName>Outdoor</ShortName>
 			<Path>Outdoor.bnk</Path>
 			<IncludedEvents>
-				<Event Id="337775249" Name="Change_To_Stone" ObjectPath="\Events\Default Work Unit\Changing_Footstep\Change_To_Stone" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="10183550" Name="Minecart" ObjectPath="\Events\Default Work Unit\Minecart" DurationType="OneShot" DurationMin="6.310680" DurationMax="6.310680">
+					<IncludedMemoryFiles>
+						<File Id="312294729" Language="SFX">
+							<ShortName>Minecart rolling.wav</ShortName>
+							<Path>SFX\Minecart rolling_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3460054317" Name="Outside_Atmos" ObjectPath="\Events\Default Work Unit\Outside_Atmos" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="998344690" Language="SFX">
+							<ShortName>Nature ambiance .wav</ShortName>
+							<Path>SFX\Nature ambiance _D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2392128485" Name="PlayOutdoorsMusic" ObjectPath="\Events\Default Work Unit\Music\PlayOutdoorsMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music\Outside"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1483562389" Name="Wood_chop" ObjectPath="\Events\Default Work Unit\Wood_chop" DurationType="OneShot" DurationMin="0.892562" DurationMax="0.892562">
+					<IncludedMemoryFiles>
+						<File Id="513646512" Language="SFX">
+							<ShortName>piplet wavs\wood chop 2.wav</ShortName>
+							<Path>SFX\piplet wavs\wood chop 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music\Outside">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1069431850" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1676133841" Name="Change_To_Dirt" ObjectPath="\Events\Default Work Unit\Player\Change_To_Dirt" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="337775249" Name="Change_To_Stone" ObjectPath="\Events\Default Work Unit\Player\Change_To_Stone" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.473146">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Player\Footstep" DurationType="OneShot" DurationMin="0.065609" DurationMax="0.473146">
 					<IncludedMemoryFiles>
 						<File Id="276486449" Language="SFX">
 							<ShortName>piplet wavs\stone step 2.wav</ShortName>
@@ -38,7 +84,7 @@
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}">
+						<SwitchContainer SwitchValue="{F101751E-53DB-4F67-8DFA-06DC95670BC1}">
 							<Media>
 								<File Id="670780140"/>
 								<File Id="276486449"/>
@@ -52,58 +98,84 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="10183550" Name="Minecart" ObjectPath="\Events\Default Work Unit\Minecart" DurationType="OneShot" DurationMin="6.188640" DurationMax="6.188640">
+				<Event Id="1284910139" Name="Menu_Button_Back" ObjectPath="\Events\Default Work Unit\Menu_Button_Back" DurationType="OneShot" DurationMin="0.162825" DurationMax="0.162825">
 					<IncludedMemoryFiles>
-						<File Id="700196015" Language="SFX">
-							<ShortName>Minecart.wav</ShortName>
-							<Path>SFX\Minecart_10C4C929.wem</Path>
+						<File Id="230312442" Language="SFX">
+							<ShortName>AI menu back.wav</ShortName>
+							<Path>SFX\AI menu back_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3460054317" Name="Outside_Atmos" ObjectPath="\Events\Default Work Unit\Outside_Atmos" DurationType="Infinite">
+				<Event Id="4007661982" Name="Menu_Button_Select" ObjectPath="\Events\Default Work Unit\Menu_Button_Select" DurationType="OneShot" DurationMin="0.133021" DurationMax="0.133021">
 					<IncludedMemoryFiles>
-						<File Id="998344690" Language="SFX">
-							<ShortName>Nature ambiance .wav</ShortName>
-							<Path>SFX\Nature ambiance _D79FB2B7.wem</Path>
+						<File Id="930448184" Language="SFX">
+							<ShortName>menu select.wav</ShortName>
+							<Path>SFX\menu select_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2002210646" Name="PlayOutdoorMusic" ObjectPath="\Events\Default Work Unit\Music\PlayOutdoorMusic" DurationType="Infinite">
+				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\Music\PlayMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="622323957" Language="SFX">
-							<ShortName>Piplets-Outside Theme Rough.wav</ShortName>
-							<Path>SFX\Piplets-Outside Theme Rough_D79FB2B7.wem</Path>
+						<File Id="58833486" Language="SFX">
+							<ShortName>BEDROOM THEME loop.wav</ShortName>
+							<Path>SFX\BEDROOM THEME loop_4766FE73.wem</Path>
+						</File>
+						<File Id="245901968" Language="SFX">
+							<ShortName>MAIN THEME loop.wav</ShortName>
+							<Path>SFX\MAIN THEME loop_4766FE73.wem</Path>
+						</File>
+						<File Id="439803078" Language="SFX">
+							<ShortName>INTRO SOUND bedroom.wav</ShortName>
+							<Path>SFX\INTRO SOUND bedroom_4766FE73.wem</Path>
+						</File>
+						<File Id="623319675" Language="SFX">
+							<ShortName>BASEMENT THEME.wav</ShortName>
+							<Path>SFX\BASEMENT THEME_4766FE73.wem</Path>
+						</File>
+						<File Id="897578871" Language="SFX">
+							<ShortName>Intro sound main theme.wav</ShortName>
+							<Path>SFX\Intro sound main theme_4766FE73.wem</Path>
+						</File>
+						<File Id="1045103953" Language="SFX">
+							<ShortName>TERMINAL THEME.wav</ShortName>
+							<Path>SFX\TERMINAL THEME_4766FE73.wem</Path>
+						</File>
+						<File Id="1056251533" Language="SFX">
+							<ShortName>OUTSIDE THEME.wav</ShortName>
+							<Path>SFX\OUTSIDE THEME_4766FE73.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C7665BAC-7E9C-4685-B851-684A163F3CA6}">
+							<Media>
+								<File Id="623319675"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{462B9310-D5EA-4710-A9B2-1623FA07027E}">
+							<Media>
+								<File Id="58833486"/>
+								<File Id="439803078"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2016FEEA-6E66-4E3B-968F-D50ADC0597C9}">
+							<Media>
+								<File Id="897578871"/>
+								<File Id="245901968"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{64465498-2966-452C-847B-266B4B675C99}">
+							<Media>
+								<File Id="1056251533"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BD4AFDE3-73F4-409D-8389-F623E40CB553}">
+							<Media>
+								<File Id="1045103953"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
-				<Event Id="3729352910" Name="Walking_Dirt" ObjectPath="\Events\Default Work Unit\Walking_Dirt" DurationType="OneShot" DurationMin="0.310362" DurationMax="0.473146">
-					<IncludedMemoryFiles>
-						<File Id="554705134" Language="SFX">
-							<ShortName>piplet wavs\single footstep 1.wav</ShortName>
-							<Path>SFX\piplet wavs\single footstep 1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1342968680" Name="Walking_stone" ObjectPath="\Events\Default Work Unit\Walking_stone" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.191155">
-					<IncludedMemoryFiles>
-						<File Id="276486449" Language="SFX">
-							<ShortName>piplet wavs\stone step 2.wav</ShortName>
-							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
-						</File>
-						<File Id="670780140" Language="SFX">
-							<ShortName>piplet wavs\stone step 1.wav</ShortName>
-							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1483562389" Name="Wood_chop" ObjectPath="\Events\Default Work Unit\Wood_chop" DurationType="OneShot" DurationMin="0.708427" DurationMax="0.892562">
-					<IncludedMemoryFiles>
-						<File Id="513646512" Language="SFX">
-							<ShortName>piplet wavs\wood chop 2.wav</ShortName>
-							<Path>SFX\piplet wavs\wood chop 2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="684570577" Name="Footstep_Material" ObjectPath="\States\Default Work Unit\Footstep_Material">
@@ -115,6 +187,19 @@
 				</StateGroup>
 				<StateGroup Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone">
 					<States/>
+				</StateGroup>
+				<StateGroup Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3991942870" Name="Music" ObjectPath="\States\Default Work Unit\Music">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\None"/>
+						<State Id="1413413702" Name="Basement" ObjectPath="\States\Default Work Unit\Music\Basement"/>
+						<State Id="3788924735" Name="Bedroom" ObjectPath="\States\Default Work Unit\Music\Bedroom"/>
+						<State Id="4238926114" Name="Greenhouse" ObjectPath="\States\Default Work Unit\Music\Greenhouse"/>
+						<State Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music\Outside"/>
+						<State Id="414380065" Name="Terminal" ObjectPath="\States\Default Work Unit\Music\Terminal"/>
+					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
@@ -141,19 +226,35 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2569711091" Name="AI_processing" ObjectPath="\Events\Default Work Unit\AI_processing" DurationType="OneShot" DurationMin="5.008776" DurationMax="5.008776">
+				<Event Id="2964552185" Name="AI_Button_Select_Back" ObjectPath="\Events\Default Work Unit\AI_Button_Select_Back" DurationType="OneShot" DurationMin="0.463264" DurationMax="0.463264">
 					<IncludedMemoryFiles>
-						<File Id="1024975717" Language="SFX">
-							<ShortName>magical whir.wav</ShortName>
-							<Path>SFX\magical whir_10C4C929.wem</Path>
+						<File Id="422390696" Language="SFX">
+							<ShortName>Menu Back Button.wav</ShortName>
+							<Path>SFX\Menu Back Button_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2596272617" Name="Fail" ObjectPath="\Events\Default Work Unit\Fail" DurationType="OneShot" DurationMin="1.194989" DurationMax="1.194989">
+				<Event Id="2569711091" Name="AI_processing" ObjectPath="\Events\Default Work Unit\AI_processing" DurationType="OneShot" DurationMin="4.736000" DurationMax="4.736000">
 					<IncludedMemoryFiles>
-						<File Id="1035197914" Language="SFX">
-							<ShortName>Fail.wav</ShortName>
-							<Path>SFX\Fail_10C4C929.wem</Path>
+						<File Id="537133613" Language="SFX">
+							<ShortName>AI Processing.wav</ShortName>
+							<Path>SFX\AI Processing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2596272617" Name="Fail" ObjectPath="\Events\Default Work Unit\Fail" DurationType="OneShot" DurationMin="0.215402" DurationMax="0.215402">
+					<IncludedMemoryFiles>
+						<File Id="1055984957" Language="SFX">
+							<ShortName>Fail Sound.wav</ShortName>
+							<Path>SFX\Fail Sound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3688866299" Name="Minecart_Loading" ObjectPath="\Events\Default Work Unit\Minecart_Loading" DurationType="OneShot" DurationMin="1.834807" DurationMax="1.834807">
+					<IncludedMemoryFiles>
+						<File Id="2568619" Language="SFX">
+							<ShortName>Minecart loading.wav</ShortName>
+							<Path>SFX\Minecart loading_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -173,22 +274,40 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1627031574" Name="Pass" ObjectPath="\Events\Default Work Unit\Pass" DurationType="OneShot" DurationMin="1.053968" DurationMax="1.053968">
+				<Event Id="1627031574" Name="Pass" ObjectPath="\Events\Default Work Unit\Pass" DurationType="OneShot" DurationMin="0.170965" DurationMax="0.170965">
 					<IncludedMemoryFiles>
-						<File Id="636351262" Language="SFX">
-							<ShortName>Pass.wav</ShortName>
-							<Path>SFX\Pass_10C4C929.wem</Path>
+						<File Id="716219899" Language="SFX">
+							<ShortName>Pass sound.wav</ShortName>
+							<Path>SFX\Pass sound_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3425704496" Name="PlayTerminalMusic" ObjectPath="\Events\Default Work Unit\Music\PlayTerminalMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="414380065" Name="Terminal" ObjectPath="\States\Default Work Unit\Music\Terminal"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="414380065" Name="Terminal" ObjectPath="\States\Default Work Unit\Music\Terminal">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="2607556080" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
 			<ShortName>Menu</ShortName>
 			<Path>Menu.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4007661982" Name="Menu_Button_Select" ObjectPath="\Events\Default Work Unit\Menu_Button_Select" DurationType="OneShot" DurationMin="0.088781" DurationMax="0.133021">
+				<Event Id="1284910139" Name="Menu_Button_Back" ObjectPath="\Events\Default Work Unit\Menu_Button_Back" DurationType="OneShot" DurationMin="0.162825" DurationMax="0.162825">
+					<IncludedMemoryFiles>
+						<File Id="230312442" Language="SFX">
+							<ShortName>AI menu back.wav</ShortName>
+							<Path>SFX\AI menu back_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4007661982" Name="Menu_Button_Select" ObjectPath="\Events\Default Work Unit\Menu_Button_Select" DurationType="OneShot" DurationMin="0.133021" DurationMax="0.133021">
 					<IncludedMemoryFiles>
 						<File Id="930448184" Language="SFX">
 							<ShortName>menu select.wav</ShortName>
@@ -196,31 +315,28 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1744321513" Name="PlayGreenhouseMusic" ObjectPath="\Events\Default Work Unit\Music\PlayGreenhouseMusic" DurationType="Infinite">
+				<Event Id="2109147180" Name="PlayTitleScreenMusic" ObjectPath="\Events\Default Work Unit\Music\PlayTitleScreenMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="413528737" Language="SFX">
-							<ShortName>Piplets_MainTheme_FINAL.wav</ShortName>
-							<Path>SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem</Path>
+						<File Id="812511206" Language="SFX">
+							<ShortName>TITLE SCREEN.wav</ShortName>
+							<Path>SFX\TITLE SCREEN_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="812511206" Language="SFX">
+					<ShortName>TITLE SCREEN.wav</ShortName>
+					<Path>SFX\TITLE SCREEN_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="4238926114" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Greenhouse</ObjectPath>
 			<ShortName>Greenhouse</ShortName>
 			<Path>Greenhouse.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1676133841" Name="Change_To_Dirt" ObjectPath="\Events\Default Work Unit\Changing_Footstep\Change_To_Dirt" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="337775249" Name="Change_To_Stone" ObjectPath="\Events\Default Work Unit\Changing_Footstep\Change_To_Stone" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
-					</ActionSetState>
-				</Event>
 				<Event Id="535830432" Name="Door_Open" ObjectPath="\Events\Default Work Unit\Door_Open" DurationType="OneShot" DurationMin="2.317896" DurationMax="2.317896">
 					<IncludedMemoryFiles>
 						<File Id="605023815" Language="SFX">
@@ -229,38 +345,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.473146">
-					<IncludedMemoryFiles>
-						<File Id="276486449" Language="SFX">
-							<ShortName>piplet wavs\stone step 2.wav</ShortName>
-							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
-						</File>
-						<File Id="554705134" Language="SFX">
-							<ShortName>piplet wavs\single footstep 1.wav</ShortName>
-							<Path>SFX\piplet wavs\single footstep 1_10C4C929.wem</Path>
-						</File>
-						<File Id="670780140" Language="SFX">
-							<ShortName>piplet wavs\stone step 1.wav</ShortName>
-							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}">
-							<Media>
-								<File Id="670780140"/>
-								<File Id="276486449"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{96FCAE78-47FA-40B3-AA6C-2FAA4FF2AF8A}">
-							<Media>
-								<File Id="554705134"/>
-								<File Id="554705134"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
-				<Event Id="1707141479" Name="Ladder_Climb" ObjectPath="\Events\Default Work Unit\Ladder_Climb" DurationType="OneShot" DurationMin="0.267709" DurationMax="0.500042">
+				<Event Id="1707141479" Name="Ladder_Climb" ObjectPath="\Events\Default Work Unit\Ladder_Climb" DurationType="OneShot" DurationMin="0.267709" DurationMax="0.622417">
 					<IncludedMemoryFiles>
 						<File Id="315187937" Language="SFX">
 							<ShortName>metal ladder 1 (1).wav</ShortName>
@@ -272,11 +357,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3610060586" Name="Ladder_Descend" ObjectPath="\Events\Default Work Unit\Ladder_Descend" DurationType="OneShot" DurationMin="1.285771" DurationMax="1.285771">
+				<Event Id="3610060586" Name="Ladder_Descend" ObjectPath="\Events\Default Work Unit\Ladder_Descend" DurationType="OneShot" DurationMin="2.533333" DurationMax="2.533333">
 					<IncludedMemoryFiles>
-						<File Id="795952486" Language="SFX">
-							<ShortName>Ladder slide.wav</ShortName>
-							<Path>SFX\Ladder slide_10C4C929.wem</Path>
+						<File Id="891338556" Language="SFX">
+							<ShortName>Ladder slide cleaned.wav</ShortName>
+							<Path>SFX\Ladder slide cleaned_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -287,9 +372,6 @@
 							<Path>SFX\piplet wavs\planting_harvesting_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<ActionPostEvent>
-						<ActionPostEventEntry Id="3450230255" Name="Plant_Harvest_Chime" ObjectPath="\Events\Default Work Unit\Plant_Harvest_Chime"/>
-					</ActionPostEvent>
 				</Event>
 				<Event Id="3450230255" Name="Plant_Harvest_Chime" ObjectPath="\Events\Default Work Unit\Plant_Harvest_Chime" DurationType="OneShot" DurationMin="1.657188" DurationMax="2.994535">
 					<IncludedMemoryFiles>
@@ -311,21 +393,20 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="562315821" Language="SFX">
-							<ShortName>piplets BEDROOM THEME rough.wav</ShortName>
-							<Path>SFX\piplets BEDROOM THEME rough_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3788924735" Name="Bedroom" ObjectPath="\States\Default Work Unit\Music\Bedroom"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="1744321513" Name="PlayGreenhouseMusic" ObjectPath="\Events\Default Work Unit\Music\PlayGreenhouseMusic" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="413528737" Language="SFX">
-							<ShortName>Piplets_MainTheme_FINAL.wav</ShortName>
-							<Path>SFX\Piplets_MainTheme_FINAL_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1744321513" Name="PlayGreenhouseMusic" ObjectPath="\Events\Default Work Unit\Music\PlayGreenhouseMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4238926114" Name="Greenhouse" ObjectPath="\States\Default Work Unit\Music\Greenhouse"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2392128485" Name="PlayOutdoorsMusic" ObjectPath="\Events\Default Work Unit\Music\PlayOutdoorsMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music\Outside"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="2449075236" Name="Seed_planting" ObjectPath="\Events\Default Work Unit\Seed_planting" DurationType="OneShot" DurationMin="0.498208" DurationMax="0.498208">
 					<IncludedMemoryFiles>
@@ -335,47 +416,32 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1342968680" Name="Walking_stone" ObjectPath="\Events\Default Work Unit\Walking_stone" DurationType="OneShot" DurationMin="0.131219" DurationMax="0.191155">
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="OneShot" DurationMin="1.835850" DurationMax="1.835850">
 					<IncludedMemoryFiles>
-						<File Id="276486449" Language="SFX">
-							<ShortName>piplet wavs\stone step 2.wav</ShortName>
-							<Path>SFX\piplet wavs\stone step 2_10C4C929.wem</Path>
-						</File>
-						<File Id="670780140" Language="SFX">
-							<ShortName>piplet wavs\stone step 1.wav</ShortName>
-							<Path>SFX\piplet wavs\stone step 1_10C4C929.wem</Path>
+						<File Id="953806277" Language="SFX">
+							<ShortName>Watering Plant.wav</ShortName>
+							<Path>SFX\Watering Plant_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="OneShot" DurationMin="1.835833" DurationMax="1.835833">
-					<IncludedMemoryFiles>
-						<File Id="1013900543" Language="SFX">
-							<ShortName>piplet wavs\water pour 4.wav</ShortName>
-							<Path>SFX\piplet wavs\water pour 4_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="909052898" Name="Water_Droplet_Atmos" ObjectPath="\Events\Default Work Unit\Water_Droplet_Atmos" DurationType="OneShot" DurationMin="0.152754" DurationMax="0.192458">
+				<Event Id="909052898" Name="Water_Droplet_Atmos" ObjectPath="\Events\Default Work Unit\Water_Droplet_Atmos" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="197502205" Language="SFX">
 							<ShortName>water droplet.wav</ShortName>
-							<Path>SFX\water droplet_10C4C929.wem</Path>
+							<Path>SFX\water droplet_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
-				<StateGroup Id="684570577" Name="Footstep_Material" ObjectPath="\States\Default Work Unit\Footstep_Material">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Footstep_Material\None"/>
-						<State Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone"/>
-						<State Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt"/>
-					</States>
-				</StateGroup>
-				<StateGroup Id="1216965916" Name="Stone" ObjectPath="\States\Default Work Unit\Footstep_Material\Stone">
+				<StateGroup Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music\Outside">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="2195636714" Name="Dirt" ObjectPath="\States\Default Work Unit\Footstep_Material\Dirt">
+				<StateGroup Id="3788924735" Name="Bedroom" ObjectPath="\States\Default Work Unit\Music\Bedroom">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4238926114" Name="Greenhouse" ObjectPath="\States\Default Work Unit\Music\Greenhouse">
 					<States/>
 				</StateGroup>
 			</StateGroups>

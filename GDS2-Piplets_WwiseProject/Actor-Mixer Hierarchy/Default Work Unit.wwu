@@ -6,6 +6,13 @@
 				<Folder Name="piplet wavs" ID="{7FA31744-6196-4160-BB9B-37FD2F52A913}" ShortID="421783039">
 					<ChildrenList>
 						<Sound Name="axe_wood chop" ID="{E8D7AB75-F780-48EA-934A-399499E504A6}" ShortID="616079469">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{EAF25AC3-F35A-48EE-B7AA-451590EB0DB8}" ShortID="1067518900"/>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -45,6 +52,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Digging" ID="{2026A978-8657-4942-BCDF-A0B289690B27}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>piplet wavs\Digging.wav</AudioFile>
 									<MediaIDList>
@@ -276,20 +287,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="wood chop 2" ID="{230F723E-BEFA-4F52-917F-C746C9006D64}" ShortID="929821873">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{4BCB2FC0-E436-40E1-85E8-7266FD1C2935}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="400"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -373,6 +370,21 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="metal ladder 1 (1)" ID="{C037B38A-182D-432D-9789-083337B82ABE}" ShortID="17684982">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{64E7FC34-DDB1-4061-81AF-0C124807657E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="328"/>
+															<Property Name="Min" Type="Real64" Value="-379"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -442,28 +454,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="greenhouse door" ID="{88234AD1-2F32-4A1A-8815-EB1622177FED}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Ladder slide" ID="{38D769FA-38FF-4DC2-A892-090D1C1015B6}" ShortID="674548128">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Ladder slide" ID="{05DE2D48-DF2F-4DFA-B3B9-D250C6B28D9C}">
-									<Language>SFX</Language>
-									<AudioFile>Ladder slide.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="795952486"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Ladder slide" ID="{05DE2D48-DF2F-4DFA-B3B9-D250C6B28D9C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="water pour 4" ID="{233BC6C7-3408-4497-A66B-BEF323C33503}" ShortID="580256055">
@@ -555,6 +545,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="menu button 1" ID="{B5A60C08-6DA0-4226-973D-44FFF3ED118E}" ShortID="737243684">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A8CEA79E-21A2-40F0-947B-257B3E9AF253}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -605,7 +607,6 @@
 										<ModifierInfo>
 											<Modifier Name="" ID="{EF1C2C96-3E89-4EF0-829D-920868E5A8CA}">
 												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="700"/>
 												</PropertyList>
 											</Modifier>
@@ -627,6 +628,13 @@
 									<AudioFile>menu select.wav</AudioFile>
 									<MediaIDList>
 										<MediaID ID="930448184"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Ladder slide cleaned" ID="{A1569979-EB7D-4B8F-B067-EC4AC2C1A59E}">
+									<Language>SFX</Language>
+									<AudioFile>Ladder slide cleaned.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="891338556"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -657,6 +665,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Minecart" ID="{4527A9A0-35E0-4E3C-96DE-5DEBECF86A1B}" ShortID="431321392">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>38</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -676,6 +691,36 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Minecart" ID="{9DC2C094-57EC-45C1-9291-BC554EF8F5CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Nature ambiance" ID="{55CB7FC3-7B1D-4005-BF04-2D11ACEAB0E6}" ShortID="508071552">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Nature ambiance" ID="{AE0252E3-C713-4944-B0CE-9243AE1916D8}">
+									<Language>SFX</Language>
+									<AudioFile>Nature ambiance .wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="998344690"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Nature ambiance" ID="{AE0252E3-C713-4944-B0CE-9243AE1916D8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="notification 2" ID="{FF7F0681-483B-4FEF-A035-1BBBE71C3DFD}" ShortID="425879583">
@@ -744,66 +789,6 @@
 								<ActiveSource Name="Pass" ID="{A1601469-B11C-4A8F-B6C4-0528F4EFCAC8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="water droplet" ID="{05C34E4C-8A34-476C-8654-BC0509769E4C}" ShortID="1049132794">
-							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{8D4D97BB-E78D-4D8B-B7FC-43D981D10FD8}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="30"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{C8784C69-886B-418B-91B2-7D07EBA049BD}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="400"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{CD0B9A87-BAD2-46AC-A803-7298FBED425F}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="8"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="water droplet" ID="{242EFB68-D80A-43BF-AFCF-17404220422A}">
-									<Language>SFX</Language>
-									<AudioFile>water droplet.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="197502205"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="water droplet" ID="{242EFB68-D80A-43BF-AFCF-17404220422A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="Plant harvest chime" ID="{BA478DDA-E9B7-4EFD-BF2A-BBEC1066AEEE}" ShortID="802231045">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
@@ -816,11 +801,6 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -836,7 +816,7 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>48</Value>
+												<Value>60</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -865,7 +845,7 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>49</Value>
+												<Value>60</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -894,7 +874,7 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>50</Value>
+												<Value>60</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -923,7 +903,7 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>50</Value>
+												<Value>60</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -950,7 +930,255 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<SwitchContainer Name="Footsteps" ID="{877ECA3B-153C-41EE-8AA1-2E343AD7BE4A}" ShortID="704701256">
+						<Sound Name="Ladder slide cleaned" ID="{CBC1746D-6222-44DE-8FB9-1FFAF10805DF}" ShortID="543875110">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ladder slide cleaned" ID="{AD441E7F-0F27-4CAB-A080-15B625B89162}">
+									<Language>SFX</Language>
+									<AudioFile>Ladder slide cleaned.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="891338556"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ladder slide cleaned" ID="{AD441E7F-0F27-4CAB-A080-15B625B89162}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="AI Processing" ID="{68523021-95BC-4D42-91D1-6EB41C05F4C5}" ShortID="867962104">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AI Processing" ID="{0BC03D1A-7B66-478C-A1C3-B8E149D79AD3}">
+									<Language>SFX</Language>
+									<AudioFile>AI Processing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="537133613"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AI Processing" ID="{0BC03D1A-7B66-478C-A1C3-B8E149D79AD3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Minecart loading" ID="{4D3FC07D-0D4A-48E8-9F8E-EDFC010424CB}" ShortID="308868955">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Minecart loading" ID="{64D66F3B-C0AC-4D14-B7FF-85ED2DB1ED1E}">
+									<Language>SFX</Language>
+									<AudioFile>Minecart loading.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="2568619"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Minecart loading" ID="{64D66F3B-C0AC-4D14-B7FF-85ED2DB1ED1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Menu Back Button" ID="{5619E5B4-33A2-46B0-92CD-303F72443C2E}" ShortID="458590035">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>24</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Menu Back Button" ID="{7C7CBEFC-3710-4337-A7E9-DE635003C291}">
+									<Language>SFX</Language>
+									<AudioFile>Menu Back Button.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="422390696"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Menu Back Button" ID="{7C7CBEFC-3710-4337-A7E9-DE635003C291}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fail Sound" ID="{83A4C40C-73A1-47FF-AE4D-BCD315B28081}" ShortID="468673366">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-100</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F8E1E9AA-A248-41DE-9A63-7A403B29D269}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fail Sound" ID="{F2D6A67C-9C55-4326-AEB8-7205B1314F85}">
+									<Language>SFX</Language>
+									<AudioFile>Fail Sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1055984957"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fail Sound" ID="{F2D6A67C-9C55-4326-AEB8-7205B1314F85}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pass sound" ID="{71519205-FA69-402E-AC24-01F5AA2268C7}" ShortID="1017192571">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>300</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pass sound" ID="{54191845-63FD-49D0-A8A8-3E109E84212A}">
+									<Language>SFX</Language>
+									<AudioFile>Pass sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="716219899"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pass sound" ID="{54191845-63FD-49D0-A8A8-3E109E84212A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Watering Plant" ID="{CCB234B9-62B3-4C5B-BF27-7A51DFF4CB5B}" ShortID="523617630">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Watering Plant" ID="{0C7BB94C-0220-4051-B0E7-10A4FAF8EE07}">
+									<Language>SFX</Language>
+									<AudioFile>Watering Plant.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="953806277"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Watering Plant" ID="{0C7BB94C-0220-4051-B0E7-10A4FAF8EE07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Minecart rolling" ID="{24E49B28-5BCF-46FF-8528-E95CA449A03B}" ShortID="924064675">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Minecart rolling" ID="{02E13D02-F5CA-4ACF-8D6D-4F13B444D675}">
+									<Language>SFX</Language>
+									<AudioFile>Minecart rolling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="312294729"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Minecart rolling" ID="{02E13D02-F5CA-4ACF-8D6D-4F13B444D675}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Menu select back" ID="{B8460ACB-5FD3-47A5-9E2F-C965F1978B5E}" ShortID="709682282">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-350</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AI menu back" ID="{B240E6EE-D144-40C3-9194-30E275E7D794}">
+									<Language>SFX</Language>
+									<AudioFile>AI menu back.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="230312442"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AI menu back" ID="{B240E6EE-D144-40C3-9194-30E275E7D794}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Footsteps" ID="{8BC84F37-28F7-4BA2-AE8F-7FB526E3CD01}" ShortID="781740405">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -959,7 +1187,7 @@
 									<ObjectRef Name="Stone" ID="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Footstep_Material" ID="{070B5FB1-01C7-4DCD-95E4-3F0ACED9D177}" WorkUnitID="{5BA2FE95-517D-4C21-A7B3-2E336C5359ED}"/>
@@ -995,6 +1223,24 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="stone step 1" ID="{D0B81939-7263-4B85-849E-4AE9927A0126}" ShortID="617222013">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4CA83174-8ABF-4517-ADFA-810E98EF6E2A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1566"/>
+																	<Property Name="Min" Type="Real64" Value="-126"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -1048,7 +1294,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1065,7 +1311,7 @@
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>36</Value>
+														<Value>45</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1101,7 +1347,7 @@
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>38</Value>
+														<Value>45</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
@@ -1162,6 +1408,12 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
+										<SwitchRef Name="None" ID="{F101751E-53DB-4F67-8DFA-06DC95670BC1}"/>
+										<ItemList>
+											<ItemRef Name="Stone Steps" ID="{24544906-B9F5-40F1-B9B6-7C109BB0E79B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Dirt" ID="{96FCAE78-47FA-40B3-AA6C-2FAA4FF2AF8A}"/>
 										<ItemList>
 											<ItemRef Name="Dirt Steps" ID="{F9D37B97-1556-4BA7-AD40-251F5252FF26}"/>
@@ -1176,24 +1428,79 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<RandomSequenceContainer Name="NatureAmbience" ID="{19A2E6E0-7687-4652-A9AE-E95A7A115816}" ShortID="584700747">
+						<RandomSequenceContainer Name="Water Droplet Atmos" ID="{F76B3E29-A0A2-4442-BB5C-8DC20E4B5732}" ShortID="45005577">
 							<PropertyList>
+								<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4A88A222-E2D2-4CE3-9116-89B2B4009601}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
+									<ObjectRef Name="SFX Audio Bus" ID="{259BDE8F-72BC-4FE9-9D8E-EC03ED0160FE}" WorkUnitID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Nature ambiance" ID="{55CB7FC3-7B1D-4005-BF04-2D11ACEAB0E6}" ShortID="508071552">
+								<Sound Name="water droplet" ID="{05C34E4C-8A34-476C-8654-BC0509769E4C}" ShortID="1049132794">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>46</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8D4D97BB-E78D-4D8B-B7FC-43D981D10FD8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C8784C69-886B-418B-91B2-7D07EBA049BD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CD0B9A87-BAD2-46AC-A803-7298FBED425F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="12"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1204,16 +1511,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Nature ambiance" ID="{AE0252E3-C713-4944-B0CE-9243AE1916D8}">
+										<AudioFileSource Name="water droplet" ID="{242EFB68-D80A-43BF-AFCF-17404220422A}">
 											<Language>SFX</Language>
-											<AudioFile>Nature ambiance .wav</AudioFile>
+											<AudioFile>water droplet.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="998344690"/>
+												<MediaID ID="197502205"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Nature ambiance" ID="{AE0252E3-C713-4944-B0CE-9243AE1916D8}" Platform="Linked"/>
+										<ActiveSource Name="water droplet" ID="{242EFB68-D80A-43BF-AFCF-17404220422A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
