@@ -1728,6 +1728,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2b4feea8ddad6ff4296dbdea78dd7f71, type: 2}
+  playTerminalMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3fffe3d313e097048ab3b32396bb7c66, type: 2}
+  playGreenhouseMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3a462bba12ad21d4bac51a2bf9aea118, type: 2}
   moneyText: {fileID: 9211441505937896029}
 --- !u!1 &4928066087119535882
 GameObject:

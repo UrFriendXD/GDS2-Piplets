@@ -282,6 +282,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1744321513" Name="PlayGreenhouseMusic" ObjectPath="\Events\Default Work Unit\Music\PlayGreenhouseMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4238926114" Name="Greenhouse" ObjectPath="\States\Default Work Unit\Music\Greenhouse"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3425704496" Name="PlayTerminalMusic" ObjectPath="\Events\Default Work Unit\Music\PlayTerminalMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="414380065" Name="Terminal" ObjectPath="\States\Default Work Unit\Music\Terminal"/>
@@ -290,6 +295,9 @@
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="414380065" Name="Terminal" ObjectPath="\States\Default Work Unit\Music\Terminal">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4238926114" Name="Greenhouse" ObjectPath="\States\Default Work Unit\Music\Greenhouse">
 					<States/>
 				</StateGroup>
 			</StateGroups>

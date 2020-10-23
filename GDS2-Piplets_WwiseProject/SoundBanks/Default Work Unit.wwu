@@ -27,6 +27,7 @@
 						<ObjectRef Name="AI_Button_Select" ID="{70FA6BED-B634-4355-A569-D76D2CC984A0}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Notification_1" ID="{FED7C56F-36C3-43D9-88AD-69BE54D42009}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fail" ID="{80A6626C-13C8-44E6-9411-D0530D69FE37}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayGreenhouseMusic" ID="{96FBBBAB-1E6E-451C-83F9-C3D49E597913}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Notification_2" ID="{7ACFAD01-2CDD-492C-ADDB-EF33A2ADBC2A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AI_processing" ID="{62388C0B-49A4-494E-BEDE-C23D59DC566D}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Minecart_Loading" ID="{69EB8421-D2D4-4A97-B4BB-5B91B1BE6E33}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>

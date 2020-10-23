@@ -22,6 +22,8 @@ public class TerminalUIWindow : MonoBehaviour
     // Audio
     public AK.Wwise.Event buttonSelect;
     public AK.Wwise.Event buttonBack;
+    public AK.Wwise.Event playTerminalMusic;
+    public AK.Wwise.Event playGreenhouseMusic;
 
     private bool _inUse;
     
@@ -46,6 +48,8 @@ public class TerminalUIWindow : MonoBehaviour
             terminalCanvas.gameObject.SetActive(true);
             OpenMainTerminalUI();
 
+            playTerminalMusic.Post(GameManager.instance.MusicManager);
+
             // // Adds closeUI to "esc"
             // _playerInputChecker.OnCancelButtonPressed += CloseUI;
         }
@@ -66,6 +70,8 @@ public class TerminalUIWindow : MonoBehaviour
         _processingCanvasUI.CloseUI();
         _sellingCanvasUI.CloseUI();
         _pipletCanvasUI.CloseUI();
+        
+        playGreenhouseMusic.Post(GameManager.instance.MusicManager);
 
         // // Remove closeUI from "esc"
         // _playerInputChecker.OnCancelButtonPressed -= CloseUI;

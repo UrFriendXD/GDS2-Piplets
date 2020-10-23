@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1218670268	Notification_1			\Default Work Unit\Notification_1	
 	1218670271	Notification_2			\Default Work Unit\Notification_2	
 	1627031574	Pass			\Default Work Unit\Pass	
+	1744321513	PlayGreenhouseMusic			\Default Work Unit\Music\PlayGreenhouseMusic	
 	2569711091	AI_processing			\Default Work Unit\AI_processing	
 	2596272617	Fail			\Default Work Unit\Fail	
 	2964552185	AI_Button_Select_Back			\Default Work Unit\AI_Button_Select_Back	
