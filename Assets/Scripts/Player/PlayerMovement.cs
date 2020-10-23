@@ -61,8 +61,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Menu()
     {
-        menu.SetActive(!menu.activeSelf);
-        isUIOn = !isUIOn;
+        if (!isUIOn)
+        {
+            menu.SetActive(!menu.activeSelf);
+            isUIOn = !isUIOn;
+        }
     }
 
     #region Selecting Items

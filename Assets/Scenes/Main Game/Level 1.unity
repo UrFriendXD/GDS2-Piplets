@@ -1141,11 +1141,11 @@ MonoBehaviour:
   changeToDirt:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2eba972865d858f4c90c4d63d630673e, type: 2}
+    WwiseObjectReference: {fileID: 0}
   changeToStone:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 48742f54d4351fc4d80f5d226d1bff80, type: 2}
+    WwiseObjectReference: {fileID: 0}
   OutsideAtmos:
     idInternal: 0
     valueGuidInternal: 
@@ -5941,7 +5941,7 @@ MonoBehaviour:
   playBedroomMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 35835e4b1ffb4884385c17dd3b3b17cc, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 30f0a6184898c35439f9a76ab9057e21, type: 2}
   playGreenhouseMusic:
     idInternal: 0
     valueGuidInternal: 
