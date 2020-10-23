@@ -18,6 +18,7 @@ public class Piplet : MonoBehaviour
     private PlayerMovement _PlayerMovement;
     public GameObject player;
     public int layer;
+    [SerializeField] private PipletAnimationController _pipletAnimationController;
 
     public PipletStats pipletStats;
 
@@ -33,6 +34,7 @@ public class Piplet : MonoBehaviour
             Debug.Log("Player not found");
         }
         _PlayerMovement = playerScript.playerMovement;
+        _pipletAnimationController = GetComponent<PipletAnimationController>();
 
         //Debug.Log(target.name);
 
@@ -78,12 +80,16 @@ public class Piplet : MonoBehaviour
                 if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
                 {
                     transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    _pipletAnimationController.MovingAnimation();
                     if (!stepping)
                     {
                         StartCoroutine(BuildTrust());
                     }
                 }
-
+                else
+                {
+                    _pipletAnimationController.IdleAnimation();                
+                }
             }
             else if ((_PlayerMovement.GroundCheck == true || _PlayerMovement.GroundCheck2 == true || _PlayerMovement.GroundCheck3 == true) && target.transform.position.y != transform.position.y)
             {

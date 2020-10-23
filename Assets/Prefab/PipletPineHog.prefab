@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8829463082077968739
+--- !u!1 &2882754126967837036
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8829463082077968767}
-  - component: {fileID: 8673751305007205038}
-  - component: {fileID: 8829463082077968766}
-  - component: {fileID: 8829463082077968748}
-  - component: {fileID: 4711589637381615972}
-  - component: {fileID: 3238962148155176291}
+  - component: {fileID: 2882754126967837040}
+  - component: {fileID: 3086741066679992993}
+  - component: {fileID: 2882754126967837041}
+  - component: {fileID: 2882754126967837027}
+  - component: {fileID: 3474226800079791143}
+  - component: {fileID: 7523647768269964434}
   m_Layer: 0
-  m_Name: PipletAvoPenguin
+  m_Name: PipletPineHog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &8829463082077968767
+  m_IsActive: 1
+--- !u!4 &2882754126967837040
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8829463082077968739}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.221, y: -3.692, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 2882754126967837036}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -43.83, y: -4.65, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8673751305007205038
+--- !u!212 &3086741066679992993
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8829463082077968739}
+  m_GameObject: {fileID: 2882754126967837036}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2512243520474318166, guid: 4e8944ee7a76ffc4dace361362c137a2, type: 3}
+  m_Sprite: {fileID: 9057356532303079108, guid: a7447667716093d40965ef63e6f8f8ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,38 +86,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8829463082077968766
+--- !u!114 &2882754126967837041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8829463082077968739}
+  m_GameObject: {fileID: 2882754126967837036}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b452f1a5efc0e94ab5c5400317d8431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  stoppingDistance: 2
+  stoppingDistance: 3
   level: 0
   level2Threshold: 300
   level3Threshold: 3000
   player: {fileID: 0}
   layer: 0
   _pipletAnimationController: {fileID: 0}
-  pipletStats: {fileID: 11400000, guid: 885664784ff139c40b350b2a42ae96d0, type: 2}
---- !u!95 &8829463082077968748
+  pipletStats: {fileID: 11400000, guid: 96a7bd0437353bf48a129587835843b7, type: 2}
+--- !u!95 &2882754126967837027
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8829463082077968739}
+  m_GameObject: {fileID: 2882754126967837036}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10e67fbea2c9c364a8d5e0e257c1c749, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8f16ec4d5750bbc479acb1c27e98c774, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -126,39 +126,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &4711589637381615972
+--- !u!61 &3474226800079791143
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8829463082077968739}
+  m_GameObject: {fileID: 2882754126967837036}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.27}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.14, y: 1.92}
+    oldSize: {x: 1.32, y: 1.38}
     newSize: {x: 1.26, y: 1.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.57, y: 0.96}
+  m_Size: {x: 0.99, y: 0.54}
   m_EdgeRadius: 0
---- !u!114 &3238962148155176291
+--- !u!114 &7523647768269964434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8829463082077968739}
+  m_GameObject: {fileID: 2882754126967837036}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fbdbd1781cae984ea80fc4e7329435d, type: 3}
