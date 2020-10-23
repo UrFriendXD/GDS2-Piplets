@@ -161,6 +161,14 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Space"",
+                    ""type"": ""Button"",
+                    ""id"": ""66ee1ac3-0227-4a0e-b1a6-ff2eebf1973a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -405,6 +413,17 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                     ""action"": ""Eleven"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7a29a3b2-108a-48aa-9de0-0da90ef430e7"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Space"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -431,6 +450,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         m_player_Nine = m_player.FindAction("Nine", throwIfNotFound: true);
         m_player_Ten = m_player.FindAction("Ten", throwIfNotFound: true);
         m_player_Eleven = m_player.FindAction("Eleven", throwIfNotFound: true);
+        m_player_Space = m_player.FindAction("Space", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -498,6 +518,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
     private readonly InputAction m_player_Nine;
     private readonly InputAction m_player_Ten;
     private readonly InputAction m_player_Eleven;
+    private readonly InputAction m_player_Space;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -520,6 +541,7 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         public InputAction @Nine => m_Wrapper.m_player_Nine;
         public InputAction @Ten => m_Wrapper.m_player_Ten;
         public InputAction @Eleven => m_Wrapper.m_player_Eleven;
+        public InputAction @Space => m_Wrapper.m_player_Space;
         public InputActionMap Get() { return m_Wrapper.m_player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -583,6 +605,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @Eleven.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEleven;
                 @Eleven.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEleven;
                 @Eleven.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEleven;
+                @Space.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
+                @Space.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
+                @Space.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -641,6 +666,9 @@ public class @PlayerAction : IInputActionCollection, IDisposable
                 @Eleven.started += instance.OnEleven;
                 @Eleven.performed += instance.OnEleven;
                 @Eleven.canceled += instance.OnEleven;
+                @Space.started += instance.OnSpace;
+                @Space.performed += instance.OnSpace;
+                @Space.canceled += instance.OnSpace;
             }
         }
     }
@@ -665,5 +693,6 @@ public class @PlayerAction : IInputActionCollection, IDisposable
         void OnNine(InputAction.CallbackContext context);
         void OnTen(InputAction.CallbackContext context);
         void OnEleven(InputAction.CallbackContext context);
+        void OnSpace(InputAction.CallbackContext context);
     }
 }
