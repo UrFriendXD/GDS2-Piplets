@@ -24,6 +24,7 @@ namespace Interaction
         protected virtual void InteractBare()
         {
             interactableObject.InteractBare(playerScript);
+            playerScript.playerAnimationController.InteractingAnimation();
         }
 
         // Calls interactableObjects InteractWithItem()
