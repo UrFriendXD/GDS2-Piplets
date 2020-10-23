@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Steven\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Steven\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GDS2-Piplets.-2059524258.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Steven\Desktop\GDS2\GDS2-Piplets" t="IncludeRecursive">
+    <e p="C:\Users\Sam\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Sam\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GDS2-Piplets.-954295577.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -15,6 +15,7 @@
           <e p="DontDestroy" t="Include">
             <e p="DontDestroy.cs" t="Include" />
           </e>
+          <e p="EndStairs.cs" t="Include" />
           <e p="Environment" t="Include">
             <e p="Indoors" t="Include">
               <e p="Bed.cs" t="Include" />
@@ -46,11 +47,30 @@
             <e p="TreeStages.cs" t="Include" />
           </e>
           <e p="FileIO" t="Include">
+            <e p="DateSaveData.cs" t="Include" />
+            <e p="DateSaveIO.cs" t="Include" />
+            <e p="DateSaveManager.cs" t="Include" />
             <e p="FileReadWrite.cs" t="Include" />
             <e p="ItemDatabase.cs" t="Include" />
             <e p="ItemSaveData.cs" t="Include" />
             <e p="ItemSaveIO.cs" t="Include" />
             <e p="ItemSaveManager.cs" t="Include" />
+            <e p="MarketPriceSaveManager.cs" t="Include" />
+            <e p="PipletSaveData.cs" t="Include" />
+            <e p="PipletSaveIO.cs" t="Include" />
+            <e p="PipletSaveManager.cs" t="Include" />
+            <e p="PipletsDatabase.cs" t="Include" />
+            <e p="PlantSaveManager.cs" t="Include" />
+            <e p="PlantSeedSaveData.cs" t="Include" />
+            <e p="PlantSeedSaveIO.cs" t="Include" />
+            <e p="PlayerSaveData.cs" t="Include" />
+            <e p="PlayerSaveIO.cs" t="Include" />
+            <e p="PlayerSaveManager.cs" t="Include" />
+            <e p="TradableItemSaveData.cs" t="Include" />
+            <e p="TradableItemSaveIO.cs" t="Include" />
+            <e p="WildPlantSaveData.cs" t="Include" />
+            <e p="WildPlantSaveIO.cs" t="Include" />
+            <e p="WildPlantsSaveManager.cs" t="Include" />
           </e>
           <e p="Interaction" t="Include">
             <e p="DoorPlayerDetector.cs" t="Include" />
@@ -75,11 +95,13 @@
             <e p="MarketManager.cs" t="Include" />
             <e p="MusicManager.cs" t="Include" />
             <e p="PipletManager.cs" t="Include" />
+            <e p="PlantsManager.cs" t="Include" />
             <e p="PlayersManager.cs" t="Include" />
             <e p="SaveManager.cs" t="Include" />
             <e p="ServiceLocator.cs" t="Include" />
             <e p="SurvivialItemUsed.cs" t="Include" />
             <e p="TradableItemsList.cs" t="Include" />
+            <e p="WildPlantManager.cs" t="Include" />
           </e>
           <e p="MaterialManagement.cs" t="Include" />
           <e p="Piplet" t="Include">
@@ -103,6 +125,7 @@
           </e>
           <e p="PlayerAction.cs" t="Include" />
           <e p="PlayMusic.cs" t="Include" />
+          <e p="Rail.cs" t="Include" />
           <e p="SceneManagement.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="Events" t="Include">
@@ -116,6 +139,7 @@
             <e p="SpawnPointArray.cs" t="Include" />
           </e>
           <e p="SpawnPoint.cs" t="Include" />
+          <e p="Stairs.cs" t="Include" />
           <e p="TempWin.cs" t="Include" />
           <e p="Terminal" t="Include">
             <e p="BuyPipletButton.cs" t="Include" />

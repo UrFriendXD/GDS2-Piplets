@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using System;
+using Player;
 using UnityEngine;
 
 namespace Farming
@@ -9,9 +10,15 @@ namespace Farming
         // Plant variables
         [SerializeField] private PlantSeed currentPlantType;
         private PlantFunctions _currentPlant;
+        public int FarmPlotID;
+
+        private void Awake()
+        {
+            FarmPlotID = ServiceLocator.Current.Get<PlantsManager>().AddFarmPlot(this);
+        }
 
         // Initialise variables
-        private void Start()
+        private void OnEnable()
         {
             _currentPlant = GetComponent<PlantFunctions>();
             if (currentPlantType != null)
@@ -67,6 +74,19 @@ namespace Farming
         {
             _currentPlant.Plant(plantSeed);
             currentPlantType = plantSeed;
+            
+            ServiceLocator.Current.Get<PlantsManager>().AddToSaveFarmPlots(this);
+        }
+
+        public (string, int, int) SavePlant()
+        {
+            return (currentPlantType.ID, FarmPlotID, _currentPlant.SavePlant());
+        }
+
+        public void LoadPlant(PlantSeed plantSeed, int daysSincePlanted)
+        {
+            _currentPlant.LoadPlant(daysSincePlanted);
+            OnPlant(plantSeed);
         }
     }
 }

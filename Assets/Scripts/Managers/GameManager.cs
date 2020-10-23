@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TradableItemsList tradableItemsList;
     [SerializeField] private int amountOfPipletNeededToWin;
     public GameObject MusicManager;
+    public DayManager DayManager;
     private bool _isNewGame;
     private SaveManager _saveManager;
     
@@ -23,16 +25,30 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        SetupSaveManger();
-        SetupMarket();
         SetupPiplets();
+        SetupSaveManger();
+        SetupPlantsManager();
+        SetupWildPlantsManager();
     }
 
-    private void OnValidate()
+    private void SetupWildPlantsManager()
     {
-        if (!MusicManager)
+        ServiceLocator.Current.Get<WildPlantManager>().Setup();
+    }
+
+    private void SetupPlantsManager()
+    {
+        ServiceLocator.Current.Get<PlantsManager>().Setup();
+    }
+
+    // To call functions that need to be done after scene is loaded. Like a start but persists between loading
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Level 1")
         {
-            MusicManager = GetComponentInChildren<MusicManager>().gameObject;
+            _isNewGame = _saveManager.IsNewGame;
+            SetupMarket();
+            CheckSave();
         }
     }
 
@@ -41,17 +57,23 @@ public class GameManager : MonoBehaviour
     private void SetupSaveManger()
     {
         _saveManager = ServiceLocator.Current.Get<SaveManager>();
-        _isNewGame = _saveManager.Setup();
+        _saveManager.Setup();
+    }
+
+    private void CheckSave()
+    {
         if (_isNewGame)
         {
             _saveManager.NewGame();
+            //Debug.Log("New");
         }
         else
         {
             _saveManager.LoadGame();
+            //Debug.Log("Loaded");
         }
     }
-    
+
     private void SetupMarket()
     {
         var marketManager = ServiceLocator.Current.Get<MarketManager>();
@@ -68,5 +90,28 @@ public class GameManager : MonoBehaviour
     public void SaveGame()
     {
         _saveManager.SaveGame();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    
+    private void OnValidate()
+    {
+        if (!MusicManager)
+        {
+            MusicManager = GetComponentInChildren<MusicManager>().gameObject;
+        }
+
+        if (!DayManager)
+        {
+            DayManager = GetComponentInChildren<DayManager>();
+        }
     }
 }

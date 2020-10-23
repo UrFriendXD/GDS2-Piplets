@@ -19,12 +19,19 @@ public class Piplet : MonoBehaviour
     public GameObject player;
     public int layer;
 
-    [SerializeField] private PipletStats pipletStats;
+    public PipletStats pipletStats;
 
     void Start()
     {
         playerScript = ServiceLocator.Current.Get<PlayersManager>().GetPlayerFromID(0);
-        target = playerScript.transform;
+        if (playerScript)
+        {
+            target = playerScript.gameObject.transform;
+        }
+        else
+        {
+            Debug.Log("Player not found");
+        }
         level = 1;
         _PlayerMovement = playerScript.playerMovement;
         if (gameObject.activeSelf)
@@ -90,6 +97,10 @@ public class Piplet : MonoBehaviour
    public void ActivatePiplet()
    {
        pipletStats.Equip(playerScript.playerStats);
+       if (!gameObject.activeSelf)
+       {
+           gameObject.SetActive(true);
+       }
        //Debug.Log("Pip");
        //Debug.Log(playerScript.playerStats.movespeed.Value);
        //Debug.Log(playerScript.playerStats.harvestingDoublerModifier.Value);

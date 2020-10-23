@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc36e9ec152838e4b9f55b66b7269237, type: 3}
+  m_Name: Piplets Database
+  m_EditorClassIdentifier: 
+  _pipletStats:
+  - {fileID: 11400000, guid: bb83255f029214248934f97a56c5f0d3, type: 2}
+  - {fileID: 11400000, guid: 885664784ff139c40b350b2a42ae96d0, type: 2}
+  - {fileID: 11400000, guid: 96a7bd0437353bf48a129587835843b7, type: 2}
+  - {fileID: 11400000, guid: e9b063c46c7702c47b90ffa46380c1d6, type: 2}
+  - {fileID: 11400000, guid: 11a28fbe13911fa4daaaf122bc2c8686, type: 2}
+  - {fileID: 11400000, guid: 3f5a11cdc318abe449e3a1721f8dec0c, type: 2}

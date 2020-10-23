@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class MarketManager : IGameService
 {
-    private TradableItemsList _tradableItemsList;
+    public TradableItemsList _tradableItemsList;
     private Dictionary<TradableItem, int> _itemsSold = new Dictionary<TradableItem, int>();
 
     public Action PriceChanged;
@@ -15,6 +15,11 @@ public class MarketManager : IGameService
     // On start, if it's a new game reset prices
     public void Setup(bool isNewGame, TradableItemsList tradableItemsList)
     {
+        if (_tradableItemsList)
+        {
+            _tradableItemsList = null;
+            _itemsSold.Clear();
+        }
         _tradableItemsList = tradableItemsList; 
         
         // For each items add to dict and set their current price to base price

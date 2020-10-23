@@ -57,8 +57,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8ea1c7d541d7243a2088233f0abd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  days: 0
-  years: 0
+  days: 1
+  years: 3000
   seasonEndEvent: {fileID: 11400000, guid: e96160650223d6047bf3c35d5d0b5851, type: 2}
   survivalItemUsed: {fileID: 11400000, guid: 6bef0f6332d7f434dbee9fed89b6ad3e, type: 2}
   playerInventory: {fileID: 0}

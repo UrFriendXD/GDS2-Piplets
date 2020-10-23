@@ -14,13 +14,7 @@ namespace Environment.Indoors
         public GameObject insideBed;
         public float time;
 
-        private SaveManager _saveManager;
-        //private PlayerScript playerScript;
-
-        private void Awake()
-        {
-            _saveManager = ServiceLocator.Current.Get<SaveManager>();
-        }
+        private bool isSleeping;
 
         // Calls day pass event regardless of interaction key
         public override void InteractWithItem(Item item, PlayerScript playerScript)
@@ -44,9 +38,10 @@ namespace Environment.Indoors
 
         private void Sleep()
         {
+            if (player.gameObject.GetComponent<PlayerMovement>().isUIOn) return;
             dayPass.Invoke();
             StartCoroutine(fadeToNextDay(time));
-            _saveManager.SaveGame();
+            GameManager.instance.SaveGame();
         }
     }
 }

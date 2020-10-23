@@ -9,8 +9,8 @@ public class BuyPipletButton : MonoBehaviour
 {
     [SerializeField] private Piplet pipletObject;
     [SerializeField] private int pipletCost;
-    
-    [HideInInspector]
+
+    [HideInInspector] 
     public PlayerStats playerStats;
 
     [SerializeField] private TextMeshProUGUI text;
@@ -21,6 +21,11 @@ public class BuyPipletButton : MonoBehaviour
     private void OnValidate()
     {
         text.text = "" + pipletCost;
+    }
+
+    public void OnEnable()
+    {
+        gameObject.SetActive(!pipletObject.pipletStats.isUnlocked);
     }
 
     public void Purchase()
