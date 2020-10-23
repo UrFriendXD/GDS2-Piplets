@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BedroomPCUIWindow : MonoBehaviour
 {
-    private PipletSilhouettes[] _pipletSilhouetteses;
+    [SerializeField] private PipletSilhouettes[] _pipletSilhouetteses;
     private bool _inUse;
 
     private void OnValidate()

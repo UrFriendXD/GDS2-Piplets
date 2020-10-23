@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class PipletSilhouettes : MonoBehaviour
 {
     [SerializeField] private PipletStats _pipletStats;
-
-    private Image _spriteRenderer;
+    [SerializeField] private Image _spriteRenderer;
 
     private void OnValidate()
     {

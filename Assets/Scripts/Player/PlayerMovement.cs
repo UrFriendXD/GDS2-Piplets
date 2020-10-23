@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using Player;
-using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
