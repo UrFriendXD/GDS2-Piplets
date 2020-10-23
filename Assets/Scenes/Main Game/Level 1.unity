@@ -12147,7 +12147,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1491301192}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1708928347
 MonoBehaviour:
@@ -15142,6 +15142,10 @@ PrefabInstance:
     - target: {fileID: 6963007848584059541, guid: 41efa77ca7bc1ea408640a6a5db47fdd, type: 3}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963007848584059541, guid: 41efa77ca7bc1ea408640a6a5db47fdd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41efa77ca7bc1ea408640a6a5db47fdd, type: 3}
