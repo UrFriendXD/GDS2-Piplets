@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3450230255	Plant_Harvest_Chime			\Default Work Unit\Plant_Harvest_Chime	
 	3610060586	Ladder_Descend			\Default Work Unit\Ladder_Descend	
 	3735191866	Plant_Harvest			\Default Work Unit\Plant_Harvest	
+	3760498357	PlayBasementMusic			\Default Work Unit\Music\PlayBasementMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	65561872	chime 3	C:\Users\Sam\Desktop\Uni\2020\GDS2\Final project\GDS2-Piplets\GDS2-Piplets_WwiseProject\.cache\Mac\SFX\chime 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\piplet wavs\Plant harvest chime\chime 3		528300
