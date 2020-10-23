@@ -149,7 +149,9 @@ namespace Farming
                         Debug.Log("Random is out of bounds");
                         break;
                 }
-
+                
+                playerScript.playerAnimationController.ChoppingAnimation();
+                
                 //Give raw good to player
                 for (var i = 0; i < amountToGive; i++)
                 {

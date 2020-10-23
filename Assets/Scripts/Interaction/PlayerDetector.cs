@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Environment.Indoors;
+using Player;
 using UnityEngine;
 
 namespace Interaction
@@ -24,6 +25,10 @@ namespace Interaction
         protected virtual void InteractBare()
         {
             interactableObject.InteractBare(playerScript);
+            if (!CompareTag("Bed"))
+            {
+                playerScript.playerAnimationController.InteractingAnimation();
+            }
         }
 
         // Calls interactableObjects InteractWithItem()
