@@ -14,6 +14,7 @@
 						<ObjectRef Name="Ladder_Climb" ID="{ED48A6E4-A36E-489F-A0D8-64F58E40FE3F}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Plant_Harvest" ID="{E8DB2A59-912B-4A05-B2EB-B03894A2BE3A}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayBedroomMusic" ID="{D0C36349-76CE-4DD0-887B-12FD7EEF7883}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayBasementMusic" ID="{8BE5F18F-0BE0-4E79-84A8-7B1616653465}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayOutdoorsMusic" ID="{F4E18889-E093-4F00-828B-B5E7F7898CAC}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Water_Droplet_Atmos" ID="{BB6E1DD8-C21D-4FE2-8EEE-90FCB904027B}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Water" ID="{573DAA0C-1FDD-4FF7-963E-C2854C38CA00}" WorkUnitID="{6CF1EC32-4AEE-4718-861E-B24E5B73E746}" Origin="Manual" Filter="7"/>

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Player;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuyPipletButton : MonoBehaviour
 {
@@ -18,9 +19,13 @@ public class BuyPipletButton : MonoBehaviour
     public AK.Wwise.Event passEvent;
     public AK.Wwise.Event failEvent;
 
+    private Image _image;
+
     private void OnValidate()
     {
         text.text = "" + pipletCost;
+        _image = GetComponent<Image>();
+        _image.sprite = pipletObject.pipletStats.icon;
     }
 
     public void OnEnable()

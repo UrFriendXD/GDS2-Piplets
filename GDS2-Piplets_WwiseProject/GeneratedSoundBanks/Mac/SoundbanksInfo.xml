@@ -393,6 +393,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3760498357" Name="PlayBasementMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBasementMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1413413702" Name="Basement" ObjectPath="\States\Default Work Unit\Music\Basement"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="1586650550" Name="PlayBedroomMusic" ObjectPath="\Events\Default Work Unit\Music\PlayBedroomMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3788924735" Name="Bedroom" ObjectPath="\States\Default Work Unit\Music\Bedroom"/>
@@ -436,6 +441,9 @@
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music\Outside">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1413413702" Name="Basement" ObjectPath="\States\Default Work Unit\Music\Basement">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3788924735" Name="Bedroom" ObjectPath="\States\Default Work Unit\Music\Bedroom">
