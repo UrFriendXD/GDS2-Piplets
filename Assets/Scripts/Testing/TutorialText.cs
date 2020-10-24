@@ -8,6 +8,14 @@ public class TutorialText : MonoBehaviour
 
 {
     public Image tutorialText;
+    public bool coroutineOn;
+    private IEnumerator co;
+
+    private void Start()
+    {
+        co = close();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -19,13 +27,23 @@ public class TutorialText : MonoBehaviour
             gameObject.GetComponentInParent<TutText>().tutText = tutorialText;
             gameObject.GetComponentInParent<TutText>().Object = this.gameObject;
             tutorialText.gameObject.SetActive(true);
-            StartCoroutine(close());
+            StartCoroutine(co);
         }
     }
     
+    public void stop()
+    {
+        if(coroutineOn == true)
+        {
+            StopCoroutine(co);
+        }
+    } 
+
     private IEnumerator close()
     {
+        coroutineOn = true;
         yield return new WaitForSeconds(25);
         gameObject.GetComponentInParent<TutText>().DisableImage();
+        coroutineOn = false;
     }
 }
