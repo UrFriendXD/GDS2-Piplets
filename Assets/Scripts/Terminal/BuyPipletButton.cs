@@ -19,13 +19,22 @@ public class BuyPipletButton : MonoBehaviour
     public AK.Wwise.Event passEvent;
     public AK.Wwise.Event failEvent;
 
-    private Image _image;
+    [SerializeField] private Image _image;
 
     private void OnValidate()
     {
         text.text = "" + pipletCost;
         _image = GetComponent<Image>();
-        _image.sprite = pipletObject.pipletStats.icon;
+        if (pipletObject)
+        {
+            _image.sprite = pipletObject.pipletStats.icon;
+        }
+        else
+        {
+            Debug.Log(pipletObject + "" + gameObject.name);
+        }
+        
+        
     }
 
     public void OnEnable()

@@ -286,7 +286,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 StairMoveUpAndDown();
             }
-            if (LadderMovement == false && GroundCheck == false && GroundCheck2 == false && GroundCheck3 == false && Stairs == false)
+            if (LadderMovement == false && GroundCheck == false && GroundCheck2 == false && GroundCheck3 == false && Stairs == false && !isUIOn)
             {
                 falling = true;
                 if (fallspeed < maxfallspeed)

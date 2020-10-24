@@ -1470,6 +1470,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 921f14d019c1ecb4ea51e83d89a0383c, type: 2}
+  _image: {fileID: 2867566038515041570}
 --- !u!1 &4928066087044531486
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,6 +4332,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 921f14d019c1ecb4ea51e83d89a0383c, type: 2}
+  _image: {fileID: 7940709100963174006}
 --- !u!1 &8739746609196588697
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,7 +4494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8337231516436434383
 RectTransform:
   m_ObjectHideFlags: 0
