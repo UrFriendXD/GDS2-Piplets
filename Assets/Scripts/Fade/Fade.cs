@@ -26,6 +26,7 @@ public class Fade : MonoBehaviour
         year.canvasRenderer.SetAlpha(0.0f);
         dateCrn.canvasRenderer.SetAlpha(0.0f);
         yearCrn.canvasRenderer.SetAlpha(0.0f);
+        player.gameObject.GetComponent<PlayerMovement>().isUIOn = true;
         FadeEffect();
     }
 
