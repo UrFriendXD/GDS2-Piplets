@@ -493,20 +493,6 @@
           </e>
         </e>
         <e p="StreamingAssets" t="Include">
-          <e p="Audio" t="Include">
-            <e p="GeneratedSoundBanks" t="Include">
-              <e p="Mac" t="Include">
-                <e p="AI_Terminal.txt" t="Include" />
-                <e p="Greenhouse.txt" t="Include" />
-                <e p="Init.txt" t="Include" />
-                <e p="Menu.txt" t="Include" />
-                <e p="Outdoor.txt" t="Include" />
-                <e p="Player.txt" t="Include" />
-                <e p="PluginInfo.xml" t="Include" />
-                <e p="SoundbanksInfo.xml" t="Include" />
-              </e>
-            </e>
-          </e>
           <e p="desc.txt" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

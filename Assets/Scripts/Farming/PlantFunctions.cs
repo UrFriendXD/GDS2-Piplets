@@ -236,6 +236,7 @@ namespace Farming
             daysSincePlanted = 0;
             _thisPlantType = PlantType.None;
             _currentPlantStage = PlantStages.None;
+            
             dayPassEventListener.Response.RemoveListener(Grow);
             seasonEndEventListener.Response.RemoveListener(OnSeasonEnd);
             ServiceLocator.Current.Get<PlantsManager>().RemoveToSaveFarmPlots(GetComponentInParent<FarmPlot>());
