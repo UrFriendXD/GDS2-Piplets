@@ -39,8 +39,7 @@ public class CraftingRecipeUI : MonoBehaviour
 	{
 		if (craftingRecipe != null && inventory != null)
 		{
-			craftingRecipe.Craft(inventory);
-			processingItemButton.ResetAmount();
+			processingItemButton.OnCraftItemButtonClick();
 		}
 	}
 	

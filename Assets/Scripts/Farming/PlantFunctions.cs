@@ -233,6 +233,7 @@ namespace Farming
         {
             _spriteRenderer.sprite = null;
             _plantSeed = null;
+            daysSincePlanted = 0;
             _thisPlantType = PlantType.None;
             _currentPlantStage = PlantStages.None;
             dayPassEventListener.Response.RemoveListener(Grow);

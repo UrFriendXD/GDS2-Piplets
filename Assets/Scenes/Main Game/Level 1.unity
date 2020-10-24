@@ -13060,10 +13060,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 724369465}
-    - target: {fileID: 8486069248234134207, guid: 8ce8d046c817bfe4886f1826fdbbd260, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8486069248521913504, guid: 8ce8d046c817bfe4886f1826fdbbd260, type: 3}
       propertyPath: cam
       value: 
