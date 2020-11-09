@@ -8,7 +8,7 @@ namespace Terminal
     {
         [SerializeField] private Sprite[] icons;
         public TradableItem _item;
-        private Image _image;
+        [SerializeField] private Image _image;
 
         private int _previousPrice;
         // Start is called before the first frame update

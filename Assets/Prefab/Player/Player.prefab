@@ -296,6 +296,7 @@ MonoBehaviour:
   Stairs: 0
   endStairs: 0
   Out: 0
+  isInside: 0
   baseWalkSpeed: 4
   fallspeed: 2
   upLadderSpeed: 2.5
@@ -306,13 +307,13 @@ MonoBehaviour:
   upStairSpeed: 2
   downStairSpeed: 3
   stairSpeed: 0
+  movementInput: 0
   ladderspeed: 2
   interactingObjectPos: 0
   menu: {fileID: 0}
   isUIOn: 0
   isSleeping: 0
   input: 0
-  piplet: {fileID: 0}
   movementAudioTimerDelay: 0.4
   movementLadderUpAudioTimerDelay: 0.4
   movementLadderDownAudioDelay: 0.8
@@ -336,8 +337,8 @@ MonoBehaviour:
   playerAnimationController: {fileID: 1002434139973221403}
   playerInputChecker: {fileID: 1447940501}
   PlayerID: 0
-  itemSaveManager: {fileID: 0}
   draggableItem: {fileID: 0}
+  selectUISprite: {fileID: 0}
 --- !u!114 &1447940501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +400,7 @@ MonoBehaviour:
   walkEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 979a830cc50559b4fb0038bb9fbeef6d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 863d306e594f06e4c9000bf3396429ef, type: 2}
   harvestEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -419,7 +420,7 @@ MonoBehaviour:
   stoneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 48742f54d4351fc4d80f5d226d1bff80, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e2917384e72153645ba0d08dfce673c1, type: 2}
 --- !u!95 &6143971938110101802
 Animator:
   serializedVersion: 3

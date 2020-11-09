@@ -39,6 +39,7 @@ public class TutText : MonoBehaviour
 
     public void Space()
     {
+        Object.GetComponent<TutorialText>().stop();
         DisableImage();
     }
 

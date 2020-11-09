@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 819492546}
+  coroutineOn: 0
 --- !u!61 &18104685
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2997,6 +2998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 716205360}
+  coroutineOn: 0
 --- !u!61 &363566973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4569,6 +4571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 281679758}
+  coroutineOn: 0
 --- !u!61 &686169934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13060,10 +13063,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 724369465}
-    - target: {fileID: 8486069248234134207, guid: 8ce8d046c817bfe4886f1826fdbbd260, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8486069248521913504, guid: 8ce8d046c817bfe4886f1826fdbbd260, type: 3}
       propertyPath: cam
       value: 
@@ -13284,6 +13283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 557949599}
+  coroutineOn: 0
 --- !u!61 &1829767309
 BoxCollider2D:
   m_ObjectHideFlags: 0

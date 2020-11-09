@@ -17,17 +17,18 @@ namespace Farming
         private void Awake()
         {
             FarmPlotID = ServiceLocator.Current.Get<PlantsManager>().AddFarmPlot(this);
+            _currentPlant = GetComponent<PlantFunctions>();
         }
 
-        // Initialise variables
-        private void OnEnable()
-        {
-            _currentPlant = GetComponent<PlantFunctions>();
-            if (currentPlantType != null)
-            {
-                OnPlant(currentPlantType);
-            }
-        }
+        // // Initialise variables
+        // private void OnEnable()
+        // {
+        //     _currentPlant = GetComponent<PlantFunctions>();
+        //     if (currentPlantType != null)
+        //     {
+        //         OnPlant(currentPlantType);
+        //     }
+        // }
 
         // Interacting with bare hands/no items in hands
         public override void InteractBare(PlayerScript playerScript)

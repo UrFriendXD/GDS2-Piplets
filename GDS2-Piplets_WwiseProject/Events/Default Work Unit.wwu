@@ -45,6 +45,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{10E54C1F-80F9-422C-A0C9-70FED15151E1}" ShortID="153408710">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Plant harvest chime" ID="{BA478DDA-E9B7-4EFD-BF2A-BBEC1066AEEE}" WorkUnitID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Door_Open" ID="{DBDCA378-DF02-4184-8854-6F35D727763D}">

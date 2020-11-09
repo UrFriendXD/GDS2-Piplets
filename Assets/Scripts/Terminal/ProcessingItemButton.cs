@@ -39,16 +39,17 @@ namespace Terminal
             }
         }
 
-        public void ResetAmount()
-        {
-            UpdateAmount(0);
-        }
-
         private new void UpdateAmount(int changeAmount)
         {
             _amount = changeAmount;
             amountText.text = "" + changeAmount * craftingRecipe.Results[0].Amount;
             amountRequiredText.text = "" + craftingRecipe.Materials[0].Amount * _amount;
+        }
+
+        public void OnCraftItemButtonClick()
+        {
+            craftingRecipe.Craft(PlayerInventory, _amount);
+            UpdateAmount(0);
         }
     }
 }
