@@ -46,7 +46,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{2EA72490-EF8D-4468-9E3F-4174CA19C48D}"/>
-						<CurrentStateRef Name="Stone" ID="{BFBCC987-E8C3-43DE-8083-8002D83C9BA5}"/>
+						<CurrentStateRef Name="Dirt" ID="{96FCAE78-47FA-40B3-AA6C-2FAA4FF2AF8A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Bedroom" ID="{D42377B8-C20F-4FEA-B488-1C8589583D0A}"/>

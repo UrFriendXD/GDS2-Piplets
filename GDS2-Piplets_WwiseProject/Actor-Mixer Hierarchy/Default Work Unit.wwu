@@ -1179,6 +1179,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="Footsteps" ID="{8BC84F37-28F7-4BA2-AE8F-7FB526E3CD01}" ShortID="781740405">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDDCFCF3-4AA3-4AD9-AFB8-E82324C23F70}"/>
@@ -1294,7 +1301,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

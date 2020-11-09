@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipletObject: {fileID: 697580592}
-  pipletCost: 300
+  pipletCost: 100
   playerStats: {fileID: 0}
   text: {fileID: 2129310353}
   passEvent:
@@ -2021,10 +2021,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3677086136817588255, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3677086136864146428, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2113,10 +2109,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Inventory
       objectReference: {fileID: 0}
-    - target: {fileID: 3677086136864146429, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3677086137023740336, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -2140,14 +2132,6 @@ PrefabInstance:
     - target: {fileID: 3677086137023740336, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137023740342, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137090101117, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3677086137090101119, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
@@ -2197,30 +2181,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3677086137297652015, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137604960671, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 130
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137827997425, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_StartCorner
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137827997426, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -30.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137894234051, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137946585128, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3677086137946585130, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -2268,14 +2228,6 @@ PrefabInstance:
     - target: {fileID: 3677086137956366384, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086137956366390, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086138445483153, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3677086138445483155, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
@@ -2325,14 +2277,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3677086138466144895, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086138590225400, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3677086138590225402, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -2381,14 +2325,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3677086138641042191, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086138731872460, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3677086138731872462, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -2412,10 +2348,6 @@ PrefabInstance:
     - target: {fileID: 3677086138731872462, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3677086138787227378, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3677086138787227388, guid: d1f8b486e8a13f24d8c69232b498b21d, type: 3}
       propertyPath: m_AnchorMin.y
@@ -4435,7 +4367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipletObject: {fileID: 249736840}
-  pipletCost: 400
+  pipletCost: 200
   playerStats: {fileID: 0}
   text: {fileID: 1675376264}
   passEvent:
@@ -5383,7 +5315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipletObject: {fileID: 1721009840}
-  pipletCost: 500
+  pipletCost: 225
   playerStats: {fileID: 0}
   text: {fileID: 967620693}
   passEvent:
@@ -5541,7 +5473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipletObject: {fileID: 950731205}
-  pipletCost: 350
+  pipletCost: 150
   playerStats: {fileID: 0}
   text: {fileID: 1725019394}
   passEvent:
@@ -7079,6 +7011,10 @@ PrefabInstance:
       propertyPath: pipletObject
       value: 
       objectReference: {fileID: 1344381531}
+    - target: {fileID: 6528005375644499177, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
+      propertyPath: pipletCost
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 6797348167454143377, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -7151,6 +7087,10 @@ PrefabInstance:
       propertyPath: pipletObject
       value: 
       objectReference: {fileID: 1932326020}
+    - target: {fileID: 7060583552372682170, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
+      propertyPath: pipletCost
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7228738937537272817, guid: 35d88bf53678cd64b8ad8fd347163d62, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -8012,7 +7952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500
+  m_text: 225
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
   m_sharedMaterial: {fileID: 8411201916722286343, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
@@ -12014,7 +11954,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 400
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
   m_sharedMaterial: {fileID: 8411201916722286343, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
@@ -12405,7 +12345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 350
+  m_text: 150
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
   m_sharedMaterial: {fileID: 8411201916722286343, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
@@ -13835,7 +13775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 600
+  m_text: 250
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
   m_sharedMaterial: {fileID: 8411201916722286343, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
@@ -14171,7 +14111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipletObject: {fileID: 1982313196}
-  pipletCost: 600
+  pipletCost: 250
   playerStats: {fileID: 0}
   text: {fileID: 1968512338}
   passEvent:
@@ -14596,7 +14536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
   m_sharedMaterial: {fileID: 8411201916722286343, guid: ceea88c89eb88d4439d9e647484e7805, type: 2}
