@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: cdccb474f7658fa41bcf6dd00b0af143
+guid: 1971550c82adeb148bcc8e8e7fa651e6
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 9172834319904098226
-    second: BasementDoorOverlay_0
-  - first:
-      213: 2161189818478282824
-    second: BasementDoorOverlay_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,49 +99,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: BasementDoorOverlay_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 42
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b74565d6347c4f70800000000000000
-      internalID: 9172834319904098226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BasementDoorOverlay_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 42
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 848c69e70b61efd10800000000000000
-      internalID: 2161189818478282824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

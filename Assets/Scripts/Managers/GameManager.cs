@@ -3,6 +3,11 @@ using Farming;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using Farming;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +21,7 @@ public class GameManager : MonoBehaviour
     private SaveManager _saveManager;
 
     public GameObject FinalDoorStopper;
+    public GameObject Basement;
     
     private void Awake()
     {
@@ -91,6 +97,7 @@ public class GameManager : MonoBehaviour
     public void OpenEnding()
     {
         FinalDoorStopper.SetActive(false);
+        Basement.SetActive(true);
     }
 
     #endregion
