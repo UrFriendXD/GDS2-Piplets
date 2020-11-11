@@ -3,17 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using Farming;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 public class PlantsManager : IGameService
 {
     public List<FarmPlot> _farmPlots = new List<FarmPlot>();
     private List<FarmPlot> _saveFarmPlots = new List<FarmPlot>();
+    public List<PlantTree> PlantTrees = new List<PlantTree>();
+    private List<PlantTree> _TreesToSave = new List<PlantTree>();
+    
     
     public void Setup()
     {
         if (_farmPlots.Count > 0)
         {
             _farmPlots.Clear();
+        }
+
+        if (PlantTrees.Count > 0)
+        {
+            PlantTrees.Clear();
+        }
+
+        var trees = Object.FindObjectsOfType<PlantTree>();
+        foreach (var tree in trees)
+        {
+            PlantTrees.Add(tree);
         }
     }
     public int AddFarmPlot(FarmPlot farmPlot)
@@ -47,5 +62,30 @@ public class PlantsManager : IGameService
     public List<FarmPlot> LoadPlants()
     {
         return _farmPlots;
+    } 
+    
+    public void AddToSavePlantTrees(PlantTree tree)
+    {
+        if (!_TreesToSave.Contains(tree))
+        {
+            _TreesToSave.Add(tree);
+        }
+    }
+    
+    public void RemoveToSavePlantTrees(PlantTree tree)
+    {
+        if (_TreesToSave.Contains(tree))
+        {
+            _TreesToSave.Remove(tree);
+        }
+    }
+    public List<PlantTree> SaveTrees()
+    {
+        return _TreesToSave;
+    }
+
+    public List<PlantTree> LoadTrees()
+    {
+        return PlantTrees;
     }
 }

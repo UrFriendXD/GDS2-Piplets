@@ -26,6 +26,8 @@ namespace Farming
         {
             _currentTree.Plant(plantSeed);
             currentPlantType = plantSeed;
+            
+            ServiceLocator.Current.Get<PlantsManager>().AddToSavePlantTrees(this);
         }
 
         // Update is called once per frame
@@ -83,6 +85,17 @@ namespace Farming
                 // Changes sprite to be slightly transparent to show it's the current object
                 plot.color = new Color(1f, 1f, 1f, 1f);
             }
+        }
+        
+        public (string, string, int) SaveTree()
+        {
+            return (currentPlantType.ID, gameObject.name, _currentTree.SaveTree());
+        }
+
+        public void LoadTree(PlantSeed plantSeed, int daysSincePlanted)
+        {
+            _currentTree.LoadTree(daysSincePlanted);
+            OnPlant(plantSeed);
         }
     }
 }

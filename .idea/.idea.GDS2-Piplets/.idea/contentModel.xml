@@ -75,6 +75,9 @@
             <e p="PlayerSaveManager.cs" t="Include" />
             <e p="TradableItemSaveData.cs" t="Include" />
             <e p="TradableItemSaveIO.cs" t="Include" />
+            <e p="TreeSaveData.cs" t="Include" />
+            <e p="TreeSaveDataIO.cs" t="Include" />
+            <e p="TreeSaveManager.cs" t="Include" />
             <e p="WildPlantSaveData.cs" t="Include" />
             <e p="WildPlantSaveIO.cs" t="Include" />
             <e p="WildPlantsSaveManager.cs" t="Include" />
