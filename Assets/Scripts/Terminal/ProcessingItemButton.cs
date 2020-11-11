@@ -19,6 +19,7 @@ namespace Terminal
                 {
                     UpdateAmount(_amount += 1);
                     _delay = delayReset;
+                    pass.Post(gameObject);
                 }
             }
 
@@ -29,6 +30,7 @@ namespace Terminal
                 {
                     UpdateAmount(_amount -= 1);
                     _delay = delayReset;
+                    fail.Post(gameObject);
                 }
             }
 

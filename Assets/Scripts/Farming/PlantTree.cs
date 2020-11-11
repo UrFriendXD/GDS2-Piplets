@@ -10,6 +10,8 @@ namespace Farming
     {
         [SerializeField] private PlantSeed currentPlantType;
         private TreeFunction _currentTree;
+        
+        [SerializeField] private SpriteRenderer plot;
         // Start is called before the first frame update
         void Start()
         {
@@ -61,6 +63,25 @@ namespace Farming
                         }
                     }
                 }
+            }
+        }
+        
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                // Changes sprite to be slightly transparent to show it's the current object
+                plot.color = new Color(1f, 1f, 1f, .5f);
+                Debug.Log("trigger");
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                // Changes sprite to be slightly transparent to show it's the current object
+                plot.color = new Color(1f, 1f, 1f, 1f);
             }
         }
     }
