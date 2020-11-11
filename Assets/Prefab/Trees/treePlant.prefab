@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlantType: {fileID: 0}
+  plot: {fileID: 5297618577204741005}
 --- !u!114 &5297618577512007516
 MonoBehaviour:
   m_ObjectHideFlags: 0

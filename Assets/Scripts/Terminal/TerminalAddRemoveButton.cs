@@ -52,14 +52,14 @@ public class TerminalAddRemoveButton : MonoBehaviour, IPointerDownHandler, IPoin
     {
         _adding = false;
         _removing = false;
-        if (Success)
-        {
-            pass.Post(gameObject);
-        }
-        else
-        {
-            fail.Post(gameObject);
-        }
+        // if (Success)
+        // {
+        //     pass.Post(gameObject);
+        // }
+        // else
+        // {
+        //     fail.Post(gameObject);
+        // }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

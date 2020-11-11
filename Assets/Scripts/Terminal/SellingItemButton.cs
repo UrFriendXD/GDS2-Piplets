@@ -40,11 +40,7 @@ public class SellingItemButton : TerminalAddRemoveButton
             {
                 UpdateAmount(_amount += 1);
                 _delay = delayReset;
-                Success = true;
-            }
-            else
-            {
-                Success = false;
+                pass.Post(gameObject);
             }
         }
 
@@ -55,6 +51,7 @@ public class SellingItemButton : TerminalAddRemoveButton
             {
                 UpdateAmount(_amount -= 1);
                 _delay = delayReset;
+                fail.Post(gameObject);
             }
         }
 
