@@ -419,6 +419,11 @@ public class PlayerMovement : MonoBehaviour
                     }
                 }
 
+                if (!LadderMovement)
+                {
+                    _playerScript.playerAnimationController.OffLadder(); 
+                }
+
                 if (movementAudioTimer > 0)
                 {
                     movementAudioTimer -= Time.deltaTime;
@@ -457,30 +462,30 @@ public class PlayerMovement : MonoBehaviour
 
     public void StairMoveUpAndDown()
     {
-            float movementInput = control.player.LadderMovement.ReadValue<float>();
-            if (movementInput == 1)
-            {
-                stairSpeed = upStairSpeed;
-            }
-            if (movementInput == -1)
-            {
-                stairSpeed = downStairSpeed;
-            }
-            if (movementInput == 1 && endStairs == true)
-            {
-                movementInput = 0;
-            }
-            if (movementInput == -1 && GroundCheck3 == true && Stairs == true)
-            {
-                movementInput = 0;
-            }
-            if(Out == true && movementInput == -1)
-            {
-                movementInput = 0;
-            }
-            Vector3 currentPosition = transform.position;
-            currentPosition.y += movementInput * stairSpeed * Time.deltaTime;
-            transform.position = currentPosition;
+        float movementInput = control.player.LadderMovement.ReadValue<float>();
+        if (movementInput == 1)
+        {
+            stairSpeed = upStairSpeed;
+        }
+        if (movementInput == -1)
+        {
+            stairSpeed = downStairSpeed;
+        }
+        if (movementInput == 1 && endStairs == true)
+        {
+            movementInput = 0;
+        }
+        if (movementInput == -1 && GroundCheck3 == true && Stairs == true)
+        {
+            movementInput = 0;
+        }
+        if(Out == true && movementInput == -1)
+        {
+            movementInput = 0;
+        }
+        Vector3 currentPosition = transform.position;
+        currentPosition.y += movementInput * stairSpeed * Time.deltaTime;
+        transform.position = currentPosition;
     }
 
 }
