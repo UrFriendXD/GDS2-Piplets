@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Player;
@@ -9,23 +10,28 @@ namespace Farming
     public class PlantTree : InteractableObject
     {
         [SerializeField] private PlantSeed currentPlantType;
-        private TreeFunction _currentTree;
+        [SerializeField] private TreeFunction _currentTree;
         
         [SerializeField] private SpriteRenderer plot;
-        // Start is called before the first frame update
-        void Start()
+        
+        public int treePlotID;
+
+        private void OnValidate()
         {
             _currentTree = GetComponent<TreeFunction>();
             if (currentPlantType != null)
             {
                 OnPlant(currentPlantType);
             }
+
         }
 
         private void OnPlant(PlantSeed plantSeed)
         {
             _currentTree.Plant(plantSeed);
             currentPlantType = plantSeed;
+            
+            ServiceLocator.Current.Get<PlantsManager>().AddToSavePlantTrees(this);
         }
 
         // Update is called once per frame
@@ -83,6 +89,17 @@ namespace Farming
                 // Changes sprite to be slightly transparent to show it's the current object
                 plot.color = new Color(1f, 1f, 1f, 1f);
             }
+        }
+        
+        public (string, int, int) SaveTree()
+        {
+            return (currentPlantType.ID, treePlotID, _currentTree.SaveTree());
+        }
+
+        public void LoadTree(PlantSeed plantSeed, int daysSincePlanted)
+        {
+            _currentTree.LoadTree(daysSincePlanted);
+            OnPlant(plantSeed);
         }
     }
 }

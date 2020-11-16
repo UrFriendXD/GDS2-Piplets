@@ -13,7 +13,7 @@ namespace Farming
     public class TreeFunction : MonoBehaviour
     {
         // Sprites variables
-        private SpriteRenderer _spriteRenderer;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
 
         // Enum of current stage of the plant
         private TreeStages _currentPlantStage;
@@ -42,7 +42,7 @@ namespace Farming
         //[SerializeField] private GameEventListener seasonEndEventListener;
 
         // Start is called before the first frame update
-        void Start()
+        void OnValidate()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
@@ -55,19 +55,25 @@ namespace Farming
 
         public void Plant(PlantSeed plantSeed)
         {
-           
             _plantSeed = plantSeed;
              clone = Instantiate(plantParticle, new Vector3(0, 0, 0), quaternion.identity);
             this.GetComponent<OutsideParticleEffects>().ParticleOn(clone);
             dayPassEventListener.Response.AddListener(Grow);
             _thisPlantType = _plantSeed.plantType;
-            if (daysSincePlanted != 0) return;
-            _currentPlantStage = TreeStages.Seed;
-            UpdateSprite(0);
+            
+            // If this is a new plant set stage to seed and seedling sprite
+            if (daysSincePlanted < plantSeed.daysToStage1)
+            {
+                _currentPlantStage = TreeStages.Seed;
+                UpdateSprite(0);
+            }
+            else
+            {
+                Debug.Log(daysSincePlanted);
+                UpdateSpriteOnDay();
+            }
         }
-
-        private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.spritesList[value].sprites[Random.Range(0, _plantSeed.spritesList.Length - 1)];
-
+        
         private void Grow()
         {
             // If plant is harvestable ignore growth 
@@ -75,6 +81,12 @@ namespace Farming
 
             daysSincePlanted++;
 
+            UpdateSpriteOnDay();
+            Debug.Log($"Growth {daysSincePlanted}, {_currentPlantStage}");
+        }
+
+        private void UpdateSpriteOnDay()
+        {
             // Depending on day since planted, grow a stage
             switch (daysSincePlanted)
             {
@@ -96,7 +108,6 @@ namespace Farming
                     Debug.Log("Grew over harvest");
                     break;
             }
-            Debug.Log($"Growth {daysSincePlanted}, {_currentPlantStage}");
         }
 
         public void Onchop(PlayerScript playerScript)
@@ -195,10 +206,22 @@ namespace Farming
             _currentPlantStage = TreeStages.None;
             daysSincePlanted = 0;
             dayPassEventListener.Response.RemoveListener(Grow);
+            ServiceLocator.Current.Get<PlantsManager>().RemoveToSavePlantTrees(GetComponentInParent<PlantTree>());
             Debug.Log("removed");
         }
 
+        private void UpdateSprite(int value) => _spriteRenderer.sprite = _plantSeed.spritesList[value].sprites[Random.Range(0,  _plantSeed.spritesList[value].sprites.Length - 1)];
+
         public bool IsPlanted() => _thisPlantType != PlantType.None;
 
+        public int SaveTree()
+        {
+            return daysSincePlanted;
+        }
+
+        public void LoadTree(int days)
+        {
+            daysSincePlanted = days;
+        }
     }
 }

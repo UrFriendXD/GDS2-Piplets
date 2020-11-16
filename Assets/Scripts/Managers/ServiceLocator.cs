@@ -21,6 +21,7 @@ public class ServiceLocator
         
         // Save managers
         Register(new PlantSaveManager());
+        Register(new TreeSaveManager());
         Register(new DateSaveManager());
     }
 

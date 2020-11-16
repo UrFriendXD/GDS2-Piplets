@@ -14385,6 +14385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: treePlant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5297618577512007514, guid: f20b98aefbbf17d45a38b55f926a91a2, type: 3}
+      propertyPath: treePlotID
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5297618577512007515, guid: f20b98aefbbf17d45a38b55f926a91a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5493965

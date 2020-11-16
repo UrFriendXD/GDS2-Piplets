@@ -12,6 +12,7 @@ public class SaveManager : IGameService
     public MarketPriceSaveManager MarketPriceSaveManager;
     public PipletSaveManager PipletSaveManager;
     private PlantSaveManager _plantSaveManager;
+    private TreeSaveManager _treeSaveManager;
     private DateSaveManager _dateSaveManager;
     
     public bool IsNewGame;
@@ -32,6 +33,11 @@ public class SaveManager : IGameService
         {
             _dateSaveManager = ServiceLocator.Current.Get<DateSaveManager>();
         }
+
+        if (_treeSaveManager == null)
+        {
+            _treeSaveManager = ServiceLocator.Current.Get<TreeSaveManager>();
+        }
     }
     
     public void NewGame()
@@ -48,6 +54,7 @@ public class SaveManager : IGameService
         ItemSaveManager.SaveInventory(_playersManager.GetPlayerFromID(0));
         MarketPriceSaveManager.SavePrices();
         _plantSaveManager.SaveGame();
+        _treeSaveManager.SaveGame();
         _dateSaveManager.SaveGame();
         PipletSaveManager.SaveGame();
         PlayerSaveManager.SaveGame(_playersManager.GetPlayerFromID(0).playerStats);
@@ -63,6 +70,7 @@ public class SaveManager : IGameService
         //Debug.Log(_playersManager.GetPlayerFromID(0));
         ItemSaveManager.LoadInventory(_playersManager.GetPlayerFromID(0));
         _plantSaveManager.LoadGame();
+        _treeSaveManager.LoadGame();
         MarketPriceSaveManager.LoadPrices();
         _dateSaveManager.LoadDate();
         PipletSaveManager.LoadGame();
