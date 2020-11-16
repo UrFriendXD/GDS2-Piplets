@@ -46,7 +46,8 @@ public class BuyPipletButton : MonoBehaviour
     {
         if (playerStats.money >= pipletCost)
         {
-            pipletObject.gameObject.SetActive(true);
+            pipletObject.ActivatePiplet();
+            pipletObject.pipletStats.isUnlocked = true;
             playerStats.money -= pipletCost;
             ServiceLocator.Current.Get<PipletManager>().PipletBoughtEvent.Invoke();
             //ServiceLocator.Current.Get<PipletManager>().ActivePiplets.Add(pipletObject);

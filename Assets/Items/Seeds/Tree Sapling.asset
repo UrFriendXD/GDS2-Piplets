@@ -35,5 +35,5 @@ MonoBehaviour:
   - sprites:
     - {fileID: 759678483730449176, guid: f06589a9fce7413418443053caa6318c, type: 3}
     - {fileID: 7748518322702929914, guid: f06589a9fce7413418443053caa6318c, type: 3}
-  amountToGive: 0
+  amountToGive: 1
   rawGoodToGive: {fileID: 11400000, guid: 3f5cf1493d272214fa1aaac3292a141a, type: 2}
