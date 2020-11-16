@@ -7,13 +7,13 @@ using UnityEngine;
 public class TreeSaveData
 {
     public string itemID;
-    public string objectName;
+    public int objectID;
     public int daysSincePlanted;
 
-    public TreeSaveData(string id, string objectName, int daysSincePlanted)
+    public TreeSaveData(string id, int objectID, int daysSincePlanted)
     {
         itemID = id;
-        this.objectName = objectName;
+        this.objectID = objectID;
         this.daysSincePlanted = daysSincePlanted;
     }
 }

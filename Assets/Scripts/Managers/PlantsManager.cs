@@ -26,9 +26,10 @@ public class PlantsManager : IGameService
         }
 
         var trees = Object.FindObjectsOfType<PlantTree>();
-        foreach (var tree in trees)
+        for (var i = 0; i < trees.Length; i++)
         {
-            PlantTrees.Add(tree);
+            PlantTrees.Add(trees[i]);
+            trees[i].treePlotID = i;
         }
     }
     public int AddFarmPlot(FarmPlot farmPlot)

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TreeSaveManager : IGameService
 {
-    private const string SavedPlantsFileName = "FarmPlots";
+    private const string SavedPlantsFileName = "TreePlots";
 
     public void SaveGame()
     {
@@ -25,7 +25,7 @@ public class TreeSaveManager : IGameService
             TreeSaveData savedFarmPlot = savedPlants.savedPlantSeeds[i];
             foreach (var plantTree in farmPlots)
             {
-                if (plantTree.gameObject.name == savedFarmPlot.objectName)
+                if (plantTree.treePlotID == savedFarmPlot.objectID)
                 {
                     plantTree.LoadTree(itemDatabase.GetItemCopy(savedFarmPlot.itemID) as PlantSeed, savedFarmPlot.daysSincePlanted);
                     Debug.Log(plantTree.name +" " + savedFarmPlot + " " + savedFarmPlot.itemID);
