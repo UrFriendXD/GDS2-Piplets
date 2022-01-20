@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}" SchemaVersion="103">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{156AA3FF-61B7-4ADC-AC25-C1B0332A9FAD}" PersistMode="Standalone">
 			<ChildrenList>
@@ -37,6 +37,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="axe_wood chop" ID="{2735E0DB-B5E1-4BFC-88C0-ECC1F6A5B3EF}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -63,6 +64,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Digging" ID="{2026A978-8657-4942-BCDF-A0B289690B27}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -85,6 +87,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="digging_ planting" ID="{1C208D60-040C-47A8-99B6-EF287C2BFF8D}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -107,6 +110,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Dirt walking 1" ID="{4D85A468-3224-4FBB-8A3F-C2C3AB353512}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -136,6 +140,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="dirt walking 2" ID="{011B7040-0B6B-4908-9231-37A35C7BDDBF}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -165,6 +170,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="grass footsteps" ID="{60402336-560D-4BA7-A3B1-698DADAE33E1}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -187,6 +193,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="planting_harvesting" ID="{7E1A0B33-EF56-4CDA-A2A4-35B55B3D6E7F}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -209,6 +216,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="seed planting" ID="{A7FD3B36-4FB7-470D-A0BF-DC5ECEC65E0E}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -238,6 +246,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="single footstep 1" ID="{E9F02136-5264-4CC1-B6E0-6EDF73C965E4}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -260,6 +269,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="water pour ground" ID="{100C5A62-E190-4209-811D-943978AC752D}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -282,6 +292,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="water pour metal" ID="{927D753A-E37A-4B3D-BC49-0D69503A3DA0}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -311,6 +322,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="wood chop 2" ID="{7580F309-18C5-4818-8064-232206FA9744}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -340,6 +352,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="wood cutting" ID="{B565BBA7-A510-4482-8F4C-1F0A0102F0BA}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -402,6 +415,7 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="metal ladder 1 (1)" ID="{3B83E719-D693-4C60-80D5-2F81E64B99CF}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -424,11 +438,13 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="metal ladder 4" ID="{004B0617-EF1B-4725-976F-0BFC1A4D64C8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists/>
 							<Playlist>
 								<ItemRef Name="metal ladder 1 (1)" ID="{C037B38A-182D-432D-9789-083337B82ABE}"/>
 								<ItemRef Name="metal ladder 4" ID="{FE25D9F9-13E8-4CD1-9B0C-F49F5B19F6DB}"/>
@@ -452,6 +468,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="greenhouse door" ID="{88234AD1-2F32-4A1A-8815-EB1622177FED}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -474,6 +491,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="water pour 4" ID="{861A4BE9-BA30-4B66-AA12-DAF4073719F6}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -496,6 +514,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="water pour 3 (1)" ID="{77025658-5F45-46DC-8DD3-FB44DE1403FF}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -518,6 +537,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Fail" ID="{8DAEE31D-D483-44B2-856C-4EF3041BEEF9}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -540,6 +560,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="magical whir" ID="{11A73197-C37E-46D2-A86A-45E84F46F111}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -574,6 +595,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="menu button 1" ID="{BE7D021F-1D9C-4532-8250-E75AE28FD4A1}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -596,6 +618,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="menu button 2" ID="{AE73FA8F-D3F3-4098-8562-7B9A7BC4E9E1}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -638,6 +661,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="menu select" ID="{EFAADEAF-08C8-4206-9D4D-5ABC08CBE856}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -660,6 +684,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Minecart 2" ID="{3C83C5D0-76BC-46A6-A57B-87ED802D1F97}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -689,6 +714,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Minecart" ID="{9DC2C094-57EC-45C1-9291-BC554EF8F5CA}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -719,6 +745,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Nature ambiance" ID="{AE0252E3-C713-4944-B0CE-9243AE1916D8}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -741,6 +768,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="notification 2" ID="{8FF2E1C7-3DFF-46E3-AC34-9E599F34D258}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -763,6 +791,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="notification" ID="{3F0DCC10-A57D-4D6A-9D37-FD8D3D9F4318}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -785,6 +814,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Pass" ID="{A1601469-B11C-4A8F-B6C4-0528F4EFCAC8}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -837,6 +867,7 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="chime 1" ID="{894F6940-9623-40AB-863B-F76F69847110}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -866,6 +897,7 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="chime 2" ID="{92EFF41E-7FCE-4855-B170-7493BE607A67}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -895,6 +927,7 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="chime 3" ID="{B3CF6457-DF3D-4B6C-8403-D4281E8251DC}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -924,11 +957,13 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="chime 4" ID="{AFB13486-3E2A-44D1-B8AE-4F2D1F94218F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists/>
 						</RandomSequenceContainer>
 						<Sound Name="Ladder slide cleaned" ID="{CBC1746D-6222-44DE-8FB9-1FFAF10805DF}" ShortID="543875110">
 							<ReferenceList>
@@ -948,6 +983,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Ladder slide cleaned" ID="{AD441E7F-0F27-4CAB-A080-15B625B89162}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -970,6 +1006,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="AI Processing" ID="{0BC03D1A-7B66-478C-A1C3-B8E149D79AD3}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -992,6 +1029,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Minecart loading" ID="{64D66F3B-C0AC-4D14-B7FF-85ED2DB1ED1E}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1026,6 +1064,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Menu Back Button" ID="{7C7CBEFC-3710-4337-A7E9-DE635003C291}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1060,6 +1099,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Fail Sound" ID="{F2D6A67C-9C55-4326-AEB8-7205B1314F85}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1089,6 +1129,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Pass sound" ID="{54191845-63FD-49D0-A8A8-3E109E84212A}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1118,6 +1159,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Watering Plant" ID="{0C7BB94C-0220-4051-B0E7-10A4FAF8EE07}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1140,6 +1182,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Minecart rolling" ID="{02E13D02-F5CA-4ACF-8D6D-4F13B444D675}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1174,6 +1217,7 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="AI menu back" ID="{B240E6EE-D144-40C3-9194-30E275E7D794}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1265,6 +1309,7 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="stone step 1" ID="{F86C0588-41F0-4792-9F4F-F73EBA52E8D1}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -1287,11 +1332,13 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="stone step 2" ID="{93B0DACB-A96F-4675-B43E-0445655371D3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists/>
 									<Playlist>
 										<ItemRef Name="stone step 1" ID="{D0B81939-7263-4B85-849E-4AE9927A0126}"/>
 										<ItemRef Name="stone step 2" ID="{AF3F5CE6-EF33-40DD-8FDC-F237A56D3895}"/>
@@ -1346,6 +1393,7 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="single footstep 1" ID="{F27F8FEF-6267-4873-ADBD-F3A9D72FB5B9}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -1397,13 +1445,16 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="single footstep 1" ID="{36FDE500-A197-4E6B-902B-00EA4BACCE3E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
@@ -1526,11 +1577,13 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="water droplet" ID="{242EFB68-D80A-43BF-AFCF-17404220422A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists/>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

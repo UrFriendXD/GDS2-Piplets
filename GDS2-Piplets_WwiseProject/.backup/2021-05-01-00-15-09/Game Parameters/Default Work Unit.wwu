@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D0521568-1F23-40A3-B04C-AC11A87167B5}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{D0521568-1F23-40A3-B04C-AC11A87167B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Volume" ID="{F9F8D68A-4CF7-4E23-851B-8DB3EAC55C88}" ShortID="1056031627">
+					<ChildrenList>
+						<GameParameter Name="MasterVolume" ID="{9B1EF3A0-DCDE-4812-84B3-358241AAAEC9}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFXVolume" ID="{5649B073-D9B7-4219-ADB4-7CB8BF143FA7}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MusicVolume" ID="{5DC0077B-0623-4EEE-B03D-E2843A15FAA1}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="75"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<GameParameter Name="TreeHealth" ID="{0A0C6734-05C9-4EDE-B60D-DE42751818E8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

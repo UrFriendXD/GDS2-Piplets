@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}" SchemaVersion="103">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{8ED836ED-DF3B-4907-BFD2-6878E4F764AF}" PersistMode="Standalone">
 			<ChildrenList>
@@ -71,6 +71,7 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ObjectLists/>
 						</Bus>
 						<Bus Name="Music Audio Bus" ID="{29D7196C-D862-4230-BF92-32DB6A26EF9D}">
 							<PropertyList>
@@ -103,8 +104,10 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ObjectLists/>
 						</Bus>
 					</ChildrenList>
+					<ObjectLists/>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
